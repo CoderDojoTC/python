@@ -1,21 +1,15 @@
 site_name: 'CoderDojo Twin Cities Python Resources'
 nav:
   - Home:
-    - Home: home/home.md
-  - Documentation:
-    - Documentation: documentation/documentation.md
-  - Getting Started:
-    - Getting Started: getting-started/getting-started.md
-  - Support:
-    - Support: support/support.md
-    - Team: support/team.md
-    - Contact: support/contact.md
+    - Home: home.md
+  - Contact:
+    - Contact: contact.md
 
-repo_name: 'atc_presentations2'
+repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
 edit_uri: 'blob/master/docs'
 theme:
-  name: material
+  name: mkdocs
   palette:
     primary: 'amber'
     accent: 'amber'
