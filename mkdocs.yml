@@ -1,4 +1,4 @@
-site_name: 'Dan_McCreary_ATC_Presetnations'
+site_name: 'CoderDojo Twin Cities Python Resources'
 nav:
   - Home:
     - Home: home/home.md
@@ -12,9 +12,8 @@ nav:
     - Contact: support/contact.md
 
 repo_name: 'atc_presentations2'
-repo_url: 'https://github.optum.com/dmccrea1/atc_presentations2'
+repo_url: 'https://github.com/CoderDojoTC/python'
 edit_uri: 'blob/master/docs'
-copyright: 'Copyright &copy; 2020 Optum'
 theme:
   name: material
   palette:
