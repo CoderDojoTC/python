@@ -1,8 +1,8 @@
 pipeline {
   agent { label 'docker-kitchensink-slave' }  // docker-kitchensink-slave is available on jenkins central, update this for other jenkins instances accordingly
   environment {
-    ORG = 'dmccrea1'
-    REPO = 'atc_presentations2'
+    ORG = 'CoderDojoTC'
+    REPO = 'python'
     CREDENTIALS_ID = '{{JenkinsCredentialId}}'  // This needs to be updated with your jenkins credential, having access to the this github repository
     
     // do not change any parameters below
@@ -18,9 +18,9 @@ pipeline {
           sh """
             . /etc/profile.d/jenkins.sh
             git config --global user.name "${USERNAME}"
-            git remote set-url origin https://${USERNAME}:${PASSWORD}@github.optum.com/${env.ORG}/${env.REPO}.git
+            git remote set-url origin https://${USERNAME}:${PASSWORD}@github.com/${env.ORG}/${env.REPO}.git
             export GIT_USER=${USERNAME}:${PASSWORD}
-            export GITHUB_HOST=github.optum.com
+            export GITHUB_HOST=github.com
             mkdocs gh-deploy --force
           """
         }
