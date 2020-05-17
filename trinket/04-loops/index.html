@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>01 turtle graphics - CoderDojo Twin Cities Python Resources</title>
+        <title>04 loops - CoderDojo Twin Cities Python Resources</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/01-turtle-graphics.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/04-loops.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -80,12 +80,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#turtle-graphics" class="nav-link">turtle graphics</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#commands" class="nav-link">commands</a>
+            <li class="nav-item" data-level="2"><a href="#simple-square" class="nav-link">Simple Square</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -94,23 +89,54 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="turtle-graphics">turtle graphics<a class="headerlink" href="#turtle-graphics" title="Permanent link">&para;</a></h2>
-<p>text
-[link]</p>
-<h2 id="commands">commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<h3 id="moving">moving<a class="headerlink" href="#moving" title="Permanent link">&para;</a></h3>
-<p>forward(40)
-back(40)
-left(90)
-right(90)</p>
-<h3 id="drawing">drawing<a class="headerlink" href="#drawing" title="Permanent link">&para;</a></h3>
-<p>penup()
-pendown()
-color('red')
-penwidth(10)</p>
-<h3 id="misc">misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h3>
-<p>clear</p>
-<p><a href="https://trinket.io/docs/python">full list</a></p></div>
+<h2 id="simple-square">Simple Square<a class="headerlink" href="#simple-square" title="Permanent link">&para;</a></h2>
+<p>In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+
+<span class="c1"># let&#39;s just put these in one place to make our program easier to modify</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with square&#39;</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><a href="https://trinket.io/library/trinkets/91be3b90a6">Run Square With Variables</a></p>
+<p>Can you make the turtle draw a larger square?  Hint: change the forward(40) to be forward(100)</p></div>
             </div>
         </div>
 
