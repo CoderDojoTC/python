@@ -7,6 +7,8 @@ nav:
   - Jupyter:
     - Setup: jupyter/01-setup
     - Draw Figure: jupyter/02-draw-figure
+  - Contributing:
+    - How to Contribute Examples: contribute.md
   - Contact:
     - Contact: contact.md
 
