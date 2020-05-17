@@ -1,6 +1,6 @@
 ## turtle graphics
 
-`import turtle
+```import turtle
 dan = turtle.Turtle()
 dan.shape('turtle')
 
@@ -16,6 +16,6 @@ dan.right(90)
 dan.forward(40)
 dan.right(90)
    
-dan.write('done with square')`
+dan.write('done with square')```
 
 [full list](https://trinket.io/docs/python)
