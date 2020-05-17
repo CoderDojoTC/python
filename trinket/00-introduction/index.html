@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>01 setup - CoderDojo Twin Cities Python Resources</title>
+        <title>00 introduction - CoderDojo Twin Cities Python Resources</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -38,15 +38,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
+    <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
 <li>
-    <a href="../../trinket/02-simple-square" class="dropdown-item">Simple Square</a>
+    <a href="../02-simple-square" class="dropdown-item">Simple Square</a>
 </li>
                                     
 <li>
-    <a href="../../trinket/03-variables" class="dropdown-item">Variables</a>
+    <a href="../03-variables" class="dropdown-item">Variables</a>
 </li>
                                 </ul>
                             </li>
@@ -55,11 +55,11 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="." class="dropdown-item">Setup</a>
+    <a href="../../jupyter/01-setup" class="dropdown-item">Setup</a>
 </li>
                                     
 <li>
-    <a href="../02-draw-figure" class="dropdown-item">Draw Figure</a>
+    <a href="../../jupyter/02-draw-figure" class="dropdown-item">Draw Figure</a>
 </li>
                                 </ul>
                             </li>
@@ -90,7 +90,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/01-setup.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/00-introduction.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -110,27 +110,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#jupyter-notebook-setup" class="nav-link">Jupyter Notebook Setup</a>
+            <li class="nav-item" data-level="2"><a href="#introduction-to-turtle-graphics-with-trinket" class="nav-link">Introduction to Turtle Graphics with Trinket</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#steps" class="nav-link">Steps</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#install-conda" class="nav-link">Install Conda</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#create-a-new-conda-envornment" class="nav-link">Create a new conda envornment:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
+            <li class="nav-item" data-level="2"><a href="#list-of-trinket-python-labs" class="nav-link">List of Trinket Python Labs</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -139,34 +124,24 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>We will be using the turtle library in Python 3.3</p>
-<p><a href="https://docs.python.org/3.6/library/turtle.html">Python 3.6 Turtle Library</a></p>
-<h2 id="jupyter-notebook-setup">Jupyter Notebook Setup<a class="headerlink" href="#jupyter-notebook-setup" title="Permanent link">&para;</a></h2>
-<p>We will be running this library from within a Jypyter notebook.</p>
-<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
-<p>Install conda
-Create a new conda environment
-Install Jupyter
-Start up Jupyter
-Test Turtle</p>
-<h2 id="install-conda">Install Conda<a class="headerlink" href="#install-conda" title="Permanent link">&para;</a></h2>
-<p>Google "install python" on your operating system.
-Google "install conda"</p>
-<h2 id="create-a-new-conda-envornment">Create a new conda envornment:<a class="headerlink" href="#create-a-new-conda-envornment" title="Permanent link">&para;</a></h2>
-<p>Open your terminal.  Type in the following commands.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">conda env list</span>
-<span class="err">conda create -n turtle python=3.6</span>
-<span class="err">conda activate turtle</span>
-<span class="err">juypter notebook</span>
-</code></pre></div>
-</td></tr></table>
-
-<p>After you run the last command it will open a web browser.</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Documentation</a></p></div>
+<h2 id="introduction-to-turtle-graphics-with-trinket">Introduction to Turtle Graphics with Trinket<a class="headerlink" href="#introduction-to-turtle-graphics-with-trinket" title="Permanent link">&para;</a></h2>
+<p>These labs assume that you have internet access and a modern web browser such as Chrome.</p>
+<p>We use the <a href="http://trniket.io">Trinket web site</a> because it has many of the basic turtle drawing libraries implemented in and easy-to-use web envornment.  It is apropriate for students just getting started with python programming but has limited libraries for our advanced data analysis and plotting labs.</p>
+<h2 id="list-of-trinket-python-labs">List of Trinket Python Labs<a class="headerlink" href="#list-of-trinket-python-labs" title="Permanent link">&para;</a></h2>
+<p>Our labs are working sample programs that you can try.  You can learn by reading the sample programs and changing some values in the code.  Each of the labs has experiments you can do to extend the code in various ways.</p>
+<ol>
+<li><a href="trinket/01-turtle-graphics">turtle graphics</a></li>
+<li><a href="trinket/02-simple-square">simple square</a></li>
+<li><a href="trinket/03-variables">variables</a></li>
+<li><a href="trinket/04-loops">loops</a></li>
+<li><a href="trinket/05-conditionals">conditionals</a></li>
+<li><a href="trinket/06-functions">functions</a></li>
+<li><a href="trinket/07-parameters">function parameters</a> TODO</li>
+<li><a href="trinket/08-random">random</a></li>
+<li><a href="trinket/08-lists">lists</a> TODO</li>
+<li><a href="trinket/09-inputs">inputs</a> TODO</li>
+<li><a href="trinket/10-loops">recursion</a> TODO</li>
+</ol></div>
             </div>
         </div>
 

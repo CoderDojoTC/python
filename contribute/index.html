@@ -7,15 +7,15 @@
         
         <meta name="author" content="Dan McCreary">
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>01 setup - CoderDojo Twin Cities Python Resources</title>
-        <link href="../../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>How to Contribute Examples - CoderDojo Twin Cities Python Resources</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -23,7 +23,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="../..">CoderDojo Twin Cities Python Resources</a>
+                <a class="navbar-brand" href="..">CoderDojo Twin Cities Python Resources</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -38,15 +38,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
+    <a href="../trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
 <li>
-    <a href="../../trinket/02-simple-square" class="dropdown-item">Simple Square</a>
+    <a href="../trinket/02-simple-square" class="dropdown-item">Simple Square</a>
 </li>
                                     
 <li>
-    <a href="../../trinket/03-variables" class="dropdown-item">Variables</a>
+    <a href="../trinket/03-variables" class="dropdown-item">Variables</a>
 </li>
                                 </ul>
                             </li>
@@ -55,20 +55,20 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="." class="dropdown-item">Setup</a>
+    <a href="../jupyter/01-setup" class="dropdown-item">Setup</a>
 </li>
                                     
 <li>
-    <a href="../02-draw-figure" class="dropdown-item">Draw Figure</a>
+    <a href="../jupyter/02-draw-figure" class="dropdown-item">Draw Figure</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Contributing <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../contribute/" class="dropdown-item">How to Contribute Examples</a>
+    <a href="./" class="dropdown-item active">How to Contribute Examples</a>
 </li>
                                 </ul>
                             </li>
@@ -77,7 +77,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../contact/" class="dropdown-item">Contact</a>
+    <a href="../contact/" class="dropdown-item">Contact</a>
 </li>
                                 </ul>
                             </li>
@@ -90,7 +90,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/01-setup.md" class="nav-link">Edit on python</a>
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../contact/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/contribute.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -110,27 +120,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#jupyter-notebook-setup" class="nav-link">Jupyter Notebook Setup</a>
+            <li class="nav-item" data-level="2"><a href="#contacts" class="nav-link">Contacts</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#steps" class="nav-link">Steps</a>
+            <li class="nav-item" data-level="2"><a href="#general-code-savvy-contact" class="nav-link">General Code Savvy Contact</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#install-conda" class="nav-link">Install Conda</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#create-a-new-conda-envornment" class="nav-link">Create a new conda envornment:</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
+            <li class="nav-item" data-level="2"><a href="#specific-questions-on-this-repository" class="nav-link">Specific questions on this repository</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -139,34 +139,12 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>We will be using the turtle library in Python 3.3</p>
-<p><a href="https://docs.python.org/3.6/library/turtle.html">Python 3.6 Turtle Library</a></p>
-<h2 id="jupyter-notebook-setup">Jupyter Notebook Setup<a class="headerlink" href="#jupyter-notebook-setup" title="Permanent link">&para;</a></h2>
-<p>We will be running this library from within a Jypyter notebook.</p>
-<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
-<p>Install conda
-Create a new conda environment
-Install Jupyter
-Start up Jupyter
-Test Turtle</p>
-<h2 id="install-conda">Install Conda<a class="headerlink" href="#install-conda" title="Permanent link">&para;</a></h2>
-<p>Google "install python" on your operating system.
-Google "install conda"</p>
-<h2 id="create-a-new-conda-envornment">Create a new conda envornment:<a class="headerlink" href="#create-a-new-conda-envornment" title="Permanent link">&para;</a></h2>
-<p>Open your terminal.  Type in the following commands.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">conda env list</span>
-<span class="err">conda create -n turtle python=3.6</span>
-<span class="err">conda activate turtle</span>
-<span class="err">juypter notebook</span>
-</code></pre></div>
-</td></tr></table>
-
-<p>After you run the last command it will open a web browser.</p>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Documentation</a></p></div>
+<h2 id="contacts">Contacts<a class="headerlink" href="#contacts" title="Permanent link">&para;</a></h2>
+<h2 id="general-code-savvy-contact">General Code Savvy Contact<a class="headerlink" href="#general-code-savvy-contact" title="Permanent link">&para;</a></h2>
+<p>kidscode@codesavvy.org</p>
+<h2 id="specific-questions-on-this-repository">Specific questions on this repository<a class="headerlink" href="#specific-questions-on-this-repository" title="Permanent link">&para;</a></h2>
+<p>Dan McCreary
+Dan.McCreary@gmail.com</p></div>
             </div>
         </div>
 
@@ -175,11 +153,11 @@ Google "install conda"</p>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "../..",
+            var base_url = "..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
