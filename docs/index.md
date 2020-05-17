@@ -6,6 +6,10 @@ This GitHub repository is for sharing resources to teach Python.
 ## Trinket
 We use the [trinket.io](http://trinket.io) web site to teach introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.
 
+## Jupyter Notebook
+You can also use Jupyter Notebooks to draw turtle graphics.  The notebook will open a new window to draw your turtle graphis.
+An example of this notebook is [here](draw-figure.ipynb)
+
 ## Target Audience
 - Students that have good keyboarding skills and are new to Python.
 Note: Students must have an Internet/web connection to use these labs.
