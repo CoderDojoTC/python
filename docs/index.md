@@ -12,21 +12,25 @@ Students must have an Internet/web connection to use these labs.
 
 ## Concepts
 1. [turtle graphics](trinket/01-turtle-graphics)
-2. [libraries](trinket/02-turtle-graphics)
-3. [variables](trinket/03-variables)
-4. [loops](trinket/04-loops)
-5. [conditionals](trinket/05-conditionals)
-6. [functions](trinket/06-functions)
-7. [function parameters](trinket/07-parameters)
-8. [lists](trinket/08-lists)
-9. [inputs](trinket/09-inputs)
-10. [recursion](trinket/10-loops)
+2. [simple square](trinket/02-simple-square)
+3. [libraries](trinket/02-turtle-library)
+4. [variables](trinket/03-variables)
+5. [loops](trinket/04-loops)
+6. [conditionals](trinket/05-conditionals)
+7. [functions](trinket/06-functions)
+8. [function parameters](trinket/07-parameters)
+9. [lists](trinket/08-lists)
+10. [inputs](trinket/09-inputs)
+11. [recursion](trinket/10-loops)
 
 ## List of labs
 
-- [*square walk*] - teach your turtle to walk in a square
-- [*distance variable*] - use a variable to store distance
-- [*loop*] use a for loop to make the turtle go forward and turn four times
-- [*conditional colors*]
+- [**square walk**] - teach your turtle to walk in a square
+- [**distance variable**] - use a variable to store distance
+- [**loops**] use a for loop to make the turtle go forward and turn four times.  We use the 
+- [**conditional colors**]
+
+## Things to try
+- Can you make your turtle draw a triangle?  Try having it turn 120 degrees three times
 
 
