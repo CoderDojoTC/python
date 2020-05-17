@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>04 loops - CoderDojo Twin Cities Python Resources</title>
+        <title>05 conditionals - CoderDojo Twin Cities Python Resources</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/04-loops.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/05-conditionals.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -103,7 +103,11 @@
 10
 11
 12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 
@@ -112,6 +116,10 @@
 
 <span class="c1"># repeat the forward/right functions four times</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
    <span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
    <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
 
@@ -119,7 +127,7 @@
 </code></pre></div>
 </td></tr></table>
 
-<p><a href="https://trinket.io/python/6cadd3c046">Run Square With Loop</a></p>
+<p><a href="https://trinket.io/python/00e2353a96">Conditinal Sqare</a></p>
 <p>Can you make the turtle draw a larger square?  Hint: change the forward(40) to be forward(100)</p></div>
             </div>
         </div>
