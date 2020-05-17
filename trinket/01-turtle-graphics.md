@@ -18,3 +18,5 @@ penwidth(10)
 
 ### misc
 clear
+
+[full list](https://trinket.io/docs/python)

@@ -11,15 +11,15 @@ Student that have good keyboarding skills and are new to Python.
 Students must have an Internet/web connection to use these labs.
 
 ## Concepts
-.1 turtle graphics
-.1 libraries
-.1 variables
-.1 loops
-.1 conditionals
-.1 functions
-.1 function parameters
-.1 inputs
-.1 recursion
+1. [turtle graphics](../trinket/01-turtle-graphics.md)
+2. libraries
+3. variables
+4. loops
+5. conditionals
+6. functions
+7. function parameters
+8. inputs
+9. recursion
 
 ## List of labs
 
