@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>02 simple square - CoderDojo TC Python</title>
+        <title>12 recursion - CoderDojo TC Python</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -42,7 +42,7 @@
 </li>
                                     
 <li>
-    <a href="." class="dropdown-item">Simple Square</a>
+    <a href="../02-simple-square" class="dropdown-item">Simple Square</a>
 </li>
                                     
 <li>
@@ -122,7 +122,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/02-simple-square.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/12-recursion.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -142,7 +142,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#drawing-a-square" class="nav-link">Drawing a Square</a>
+            <li class="nav-item" data-level="2"><a href="#recursion" class="nav-link">Recursion</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -171,24 +171,54 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="drawing-a-square">Drawing a Square</h2>
-<p>The following code is an example of drawing a square using turtle graphics.  In this example the turtle moves foward 100 units and then turns right.  The angle for the right turn is 90 degrees.  It repeats these two functions four times to make a square.</p>
+<h2 id="recursion">Recursion</h2>
+<p>Recursion is when we write a function that calls itself.  It usually passes a parameter that changes and when it hits a limit it stops going.  This lab does a lot of drawing so to speed it up we will disable the turtle motion.</p>
+<p>Our recursive funtion is the draw_branch function.  It will draw a single branch and then call itself two times at its tip to draw two more smaller branches.</p>
 <h2 id="sample-code">Sample Code</h2>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">color_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;indigo&#39;</span><span class="p">,</span> <span class="s1">&#39;violet&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">]</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">draw_branch</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">pensize</span><span class="p">,</span> <span class="n">depth</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">depth</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="n">pensize</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color_list</span><span class="p">[</span><span class="n">depth</span><span class="p">])</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+    <span class="c1"># draw three branches at half length with a branch on the tip of each branch </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+       <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+       <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+       <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+       <span class="n">draw_branch</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color_list</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">size</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">pensize</span> <span class="o">-</span> <span class="mi">4</span><span class="p">,</span> <span class="n">depth</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+       <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">size</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+       <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">35</span><span class="p">)</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+    <span class="c1"># turtle.penup()</span>
+    <span class="n">turtle</span><span class="o">.</span><span class="n">backward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">myTurtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">myTurtle</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+
+<span class="n">length</span> <span class="o">=</span> <span class="mi">143</span>
+<span class="n">recursion_depth</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">pen_size</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c1"># speedup for faster drawing</span>
+<span class="k">if</span> <span class="n">recursion_depth</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+  <span class="n">myTurtle</span><span class="o">.</span><span class="n">hideturtle</span><span class="p">()</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="n">myTurtle</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
+
+<span class="n">myTurtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+<span class="c1"># move to the bottom center</span>
+<span class="n">myTurtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">220</span><span class="p">)</span>
+<span class="n">myTurtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+
+<span class="n">draw_branch</span><span class="p">(</span><span class="n">myTurtle</span><span class="p">,</span> <span class="n">color_list</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">length</span><span class="p">,</span> <span class="n">pen_size</span><span class="p">,</span> <span class="n">recursion_depth</span><span class="p">)</span>
 </code></pre></div>
 
 
