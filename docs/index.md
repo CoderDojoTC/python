@@ -7,8 +7,8 @@ This GitHub repository is for sharing resources to teach Python.
 We use the [trinket.io](http://trinket.io) web site to teach introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.
 
 ## Target Audience
-Student that have good keyboarding skills and are new to Python.
-Students must have an Internet/web connection to use these labs.
+- Students that have good keyboarding skills and are new to Python.
+Note: Students must have an Internet/web connection to use these labs.
 
 ## Concepts
 1. [turtle graphics](trinket/01-turtle-graphics)
