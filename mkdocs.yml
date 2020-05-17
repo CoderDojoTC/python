@@ -9,6 +9,7 @@ nav:
     - Functions: trinket/06-functions
     - Function Parameters: trinket/07-function-parameters
     - Random Numbers: trinket/08-random
+    - Recursion: trinket/12-recursion
   - Jupyter:
     - Setup Turtle on Jupyter: jupyter/01-setup
     - Drawing Box Labs: jupyter/02-draw-box

@@ -52,7 +52,7 @@ draw_branch(myTurtle, color_list[0], length, pen_size, recursion_depth)
 
 ```
 ## Drawing
-![](../img/simple-square.png)
+![](../img/fractle-tree.png)
 
 ## Explaination
 The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.
