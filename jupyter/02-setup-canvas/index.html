@@ -4,26 +4,26 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Resources for teaching Python to CoderDojo Twin Cities students.">
+        
         <meta name="author" content="Dan McCreary">
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>CoderDojo TC Python</title>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>02 setup canvas - CoderDojo TC Python</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap.min.js" defer></script>
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
 
-    <body class="homepage">
+    <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href=".">CoderDojo TC Python</a>
+                <a class="navbar-brand" href="../..">CoderDojo TC Python</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -38,15 +38,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
+    <a href="../../trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
 <li>
-    <a href="trinket/02-simple-square" class="dropdown-item">Simple Square</a>
+    <a href="../../trinket/02-simple-square" class="dropdown-item">Simple Square</a>
 </li>
                                     
 <li>
-    <a href="trinket/03-variables" class="dropdown-item">Variables</a>
+    <a href="../../trinket/03-variables" class="dropdown-item">Variables</a>
 </li>
                                 </ul>
                             </li>
@@ -55,15 +55,15 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="jupyter/01-setup" class="dropdown-item">Setup Turtle on Jupyter</a>
+    <a href="../01-setup" class="dropdown-item">Setup Turtle on Jupyter</a>
 </li>
                                     
 <li>
-    <a href="jupyter/02-canvas-setup" class="dropdown-item">Setup Canvas on Jypyter Lab</a>
+    <a href="../02-canvas-setup" class="dropdown-item">Setup Canvas on Jypyter Lab</a>
 </li>
                                     
 <li>
-    <a href="jupyter/02-draw-figure" class="dropdown-item">Draw Figure</a>
+    <a href="../02-draw-figure" class="dropdown-item">Draw Figure</a>
 </li>
                                 </ul>
                             </li>
@@ -72,7 +72,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="contribute/" class="dropdown-item">How to Contribute Examples</a>
+    <a href="../../contribute/" class="dropdown-item">How to Contribute Examples</a>
 </li>
                                 </ul>
                             </li>
@@ -81,7 +81,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="contact/" class="dropdown-item">Contact</a>
+    <a href="../../contact/" class="dropdown-item">Contact</a>
 </li>
                                 </ul>
                             </li>
@@ -94,7 +94,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/index.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/02-setup-canvas.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -114,28 +114,23 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#coderdojo-twin-cities-python-resources" class="nav-link">CoderDojo Twin Cities Python Resources</a>
-              <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#trinket" class="nav-link">Trinket</a>
+            <li class="nav-item" data-level="2"><a href="#jupyter-lab" class="nav-link">Jupyter Lab</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#jupyter-notebook" class="nav-link">Jupyter Notebook</a>
+            
+            <li class="nav-item" data-level="2"><a href="#steps" class="nav-link">Steps</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#target-audience" class="nav-link">Target Audience</a>
+            
+            <li class="nav-item" data-level="2"><a href="#setup-with-conda" class="nav-link">Setup With Conda</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#list-of-concepts" class="nav-link">List of Concepts</a>
+            
+            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#contributing-to-our-library" class="nav-link">Contributing to Our Library</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -143,39 +138,27 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>this is the docs/index.md file</p>
-<h1 id="coderdojo-twin-cities-python-resources">CoderDojo Twin Cities Python Resources</h1>
-<p>This GitHub repository is for sharing resources to teach Python.  We have used two different envornments for teaching Python: Trinket.io and Jypyter Notebooks.  Each has its strengths and weaknesses.</p>
-<h2 id="trinket">Trinket</h2>
-<p>We use the <a href="http://trinket.io">trinket.io</a> web site to teach introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.</p>
-<h2 id="jupyter-notebook">Jupyter Notebook</h2>
-<p>You can also use Jupyter Notebooks to draw turtle graphics.  The notebook will open a new window to draw your turtle graphis.  Getting Jupyter Notebooks is a bit tricky to setup on many PCs.  However, once it is setup it offers tens of thousands of sample programs to learn python coding.  Jupyter Notebooks are also the preferred tool by many data science professionals.
-An example of a Jupyter Notebook that uses turtle graphs is <a href="jupyter/draw-figure.ipynb">here</a></p>
-<h2 id="target-audience">Target Audience</h2>
-<ul>
-<li>Students that have good keyboarding skills and are new to Python.
-Note: Students must have an Internet/web connection to use these labs.</li>
-</ul>
-<h2 id="list-of-concepts">List of Concepts</h2>
-<p>Here are some of the concepts we will be learning in this course.  If you are already familiar with these concepts you can skip over some of the labs.</p>
-<ul>
-<li><strong>importing libraries</strong> We need to tell Pyhton what functions we want to use.  We will use the import function to tell Python which functions we need to use in our programs.</li>
-<li><strong>drawing</strong> Turtle graphs has a set of drawing functions.  We will learn to use these to draw patterns on the screen.</li>
-<li><strong>square walk</strong> - teach your turtle to walk in a square and draw figures.</li>
-<li><strong>variables</strong> Variables make our programs easier to read and easier to understand.</li>
-<li><strong>loops</strong> Loops help use when we have many tasks that we repeat over and over.</li>
-<li><strong>conditionals</strong> Conditionals allow us to change our behavior based on rules we create.</li>
-<li><strong>functions</strong>  Functions allow us to break large programs into chunks that we can give names and can call over and over.</li>
-<li><strong>function parameters</strong>  Functions can also take parameters to change the behavior of a function.</li>
-<li><strong>random numbers</strong>  Random number functions allow our programs to have the computer select new random number between a range of numbers.</li>
-<li><strong>lists</strong> Lists alow us to create collections of names.</li>
-<li><strong>inputs</strong>  Inputs allow us to prompt the user for values.</li>
-<li><strong>recursion</strong>  Recursion allows us to have programs call themselves to create repeating patterns.</li>
-</ul>
-<h2 id="contributing-to-our-library">Contributing to Our Library</h2>
-<ul>
-<li>Do you have a specific example you would like to share with other students and teachers?  Please see the Contributing menu for details on how to share your code.</li>
-</ul></div>
+<p>We will be using python canvas drawing library.  Unlike turtle graphics the canvas library has many powerful drawing tools.</p>
+<p><a href="https://ipycanvas.readthedocs.io/en/latest/index.html">Python IPYCanvas Library</a></p>
+<h2 id="jupyter-lab">Jupyter Lab</h2>
+<p>We will be running this library from within a Jypyter lab.</p>
+<h2 id="steps">Steps</h2>
+<p>Install conda
+Create a new conda environment
+Install Jupyter lab
+Start up Jupyter
+Test Canvas</p>
+<h2 id="setup-with-conda">Setup With Conda</h2>
+<div class="codehilite"><pre><span></span><code><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">turtle</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.6</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">turtle</span>
+<span class="n">juypter</span> <span class="n">lab</span>
+</code></pre></div>
+
+
+<p>After you run the last command it will open a web browser.</p>
+<h2 id="references">References</h2>
+<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Documentation</a></p></div>
             </div>
         </div>
 
@@ -184,11 +167,11 @@ Note: Students must have an Internet/web connection to use these labs.</li>
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = ".",
+            var base_url = "../..",
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -256,8 +239,3 @@ Note: Students must have an Internet/web connection to use these labs.</li>
 
     </body>
 </html>
-
-<!--
-MkDocs version : 1.1.2
-Build Date UTC : 2020-05-17 21:20:59.394132+00:00
--->
