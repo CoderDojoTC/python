@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>02 simple square - CoderDojo Twin Cities Python Resources</title>
+        <title>06 functions - CoderDojo Twin Cities Python Resources</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/02-simple-square.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/06-functions.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -80,17 +80,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#drawing-a-simple-square" class="nav-link">Drawing a Simple Square</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#sample-code" class="nav-link">Sample Code</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#explaination" class="nav-link">Explaination</a>
+            <li class="nav-item" data-level="2"><a href="#functions" class="nav-link">Functions</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -104,9 +94,8 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="drawing-a-simple-square">Drawing a Simple Square<a class="headerlink" href="#drawing-a-simple-square" title="Permanent link">&para;</a></h2>
-<p>The following code is an example of drawing a square using turtle graphics.</p>
-<h2 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permanent link">&para;</a></h2>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">&para;</a></h2>
+<p>In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
@@ -127,27 +116,26 @@
 <span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">distance</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="c1"># repeat the forward/right functions four times</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+   <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
+      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+   <span class="k">else</span><span class="p">:</span>
+      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+   <span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
+   <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
 
 <span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with square&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="explaination">Explaination<a class="headerlink" href="#explaination" title="Permanent link">&para;</a></h2>
-<p>The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.</p>
+<p><a href="https://trinket.io/python/00e2353a96">Conditinal Sqare</a></p>
+<p>Can you make the turtle use a larger pen size?  Try dan.pensize(10) for the red and dan.pensize(3) for the blue.</p>
 <h2 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h2>
-<p>Can you change the distance and angle the turtle moves?  What happens when you change the numbers for the forward and right functions?</p>
-<p>Can you add more motion commands using copy and paste?</p></div>
+<p>Can you change the width of the pen with the dan.penwidth(20) function?</p></div>
             </div>
         </div>
 
