@@ -11,21 +11,22 @@ Student that have good keyboarding skills and are new to Python.
 Students must have an Internet/web connection to use these labs.
 
 ## Concepts
-1. [turtle graphics](../trinket/01-turtle-graphics.md)
-2. libraries
-3. variables
-4. loops
-5. conditionals
-6. functions
-7. function parameters
-8. inputs
-9. recursion
+1. [turtle graphics](trinket/01-turtle-graphics)
+2. [libraries](trinket/02-turtle-graphics)
+3. [variables](trinket/03-variables)
+4. [loops](trinket/04-loops)
+5. [conditionals](trinket/05-conditionals)
+6. [functions](trinket/06-functions)
+7. [function parameters](trinket/07-parameters)
+8. [lists](trinket/08-lists)
+9. [inputs](trinket/09-inputs)
+10. [recursion](trinket/10-loops)
 
 ## List of labs
 
 - [*square walk*] - teach your turtle to walk in a square
-- *distance variable* - use a variable to store distance
-- *loop* use a for loop to make the turtle go forward and turn four times
-- *conditional colors*
+- [*distance variable*] - use a variable to store distance
+- [*loop*] use a for loop to make the turtle go forward and turn four times
+- [*conditional colors*]
 
 
