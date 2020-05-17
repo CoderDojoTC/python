@@ -5,6 +5,8 @@ nav:
   - Contact:
     - Contact: contact.md
 
+site_description: 'Resources for teaching python to CoderDojo students.'
+site_author: 'Dan McCreary'
 repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
 edit_uri: 'blob/master/docs'
@@ -16,6 +18,7 @@ theme:
   feature:
     tabs: true
   custom_dir: 'theme'
+  include_sidebar: true
 markdown_extensions:
   - admonition
   - footnotes
@@ -23,3 +26,5 @@ markdown_extensions:
       permalink: true
   - codehilite:
       linenums: true
+plugins:
+    - search
