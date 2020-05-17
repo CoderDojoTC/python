@@ -1,7 +1,12 @@
 site_name: 'CoderDojo Twin Cities Python Resources'
 nav:
-  - Home:
-    - Home: index.md
+  - Trinket:
+    - Turtle Graphics: trinket/01-turtle-graphics
+    - Simple Square: trinket/02-simple-square
+    - Variables: trinket/03-variables
+  - Jupyter:
+    - Setup: jupyter/01-setup
+    - Draw Figure: jupyter/02-draw-figure
   - Contact:
     - Contact: contact.md
 
