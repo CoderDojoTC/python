@@ -48,6 +48,26 @@
 <li>
     <a href="../03-variables" class="dropdown-item">Variables</a>
 </li>
+                                    
+<li>
+    <a href="../03-variables" class="dropdown-item">Loops</a>
+</li>
+                                    
+<li>
+    <a href="../05-conditionals" class="dropdown-item">Conditional</a>
+</li>
+                                    
+<li>
+    <a href="../06-functions" class="dropdown-item">Functions</a>
+</li>
+                                    
+<li>
+    <a href="../07-function-parameters" class="dropdown-item">Function Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../08-random" class="dropdown-item">Random Numbers</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -114,12 +134,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#drawing-a-simple-square" class="nav-link">Drawing a Simple Square</a>
+            <li class="nav-item" data-level="2"><a href="#drawing-a-square" class="nav-link">Drawing a Square</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
             <li class="nav-item" data-level="2"><a href="#sample-code" class="nav-link">Sample Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#drawing" class="nav-link">Drawing</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -138,33 +163,34 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="drawing-a-simple-square">Drawing a Simple Square</h2>
-<p>The following code is an example of drawing a square using turtle graphics.</p>
+<h2 id="drawing-a-square">Drawing a Square</h2>
+<p>The following code is an example of drawing a square using turtle graphics.  In this example the turtle moves foward 100 units and then turns right.  The angle for the right turn is 90 degrees.  It repeats these two functions four times to make a square.</p>
 <h2 id="sample-code">Sample Code</h2>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-
-<span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with square&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 
+<h2 id="drawing">Drawing</h2>
+<p><img alt="" src="../../img/simple-square.png" /></p>
 <h2 id="explaination">Explaination</h2>
 <p>The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.</p>
+<p>Note that at the start, the turtle is facing to the right.  After the last instruction, it is also facing to the right.</p>
 <h2 id="experiments">Experiments</h2>
-<p>Can you change the distance and angle the turtle moves?  What happens when you change the numbers for the forward and right functions?</p>
+<p>Can you change the distance and angle the turtle moves?  What happens when you change the numbers for the forward and right functions?  Can you go left as well as right?</p>
 <p>Can you add more motion commands using copy and paste?</p></div>
             </div>
         </div>

@@ -48,6 +48,26 @@
 <li>
     <a href="../03-variables" class="dropdown-item">Variables</a>
 </li>
+                                    
+<li>
+    <a href="../03-variables" class="dropdown-item">Loops</a>
+</li>
+                                    
+<li>
+    <a href="../05-conditionals" class="dropdown-item">Conditional</a>
+</li>
+                                    
+<li>
+    <a href="../06-functions" class="dropdown-item">Functions</a>
+</li>
+                                    
+<li>
+    <a href="../07-function-parameters" class="dropdown-item">Function Parameters</a>
+</li>
+                                    
+<li>
+    <a href="../08-random" class="dropdown-item">Random Numbers</a>
+</li>
                                 </ul>
                             </li>
                             <li class="dropdown">
@@ -158,13 +178,14 @@
 </code></pre></div>
 
 
-<p>The first line loads the turtle library into our program.  The second creates a new turtle object called "t".  The third line sets the shape to be a turtle.  You don't have to use the name "t".  You can set your turtle's name to be whatever you want.  For example you can call your turtle "sue".</p>
+<p>The first line loads the turtle library into our program.  The second creates a new turtle object called "t".  The third line sets the shape to be a turtle.  You don't have to use the name "t".  You can set your turtle's name to be whatever you want.  For example you can call your turtle "sue".  </p>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="n">sue</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<span class="n">sue</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 </code></pre></div>
 
 
+<p>Just make sure you change all the names in the file to reference your new name.</p>
 <h2 id="moving-the-turtle">Moving the Turtle</h2>
 <p>There a five basic ways to move your turtle around the screen.  Our screen is approximatly 300 points wide and 400 points high.  The point (0,0) is at the center of our screen.  The first four are relative commands.  The last one will move the turtle to the absolute x and y location.</p>
 <ul>
@@ -186,7 +207,7 @@
 </ul>
 <h2 id="shapes">Shapes</h2>
 <p>There are also a few built-in drawing functions.
--t.circle(10)</p>
+- t.circle(10)</p>
 <h2 id="misc">Misc</h2>
 <p>There are also a few other miscellanious things you can do.  You can do some drawing and then clear the screen.</p>
 <ul>
@@ -194,7 +215,10 @@
 </ul>
 <p>You can see a full list of the turtle commands <a href="https://trinket.io/docs/python">here</a>.  Just click on the turtle area and scroll down.</p>
 <p>In addition to these drawing commands some of the exercises use random numbers.</p>
-<p>import random</p></div>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="c1"># get a random number between -200 and 200</span>
+<span class="n">myNumber</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+</code></pre></div></div>
             </div>
         </div>
 
