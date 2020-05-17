@@ -1,4 +1,4 @@
-## Conditionals
+## Functions
 
 In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.
 
