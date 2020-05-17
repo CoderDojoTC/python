@@ -13,7 +13,6 @@ Note: Students must have an Internet/web connection to use these labs.
 ## Concepts
 1. [turtle graphics](trinket/01-turtle-graphics)
 2. [simple square](trinket/02-simple-square)
-3. [libraries](trinket/02-turtle-library)
 4. [variables](trinket/03-variables)
 5. [loops](trinket/04-loops)
 6. [conditionals](trinket/05-conditionals)

@@ -1,11 +1,11 @@
 site_name: 'CoderDojo Twin Cities Python Resources'
 nav:
   - Home:
-    - Home: home.md
+    - Home: index.md
   - Contact:
     - Contact: contact.md
 
-site_description: 'Resources for teaching python to CoderDojo students.'
+site_description: 'Resources for teaching Python to CoderDojo students.'
 site_author: 'Dan McCreary'
 repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
