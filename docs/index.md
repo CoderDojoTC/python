@@ -1,3 +1,5 @@
+this is the docs/index.md file
+
 # CoderDojo Twin Cities Python Resources
 This GitHub repository is for sharing resources to teach Python.
 
