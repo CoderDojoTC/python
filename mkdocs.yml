@@ -1,4 +1,4 @@
-site_name: 'CoderDojo Twin Cities Python Resources'
+site_name: 'CoderDojo TC Python'
 nav:
   - Trinket:
     - Turtle Graphics: trinket/01-turtle-graphics
@@ -12,7 +12,7 @@ nav:
   - Contact:
     - Contact: contact.md
 
-site_description: 'Resources for teaching Python to CoderDojo students.'
+site_description: 'Resources for teaching Python to CoderDojo Twin Cities students.'
 site_author: 'Dan McCreary'
 repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
