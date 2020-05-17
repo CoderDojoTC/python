@@ -12,12 +12,16 @@ angle = 90
 
 # repeat the forward/right functions four times
 for i in range(4):
+   if i % 2:
+      dan.color('red')
+   else:
+      dan.color('blue')
    dan.forward(distance)
    dan.right(angle)
    
 dan.write('done with square')
 ```
 
-[Run Square With Loop](https://trinket.io/python/6cadd3c046)
+[Conditinal Sqare](https://trinket.io/python/00e2353a96)
 
 Can you make the turtle draw a larger square?  Hint: change the forward(40) to be forward(100)
