@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>01 turtle graphics - CoderDojo Twin Cities Python Resources</title>
+        <title>08 random - CoderDojo Twin Cities Python Resources</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -60,7 +60,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/01-turtle-graphics.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/08-random.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -80,32 +80,17 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#turtle-graphics" class="nav-link">Turtle Graphics</a>
+            <li class="nav-item" data-level="2"><a href="#random-circles" class="nav-link">Random Circles</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#initializaton-commands" class="nav-link">Initializaton commands</a>
+            <li class="nav-item" data-level="2"><a href="#sample-code" class="nav-link">Sample Code</a>
               <ul class="nav flex-column">
               </ul>
             </li>
             
-            <li class="nav-item" data-level="2"><a href="#moving-the-turtle" class="nav-link">Moving the Turtle</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#drawing" class="nav-link">Drawing</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#shapes" class="nav-link">Shapes</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#misc" class="nav-link">Misc</a>
+            <li class="nav-item" data-level="2"><a href="#experiments" class="nav-link">Experiments</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -114,57 +99,55 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="turtle-graphics">Turtle Graphics<a class="headerlink" href="#turtle-graphics" title="Permanent link">&para;</a></h2>
-<p>Turtle graphs have been around for almost <a href="https://en.wikipedia.org/wiki/Turtle_graphics">50 years</a>.  A turtle is a drawing object that has position, direction and a pen to draw as it moves around a grid.  They are a great way to teach students about the concepts of programming.</p>
-<h2 id="initializaton-commands">Initializaton commands<a class="headerlink" href="#initializaton-commands" title="Permanent link">&para;</a></h2>
-<p>There are three lines that will appear at the top of these labs:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<h2 id="random-circles">Random Circles<a class="headerlink" href="#random-circles" title="Permanent link">&para;</a></h2>
+<p>In this exercise we will draw 10 random circles on the screen.  We will use the random function <strong>randint(min, max)</strong> that will generate a random number between the minimum and maximum values.  Since we are drawing on a grid that goes from -200 to 200 here is the random function:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">myNumber = random.randint(-200, 200)</span>
 </code></pre></div>
 </td></tr></table>
 
-<p>The first line loads the turtle library into our program.  The second creates a new turtle object called "t".  The third line sets the shape to be a turtle.  You don't have to use the name "t".  You can set your turtle's name to be whatever you want.  For example you can call your turtle "sue".</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">sue</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<p>After this line runs, the variable myNumber will be assigned some random number between -200 and 200.   We will then use this number to go to that location before we draw a circle.</p>
+<h2 id="sample-code">Sample Code<a class="headerlink" href="#sample-code" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+
+<span class="n">distance</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span>
+
+<span class="c1"># draw a circle at a random location on the screen</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+   <span class="n">x</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+   <span class="n">y</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+   <span class="n">dan</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+   <span class="c1"># draw a circle</span>
+   <span class="n">dan</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">dan</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with random&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="moving-the-turtle">Moving the Turtle<a class="headerlink" href="#moving-the-turtle" title="Permanent link">&para;</a></h2>
-<p>There a five basic ways to move your turtle around the screen.  Our screen is approximatly 300 points wide and 400 points high.  The point (0,0) is at the center of our screen.  The first four are relative commands.  The last one will move the turtle to the absolute x and y location.</p>
-<ul>
-<li>t.forward(40)</li>
-<li>t.back(40)</li>
-<li>t.left(90)</li>
-<li>t.right(90)</li>
-<li>t.goto(x,y)</li>
-</ul>
-<h2 id="drawing">Drawing<a class="headerlink" href="#drawing" title="Permanent link">&para;</a></h2>
-<p>There are several ways to draw virtual "ink" on the screen.  The most common way is to just move your turtle around.  It will draw a thin black line by default.</p>
-<ul>
-<li>t.penup()</li>
-<li>t.pendown()</li>
-<li>t.color('red')</li>
-<li>t.pensize(5)</li>
-<li>t.begin_fill() - begin filling a region you draw around</li>
-<li>t.end_fill() - end the fill region</li>
-</ul>
-<h2 id="shapes">Shapes<a class="headerlink" href="#shapes" title="Permanent link">&para;</a></h2>
-<p>There are also a few built-in drawing functions.
--t.circle(10)</p>
-<h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
-<p>There are also a few other miscellanious things you can do.  You can do some drawing and then clear the screen.</p>
-<ul>
-<li>t.clear()</li>
-</ul>
-<p>You can see a full list of the turtle commands <a href="https://trinket.io/docs/python">here</a>.  Just click on the turtle area and scroll down.</p>
-<p>In addition to these drawing commands some of the exercises use random numbers.</p>
-<p>import random</p></div>
+<p><a href="https://trinket.io/python/00e2353a96">Draw 10 circles example on Trinket</a></p>
+<h2 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h2>
+<p>Can you change the name of the function to be "petal"?</p></div>
             </div>
         </div>
 
