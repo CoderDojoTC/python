@@ -28,6 +28,8 @@ for i in range(10):
 dan.goto(0,0)
 dan.write('done with random')
 ```
+## Drawing
+![](../img/random-circle.png)
 
 [Draw 10 circles example on Trinket](https://trinket.io/python/00e2353a96)
 
