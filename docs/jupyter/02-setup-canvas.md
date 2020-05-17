@@ -13,7 +13,7 @@ Start up Jupyter
 Test Canvas
 
 ## Setup With Conda
-```
+```python
 conda env list
 conda create -n turtle python=3.6
 conda activate turtle

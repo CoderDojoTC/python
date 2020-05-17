@@ -19,7 +19,7 @@ Google "install conda"
 ## Create a new conda envornment:
 Open your terminal.  Type in the following commands.
 
-```
+```python
 conda env list
 conda create -n turtle python=3.6
 conda activate turtle

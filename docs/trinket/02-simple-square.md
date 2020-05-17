@@ -2,7 +2,7 @@
 The following code is an example of drawing a square using turtle graphics.
 
 ## Sample Code
-```
+```python
 import turtle
 dan = turtle.Turtle()
 dan.shape('turtle')

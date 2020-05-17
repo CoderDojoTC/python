@@ -3,7 +3,7 @@ We can draw directly into the Jupyter Lab canvas by using the Canvas drawing com
 
 The following draws several horizontal bars of different color.
 
-```
+```python
 from ipycanvas import Canvas
 
 canvas = Canvas(width=400, height=170)

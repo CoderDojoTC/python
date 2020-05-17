@@ -3,7 +3,8 @@ Turtle graphs have been around for almost [50 years](https://en.wikipedia.org/wi
 
 ## Initializaton commands
 There are three lines that will appear at the top of these labs:
-```
+
+```python
 import turtle
 t = turtle.Turtle()
 t.shape('turtle')
