@@ -5,8 +5,10 @@ nav:
     - Simple Square: trinket/02-simple-square
     - Variables: trinket/03-variables
   - Jupyter:
-    - Setup: jupyter/01-setup
+    - Setup Turtle on Jupyter: jupyter/01-setup
+    - Setup Canvas on Jypyter Lab: jupyter/02-canvas-setup
     - Draw Figure: jupyter/02-draw-figure
+    
   - Contributing:
     - How to Contribute Examples: contribute.md
   - Contact:
