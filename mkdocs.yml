@@ -16,7 +16,8 @@ nav:
     - Drawing Figure: jupyter/02-draw-figure
     - Setup Canvas on Jupyter Lab: jupyter/02-canvas-setup
     - Canvas Color Bars: jupyter/20-canvas-color-bars
-
+ - Pi:
+    - Python on Raspberry Pi: pi/01-intro.md
     
   - Contributing:
     - How to Contribute Examples: contribute.md
