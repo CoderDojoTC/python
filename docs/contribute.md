@@ -21,9 +21,17 @@ A good contribution has some, but not necessarily all of the following:
 4. **Difficulty Level** - is it a Beginner, Intermediate or Difficult 
 concept?  For example drawing a square with a turtle is a Beginner concept.  Recursion is a Difficult concept.
 
-4. **Sample Code** - Please provide working sample code that you have tested whenever possible.  We encourage you to put in in-line comments when possible.
+4. **Sample Code** - Please provide working sample code that you have tested whenever possible.  We encourage you to put in in-line comments when possible.  To use our test highlighter for Python code, please place your code in a block sourrounded by back quotes.  Use the word "python" on the like with the first backquotes.  See [Examples Here](https://squidfunk.github.io/mkdocs-material/extensions/codehilite/)
 
 5. **Experiments** - What additional experiments could the students do?  Could they intergrate other prior concepts?
 
 ## Using Markdown formats
-We strongly suggest you submit your contributions using Markdown format.  There are tools that will convert MS-Word into Markdown format.
+We strongly suggest you submit your contributions using Markdown format.  There are tools that will convert MS-Word into Markdown format.  See the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) for tips to get started with Markdown.
+
+## Converting MS-Word to Markdown format
+If you have content in Microsoft Word and you use a Windows PC, you can use the [Writage](http://www.writage.com/) plugin to convert your documents.  
+
+For Mac users you can use the [PanDoc](https://pandoc.org/) program to convert MS-Word into Markdown.  You will need to open a Terminal to run the following command:
+```unix
+$ pandoc -s MyFile.docx -o MyFile.md
+```
