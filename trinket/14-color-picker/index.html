@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>12 shape module - CoderDojo TC Python</title>
+        <title>14 color picker - CoderDojo TC Python</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -135,7 +135,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/12-shape-module.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/14-color-picker.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -155,22 +155,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#shape-module" class="nav-link">Shape Module</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#sample-code" class="nav-link">Sample Code</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#sample-program" class="nav-link">Sample Program</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#experiments" class="nav-link">Experiments</a>
+            <li class="nav-item" data-level="2"><a href="#color-picker" class="nav-link">Color Picker</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -179,72 +164,8 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="shape-module">Shape Module</h2>
-<p>In this lab we will create a set of drawing function and put them together into a new file.  We will then import this file into our main.py file.</p>
-<h2 id="sample-code">Sample Code</h2>
-<div class="codehilite"><pre><span></span><code><span class="c1"># This is a custom module we&#39;ve made.  </span>
-<span class="c1"># Modules are files full of code that you can import into your programs.</span>
-<span class="c1"># This one teaches our turtle to draw various shapes.</span>
-
-<span class="kn">import</span> <span class="nn">turtle</span>
-
-<span class="k">def</span> <span class="nf">draw_circle</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">draw_triangle</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">draw_square</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">draw_star</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</code></pre></div>
-
-
-<h2 id="sample-program">Sample Program</h2>
-<p><a href="https://trinket.io/python/890e7026e5">Sample</a></p>
-<h2 id="experiments">Experiments</h2>
-<p>Can you add a new shape called "flower"?</p></div>
+<h2 id="color-picker">Color Picker</h2>
+<p><a href="https://projects.raspberrypi.org/en/projects/colourful-creations/1">Color Picker</a></p></div>
             </div>
         </div>
 
