@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>02 setup canvas - CoderDojo TC Python</title>
+        <title>Python on Raspberry Pi - CoderDojo TC Python</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -79,32 +79,32 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../01-setup" class="dropdown-item">Setup Turtle on Jupyter</a>
+    <a href="../../jupyter/01-setup" class="dropdown-item">Setup Turtle on Jupyter</a>
 </li>
                                     
 <li>
-    <a href="../02-draw-box" class="dropdown-item">Drawing Box Labs</a>
+    <a href="../../jupyter/02-draw-box" class="dropdown-item">Drawing Box Labs</a>
 </li>
                                     
 <li>
-    <a href="../02-draw-figure" class="dropdown-item">Drawing Figure</a>
+    <a href="../../jupyter/02-draw-figure" class="dropdown-item">Drawing Figure</a>
 </li>
                                     
 <li>
-    <a href="../02-canvas-setup" class="dropdown-item">Setup Canvas on Jupyter Lab</a>
+    <a href="../../jupyter/02-canvas-setup" class="dropdown-item">Setup Canvas on Jupyter Lab</a>
 </li>
                                     
 <li>
-    <a href="../20-canvas-color-bars" class="dropdown-item">Canvas Color Bars</a>
+    <a href="../../jupyter/20-canvas-color-bars" class="dropdown-item">Canvas Color Bars</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pi <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="../../pi/01-intro/" class="dropdown-item">Python on Raspberry Pi</a>
+    <a href="./" class="dropdown-item active">Python on Raspberry Pi</a>
 </li>
                                 </ul>
                             </li>
@@ -135,7 +135,17 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/02-setup-canvas.md" class="nav-link">Edit on python</a>
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../../contribute/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/pi/01-intro.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -155,22 +165,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#jupyter-lab" class="nav-link">Jupyter Lab</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#steps" class="nav-link">Steps</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#setup-with-conda" class="nav-link">Setup With Conda</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
+            <li class="nav-item" data-level="2"><a href="#learning-python-on-raspberry-pi" class="nav-link">Learning Python on Raspberry Pi</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -179,27 +174,30 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>We will be using python canvas drawing library.  Unlike turtle graphics the canvas library has many powerful drawing tools.</p>
-<p><a href="https://ipycanvas.readthedocs.io/en/latest/index.html">Python IPYCanvas Library</a></p>
-<h2 id="jupyter-lab">Jupyter Lab</h2>
-<p>We will be running this library from within a Jypyter lab.</p>
-<h2 id="steps">Steps</h2>
-<p>Install conda
-Create a new conda environment
-Install Jupyter lab
-Start up Jupyter
-Test Canvas</p>
-<h2 id="setup-with-conda">Setup With Conda</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
-<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">turtle</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.6</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">turtle</span>
-<span class="n">juypter</span> <span class="n">lab</span>
-</code></pre></div>
-
-
-<p>After you run the last command it will open a web browser.</p>
-<h2 id="references">References</h2>
-<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Documentation</a></p></div>
+<h2 id="learning-python-on-raspberry-pi">Learning Python on Raspberry Pi</h2>
+<ul>
+<li>
+<p><a href="https://projects.raspberrypi.org/en">Raspberry Pi Foundation Projects</a></p>
+</li>
+<li>
+<p><a href="https://projects.raspberrypi.org/en/coderdojo">CoderDojo Pages on the Pi Site</a></p>
+</li>
+<li>
+<p><a href="https://thonny.org/">Thonny</a>Thonny is a Integrated Development Environment for debugging Python code.  Unfortunatly, no turtle graphics are supported.</p>
+</li>
+<li>
+<p><a href="https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython">Adafruit CircuitPython</a> CircuitPython is a programming language designed to simplify experimenting and learning to program on low-cost microcontroller boards.</p>
+</li>
+<li>
+<p><a href="https://www.raspberrypi.org/blog/learning-python-with-raspberry-pi/">Learning Python with Raspberry Pi Book</a></p>
+</li>
+<li>
+<p><a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/all">Sparkfun Tutorial</a></p>
+</li>
+<li>
+<p><a href="https://tutorials-raspberrypi.com/connect-control-raspberry-pi-ws2812-rgb-led-strips/">Controlling LED Strips with Python</a></p>
+</li>
+</ul></div>
             </div>
         </div>
 

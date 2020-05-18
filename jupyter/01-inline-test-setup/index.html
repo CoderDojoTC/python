@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>02 setup canvas - CoderDojo TC Python</title>
+        <title>01 inline test setup - CoderDojo TC Python</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -135,7 +135,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/02-setup-canvas.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/jupyter/01-inline-test-setup.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -155,22 +155,7 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#jupyter-lab" class="nav-link">Jupyter Lab</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#steps" class="nav-link">Steps</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#setup-with-conda" class="nav-link">Setup With Conda</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            
-            <li class="nav-item" data-level="2"><a href="#references" class="nav-link">References</a>
+            <li class="nav-item" data-level="2"><a href="#test-of-jupyter-lab-inline-setup" class="nav-link">Test of Jupyter Lab Inline Setup</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -179,27 +164,19 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>We will be using python canvas drawing library.  Unlike turtle graphics the canvas library has many powerful drawing tools.</p>
-<p><a href="https://ipycanvas.readthedocs.io/en/latest/index.html">Python IPYCanvas Library</a></p>
-<h2 id="jupyter-lab">Jupyter Lab</h2>
-<p>We will be running this library from within a Jypyter lab.</p>
-<h2 id="steps">Steps</h2>
-<p>Install conda
-Create a new conda environment
-Install Jupyter lab
-Start up Jupyter
-Test Canvas</p>
-<h2 id="setup-with-conda">Setup With Conda</h2>
-<div class="codehilite"><pre><span></span><code><span class="n">conda</span> <span class="n">env</span> <span class="nb">list</span>
-<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">turtle</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.6</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">turtle</span>
-<span class="n">juypter</span> <span class="n">lab</span>
-</code></pre></div>
-
-
-<p>After you run the last command it will open a web browser.</p>
-<h2 id="references">References</h2>
-<p><a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">Conda Documentation</a></p></div>
+<h2 id="test-of-jupyter-lab-inline-setup">Test of Jupyter Lab Inline Setup</h2>
+<p><a href="https://github.com/takluyver/mobilechelonian">Rumor this work</a></p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipyturtle</span> <span class="kn">import</span> <span class="n">Turtle</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">resetscreen</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+    <span class="n">t</span><span class="o">.</span><span class="n">rt</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">t</span>
+</code></pre></div></div>
             </div>
         </div>
 
