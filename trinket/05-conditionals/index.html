@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -171,24 +175,23 @@
 
 <h2 id="conditionals">Conditionals</h2>
 <p>In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<pre class="codehilite"><code>import turtle
+dan = turtle.Turtle()
+dan.shape('turtle')
 
-<span class="n">distance</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span>
+distance = 50
+angle = 90
 
-<span class="c1"># repeat the forward/right functions four times</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-   <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span><span class="p">:</span>
-      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
-   <span class="k">else</span><span class="p">:</span>
-      <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+# repeat the forward/right functions four times
+for i in range(4):
+   if i % 2:
+      dan.color('red')
+   else:
+      dan.color('blue')
+   dan.forward(distance)
+   dan.right(angle)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with square&#39;</span><span class="p">)</span>
-</code></pre></div>
+dan.write('done with square')</code></pre>
 
 
 <p><a href="https://trinket.io/python/00e2353a96">Conditinal Sqare</a></p>

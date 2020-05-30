@@ -8,7 +8,7 @@
         <meta name="author" content="Dan McCreary">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>14 color picker - CoderDojo TC Python</title>
+        <title>12 shape module - CoderDojo TC Python</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -36,6 +36,10 @@
                             <li class="dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trinket <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
                                     
 <li>
     <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
@@ -135,7 +139,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/14-color-picker.md" class="nav-link">Edit on python</a>
+                                <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/12-shape-module.md" class="nav-link">Edit on python</a>
                             </li>
                     </ul>
                 </div>
@@ -155,7 +159,22 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="2"><a href="#color-picker" class="nav-link">Color Picker</a>
+            <li class="nav-item" data-level="2"><a href="#shape-module" class="nav-link">Shape Module</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#sample-code" class="nav-link">Sample Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#sample-program" class="nav-link">Sample Program</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#experiments" class="nav-link">Experiments</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -164,8 +183,71 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="color-picker">Color Picker</h2>
-<p><a href="https://projects.raspberrypi.org/en/projects/colourful-creations/1">Color Picker</a></p></div>
+<h2 id="shape-module">Shape Module</h2>
+<p>In this lab we will create a set of drawing function and put them together into a new file.  We will then import this file into our main.py file.</p>
+<h2 id="sample-code">Sample Code</h2>
+<pre class="codehilite"><code># This is a custom module we've made.  
+# Modules are files full of code that you can import into your programs.
+# This one teaches our turtle to draw various shapes.
+
+import turtle
+
+def draw_circle(turtle, color, size, x, y):
+  turtle.penup()
+  turtle.color(color)
+  turtle.fillcolor(color)
+  turtle.goto(x,y)
+  turtle.pendown()
+  turtle.begin_fill()
+  turtle.circle(size)
+  turtle.end_fill()
+
+def draw_triangle(turtle, color, size, x, y):
+  turtle.penup()
+  turtle.color(color)
+  turtle.fillcolor(color)
+  turtle.goto(x,y)
+  turtle.pendown()
+  turtle.begin_fill()
+  for i in range (3):
+    turtle.forward(size*3)
+    turtle.left(120)
+  turtle.end_fill()
+  turtle.setheading(0)
+
+def draw_square(turtle, color, size, x, y):
+  turtle.penup()
+  turtle.color(color)
+  turtle.fillcolor(color)
+  turtle.goto(x,y)
+  turtle.pendown()
+  turtle.begin_fill()
+  for i in range (4):
+    turtle.forward(size*2)
+    turtle.left(90)
+  turtle.end_fill()
+  turtle.setheading(0)
+
+def draw_star(turtle, color, size, x, y):
+  turtle.penup()
+  turtle.color(color)
+  turtle.fillcolor(color)
+  turtle.goto(x,y)
+  turtle.pendown()
+  turtle.begin_fill()
+  turtle.right(144)
+  for i in range(5):
+    turtle.forward(size*2)
+    turtle.right(144)
+    turtle.forward(size*2)
+  turtle.end_fill()
+  turtle.setheading(0)</code></pre>
+
+
+<h2 id="sample-program">Sample Program</h2>
+<p><a href="https://trinket.io/python/890e7026e5">Sample</a></p>
+<h2 id="experiments">Experiments</h2>
+<p>Can you add a new shape called "flower"?</p></div>
             </div>
         </div>
 

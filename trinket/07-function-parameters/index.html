@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -185,27 +189,26 @@
 - the horizontal x position on the grid
 - the vertical y position on the grid</p>
 <h2 id="sample-code">Sample Code</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<pre class="codehilite"><code class="language-python">import turtle
+dan = turtle.Turtle()
+dan.shape('turtle')
 
-<span class="n">size</span> <span class="o">=</span> <span class="mi">40</span>
+size = 40
 
-<span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">myColor</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">myColor</span><span class="p">)</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-   <span class="n">dan</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-   <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-      <span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-      <span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+def square(myColor, x, y):
+   dan.color(myColor)
+   dan.penup()
+   dan.goto(x, y)
+   dan.pendown()
+   for i in range(4):
+      dan.forward(size)
+      dan.right(90)
 
 
-<span class="n">square</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">80</span><span class="p">)</span>
-<span class="n">square</span><span class="p">(</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">70</span><span class="p">)</span>
-<span class="n">square</span><span class="p">(</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-<span class="n">square</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="o">-</span><span class="mi">90</span><span class="p">)</span>
-</code></pre></div>
+square('red', -50, -80)
+square('orange', -30, -70)
+square('green', 50, 20)
+square('blue', 100, -90)</code></pre>
 
 
 <h2 id="drawing">Drawing</h2>

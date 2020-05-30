@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="." class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -184,26 +188,30 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-level="2"><a href="#generating-a-random-number" class="nav-link">Generating a random number</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
 <h2 id="turtle-graphics">Turtle Graphics</h2>
-<p>Turtle graphs have been around for almost <a href="https://en.wikipedia.org/wiki/Turtle_graphics">50 years</a>.  A turtle is a drawing object that has position, direction and a pen to draw as it moves around a grid.  They are a great way to teach students about the concepts of programming.</p>
+<p>Turtle graphs have been around for almost <a href="https://en.wikipedia.org/wiki/Turtle_graphics">50 years</a>.  A turtle is a drawing object that has position, direction and a pen to draw as it moves around a grid.  Turtle graphic are the preferred way to teach many concepts in computer science because they give you fast feedback.</p>
+<p>For many of our introductary python labs we will use the turtle python library.  Although there are many different versions of the turtle library, most of the commands are similar.  What you learn with the trinket python system will be useful in other sytems also.</p>
 <h2 id="initializaton-commands">Initializaton commands</h2>
 <p>There are three lines that will appear at the top of these labs:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
-</code></pre></div>
+<pre class="codehilite"><code class="language-python">import turtle
+t = turtle.Turtle()
+t.shape('turtle')</code></pre>
 
 
 <p>The first line loads the turtle library into our program.  The second creates a new turtle object called "t".  The third line sets the shape to be a turtle.  You don't have to use the name "t".  You can set your turtle's name to be whatever you want.  For example you can call your turtle "sue".  </p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">sue</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">sue</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
-</code></pre></div>
+<pre class="codehilite"><code class="language-python">import turtle
+sue = turtle.Turtle()
+sue.shape('turtle')</code></pre>
 
 
 <p>Just make sure you change all the names in the file to reference your new name.</p>
@@ -227,7 +235,7 @@
 <li>t.end_fill() - end the fill region</li>
 </ul>
 <h2 id="shapes">Shapes</h2>
-<p>There are also a few built-in drawing functions.
+<p>There are also a few built-in drawing functions.  The circle function that takes a single radius is an example of this.
 - t.circle(10)</p>
 <h2 id="misc">Misc</h2>
 <p>There are also a few other miscellanious things you can do.  You can do some drawing and then clear the screen.</p>
@@ -235,11 +243,14 @@
 <li>t.clear()</li>
 </ul>
 <p>You can see a full list of the turtle commands <a href="https://trinket.io/docs/python">here</a>.  Just click on the turtle area and scroll down.</p>
-<p>In addition to these drawing commands some of the exercises use random numbers.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-<span class="c1"># get a random number between -200 and 200</span>
-<span class="n">myNumber</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">200</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
-</code></pre></div></div>
+<h2 id="generating-a-random-number">Generating a random number</h2>
+<p>In addition to these drawing commands some of the exercises use random numbers.  Here is how we do this:</p>
+<pre class="codehilite"><code class="language-python">import random
+# get a random number between -200 and 200
+myNumber = random.randint(-200, 200)</code></pre>
+
+
+<p>This will generate a random number from -200 to 200.  You can use this number to randomly place items on the drawing canvas.</p></div>
             </div>
         </div>
 

@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -178,28 +182,27 @@
 <p>In the simple square program we repeated the numbers for the distance and turning angle four times in four different places.  If we wanted to change the size of our box we would have to change the code in four different places.  By using variables we can make our program easier to change.</p>
 <p>In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.</p>
 <h2 id="sample-code">Sample Code</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<pre class="codehilite"><code class="language-python">import turtle
+dan = turtle.Turtle()
+dan.shape('turtle')
 
-<span class="c1"># let&#39;s just put these in one place to make our program easier to modify</span>
-<span class="n">distance</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">angle</span> <span class="o">=</span> <span class="mi">90</span>
+# let's just put these in one place to make our program easier to modify
+distance = 50
+angle = 90
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+dan.forward(distance)
+dan.right(angle)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+dan.forward(distance)
+dan.right(angle)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+dan.forward(distance)
+dan.right(angle)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
+dan.forward(distance)
+dan.right(angle)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done with square&#39;</span><span class="p">)</span>
-</code></pre></div>
+dan.write('done with square')</code></pre>
 
 
 <p><a href="https://trinket.io/library/trinkets/91be3b90a6">Run Square With Variables</a></p>

@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../../trinket/00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="../../trinket/01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -166,17 +170,16 @@
 
 <h2 id="test-of-jupyter-lab-inline-setup">Test of Jupyter Lab Inline Setup</h2>
 <p><a href="https://github.com/takluyver/mobilechelonian">Rumor this work</a></p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipyturtle</span> <span class="kn">import</span> <span class="n">Turtle</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">resetscreen</span><span class="p">()</span>
-<span class="n">t</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-<span class="n">t</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
-    <span class="n">t</span><span class="o">.</span><span class="n">rt</span><span class="p">(</span><span class="mi">45</span><span class="p">)</span>
-<span class="n">t</span>
-</code></pre></div></div>
+<pre class="codehilite"><code class="language-python">from ipyturtle import Turtle
+t = turtle.Turtle()
+t.clear()
+t.resetscreen()
+t.color('blue')
+t.pensize(5)
+for i in range(8):
+    t.fd(50)
+    t.rt(45)
+t</code></pre></div>
             </div>
         </div>
 

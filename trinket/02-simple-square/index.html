@@ -38,6 +38,10 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
+    <a href="../00-introduction" class="dropdown-item">Introduction</a>
+</li>
+                                    
+<li>
     <a href="../01-turtle-graphics" class="dropdown-item">Turtle Graphics</a>
 </li>
                                     
@@ -170,7 +174,17 @@
               </ul>
             </li>
             
+            <li class="nav-item" data-level="2"><a href="#try-it-out" class="nav-link">Try it out</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-level="2"><a href="#explaination" class="nav-link">Explaination</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#reorinenting-your-turtle" class="nav-link">Reorinenting your turtle</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -187,32 +201,36 @@
 <h2 id="drawing-a-square">Drawing a Square</h2>
 <p>The following code is an example of drawing a square using turtle graphics.  In this example the turtle moves foward 100 units and then turns right.  The angle for the right turn is 90 degrees.  It repeats these two functions four times to make a square.</p>
 <h2 id="sample-code">Sample Code</h2>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
+<pre class="codehilite"><code class="language-python">import turtle
+dan = turtle.Turtle()
+dan.shape('turtle')
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+dan.forward(100)
+dan.right(90)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+dan.forward(100)
+dan.right(90)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+dan.forward(100)
+dan.right(90)
 
-<span class="n">dan</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">dan</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-</code></pre></div>
+dan.forward(100)
+dan.right(90)</code></pre>
 
 
 <h2 id="drawing">Drawing</h2>
 <p><img alt="" src="../../img/simple-square.png" /></p>
+<h2 id="try-it-out">Try it out</h2>
+<p>Here is a link to the Trinket web site with this program running:</p>
+<p><a href="https://trinket.io/python/564899ffe9">https://trinket.io/python/564899ffe9</a></p>
+<p>You can click on this link and then press the Run button.  You should see the python code on the left side and the drawing on the right side of your screen.</p>
 <h2 id="explaination">Explaination</h2>
-<p>The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.</p>
-<p>Note that at the start, the turtle is facing to the right.  After the last instruction, it is also facing to the right.</p>
+<p>The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.  Although almost all the turtle libraries work this way, there are some minor differences you will see in future examples.</p>
+<h2 id="reorinenting-your-turtle">Reorinenting your turtle</h2>
+<p>Note that at the start, the turtle is facing to the right.  After the last instruction, it is also facing to the right.  This is a common best practice so that the turtle gets reoriented after some drawing function.  If you remove the last right(90) function and run the program again you will see the turtle ends up facing upward.  But if you rerun the progam you will still get the same square because the orientation of the turtle is not stored between runs.</p>
 <h2 id="experiments">Experiments</h2>
 <p>Can you change the distance and angle the turtle moves?  What happens when you change the numbers for the forward and right functions?  Can you go left as well as right?</p>
-<p>Can you add more motion commands using copy and paste?</p></div>
+<p>Can you add more motion commands using the copy and paste?</p></div>
             </div>
         </div>
 
