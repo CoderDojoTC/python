@@ -5,6 +5,7 @@ We think that learning Python using Jupyter is ideal if you have some type of in
 
 ## Two Ways to View Turtle Graphics
 There are two ways to view turtle graphics in Jupyter:
+
 1. With the turtle being drawn in a separate window
 2. With the turtle being drawn "inline" directly under your code
 
@@ -49,6 +50,9 @@ t.forward(100)
 
 ![](../img/jupyter-inline-turtle.png)
 
+```python
+help(Turtle)
+```
 
 ## References
 [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
