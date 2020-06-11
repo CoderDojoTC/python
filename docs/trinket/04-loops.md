@@ -1,6 +1,7 @@
 ## Using a Loop
 
-In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  We will repeat this four times to complete a square.
+In this example program we will make the turtle go forward 40 steps and then make a right turn of 90 degrees.  
+We will repeat this four times to complete a square.
 
 
 ## Sample Code
@@ -24,4 +25,4 @@ dan.write('done with square')
 [Run Square With Loop](https://trinket.io/python/6cadd3c046)
 
 ## Experiments
-Can you make the turtle draw a larger square?  Hint: change the distnace to be 80.  How big can you make the square before the turtle goes off the screen?
+Can you make the turtle draw a larger square?  Hint: change the distance to be 80.  How big can you make the square before the turtle goes off the screen?
