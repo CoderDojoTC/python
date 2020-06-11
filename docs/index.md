@@ -3,6 +3,7 @@ This GitHub repository is for sharing teaching resources to teach Python. This i
 
 
 Our mentors have used several different envornments for teaching Python.  They each have pros and cons.  What our mentors like is getting new students started using a graphical programming environment such as turtle graphics libraries.  Here are some of our favorite tools:
+
 - [**Trinket.io**](http://trinket.io) is an easy-to use, kid friendly web-based turtle graphics for beginners.
 - [**Jupyter Notebooks**](https://jupyter.org/) also have some support for turtle graphics.  Jupyter Notebooks can be tricky to setup for the first time, but they are the perfect on-ramp for teaching data literacy.
 - [**Raspberry Pi**](https://www.raspberrypi.org/documentation/usage/python/) - The Raspberry Pi foundation has selected Python as its primary tool for teaching programming.  If you have a Raspberry Pi there are many resources for you.  Trinket and Jupyter Notebooks will also run on many Raspberry Pi devices.
@@ -24,7 +25,7 @@ If you have a Rasperry Pi there are many great ways to learn Python.  One of fir
 Right now we are continuing to try to find the right combination of easy-of-use and low-cost robots to teach python.  If you hear of any good tools, please let us know.
 
 ## Target Audience
-Learning Python is ideas for students that have good keyboarding skills.  If students have difficulty with doing functions like copy and pasting text we suggest they start with a block-programming language like Scratch.
+Learning Python is ideal for students that have good keyboarding skills.  If students have difficulty with doing functions like copy and pasting text we suggest they start with a block-programming language like Scratch.
 
 ## List of Concepts
 Here are some of the concepts we will be learning in this course.  If you are already familiar with these concepts you can skip over some of the labs.
@@ -41,6 +42,7 @@ Here are some of the concepts we will be learning in this course.  If you are al
 - **lists** Lists alow us to create collections of names.
 - **inputs**  Inputs allow us to prompt the user for values.
 - **recursion**  Recursion allows us to have programs call themselves to create repeating patterns.
+- **modules**  Once you have a group of related functions you can put them all together into a module.  This makes it easier for others to reuse your programs.
 
 
 ## Contributing to Our Library

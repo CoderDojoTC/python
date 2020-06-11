@@ -1,6 +1,7 @@
 site_name: 'CoderDojo TC Python'
 nav:
   - Trinket:
+    - Introduction: trinket/00-introduction
     - Turtle Graphics: trinket/01-turtle-graphics
     - Simple Square: trinket/02-simple-square
     - Variables: trinket/03-variables
@@ -30,10 +31,11 @@ repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
 edit_uri: 'blob/master/docs'
 theme:
-  name: mkdocs
+  name: material
+  logo: img/coderdojo-logo-dark-bg-light-text.png
   palette:
-    primary: 'amber'
-    accent: 'amber'
+    primary: '#642580'
+    accent: '#41BAC1'
   feature:
     tabs: true
   custom_dir: 'theme'
