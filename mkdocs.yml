@@ -1,22 +1,22 @@
 site_name: 'CoderDojo TC Python'
 nav:
   - Trinket:
-    - Introduction: trinket/00-introduction
-    - Turtle Graphics: trinket/01-turtle-graphics
-    - Simple Square: trinket/02-simple-square
-    - Variables: trinket/03-variables
-    - Loops: trinket/04-loops
-    - Conditional: trinket/05-conditionals
-    - Functions: trinket/06-functions
-    - Function Parameters: trinket/07-function-parameters
-    - Random Numbers: trinket/08-random
-    - Recursion: trinket/12-recursion
+    - Introduction: trinket/00-introduction.md
+    - Turtle Graphics: trinket/01-turtle-graphics.md
+    - Simple Square: trinket/02-simple-square.md
+    - Variables: trinket/03-variables.md
+    - Loops: trinket/04-loops.md
+    - Conditional: trinket/05-conditionals.md
+    - Functions: trinket/06-functions.md
+    - Function Parameters: trinket/07-function-parameters.md
+    - Random Numbers: trinket/08-random.md
+    - Recursion: trinket/12-recursion.md
   - Jupyter:
-    - Setup Turtle on Jupyter: jupyter/01-setup
-    - Drawing Box Labs: jupyter/02-draw-box
-    - Drawing Figure: jupyter/02-draw-figure
-    - Setup Canvas on Jupyter Lab: jupyter/02-canvas-setup
-    - Canvas Color Bars: jupyter/20-canvas-color-bars
+    - Setup Turtle on Jupyter: jupyter/01-setup.md
+    - Drawing Box Labs: jupyter/02-draw-box.md
+    - Drawing Figure: jupyter/02-draw-figure.md
+    - Setup Canvas on Jupyter Lab: jupyter/02-canvas-setup.md
+    - Canvas Color Bars: jupyter/20-canvas-color-bars.md
   - Pi:
     - Python on Raspberry Pi: pi/01-intro.md
     
