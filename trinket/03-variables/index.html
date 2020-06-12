@@ -19,7 +19,7 @@
     
     
       
-        <title>03 variables - CoderDojo TC Python</title>
+        <title>Variables - CoderDojo TC Python</title>
       
     
     
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              03 variables
+              Variables
             
           </span>
         </div>
@@ -185,10 +185,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
     
     <label class="md-nav__link" for="nav-1">
       Trinket
@@ -212,7 +214,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../00-introduction" title="Introduction" class="md-nav__link">
+    <a href="../00-introduction/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -224,7 +226,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../01-turtle-graphics" title="Turtle Graphics" class="md-nav__link">
+    <a href="../01-turtle-graphics/" title="Turtle Graphics" class="md-nav__link">
       Turtle Graphics
     </a>
   </li>
@@ -236,7 +238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../02-simple-square" title="Simple Square" class="md-nav__link">
+    <a href="../02-simple-square/" title="Simple Square" class="md-nav__link">
       Simple Square
     </a>
   </li>
@@ -246,11 +248,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="." title="Variables" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Variables
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Variables" class="md-nav__link md-nav__link--active">
       Variables
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#using-variables" class="md-nav__link">
+    Using Variables
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-code" class="md-nav__link">
+    Sample Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -260,7 +314,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../04-loops" title="Loops" class="md-nav__link">
+    <a href="../04-loops/" title="Loops" class="md-nav__link">
       Loops
     </a>
   </li>
@@ -272,7 +326,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../05-conditionals" title="Conditional" class="md-nav__link">
+    <a href="../05-conditionals/" title="Conditional" class="md-nav__link">
       Conditional
     </a>
   </li>
@@ -284,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../06-functions" title="Functions" class="md-nav__link">
+    <a href="../06-functions/" title="Functions" class="md-nav__link">
       Functions
     </a>
   </li>
@@ -296,7 +350,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-function-parameters" title="Function Parameters" class="md-nav__link">
+    <a href="../07-function-parameters/" title="Function Parameters" class="md-nav__link">
       Function Parameters
     </a>
   </li>
@@ -308,7 +362,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../08-random" title="Random Numbers" class="md-nav__link">
+    <a href="../08-random/" title="Random Numbers" class="md-nav__link">
       Random Numbers
     </a>
   </li>
@@ -320,7 +374,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../12-recursion" title="Recursion" class="md-nav__link">
+    <a href="../12-recursion/" title="Recursion" class="md-nav__link">
       Recursion
     </a>
   </li>
@@ -362,7 +416,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jupyter/01-setup" title="Setup Turtle on Jupyter" class="md-nav__link">
+    <a href="../../jupyter/01-setup/" title="Setup Turtle on Jupyter" class="md-nav__link">
       Setup Turtle on Jupyter
     </a>
   </li>
@@ -374,7 +428,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jupyter/02-draw-box" title="Drawing Box Labs" class="md-nav__link">
+    <a href="../../jupyter/02-draw-box.md" title="Drawing Box Labs" class="md-nav__link">
       Drawing Box Labs
     </a>
   </li>
@@ -386,7 +440,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jupyter/02-draw-figure" title="Drawing Figure" class="md-nav__link">
+    <a href="../../jupyter/02-draw-figure/" title="Drawing Figure" class="md-nav__link">
       Drawing Figure
     </a>
   </li>
@@ -398,7 +452,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jupyter/02-canvas-setup" title="Setup Canvas on Jupyter Lab" class="md-nav__link">
+    <a href="../../jupyter/02-canvas-setup.md" title="Setup Canvas on Jupyter Lab" class="md-nav__link">
       Setup Canvas on Jupyter Lab
     </a>
   </li>
@@ -410,7 +464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../jupyter/20-canvas-color-bars" title="Canvas Color Bars" class="md-nav__link">
+    <a href="../../jupyter/20-canvas-color-bars/" title="Canvas Color Bars" class="md-nav__link">
       Canvas Color Bars
     </a>
   </li>
@@ -611,7 +665,7 @@
                   
                 
                 
-                  <h1>03 variables</h1>
+                  <h1>Variables</h1>
                 
                 <h2 id="using-variables">Using Variables</h2>
 <p>In the simple square program we repeated the numbers for the distance and turning angle four times in four different places.  If we wanted to change the size of our box we would have to change the code in four different places.  By using variables we can make our program easier to change.</p>
@@ -658,6 +712,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../02-simple-square/" title="Simple Square" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Simple Square
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../04-loops/" title="Loops" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Loops
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
