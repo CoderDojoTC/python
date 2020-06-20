@@ -11,7 +11,7 @@ Our mentors have used several different envornments for teaching Python.  They e
 
 Now lets briefly go into the pros and cons of these systems.
 
-## Learing Python with Trinket
+## Learning Python with Trinket
 We use the [trinket.io](http://trinket.io) web site to teach our introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.  Because it is a free and a pure web web based environment it meets the criteria for our courses.  There is no complex setup and each student can continue to do development when they are at home.  The downside of Trinket is it has limited functionality and you must have an internet connection to use Trinket.
 
 ## Learning Python with Jupyter Notebooks
