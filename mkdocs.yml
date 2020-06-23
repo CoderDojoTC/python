@@ -17,6 +17,7 @@ nav:
   - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
+    - Recursion: repl/12-recursion.md
   - Jupyter:
     - Setup Turtle on Jupyter: jupyter/01-setup.md
     - Drawing Box Labs: jupyter/02-draw-box.md
