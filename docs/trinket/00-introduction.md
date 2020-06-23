@@ -10,7 +10,7 @@ version is limited to the older Python 2.X functionality.  If you want to try an
 ## List of Trinket Python Learning Labs
 For students that are new to programming, here are some sample programs (what we call learning labs) that you can try.  You can learn by reading the sample programs, going to the Trinkit.io site and changing some values in the code.  Each of the labs has experiments at the end you can do to extend to see if you have mastered the concepts before you go on to the next lab.
 
-0. [introduction](./00-introduction.md) - this file
+0. [Introduction](./00-introduction.md) - this file
 1. [turtle graphics](./01-turtle-graphics.md) - introduction to the Turtle Graphs library with list of drawing functions
 2. [simple square](./02-simple-square.md) - draw a square by moving and turning right four times
 4. [variables](./03-variables.md) - add variables for the move edge distance and angle
