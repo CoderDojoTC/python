@@ -8,25 +8,27 @@ myNumber = random.randint(-200, 200)
 After this line runs, the variable myNumber will be assigned some random number between -200 and 200.   We will then use this number to go to that location before we draw a circle.
 
 ## Sample Code
-```
+```python
 import turtle
 import random
+# this is a list of colors
+colorList = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown', 'gray', 'gold']
 dan = turtle.Turtle()
 dan.shape('turtle')
-
-distance = 50
-angle = 90
 
 # draw a circle at a random location on the screen
 for i in range(10):
    x = random.randint(-200, 200)
    y = random.randint(-200, 200)
    dan.goto(x,y)
-   # draw a circle
-   dan.circle(5)
+   # pick a random color from the colorList by getting a random index from 0 to 9
+   dan.color(colorList[random.randint(0,9)])
+   # draw a circle with radius of 7 units
+   dan.begin_fill()
+   dan.circle(7)
+   dan.end_fill()
 
 dan.goto(0,0)
-dan.write('done with random')
 ```
 ## Drawing
 ![](../img/random-circle.png)

@@ -1,9 +1,11 @@
-## Turtle Graphics
+# Turtle Graphics Library
+
+## What is the turtle graphics library?
 Turtle graphs have been around for almost [50 years](https://en.wikipedia.org/wiki/Turtle_graphics).  A turtle is a drawing object that has position, direction and a pen to draw as it moves around a grid.  Turtle graphic are the preferred way to teach many concepts in computer science because they give you fast feedback.
 
-For many of our introductary python labs we will use the turtle python library.  Although there are many different versions of the turtle library, most of the commands are similar.  What you learn with the trinket python system will be useful in other sytems also.
+For many of our introductory python labs we will use the turtle python library.  Although there are many different versions of the turtle library, most of the commands are similar.  What you learn with the trinket python system will be useful in other systems also.
 
-## Initializaton commands
+## Initialization commands
 There are three lines that will appear at the top of these labs:
 
 ```python
@@ -44,7 +46,7 @@ There are also a few built-in drawing functions.  The circle function that takes
 - t.circle(10)
 
 ## Misc
-There are also a few other miscellanious things you can do.  You can do some drawing and then clear the screen.
+There are also a few other miscellaneous things you can do.  You can do some drawing and then clear the screen.
 
 - t.clear()
 

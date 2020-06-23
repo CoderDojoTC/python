@@ -8,9 +8,15 @@ nav:
     - Loops: trinket/04-loops.md
     - Conditional: trinket/05-conditionals.md
     - Functions: trinket/06-functions.md
+    - Flower: trinket/07-flower.md
     - Function Parameters: trinket/07-function-parameters.md
+    - Lists: trinket/08-list.md
     - Random Numbers: trinket/08-random.md
+    - Input: trinket/11-input.md
     - Recursion: trinket/12-recursion.md
+  - Repl.it:
+    - Square: repl/02-square.md
+    - Flower: repl/07-flower.md
   - Jupyter:
     - Setup Turtle on Jupyter: jupyter/01-setup.md
     - Drawing Box Labs: jupyter/02-draw-box.md

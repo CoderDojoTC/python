@@ -3,7 +3,7 @@
 Now we will create a new function that will draw each side.
 
 ## Sample Code
-```
+```python
 import turtle
 dan = turtle.Turtle()
 dan.shape('turtle')
@@ -12,8 +12,10 @@ distance = 50
 angle = 90
 
 def side():
+   # if event then red 2, 4 etc.
    if i % 2:
       dan.color('red')
+   # else if odd then draw blue 1, 3 etc.
    else:
       dan.color('blue')
    dan.forward(distance)
@@ -26,7 +28,7 @@ for i in range(4):
 dan.write('done with square')
 ```
 
-[Function](https://trinket.io/python/00e2353a96)
+[Function](https://trinket.io/library/trinkets/e3a8279a76)
 
 
 
