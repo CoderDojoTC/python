@@ -4,7 +4,7 @@
 
 These labs assume that you have internet access and a modern web browser such as Chrome.
 
-We use the [Trinket web site](http://trniket.io) because it has many of the basic turtle drawing libraries implemented in and easy-to-use web environment.  It is appropriate for students just getting started with python programming but has limited libraries for our advanced data analysis and plotting labs.  The free
+We use the [Trinket web site](https://trinket.io/) because it has many of the basic turtle drawing libraries implemented in and easy-to-use web environment.  It is appropriate for students just getting started with python programming but has limited libraries for our advanced data analysis and plotting labs.  The free
 version is limited to the older Python 2.X functionality.  If you want to try another web-based system that support turtle graphics and Python 3.X we suggest the web site [repl.it](http://repl.it)
 
 ## List of Trinket Python Learning Labs
