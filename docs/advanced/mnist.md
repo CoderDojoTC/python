@@ -1,6 +1,6 @@
 # Handwritten Digit Classification
 
-We will program and train a machine learning model to recognize handwritten numbers. The code for this lesson can be found [here]().
+We will program and train a machine learning model to recognize handwritten numbers. The code for this lesson can be found [here](https://github.com/CoderDojoTC/python/blob/master/advanced/machineLearning/mnist.ipynb).
 
 ## But What *Is* Machine Learnig?
 
