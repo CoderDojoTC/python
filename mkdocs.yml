@@ -26,6 +26,8 @@ nav:
     - Canvas Color Bars: jupyter/20-canvas-color-bars.md
   - Pi:
     - Python on Raspberry Pi: pi/01-intro.md
+  - Advanced Python:
+    - Stock Ticker Analysis: advanced/stocks.md
     
   - Contributing:
     - How to Contribute Examples: contribute.md
