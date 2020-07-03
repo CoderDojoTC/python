@@ -29,6 +29,7 @@ nav:
     - Python on Raspberry Pi: pi/01-intro.md
   - Advanced Python:
     - Stock Ticker Analysis: advanced/stocks.md
+    - MNIST Digit Prediction: advanced/mnist.md
     
   - Contributing:
     - How to Contribute Examples: contribute.md
