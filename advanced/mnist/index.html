@@ -19,7 +19,7 @@
     
     
       
-        <title>Handwritten Digit Classification - CoderDojo TC Python</title>
+        <title>MNIST Digit Prediction - CoderDojo TC Python</title>
       
     
     
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Handwritten Digit Classification
+              MNIST Digit Prediction
             
           </span>
         </div>
@@ -582,10 +582,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Advanced Python
@@ -612,6 +614,137 @@
     <a href="../stocks/" title="Stock Ticker Analysis" class="md-nav__link">
       Stock Ticker Analysis
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        MNIST Digit Prediction
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="MNIST Digit Prediction" class="md-nav__link md-nav__link--active">
+      MNIST Digit Prediction
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#but-what-is-machine-learnig" class="md-nav__link">
+    But What Is Machine Learnig?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-neural-networks" class="md-nav__link">
+    Types of Neural Networks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#convolutional-neural-network" class="md-nav__link">
+    Convolutional Neural Network
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-packages" class="md-nav__link">
+    Importing Packages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#loading-data" class="md-nav__link">
+    Loading Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preprocessing-data" class="md-nav__link">
+    Preprocessing Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#look-at-data" class="md-nav__link">
+    Look At Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#desired-output" class="md-nav__link">
+    Desired Output
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-model" class="md-nav__link">
+    Define Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-parameters" class="md-nav__link">
+    Set Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compile-and-train-model" class="md-nav__link">
+    Compile and Train Model
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-model" class="md-nav__link">
+    Test Model
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -994,6 +1127,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../stocks/" title="Stock Ticker Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Stock Ticker Analysis
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../../contribute/" title="How to Contribute Examples" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  How to Contribute Examples
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
