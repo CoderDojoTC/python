@@ -1,5 +1,6 @@
 site_name: 'CoderDojo TC Python'
 nav:
+  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Trinket:
     - Introduction: trinket/00-introduction.md
     - Turtle Graphics: trinket/01-turtle-graphics.md
@@ -39,7 +40,7 @@ repo_url: 'https://github.com/CoderDojoTC/python'
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/coderdojo-logo-dark-bg-light-text.png
+  logo: img/coderdojo-logo.png
   palette:
     primary: '#642580'
     accent: '#41BAC1'
