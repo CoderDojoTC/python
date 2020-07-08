@@ -12,12 +12,9 @@ Our mentors have used several different envornments for teaching Python.  They e
 Now lets briefly go into the pros and cons of these systems.
 
 ## Learning Python with Trinket
-<<<<<<< HEAD
+
 We use the [trinket.io](http://trinket.io) web site to teach our introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.  Because it is a free and a pure web web based environment it meets the criteria for our courses.  There is no complex setup and each student can continue to do development when they are at home.  The downside of Trinket is it has limited functionality, only supports Python 2.X in the free version and you must have an internet connection to use Trinket.  If you need Python 3.X web
 version you can use the free [repl.id](https://repl.it/) web site.
-=======
-We use the [trinket.io](http://trinket.io) web site to teach our introduction to python.  Trinket has a nice turtle graphics library which is ideal for fast visual feedback.  Because it is a free and a pure web web based environment it meets the criteria for our courses.  There is no complex setup and each student can continue to do development when they are at home.  The downside of Trinket is it has limited functionality and you must have an internet connection to use Trinket.
->>>>>>> 4a021d2f0aa612c014ff6f8169b8b518161d8879
 
 ## Learning Python with Jupyter Notebooks
 You can also use Jupyter Notebooks to draw turtle graphics.  The notebook will open a new window to draw your turtle graphis.  Getting Jupyter Notebooks is a bit tricky to setup on many PCs.  However, once it is setup it offers tens of thousands of sample programs to learn python coding.  Jupyter Notebooks are also the preferred tool by many data science professionals.
