@@ -22,3 +22,7 @@ For students that are new to programming, here are some sample programs (what we
 9. [Lists](./08-list.md) - store a list of colors
 10. [Inputs](./11-input.md) - get some input from the user
 11. [Recursion](./12-recursion.md) - create a function that calls itself
+
+## Journey Map
+
+![Intermediate Python Journey Map](../img/intermediat-python-journey-map.png)
