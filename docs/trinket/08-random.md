@@ -38,4 +38,6 @@ dan.goto(0,0)
 
 
 ## Experiments
-Can you change the name of the function to be "petal"?
+1. Can you create a variable that is used to control the distance from the origin to wander?  Right now the distance is set to be 200 on each extent.
+2. Can you create a variable for the number of circles to draw?
+3. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.  Note that you can use 
