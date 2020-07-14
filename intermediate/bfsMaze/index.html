@@ -19,7 +19,7 @@
     
     
       
-        <title>Roll the Dice - CoderDojo TC Python</title>
+        <title>bfsMaze - CoderDojo TC Python</title>
       
     
     
@@ -61,11 +61,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#roll-the-dice" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -89,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Roll the Dice
+              bfsMaze
             
           </span>
         </div>
@@ -477,7 +472,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../intermediate/intro/" title="Introduction" class="md-nav__link">
+    <a href="../intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -765,27 +760,12 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/advanced-python/02-roll-the-dice.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/bfsMaze.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -793,27 +773,36 @@
                   
                 
                 
-                <h1 id="roll-the-dice">Roll the Dice</h1>
-<p>In this game the program generates two random numbers between 1 and 6.  The program then asks the user if they want to roll the dice again.  If they answer y or yes then the pair of
-dice are rolled again.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
-<span class="nb">min</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="nb">max</span> <span class="o">=</span> <span class="mi">6</span>
+                  <h1>bfsMaze</h1>
+                
+                <div class="codehilite"><pre><span></span><code><span class="c1">#Takes as input a Square object node in a graph of Square nodes.</span>
+<span class="c1"># This will always be the Square node representing (0,0), the start position</span>
+<span class="c1">#Performs BFS until the goal Square is found (the Square with color = &quot;blue&quot;).</span>
+<span class="c1">#Returns a list containing each Square node in the path from the start</span>
+<span class="c1"># (0,0) to the goal node, inclusive, in order from start to goal.</span>
+<span class="k">def</span> <span class="nf">find_path</span><span class="p">(</span><span class="n">start_node</span><span class="p">):</span>
+    <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
+    <span class="n">start_node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
 
-<span class="n">roll_again</span> <span class="o">=</span> <span class="s2">&quot;yes&quot;</span>
-
-<span class="k">while</span> <span class="n">roll_again</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span> <span class="ow">or</span> <span class="n">roll_again</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rolling the dice.  The values are:&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">))</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="nb">min</span><span class="p">,</span> <span class="nb">max</span><span class="p">))</span>
-    <span class="n">roll_again</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Roll the dices again?&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-
-<div class="codehilite"><pre><span></span><code>Rolling the dice.  The values are:
-<span class="m">4</span>
-<span class="m">4</span>
-Roll the dices again?
+    <span class="n">q</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_node</span><span class="p">)</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">start_node</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">start_node</span><span class="o">.</span><span class="n">adj</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span>
+                <span class="n">node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;grey&quot;</span><span class="p">)</span>
+                <span class="n">node</span><span class="o">.</span><span class="n">depth</span> <span class="o">=</span> <span class="n">start_node</span><span class="o">.</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span>
+                <span class="n">node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">start_node</span>
+                <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;blue&quot;</span><span class="p">:</span>
+                <span class="n">node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">start_node</span>
+                <span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="n">node</span><span class="p">]</span>
+                <span class="n">cur</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">prev</span>
+                <span class="k">while</span> <span class="n">cur</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                    <span class="n">visited</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">cur</span><span class="p">)</span>
+                    <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">prev</span>
+                <span class="k">return</span> <span class="n">visited</span>
+        <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 </code></pre></div>
                 
               
