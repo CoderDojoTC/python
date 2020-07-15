@@ -21,6 +21,8 @@ nav:
     - Recursion: repl/12-recursion.md
   - Intermediate Python:
     - Introduction: intermediate/intro.md
+    - Maze Solving with BFS: intermediate/bfsMaze.md
+    - Maze Solving with DFS: intermediate/dfsMaze.md
   - Jupyter:
     - Setup Turtle on Jupyter: jupyter/01-setup.md
     - Drawing Box Labs: jupyter/02-draw-box.md

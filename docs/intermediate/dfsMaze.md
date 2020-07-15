@@ -1,5 +1,4 @@
 ```python
-
 def visit(u):
     u.set_color("gray")
     for vert in u.adj:
@@ -23,5 +22,6 @@ def find_path(start_node):
         visited.insert(0, cur)
         cur = cur.prev
     return visited #Placeholder return to avoid errors
-
 ```
+
+* This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.
