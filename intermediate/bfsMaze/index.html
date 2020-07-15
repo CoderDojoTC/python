@@ -19,7 +19,7 @@
     
     
       
-        <title>bfsMaze - CoderDojo TC Python</title>
+        <title>Maze Solving with BFS - CoderDojo TC Python</title>
       
     
     
@@ -61,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#maze-solving-with-breadth-first-search" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -84,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              bfsMaze
+              Maze Solving with BFS
             
           </span>
         </div>
@@ -445,10 +450,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Intermediate Python
@@ -474,6 +481,39 @@
   <li class="md-nav__item">
     <a href="../intro/" title="Introduction" class="md-nav__link">
       Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Maze Solving with BFS" class="md-nav__link md-nav__link--active">
+      Maze Solving with BFS
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dfsMaze/" title="Maze Solving with DFS" class="md-nav__link">
+      Maze Solving with DFS
     </a>
   </li>
 
@@ -760,6 +800,21 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -773,9 +828,19 @@
                   
                 
                 
-                  <h1>bfsMaze</h1>
-                
-                <div class="codehilite"><pre><span></span><code><span class="c1">#Takes as input a Square object node in a graph of Square nodes.</span>
+                <h1 id="maze-solving-with-breadth-first-search">Maze Solving with Breadth-First Search</h1>
+<p>In this lab, we are going to solve a maze with an <strong>algorithm</strong> called <strong>breadth-first search</strong>. Before we do though, we need to get some terminology out of the way. There are two main ways that we will be storing data, known as <strong>data structures</strong>. These are:</p>
+<ul>
+<li>
+<p>A <strong>graph</strong> is a data structure representing data that is interconnected. We will be representing our maze this way. Graphs are made of of <strong>nodes</strong> and <strong>edges</strong>. Think of edges as roads that connect different nodes together. In this maze, we will hopping from node to node via these edges.</p>
+</li>
+<li>
+<p>A <strong>queue</strong> is another commonly used data structure. Think of it as a line that we always take from the front of and always add to the back (no budging).</p>
+</li>
+</ul>
+<p>First, download the code template found in the <code>src/intermediate</code> folder of the repository, found <a href="https://github.com/CoderDojoTC/python">here</a>. Then, lets try and implement a solution to solve it!</p>
+<p>One solution is breadth-first search, or BFS. BFS works by cycling through all possible nodes one hop away from your current position, adding them to a <strong>queue</strong> and then cycling through all of those nodes in the queue to see if they are the solution. Lets see how it is implemented below:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">#Takes as input a Square object node in a graph of Square nodes.</span>
 <span class="c1"># This will always be the Square node representing (0,0), the start position</span>
 <span class="c1">#Performs BFS until the goal Square is found (the Square with color = &quot;blue&quot;).</span>
 <span class="c1">#Returns a list containing each Square node in the path from the start</span>
@@ -784,26 +849,32 @@
     <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
     <span class="n">start_node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>
 
-    <span class="n">q</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_node</span><span class="p">)</span>
-    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">start_node</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">start_node</span><span class="o">.</span><span class="n">adj</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># Our queue of nodes visited</span>
+    <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">start_node</span><span class="p">)</span> <span class="c1"># Add starting node to the end of the queue</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">q</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># Runs when there are still nodes in the queue</span>
+        <span class="n">start_node</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1"># Remove the node in the front of the queue</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">start_node</span><span class="o">.</span><span class="n">adj</span><span class="p">:</span>   <span class="c1"># Look at every item in the current node&#39;s adjacency list</span>
+            <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span>  <span class="c1"># If the color is white, we haven&#39;t visited this node before</span>
                 <span class="n">node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;grey&quot;</span><span class="p">)</span>
                 <span class="n">node</span><span class="o">.</span><span class="n">depth</span> <span class="o">=</span> <span class="n">start_node</span><span class="o">.</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span>
                 <span class="n">node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">start_node</span>
-                <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;blue&quot;</span><span class="p">:</span>
+                <span class="n">q</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>  <span class="c1"># Add this new node to the queue</span>
+            <span class="k">elif</span> <span class="n">node</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;blue&quot;</span><span class="p">:</span>  <span class="c1"># If the color is blue, we have reached our goal</span>
                 <span class="n">node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">start_node</span>
                 <span class="n">visited</span> <span class="o">=</span> <span class="p">[</span><span class="n">node</span><span class="p">]</span>
                 <span class="n">cur</span> <span class="o">=</span> <span class="n">node</span><span class="o">.</span><span class="n">prev</span>
-                <span class="k">while</span> <span class="n">cur</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">while</span> <span class="n">cur</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># Backtrack our path, adding nodes to the visited list as we go</span>
                     <span class="n">visited</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">cur</span><span class="p">)</span>
                     <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">prev</span>
                 <span class="k">return</span> <span class="n">visited</span>
         <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 </code></pre></div>
+
+
+<p>There are other ways to find paths in mazes, one of which we will explore in the next lab!</p>
+<ul>
+<li>This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.</li>
+</ul>
                 
               
               
@@ -818,6 +889,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Introduction
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../dfsMaze/" title="Maze Solving with DFS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Maze Solving with DFS
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">

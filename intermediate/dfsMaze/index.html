@@ -19,7 +19,7 @@
     
     
       
-        <title>dfsMaze - CoderDojo TC Python</title>
+        <title>Maze Solving with DFS - CoderDojo TC Python</title>
       
     
     
@@ -84,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              dfsMaze
+              Maze Solving with DFS
             
           </span>
         </div>
@@ -445,10 +445,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Intermediate Python
@@ -475,6 +477,37 @@
     <a href="../intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bfsMaze/" title="Maze Solving with BFS" class="md-nav__link">
+      Maze Solving with BFS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Maze Solving with DFS" class="md-nav__link md-nav__link--active">
+      Maze Solving with DFS
+    </a>
+    
   </li>
 
         
@@ -773,7 +806,7 @@
                   
                 
                 
-                  <h1>dfsMaze</h1>
+                  <h1>Maze Solving with DFS</h1>
                 
                 <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>
     <span class="n">u</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
@@ -799,6 +832,11 @@
         <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">prev</span>
     <span class="k">return</span> <span class="n">visited</span> <span class="c1">#Placeholder return to avoid errors</span>
 </code></pre></div>
+
+
+<ul>
+<li>This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.</li>
+</ul>
                 
               
               
@@ -813,6 +851,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../bfsMaze/" title="Maze Solving with BFS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Maze Solving with BFS
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../../jupyter/01-setup/" title="Setup Turtle on Jupyter" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Setup Turtle on Jupyter
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
