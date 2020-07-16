@@ -19,7 +19,7 @@
     
     
       
-        <title>Maze Solving with DFS - CoderDojo TC Python</title>
+        <title>Introduction to Intermediate Python - CoderDojo TC Python</title>
       
     
     
@@ -60,6 +60,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#introduction-to-intermediate-python" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Maze Solving with DFS
+              Introduction to Intermediate Python
             
           </span>
         </div>
@@ -444,12 +449,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Intermediate Python
@@ -579,18 +582,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Maze Solving with DFS" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../dfsMaze/" title="Maze Solving with DFS" class="md-nav__link">
       Maze Solving with DFS
     </a>
-    
   </li>
 
         
@@ -876,12 +872,27 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/dfsMaze.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/modules.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -889,37 +900,8 @@
                   
                 
                 
-                  <h1>Maze Solving with DFS</h1>
-                
-                <div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">vert</span> <span class="ow">in</span> <span class="n">u</span><span class="o">.</span><span class="n">adj</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">vert</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span>
-            <span class="n">vert</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">u</span>
-            <span class="n">path</span> <span class="o">=</span> <span class="n">visit</span><span class="p">(</span><span class="n">vert</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">path</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">path</span>
-        <span class="k">elif</span> <span class="n">vert</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;blue&quot;</span><span class="p">:</span>
-            <span class="n">vert</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="n">u</span>
-            <span class="k">return</span> <span class="n">vert</span>
-    <span class="n">u</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">find_path</span><span class="p">(</span><span class="n">start_node</span><span class="p">):</span>
-    <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
-    <span class="n">start_node</span><span class="o">.</span><span class="n">prev</span> <span class="o">=</span> <span class="kc">None</span>        
-    <span class="n">goal</span> <span class="o">=</span> <span class="n">visit</span><span class="p">(</span><span class="n">start_node</span><span class="p">)</span>
-    <span class="n">visited</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">cur</span> <span class="o">=</span> <span class="n">goal</span>
-    <span class="k">while</span> <span class="n">cur</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">visited</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">cur</span><span class="p">)</span>
-        <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">prev</span>
-    <span class="k">return</span> <span class="n">visited</span> <span class="c1">#Placeholder return to avoid errors</span>
-</code></pre></div>
-
-
-<ul>
-<li>This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.</li>
-</ul>
+                <h1 id="introduction-to-intermediate-python">Introduction to Intermediate Python</h1>
+<h1 id="modules">Modules</h1>
                 
               
               
@@ -934,41 +916,6 @@
       
         
   <footer class="md-footer">
-    
-      <div class="md-footer-nav">
-        <nav class="md-footer-nav__inner md-grid">
-          
-            <a href="../bfsMaze/" title="Maze Solving with BFS" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-              </div>
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Previous
-                  </span>
-                  Maze Solving with BFS
-                </span>
-              </div>
-            </a>
-          
-          
-            <a href="../../jupyter/01-setup/" title="Setup Turtle on Jupyter" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-                <span class="md-flex__ellipsis">
-                  <span class="md-footer-nav__direction">
-                    Next
-                  </span>
-                  Setup Turtle on Jupyter
-                </span>
-              </div>
-              <div class="md-flex__cell md-flex__cell--shrink">
-                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-              </div>
-            </a>
-          
-        </nav>
-      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
