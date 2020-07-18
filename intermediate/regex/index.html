@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
       
       
         
@@ -55,7 +55,6 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -587,6 +586,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#checking-for-one-or-more-digits" class="md-nav__link">
+    Checking for one or more digits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-regular-expression-characters-for-validating-inputs" class="md-nav__link">
+    Common regular expression characters for validating inputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-regular-expressions" class="md-nav__link">
+    Combining Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-regular-expression-references" class="md-nav__link">
+    Python Regular Expression References
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -968,6 +995,34 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#checking-for-one-or-more-digits" class="md-nav__link">
+    Checking for one or more digits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-regular-expression-characters-for-validating-inputs" class="md-nav__link">
+    Common regular expression characters for validating inputs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#combining-regular-expressions" class="md-nav__link">
+    Combining Regular Expressions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-regular-expression-references" class="md-nav__link">
+    Python Regular Expression References
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1014,29 +1069,35 @@
 <h2 id="finding-exactly-four-digits">Finding exactly four digits</h2>
 <p>What if you wanted <strong>exactly</strong> four digits? For example say you have a phone system that has exactly four-digit extensions. To do this you would need to also specify two additional characters: the start expression <strong>"^"</strong> and the end character <strong>"$"</strong>.</p>
 <p>Here is what that program would look like:</p>
-<p>```python
-import re
-my_input = '1234'</p>
-<h1 id="check-to-for-exactly-four-digits">check to for exactly four digits</h1>
-<p>digits_test = re.search('^\d\d\d\d$', my_input)</p>
-<p>if digits_test:
-  print("We have exactly four digits!")
-else:
-  print("Invalid data")
-  ```</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
+
+<span class="c1"># check to for exactly four digits</span>
+<span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\d\d\d\d$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have exactly four digits!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
 <p><a href="https://trinket.io/library/trinkets/ef0666e0d3">Run the regex-02 program on Trinket.io</a></p>
 <h2 id="checking-for-one-or-more-digits">Checking for one or more digits</h2>
 <p>Sometimes we don't know exactly how many digits an input field should contain.  We might just want to say "look for one or more digits".  We can do this by using the <strong>'+'</strong> expression which says "look for one or more of the previous expression".  Here is a program that will check for one or more digits:</p>
-<p>```python
-import re
-my_input = '1'</p>
-<h1 id="check-for-one-or-more-digits">check for one or more digits</h1>
-<p>digits_test = re.search('^\d+', my_input)</p>
-<p>if digits_test:
-  print("We have one or more digits!")
-else:
-  print("Invalid data")
-  ```</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+
+<span class="c1"># check for one or more digits</span>
+<span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\d+&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have one or more digits!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
 <h2 id="common-regular-expression-characters-for-validating-inputs">Common regular expression characters for validating inputs</h2>
 <p>Now that you have seen several examples of regular expressions, lets list some of the most common ones we use to validate input data.:</p>
 <table>
@@ -1158,14 +1219,14 @@ else:
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
