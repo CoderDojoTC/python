@@ -15,17 +15,17 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
-        <title>Turtle Graphics - CoderDojo TC Python</title>
+        <title>Trinket Account - CoderDojo TC Python</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -55,13 +55,14 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#turtle-graphics-library" class="md-skip">
+        <a href="#trinket-account" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Turtle Graphics
+              Trinket Account
             
           </span>
         </div>
@@ -247,14 +248,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Turtle Graphics
+        Trinket Account
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="Turtle Graphics" class="md-nav__link md-nav__link--active">
-      Turtle Graphics
+    <a href="./" title="Trinket Account" class="md-nav__link md-nav__link--active">
+      Trinket Account
     </a>
     
       
@@ -334,8 +335,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../02-simple-square/" title="Simple Square" class="md-nav__link">
-      Simple Square
+    <a href="../02-simple-square/" title="Turtle Square" class="md-nav__link">
+      Turtle Square
     </a>
   </li>
 
@@ -1081,10 +1082,14 @@
                   
                 
                 
-                <h1 id="turtle-graphics-library">Turtle Graphics Library</h1>
+                <h1 id="trinket-account">Trinket Account</h1>
+<p>Before you begin, we would like you to go to the <a href="https://trinket.io/">Trinket web site</a> and create your own account.  This will allow you to save your programs and come back later and continue working on them.</p>
+<p>Here is the link to the Trinket web site:</p>
+<p><a href="https://trinket.io/">https://trinket.io/</a></p>
+<p>Be sure to bookmark this site for future reference.</p>
 <h2 id="what-is-the-turtle-graphics-library">What is the turtle graphics library?</h2>
-<p>Turtle graphs have been around for almost <a href="https://en.wikipedia.org/wiki/Turtle_graphics">50 years</a>.  A turtle is a drawing object that has position, direction and a pen to draw as it moves around a grid.  Turtle graphic are the preferred way to teach many concepts in computer science because they give you fast feedback.</p>
-<p>For many of our introductory python labs we will use the turtle python library.  Although there are many different versions of the turtle library, most of the commands are similar.  What you learn with the trinket python system will be useful in other systems also.</p>
+<p>Turtle graphs have been around for almost <a href="https://en.wikipedia.org/wiki/Turtle_graphics">50 years</a>.  A turtle is a drawing object that has position, direction, and a pen to draw as it moves around a grid.  Turtle graphics are the preferred way to teach many concepts in computer science because they give you fast feedback.  Fast feedback allows you to quickly see the errors in your code and correct them.</p>
+<p>For many of our introductory python labs, we will use the turtle python library.  Although there are many different versions of the turtle library, most of the commands are similar.  What you learn with the trinket python system will be useful in other systems also.</p>
 <h2 id="initialization-commands">Initialization commands</h2>
 <p>There are three lines that will appear at the top of these labs:</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
@@ -1102,7 +1107,7 @@
 
 <p>Just make sure you change all the names in the file to reference your new name.</p>
 <h2 id="moving-the-turtle">Moving the Turtle</h2>
-<p>There a five basic ways to move your turtle around the screen.  Our screen is approximatly 300 points wide and 400 points high.  The point (0,0) is at the center of our screen.  The first four are relative commands.  The last one will move the turtle to the absolute x and y location.</p>
+<p>There are five ways to move your turtle around the screen.  Our screen is around 400 points wide and 400 points high.  The point (0,0) is at the center of our screen.  The first four are relative movement commands.  The last one will move the turtle to the absolute x and y location.</p>
 <ul>
 <li>t.forward(40)</li>
 <li>t.back(40)</li>
@@ -1111,12 +1116,12 @@
 <li>t.goto(x,y)</li>
 </ul>
 <h2 id="drawing">Drawing</h2>
-<p>There are several ways to draw virtual "ink" on the screen.  The most common way is to just move your turtle around.  It will draw a thin black line by default.</p>
+<p>There are several ways to draw virtual "ink" on the screen.  The most common way is to just move your turtle around.  It will draw a thin black line by default, but you can also change the pen color and the width of drawing.</p>
 <ul>
-<li>t.penup()</li>
-<li>t.pendown()</li>
-<li>t.color('red')</li>
-<li>t.pensize(5)</li>
+<li>t.penup() - no drawing will happen when the pen is up</li>
+<li>t.pendown() - drawing will occur on the screen when the turtle moves</li>
+<li>t.color('red') - set the pen to a specific color</li>
+<li>t.pensize(5) - set the width of the pen from 1 to 20.  5 is a good size.</li>
 <li>t.begin_fill() - begin filling a region you draw around</li>
 <li>t.end_fill() - end the fill region</li>
 </ul>
@@ -1126,7 +1131,8 @@
 <h2 id="misc">Misc</h2>
 <p>There are also a few other miscellaneous things you can do.  You can do some drawing and then clear the screen.</p>
 <ul>
-<li>t.clear()</li>
+<li>t.clear() - clears the screen of all drawing</li>
+<li>t.hideturtle() - hides the turtle on the screen</li>
 </ul>
 <p>You can see a full list of the turtle commands <a href="https://trinket.io/docs/python">here</a>.  Just click on the turtle area and scroll down.</p>
 <h2 id="generating-a-random-number">Generating a random number</h2>
@@ -1138,6 +1144,7 @@
 
 
 <p>This will generate a random number from -200 to 200.  You can use this number to randomly place items on the drawing canvas.</p>
+<p>Now, let's get started doing some fun drawing!</p>
                 
               
               
@@ -1171,13 +1178,13 @@
             </a>
           
           
-            <a href="../02-simple-square/" title="Simple Square" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../02-simple-square/" title="Turtle Square" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Simple Square
+                  Turtle Square
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -1202,14 +1209,14 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
