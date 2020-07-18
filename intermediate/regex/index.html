@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
       
       
         
@@ -55,7 +55,6 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -547,9 +546,49 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Regular Expressions
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Regular Expressions" class="md-nav__link md-nav__link--active">
       Regular Expressions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-four-digits-in-an-input-string" class="md-nav__link">
+    Finding four digits in an input string
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-exactly-four-digits" class="md-nav__link">
+    Finding exactly four digits
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -906,6 +945,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#finding-four-digits-in-an-input-string" class="md-nav__link">
+    Finding four digits in an input string
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-exactly-four-digits" class="md-nav__link">
+    Finding exactly four digits
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -926,22 +989,110 @@
                 
                 <h1 id="regular-expressions-in-python">Regular Expressions in Python</h1>
 <p>A regular expression is a shorthand notation for describing a search pattern.  Regular expressions are handy whenever you have one ore more strings and you want to detect if a specific patten of characters appears in that string.  Regular expressions are mostly standardized so that if you use them other developers will quickly be able to read this the patten notation and understand the function of the pattern.</p>
+<h2 id="finding-four-digits-in-an-input-string">Finding four digits in an input string</h2>
 <p>Let's take a simple example.  What if you want an input to to a function to contain four digits.  The string <code>\d</code> matches a single digit.  Here is the python program to check to see if there are four consecutive digits in an input string:</p>
 <div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-
-<span class="c1"># Check if the string has four digits in a </span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
+
+<span class="c1"># check to see if there are four consecutive digits somewhere in the input</span>
 <span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;\d\d\d\d&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have four digits&quot;</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have four digits!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
 </code></pre></div>
 
 
-<p>The name of the regular expression module is just "re".  We must import this line first.  The key line has re.search() function with two parameters.  The first parameter is the regular expression and the second is the string to be tested.</p>
-<p><a href="https://trinket.io/python3/780b1810ad">Run on Trinket.io</a></p>
+<p><a href="https://trinket.io/python3/780b1810ad">Run the regex-01 program on Trinket.io</a></p>
+<p>If you run the program as-is, it will tell you that the string <strong>'1234'</strong> will pass the test and the string <strong>We have four digits</strong>, but if you change the my_input to be <strong>123x</strong> then the <strong>Invalid data</strong> will be returned.</p>
+<p>The name of the regular expression module is just "re".  We must have an import this line with the "re" module at the start of our program.  The key line has <strong>re.search()</strong> function with two parameters.  The first parameter is the regular expression and the second is the string to be tested.</p>
+<p>The exact way to read this line is:</p>
+<p>check to see if there are four consecutive digits somewhere in the input</p>
+<p>Note that if you put letters or spaces before or after the four digits the test will still pass.</p>
+<h2 id="finding-exactly-four-digits">Finding exactly four digits</h2>
+<p>What if you wanted <strong>exactly</strong> four digits? For example say you have a phone system that has exactly four-digit extensions. To do this you would need to also specify two additional characters: the start expression <strong>"^"</strong> and the end character <strong>"$"</strong>.</p>
+<p>Here is what that program would look like:</p>
+<p>```python
+import re
+my_input = '1234'</p>
+<h1 id="check-to-for-exactly-four-digits">check to for exactly four digits</h1>
+<p>digits_test = re.search('^\d\d\d\d$', my_input)</p>
+<p>if digits_test:
+  print("We have exactly four digits!")
+else:
+  print("Invalid data")
+  ```</p>
+<p><a href="https://trinket.io/library/trinkets/ef0666e0d3">Run the regex-02 program on Trinket.io</a></p>
+<h2 id="checking-for-one-or-more-digits">Checking for one or more digits</h2>
+<p>Sometimes we don't know exactly how many digits an input field should contain.  We might just want to say "look for one or more digits".  We can do this by using the <strong>'+'</strong> expression which says "look for one or more of the previous expression".  Here is a program that will check for one or more digits:</p>
+<p>```python
+import re
+my_input = '1'</p>
+<h1 id="check-for-one-or-more-digits">check for one or more digits</h1>
+<p>digits_test = re.search('^\d+', my_input)</p>
+<p>if digits_test:
+  print("We have one or more digits!")
+else:
+  print("Invalid data")
+  ```</p>
+<h2 id="common-regular-expression-characters-for-validating-inputs">Common regular expression characters for validating inputs</h2>
+<p>Now that you have seen several examples of regular expressions, lets list some of the most common ones we use to validate input data.:</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Meaning</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\d</td>
+<td>A single digit in the range 0 to 9</td>
+<td><strong>'\d\d\d'</strong> for validating <strong>'123'</strong></td>
+</tr>
+<tr>
+<td>^</td>
+<td>The start of a string</td>
+<td><strong>'^hello'</strong></td>
+</tr>
+<tr>
+<td>$</td>
+<td>The end of a string</td>
+<td><strong>'hello'$</strong></td>
+</tr>
+<tr>
+<td>[a-z]</td>
+<td>Any lowercase character in the range of <strong>'a'</strong> to <strong>'z'</strong></td>
+<td><strong>'[a-z]\d\d'</strong> will match <strong>'x12'</strong></td>
+</tr>
+<tr>
+<td>[A-Z]</td>
+<td>Any uppercase character in the range <strong>'A'</strong> to <strong>'Z'</strong></td>
+<td><strong>'\d\d[A-Z]</strong> will match <strong>'47N'</strong></td>
+</tr>
+<tr>
+<td><strong>.</strong></td>
+<td>Zero or more occurrences of the previous expression</td>
+<td><strong>'\d.'</strong> would match an empty string, '1' or '12'</td>
+</tr>
+<tr>
+<td><strong>+</strong></td>
+<td>One or more occurrences of the previous expression</td>
+<td><strong>'\d+'</strong> would match '1' or '12' but would not match an empty string</td>
+</tr>
+<tr>
+<td>**</td>
+<td>**</td>
+<td>Or</td>
+</tr>
+</tbody>
+</table>
+<p>Note that there is an important difference between using the "dot" (period) and the "plus" characters.  We use the dot when we want to check for an optional integer.  We use the plus sign when we require an integer.  When we are gathering information from users in a form, we often must be careful to specify what fields should require an integer input for the field to be valid.</p>
+<h2 id="combining-regular-expressions">Combining Regular Expressions</h2>
+<h2 id="python-regular-expression-references">Python Regular Expression References</h2>
+<p><a href="https://docs.python.org/3/howto/regex.html#regex-howto">Python Regular Expressions HOWTO</a></p>
                 
               
               
@@ -1006,14 +1157,14 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
