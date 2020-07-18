@@ -13,6 +13,7 @@ nav:
     - Function Parameters: trinket/07-function-parameters.md
     - Lists: trinket/08-list.md
     - Random Numbers: trinket/08-random.md
+    - Random Stars: trinket/13-random-stars.md
     - Input: trinket/11-input.md
     - Recursion: trinket/12-recursion.md
   - Beginning Python - Repl.it:
