@@ -22,12 +22,13 @@ nav:
   - Intermediate Python:
     - Introduction: intermediate/intro.md
     - Variables and Scope: intermediate/scope.md
-    - Maps: intermediate/map.md
+    - Maps: intermediate/maps.md
     - Files: intermediate/files.md
     - Images: intermediate/images.md
-    - Wildcards: intermediate/wildcard.md
+    - Regular Expressions: intermediate/regex.md
     - Dir: intermediate/dir.md
-    - Debugging: intermediate/debug.md
+    - Modules: intermediate/modules.md
+    - Debugging: intermediate/debugging.md
     - Maze Solving with BFS: intermediate/bfsMaze.md
     - Maze Solving with DFS: intermediate/dfsMaze.md
   - Jupyter:
