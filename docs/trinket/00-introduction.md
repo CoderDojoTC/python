@@ -9,7 +9,7 @@ version is limited to the older Python 2.X functionality.  If you want to try an
 
 ## Beginning Python Journey Map
 
-![Beginning Python Journey Map](../img/beginning-python-journey-map.png)
+![Beginning Python Journey Map](./beginning-python-journey-map.png)
 
 ## List of Trinket Python Learning Labs
 For students that are new to programming, here are some sample programs (what we call learning labs) that you can try.  You can learn by reading the sample programs, going to the Trinkit.io site and changing some values in the code.  Each of the labs has experiments at the end you can do to extend to see if you have mastered the concepts before you go on to the next lab.
@@ -25,3 +25,7 @@ For students that are new to programming, here are some sample programs (what we
 9. [Lists](./08-list.md) - store a list of colors
 10. [Inputs](./11-input.md) - get some input from the user
 11. [Recursion](./12-recursion.md) - create a function that calls itself
+
+## Additional Labs
+In addition to our core labs, here are a few other labs that your students might find fun:
+
