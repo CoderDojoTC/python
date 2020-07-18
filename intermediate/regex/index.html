@@ -356,6 +356,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../trinket/13-random-stars/" title="Random Stars" class="md-nav__link">
+      Random Stars
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../trinket/11-input/" title="Input" class="md-nav__link">
       Input
     </a>
@@ -601,8 +613,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#combining-regular-expressions" class="md-nav__link">
-    Combining Regular Expressions
+  <a href="#combining-regular-expressions-checking-e-mail-address" class="md-nav__link">
+    Combining Regular Expressions: Checking E-mail Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-right-regular-expression" class="md-nav__link">
+    Finding The Right Regular Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-search-to" class="md-nav__link">
+    From Search to
   </a>
   
 </li>
@@ -1010,8 +1036,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#combining-regular-expressions" class="md-nav__link">
-    Combining Regular Expressions
+  <a href="#combining-regular-expressions-checking-e-mail-address" class="md-nav__link">
+    Combining Regular Expressions: Checking E-mail Address
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finding-the-right-regular-expression" class="md-nav__link">
+    Finding The Right Regular Expression
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#from-search-to" class="md-nav__link">
+    From Search to
   </a>
   
 </li>
@@ -1149,12 +1189,64 @@
 <td>**</td>
 <td>Or</td>
 </tr>
+<tr>
+<td><strong>\w</strong></td>
+<td>Characters that typically make up words. This includes upper and lowercase charcters [a-z], [A-Z] and digits as well as the underscore</td>
+<td><strong>\w</strong> would match <strong>'hello_world123'</strong></td>
+</tr>
 </tbody>
 </table>
 <p>Note that there is an important difference between using the "dot" (period) and the "plus" characters.  We use the dot when we want to check for an optional integer.  We use the plus sign when we require an integer.  When we are gathering information from users in a form, we often must be careful to specify what fields should require an integer input for the field to be valid.</p>
-<h2 id="combining-regular-expressions">Combining Regular Expressions</h2>
+<h2 id="combining-regular-expressions-checking-e-mail-address">Combining Regular Expressions: Checking E-mail Address</h2>
+<p>We can combine regular expressions to make more complicated expressions.  For example here are some rules that form a simple e-mail address:</p>
+<ol>
+<li>a string of word characters</li>
+<li>the ampersand character <strong>'@'</strong></li>
+<li>a string of additional word characters</li>
+<li>the period character <strong>'.'</strong></li>
+<li>some additional characters such as 'com', 'edu'</li>
+</ol>
+<p>Here is a regular expression that does this:</p>
+<div class="codehilite"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Recall that the \w+ character looks for one or more word characters.
+Note that we had to use a backslash in from of the period so it takes it as a literal period and not as a regular expression for zero-or-more of prior expression.</p>
+<p>Here is a program that prompts the user to input a valid e-mail:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;a@myco.com&#39;</span>
+
+<span class="c1"># check for one or more digits</span>
+<span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E-mail address valid&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Invalid email address!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="finding-the-right-regular-expression">Finding The Right Regular Expression</h2>
+<p>You often are confronted with validating complex fields like phone numbers, zip codes, and postal addresses.  The good news is that many other people have also needed to do this and with a bit of searching you can probably find a regular expression that meets your needs.  One of the best places to look for regular expressions is <a href="ttps://www.regexlib.com/">RegExLib</a>.  You can not only search for a regular expression but you can test it on common patterns.  Other users have also voted on which regular expressions are their favorites.  There are also categories of regular expressions such as:</p>
+<ol>
+<li>E-mails</li>
+<li>Dates and times</li>
+<li>Strings</li>
+<li>Numbers</li>
+<li>URI</li>
+<li>Addresses/Phone</li>
+<li>Markup</li>
+<li>Miscellaneous</li>
+</ol>
+<h2 id="from-search-to">From Search to</h2>
+<p>The re module offers a set of functions that allows us to search a string for a match:</p>
+<p>Function    Description
+findall Returns a list containing all matches
+search  Returns a Match object if there is a match anywhere in the string
+split   Returns a list where the string has been split at each match
+sub Replaces one or many matches with a string</p>
 <h2 id="python-regular-expression-references">Python Regular Expression References</h2>
-<p><a href="https://docs.python.org/3/howto/regex.html#regex-howto">Python Regular Expressions HOWTO</a></p>
+<p><a href="https://www.debuggex.com/cheatsheet/regex/python">Python RegEx Cheat Sheet</a>
+<a href="https://docs.python.org/3/howto/regex.html#regex-howto">Python Regular Expressions HOWTO</a></p>
                 
               
               

@@ -19,7 +19,7 @@
     
     
       
-        <title>13 shape module - CoderDojo TC Python</title>
+        <title>Random Stars - CoderDojo TC Python</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#shape-module" class="md-skip">
+        <a href="#this-is-a-list-of-colors" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              13 shape module
+              Random Stars
             
           </span>
         </div>
@@ -197,10 +197,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Beginning Python - Trinket
@@ -354,11 +356,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../13-random-stars/" title="Random Stars" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Random Stars" class="md-nav__link md-nav__link--active">
       Random Stars
     </a>
+    
   </li>
 
         
@@ -903,44 +914,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#shape-module" class="md-nav__link">
-    Shape Module
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-code" class="md-nav__link">
-    Sample Code
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-program" class="md-nav__link">
-    Sample Program
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#experiments" class="md-nav__link">
-    Experiments
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -952,7 +927,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/13-shape-module.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/trinket/13-random-stars.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -960,74 +935,40 @@
                   
                 
                 
-                  <h1>13 shape module</h1>
-                
-                <h2 id="shape-module">Shape Module</h2>
-<p>In this lab we will create a set of drawing function and put them together into a new file.  We will then import this file into our main.py file.</p>
-<h2 id="sample-code">Sample Code</h2>
-<div class="codehilite"><pre><span></span><code><span class="c1"># This is a custom module we&#39;ve made.  </span>
-<span class="c1"># Modules are files full of code that you can import into your programs.</span>
-<span class="c1"># This one teaches our turtle to draw various shapes.</span>
-
-<span class="kn">import</span> <span class="nn">turtle</span>
-
-<span class="k">def</span> <span class="nf">draw_circle</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">size</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-
-<span class="k">def</span> <span class="nf">draw_triangle</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">120</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">draw_square</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">4</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">draw_star</span><span class="p">(</span><span class="n">turtle</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">144</span><span class="p">)</span>
-    <span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">size</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
-  <span class="n">turtle</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-</code></pre></div>
-
-
-<h2 id="sample-program">Sample Program</h2>
-<p><a href="https://trinket.io/python/890e7026e5">Sample</a></p>
-<h2 id="experiments">Experiments</h2>
-<p>Can you add a new shape called "flower"?</p>
+                <p>import turtle
+import random</p>
+<h1 id="this-is-a-list-of-colors">this is a list of colors</h1>
+<p>colorList = ['red', 'orange', 'green', 'blue', 'purple', 'pink', 'brown', 'gray', 'gold']
+dan = turtle.Turtle()
+dan.shape('turtle')
+dan.delay(1)
+dan.clear()
+dan.penup()</p>
+<p>max_distance = 160</p>
+<h1 id="draw-an-eight-sided-star">draw an eight sided star</h1>
+<p>def star(x, y, size, color):
+  dan.goto(x, y)
+  dan.color(colorList[random.randint(0,len(colorList)-1)])
+  dan.pendown()
+  dan.begin_fill()
+  for i in range(1,8):
+     dan.forward(size)
+     dan.right(150)
+     dan.forward(size)
+     dan.left(100)
+  dan.end_fill()
+  dan.right(10)
+  dan.penup()</p>
+<h1 id="draw-a-pattern-at-a-random-location-on-the-screen">draw a pattern at a random location on the screen</h1>
+<p>for i in range(5):
+   x = random.randint(-max_distance, max_distance)
+   y = random.randint(-max_distance, max_distance)
+   size = random.randint(15, 30)
+   color_index = random.randint(0,8)
+   # draw a star with size and color
+   star(x,y,size, color_index)</p>
+<h1 id="hide-so-we-have-a-nice-drawing">hide so we have a nice drawing</h1>
+<p>dan.hideturtle()</p>
                 
               
               
@@ -1042,6 +983,41 @@
       
         
   <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../08-random/" title="Random Numbers" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Random Numbers
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../11-input/" title="Input" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Input
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
     
     <div class="md-footer-meta md-typeset">
       <div class="md-footer-meta__inner md-grid">
