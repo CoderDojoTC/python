@@ -21,10 +21,10 @@ nav:
     - Flower: repl/07-flower.md
     - Recursion: repl/12-recursion.md
   - Intermediate Python:
-    - Introduction: intermediate/intro.md
-    - Variables and Scope: intermediate/scope.md
-    - Data Types: intermediate/data-types.md
-    - Maps: intermediate/maps.md
+    - Variables and Scope: intermediate/01-variables-scope.md
+    - Data Types: intermediate/02-data-types.md
+    - Data Types & Function Parameters: intermediate/03-data-type-validation.md
+    - Maps: intermediate/04-maps.md
     - Files: intermediate/files.md
     - Images: intermediate/images.md
     - Regular Expressions: intermediate/regex.md
