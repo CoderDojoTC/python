@@ -19,7 +19,7 @@
     
     
       
-        <title>Maps - CoderDojo TC Python</title>
+        <title>Data Types & Function Parameters - CoderDojo TC Python</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#maps-in-python" class="md-skip">
+        <a href="#checking-data-types-of-function-parameters" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Maps
+              Data Types & Function Parameters
             
           </span>
         </div>
@@ -491,19 +491,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../intro/" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../scope/" title="Variables and Scope" class="md-nav__link">
+    <a href="../01-variables-scope/" title="Variables and Scope" class="md-nav__link">
       Variables and Scope
     </a>
   </li>
@@ -515,7 +503,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../data-types/" title="Data Types" class="md-nav__link">
+    <a href="../02-data-types/" title="Data Types" class="md-nav__link">
       Data Types
     </a>
   </li>
@@ -535,10 +523,55 @@
       
     
     
-    <a href="./" title="Maps" class="md-nav__link md-nav__link--active">
-      Maps
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Types & Function Parameters
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Data Types & Function Parameters" class="md-nav__link md-nav__link--active">
+      Data Types & Function Parameters
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#you-try-it" class="md-nav__link">
+    You try it!
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-maps/" title="Maps" class="md-nav__link">
+      Maps
+    </a>
   </li>
 
         
@@ -930,6 +963,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#you-try-it" class="md-nav__link">
+    You try it!
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -940,7 +990,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/maps.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/03-data-type-validation.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -948,7 +998,62 @@
                   
                 
                 
-                <h1 id="maps-in-python">Maps in Python</h1>
+                <h1 id="checking-data-types-of-function-parameters">Checking Data Types of Function Parameters</h1>
+<p>In the beginning course we learned how to pass arguments to functions.  Now we learn how to make sure our functions get the data that they expect!</p>
+<p>We saw in the data types lab we can use the type keyword to get the type of a variable (e.g. <code>type(my_var)</code>). We can use this in combination with the <em>is equal to</em> operator (<code>==</code>) to make sure a variable passed to a function is the right data type. </p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">validateType</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">):</span>
+  <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">)</span><span class="o">==</span><span class="nb">str</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed a string!&quot;</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed something that wasn&#39;t a string!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>As you may recall, during the data type labs we used the input function to solicit user input. The response from input is always a string! So if we ask the user to input a number, how do we confirm the input is in fact a number before type casting int on the user input? Remember type casting int on an alphabetic string will throw an error. Let's check it out.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+  <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
+  <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">user_input_as_int</span>
+
+<span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Let's try <a href="https://trinket.io/python/51fabe7c6c">running this on trinket.io</a> and when asked to enter an int, let's enter a word!</p>
+<p>As you can see we get a type error, because we're trying to convert an alphabetic string to an integer:</p>
+<div class="codehilite"><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span>
+</code></pre></div>
+
+
+<p>So what's the work around? Strings have some very useful methods (methods are functions that belong to objects. We'll take about objects in the advanced section), among them <code>.isdigit()</code>! Let's see it in action!</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+  <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+    <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">user_input_as_int</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="k">return</span> <span class="s2">&quot;You did not input an integer!&quot;</span>
+
+<span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Let's say the user input was critical to the program we're building and if the user does not input an integer we want to throw an error to the user. We can use the <code>assert</code> keyword to achieve this. The syntax for the assert keyword is as follows: <code>assert some_conditional_statement, "Error message to output."</code> Let's see it in action below! </p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+  <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
+  <span class="k">assert</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">(),</span> <span class="s2">&quot;You did not input an integer!&quot;</span>
+  <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">user_input_as_int</span>
+
+<span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="you-try-it">You try it!</h2>
+<p>Let's say we want to continously bug a user until they input an integer. How might we achieve this using the lesson above + what we know about while loops?</p>
                 
               
               
@@ -967,7 +1072,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../data-types/" title="Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../02-data-types/" title="Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -982,13 +1087,13 @@
             </a>
           
           
-            <a href="../files/" title="Files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../04-maps/" title="Maps" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Files
+                  Maps
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

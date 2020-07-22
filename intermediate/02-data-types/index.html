@@ -19,7 +19,7 @@
     
     
       
-        <title>Variables and Scope - CoderDojo TC Python</title>
+        <title>Data Types - CoderDojo TC Python</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#scope" class="md-skip">
+        <a href="#data-types" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Variables and Scope
+              Data Types
             
           </span>
         </div>
@@ -491,8 +491,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../intro/" title="Introduction" class="md-nav__link">
-      Introduction
+    <a href="../01-variables-scope/" title="Variables and Scope" class="md-nav__link">
+      Variables and Scope
     </a>
   </li>
 
@@ -508,25 +508,82 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Types
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
-    <a href="./" title="Variables and Scope" class="md-nav__link md-nav__link--active">
-      Variables and Scope
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../data-types/" title="Data Types" class="md-nav__link">
+    <a href="./" title="Data Types" class="md-nav__link md-nav__link--active">
       Data Types
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-different-data-types" class="md-nav__link">
+    What are the different data types
+  </a>
+  
+    <nav class="md-nav" aria-label="What are the different data types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-casting" class="md-nav__link">
+    Type Casting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-try-it" class="md-nav__link">
+    You Try It!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for Thought
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -536,7 +593,19 @@
 
 
   <li class="md-nav__item">
-    <a href="../maps/" title="Maps" class="md-nav__link">
+    <a href="../03-data-type-validation/" title="Data Types & Function Parameters" class="md-nav__link">
+      Data Types & Function Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-maps/" title="Maps" class="md-nav__link">
       Maps
     </a>
   </li>
@@ -927,8 +996,63 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-different-data-types" class="md-nav__link">
+    What are the different data types
+  </a>
+  
+    <nav class="md-nav" aria-label="What are the different data types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-casting" class="md-nav__link">
+    Type Casting
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-try-it" class="md-nav__link">
+    You Try It!
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for Thought
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -940,7 +1064,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/scope.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/02-data-types.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -948,7 +1072,138 @@
                   
                 
                 
-                <h1 id="scope">Scope</h1>
+                  <h1>Data Types</h1>
+                
+                <h2 id="data-types">Data Types</h2>
+<p><img alt="Data GIF" src="https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif" /></p>
+<p>So we know that data is a piece of information, but there are of course different types of data! Let's illustrate the importance of data types...</p>
+<div class="codehilite"><pre><span></span><code><span class="n">three_string</span> <span class="o">=</span> <span class="s2">&quot;3&quot;</span>
+<span class="n">three_integer</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">three_string</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">three_integer</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>Notice the difference in the output when multiplying three_string and three_int by three. three_string * 3 returned 333, whereas three_integer * 3 returned 9. This is because the three_string variable is a string datatype. </p>
+<h3 id="what-are-the-different-data-types">What are the different data types</h3>
+<p><strong>Text</strong></p>
+<ul>
+<li>string: <em>str</em><ul>
+<li>example: <code>my_string = "this is a string"</code></li>
+</ul>
+</li>
+</ul>
+<p><strong>Numeric</strong></p>
+<ul>
+<li>integer: <em>int</em><ul>
+<li>example: <code>my_int = 3</code></li>
+</ul>
+</li>
+<li>float: <em>float</em><ul>
+<li>example: <code>my_float = 3.14</code></li>
+</ul>
+</li>
+</ul>
+<p>Both integers and floats can be negative. For example: <code>my_negative_int = -3</code></p>
+<p><strong>Sequence</strong></p>
+<ul>
+<li>List: <em>list</em> — an unordered list of data / objects. <ul>
+<li>example: <code>my_list = [1, 2, my_float, 4, "Bananas"]</code></li>
+</ul>
+</li>
+<li>Tuple: <em>tuple</em> — an ordered and immutable list of of data / objects. Immutable means <em>unchangeable</em>, once you have defined a tuple you cannot change, remove or reorder elements— for any of these operations, use a list. <ul>
+<li>example: <code>my_tuple = (1, 2, my_float, 4, "Bananas")</code></li>
+</ul>
+</li>
+</ul>
+<p>As you can see, elements in lists and tuples do not have to be the same data type. There are three integers, a variable and a string in both the list and tuple shown above.</p>
+<p><strong>Boolean</strong></p>
+<ul>
+<li>Boolean: <em>bool</em> — a binary data type that is either True or False</li>
+<li>example: <code>my_bool = True</code></li>
+</ul>
+<p><strong>None</strong></p>
+<p>-None: <em>NoneType</em> — <code>None</code> is a keyword in Python used to indicate a null value. None differs from False or an empty string (<code>""</code>). A function that does not specify a return value will always return None.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">no_return</span><span class="p">():</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This function does not return anything.&quot;</span><span class="p">)</span>
+
+<span class="n">no_return_response</span><span class="o">=</span><span class="n">no_return</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">no_return_response</span> <span class="o">==</span> <span class="kc">None</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">no_return_response</span><span class="p">))</span>
+</code></pre></div>
+
+
+<p>As you can see from the code above, when we assign the result of the <em>no_return()</em> function call to the <em>no_return_response</em> variable, the print statement in the function is executed. However, the value of <em>no_return_response</em> is None, since there was no return statement in the <em>no_return</em> function.</p>
+<p><strong>Mapping</strong></p>
+<p>-Dictionary: <em>dict</em> — an unordered data type consisting of key, value pairs</p>
+<p>Creating a dictionary</p>
+<p>A dictionary is demarcated by curly braces around key:value pairs that are separated by commas. Keys and values do not need to be the same data types. </p>
+<p><code>python 
+  my_dict = {"dictionary" : "a book or electronic resource that lists the words of a language", "int" : "short for integer. A whole number; a number that is not a fraction", "float" : "for our purposes this means a decimal number— a number that consists of a whole number and a fractional part", "bool" : "short for boolean; a binary, True or False value"}</code></p>
+<p>We'll learn more about dictionaries in the <a href="../04-maps/">maps section</a></p>
+<h4 id="type-casting">Type Casting</h4>
+<p>Strings consisting of digits can easily be converted to floats or integers</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">#ask the user to input a number</span>
+<span class="n">number</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type a number here and press &#39;enter&#39; to proceed&gt;&gt;&gt;&quot;</span><span class="p">)</span>
+
+<span class="c1">#side note: &#39;\n&#39; tells python to print a newline</span>
+<span class="c1">#side note: we can use the the type keyword to determine what datatype a variable is</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1">#as you can see the number the user entered belongs to the str data type, that&#39;s because input always returns a string.</span>
+
+<span class="c1">#so if we wanted to see what two times the number the user entered is how would we do it?</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+
+<span class="c1">#that didn&#39;t do what we wanted, did it?</span>
+
+<span class="c1">#let&#39;s convert the number variable to the int data type:</span>
+<span class="n">number_as_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number_as_int variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number_as_int</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type&quot;</span><span class="p">)</span>
+
+<span class="c1">#okay now our number is an int!</span>
+
+<span class="c1">#as you know, division operation always returns a float, even if there is no remainder</span>
+
+<span class="n">my_float</span><span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">4</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">my_float is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">my_float</span><span class="p">))</span>
+</code></pre></div>
+
+
+<h2 id="you-try-it">You Try It!</h2>
+<p>We know what type casting is and how to convert a string to an integer. We also know that a division operation in Python will always return a float, regardless of whether or not there's a remainder. Finally, we know using the modulo operator (<em>%</em>) in place of the division operator will return only the remainder—for example, <code>7 % 4</code> will return 3. Using these pieces of knowledge, implement a function that will convert a float to an int, but only if there is no remainder. Complete the function definition for float_converter below! We've put some test conditions below to check your function.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">float_converter</span><span class="p">(</span><span class="n">some_float</span><span class="p">):</span>
+  <span class="c1">#if some_float has a remainder return the original float</span>
+  <span class="c1">#else return the some_float as an int</span>
+
+<span class="c1">#test our function:</span>
+<span class="n">expecting_float</span> <span class="o">=</span> <span class="n">float_converter</span><span class="p">(</span><span class="mi">7</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">expecting_int</span> <span class="o">=</span> <span class="n">float_converter</span><span class="p">(</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="n">test1</span> <span class="o">=</span> <span class="n">expecting_float</span> <span class="o">==</span> <span class="mi">7</span><span class="o">/</span><span class="mi">3</span> 
+<span class="n">test2</span> <span class="o">=</span> <span class="n">expecting_int</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="nb">type</span><span class="p">(</span><span class="n">expecting_int</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span>
+<span class="n">test3</span> <span class="o">=</span> <span class="n">expecting_float</span> <span class="o">!=</span> <span class="mi">2</span>
+
+<span class="k">if</span> <span class="n">test1</span> <span class="ow">and</span> <span class="n">test2</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Congrats! You&#39;ve properly implemented the float_converter function!&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">test1</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly returned the original float, but didn&#39;t return some_float as an integer when there&#39;s no remainder.&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">test2</span> <span class="ow">and</span> <span class="n">test3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly type returned some_float as an integer when there&#39;s no remainder! But you still need to return the original float when there is a remainder.&quot;</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">test2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">test3</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks It looks like you may always be returning my_float as an integer regardless of whether or not there&#39;s a remainder.&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span> 
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you haven&#39;t properly implemented either of the requirements for float_converter.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="food-for-thought">Food for Thought</h2>
+<p>When learning about the dictionary data type, we created <em>my_dict</em>, which contained data types and their definitions. Let's say in addition to the definitions of each data type, I wanted to add part of speech and store an example of each data type. How might we do this? Hint: it involves more dictionaries!</p>
                 
               
               
@@ -967,7 +1222,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../01-variables-scope/" title="Variables and Scope" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -976,19 +1231,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Introduction
+                  Variables and Scope
                 </span>
               </div>
             </a>
           
           
-            <a href="../data-types/" title="Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../03-data-type-validation/" title="Data Types & Function Parameters" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Data Types
+                  Data Types & Function Parameters
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

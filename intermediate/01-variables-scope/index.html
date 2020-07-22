@@ -19,7 +19,7 @@
     
     
       
-        <title>Data Types - CoderDojo TC Python</title>
+        <title>Variables and Scope - CoderDojo TC Python</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#build-in-data-types-in-python" class="md-skip">
+        <a href="#variables" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Data Types
+              Variables and Scope
             
           </span>
         </div>
@@ -489,30 +489,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../intro/" title="Introduction" class="md-nav__link">
-      Introduction
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../scope/" title="Variables and Scope" class="md-nav__link">
-      Variables and Scope
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -520,12 +496,75 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
-      
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Variables and Scope
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
-    <a href="./" title="Data Types" class="md-nav__link md-nav__link--active">
-      Data Types
+    <a href="./" title="Variables and Scope" class="md-nav__link md-nav__link--active">
+      Variables and Scope
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    Naming conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giving-variables-and-functions-meaningful-names" class="md-nav__link">
+    Giving variables and functions meaningful names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-scope" class="md-nav__link">
+    Variable Scope
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for Thought
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -536,7 +575,31 @@
 
 
   <li class="md-nav__item">
-    <a href="../maps/" title="Maps" class="md-nav__link">
+    <a href="../02-data-types/" title="Data Types" class="md-nav__link">
+      Data Types
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../03-data-type-validation/" title="Data Types & Function Parameters" class="md-nav__link">
+      Data Types & Function Parameters
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../04-maps/" title="Maps" class="md-nav__link">
       Maps
     </a>
   </li>
@@ -927,8 +990,57 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-conventions" class="md-nav__link">
+    Naming conventions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giving-variables-and-functions-meaningful-names" class="md-nav__link">
+    Giving variables and functions meaningful names
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#variable-scope" class="md-nav__link">
+    Variable Scope
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#food-for-thought" class="md-nav__link">
+    Food for Thought
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -940,7 +1052,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/data-types.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/01-variables-scope.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -948,7 +1060,77 @@
                   
                 
                 
-                <h1 id="build-in-data-types-in-python">Build In Data Types in Python</h1>
+                  <h1>Variables and Scope</h1>
+                
+                <h2 id="variables">Variables</h2>
+<p>If you've made it this far, you know a variable is a container for data in Python. Let's dive a little deeper into the world of variables!</p>
+<h3 id="naming-conventions">Naming conventions</h3>
+<p>In the <a href="https://www.python.org/dev/peps/pep-0008/#function-and-variable-names">Python community</a>, the general accepted format for variable and function names is all lower case, with multiple words separated by underscores. For example:</p>
+<p>variable = 0</p>
+<p>my_variable = 0</p>
+<p>my_function_name()</p>
+<h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names</h3>
+<p>Variable names should be meaningful to you as the programmer, to any other developers that may be collaborating with you and any developers that may look at your code in the future. Below are two instances of the same code using different variable and function names. Which is easier to read?</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+  <span class="n">variable1</span> <span class="o">=</span> <span class="n">arg</span> <span class="o">+</span> <span class="mi">2</span>
+  <span class="k">return</span> <span class="n">variable1</span>
+
+<span class="k">def</span> <span class="nf">my_second_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+  <span class="n">variable</span> <span class="o">=</span> <span class="n">arg</span> <span class="o">*</span> <span class="mi">5</span>
+  <span class="k">return</span> <span class="n">variable</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_first_function</span><span class="p">(</span><span class="n">my_second_function</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+  <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
+  <span class="k">return</span> <span class="n">two_more</span>
+
+<span class="k">def</span> <span class="nf">times_five</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+  <span class="n">five_times</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">5</span>
+  <span class="k">return</span> <span class="n">five_times</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">plus_two</span><span class="p">(</span><span class="n">times_five</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+</code></pre></div>
+
+
+<h3 id="variable-scope">Variable Scope</h3>
+<p>A variable's scope refers to where in your code you can access that variable. The scope of a variable defined within a function is limited to the function in which it is defined. This is an example of a local variable.  For example, using the more legible code above: </p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+  <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
+  <span class="k">return</span> <span class="n">two_more</span>
+
+<span class="k">def</span> <span class="nf">times_five</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+  <span class="n">five_times</span> <span class="o">=</span> <span class="n">num</span> <span class="o">*</span> <span class="mi">5</span>
+  <span class="k">return</span> <span class="n">five_times</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">plus_two</span><span class="p">(</span><span class="n">times_five</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">five_times</span><span class="p">)</span> 
+</code></pre></div>
+
+
+<p>Attempting to print the value of five_times within the global scope of the code will result in a NameError, because the scope of the variable five_times is limited to the times_five function. Conversely, a global variable is a variable that can be accessed anywhere within your code. Global variables are usually created within the main body of your code, that is outside of functions, as demonstrated below. You can see the my_name variable is accessible within the who_is_awesome function.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Zack&quot;</span>
+<span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">my_name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+
+<p>You can make a variable used within a function globally accessible by using the 'global' keyword. For example,</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">awesome_statement</span>
+    <span class="n">awesome_statement</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variable Reference Within Function: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
+
+<span class="n">who_is_awesome</span><span class="p">(</span><span class="s2">&quot;Zack&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Global Variable Use: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
+</code></pre></div>
+
+
+<h2 id="food-for-thought">Food for Thought</h2>
+<p>When would it make sense to use the global keyword within a function to make a variable globally accessible, instead of returning the variable from the function? </p>
                 
               
               
@@ -967,7 +1149,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../scope/" title="Variables and Scope" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../../repl/12-recursion/" title="Recursion" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -976,19 +1158,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Variables and Scope
+                  Recursion
                 </span>
               </div>
             </a>
           
           
-            <a href="../maps/" title="Maps" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../02-data-types/" title="Data Types" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Maps
+                  Data Types
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
