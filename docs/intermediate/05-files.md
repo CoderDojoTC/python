@@ -8,9 +8,9 @@ Python makes it easy to read and write text files. The general syntax for openin
 The first argument is the path the file on your computer. If the file you're trying to open is in the same folder as your python script you can just input the filename, if not you'll need the path to file. For example, let's say you're using a Mac, your username is Bella, and you're trying to open a file called "myfile.txt" in your downloads folder. The path to that file would be: ```/Users/Bella/Downloads/myfile.txt```
 
 Valid arguments for the mode parameter are:
-    - 'w': writing to a file, this will overwrite a file if it already exists.
-    - 'a': append to a file, you can add new lines to a file that already exists, otherwise it will create the file.
-    - 'r': to read a file.
+* 'w': writing to a file, this will overwrite a file if it already exists.
+* 'a': append to a file, you can add new lines to a file that already exists, otherwise it will create the file.
+* 'r': to read a file.
 
 ### Reading Files
 
