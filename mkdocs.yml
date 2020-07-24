@@ -25,8 +25,8 @@ nav:
     - Data Types: intermediate/02-data-types.md
     - Data Types & Function Parameters: intermediate/03-data-type-validation.md
     - Maps: intermediate/04-maps.md
-    - Files: intermediate/files.md
-    - Images: intermediate/images.md
+    - Files: intermediate/05-files.md
+    - Images: intermediate/06-images.md
     - Regular Expressions: intermediate/regex.md
     - Dir: intermediate/dir.md
     - Modules: intermediate/modules.md

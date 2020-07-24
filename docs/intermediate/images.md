@@ -1,2 +1,0 @@
-# Reading Images in Python
-
