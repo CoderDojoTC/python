@@ -42,3 +42,6 @@ fib(10)
 ```
 
 In further labs, we will see how you can view the contents of a given module using the dir() functionality.
+
+
+* Lab heavily inspired (code credited to): [https://docs.python.org/3/tutorial/modules.html](https://docs.python.org/3/tutorial/modules.html)
