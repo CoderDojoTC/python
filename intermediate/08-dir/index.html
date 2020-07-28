@@ -19,7 +19,7 @@
     
     
       
-        <title>Debugging - CoderDojo TC Python</title>
+        <title>Dir - CoderDojo TC Python</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#debugging-in-python" class="md-skip">
+        <a href="#the-dir-function" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Debugging
+              Dir
             
           </span>
         </div>
@@ -491,6 +491,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../intro/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../01-variables-scope/" title="Variables and Scope" class="md-nav__link">
       Variables and Scope
     </a>
@@ -563,31 +575,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../regex/" title="Regular Expressions" class="md-nav__link">
-      Regular Expressions
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../dir/" title="Dir" class="md-nav__link">
-      Dir
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../modules/" title="Modules" class="md-nav__link">
+    <a href="../07-modules/" title="Modules" class="md-nav__link">
       Modules
     </a>
   </li>
@@ -607,10 +595,34 @@
       
     
     
-    <a href="./" title="Debugging" class="md-nav__link md-nav__link--active">
-      Debugging
+    <a href="./" title="Dir" class="md-nav__link md-nav__link--active">
+      Dir
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-regex/" title="Regular Expressions" class="md-nav__link">
+      Regular Expressions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10-debugging/" title="Debugging" class="md-nav__link">
+      Debugging
+    </a>
   </li>
 
         
@@ -940,7 +952,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/debugging.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/08-dir.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -948,7 +960,83 @@
                   
                 
                 
-                <h1 id="debugging-in-python">Debugging in Python</h1>
+                <h1 id="the-dir-function">The dir() function</h1>
+<p>As you know some date types and objects have their own methods. For example, a dictionary object has the <code>.items()</code> method. So how do you know what methods are available to you? That's where the dir function comes in! Just pass whatever data or object you want to know about as an argument. </p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="nb">dir</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
+
+<span class="p">[</span><span class="s1">&#39;__add__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__class__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__contains__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__delattr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__delitem__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__dir__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__doc__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__eq__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__format__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__ge__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__getattribute__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__getitem__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__gt__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__hash__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__iadd__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__imul__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__init__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__init_subclass__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__iter__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__le__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__len__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__lt__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__mul__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__ne__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__new__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__reduce__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__reduce_ex__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__repr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__reversed__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__rmul__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__setattr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__setitem__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__sizeof__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__str__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__subclasshook__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;append&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;clear&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;copy&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;count&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;extend&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;index&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;insert&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;pop&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;remove&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reverse&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;sort&#39;</span><span class="p">]</span>
+</code></pre></div>
+
+
+<p>You can see this returns a list of methods, a lot of which begin and end with <code>__</code>, those are special methods that we won't worry about for the purposes of this lab. But the rest of them are methods we can use on a list object. For example, <code>.pop()</code>.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="n">last</span><span class="o">=</span><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span> <span class="c1">#prints 4</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#prints [1,2,3]</span>
+</code></pre></div>
+
+
+<p>The pop() method will remove and return the last element from the list, that is if you call pop without passing in an argument, as we just did. Pop will accept one optional argument, that is index...you can pass the index of the item you want to remove from the list and return. With lists we start counting indices from 0. So in the list below 1 is at the 0th index and 6 is at the 5th index. </p>
+<div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#prints 1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c1">#prints 6</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="c1">#prints 3</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#prints [1,2,4,5,6]</span>
+</code></pre></div>
                 
               
               
@@ -967,7 +1055,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../modules/" title="Modules" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../07-modules/" title="Modules" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -982,13 +1070,13 @@
             </a>
           
           
-            <a href="../bfsMaze/" title="Maze Solving with BFS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../09-regex/" title="Regular Expressions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Maze Solving with BFS
+                  Regular Expressions
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

@@ -19,7 +19,7 @@
     
     
       
-        <title>Modules - CoderDojo TC Python</title>
+        <title>Debugging - CoderDojo TC Python</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-intermediate-python" class="md-skip">
+        <a href="#debugging-in-python" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Modules
+              Debugging
             
           </span>
         </div>
@@ -491,6 +491,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../intro/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../01-variables-scope/" title="Variables and Scope" class="md-nav__link">
       Variables and Scope
     </a>
@@ -563,8 +575,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../regex/" title="Regular Expressions" class="md-nav__link">
-      Regular Expressions
+    <a href="../07-modules/" title="Modules" class="md-nav__link">
+      Modules
     </a>
   </li>
 
@@ -575,8 +587,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../dir/" title="Dir" class="md-nav__link">
+    <a href="../08-dir/" title="Dir" class="md-nav__link">
       Dir
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../09-regex/" title="Regular Expressions" class="md-nav__link">
+      Regular Expressions
     </a>
   </li>
 
@@ -595,22 +619,10 @@
       
     
     
-    <a href="./" title="Modules" class="md-nav__link md-nav__link--active">
-      Modules
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../debugging/" title="Debugging" class="md-nav__link">
+    <a href="./" title="Debugging" class="md-nav__link md-nav__link--active">
       Debugging
     </a>
+    
   </li>
 
         
@@ -940,7 +952,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/modules.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/10-debugging.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -948,48 +960,46 @@
                   
                 
                 
-                <h1 id="introduction-to-intermediate-python">Introduction to Intermediate Python</h1>
-<h1 id="modules">Modules</h1>
-<p>Modules are a way to store and install reusable Python code. You can create your own modules by defining a set of functions that may be useful to other developers, and packaging these functions in a specific way so the other developers can download and easily integrate your code into their projects.</p>
-<p>To define a module, lets create a new file called <code>fibo.py</code> in your current directory. Lets add the following code:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>    <span class="c1"># write Fibonacci series up to n</span>
-    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
-        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-    <span class="nb">print</span><span class="p">()</span>
+                <h1 id="debugging-in-python">Debugging in Python</h1>
+<p>Uncaught errors in a Python script will cause it to abruptley hault. Utilizing the error output, also known as a stack trace will help us determine the root cause. The code below throws an error.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
 
-<span class="k">def</span> <span class="nf">fib2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>   <span class="c1"># return Fibonacci series up to n</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
-        <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
-    <span class="k">return</span> <span class="n">result</span>
+<span class="n">my_list</span><span class="o">=</span><span class="p">[]</span> <span class="c1">#create empty list</span>
+
+<span class="c1">#get a random item from a list</span>
+<span class="k">def</span> <span class="nf">choose_random</span><span class="p">(</span><span class="n">some_list</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">some_list</span><span class="p">)</span>
+
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span> <span class="c1">#(produces 1,2,3,4,5,6,7,8,9 over the 9 iterations of the loop)</span>
+    <span class="n">my_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1">#add the number to my_list</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span> <span class="c1">#if the number of the current iteration of the loop is 1</span>
+        <span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#remove the first element from the list</span>
+    <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#randomly chose an element from the list</span>
 </code></pre></div>
 
 
-<p>Now that we have some functions defined, how do we access them? Let's open the Python shell (or create a new file), and run/create:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">fibo</span>
+<p>This code throws an error and produces the following stack trace:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1">---------------------------------------------------------------------------</span>
+<span class="n">IndexError</span><span class="w">                                </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span><span class="w"></span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="k">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="mi">593</span><span class="n">f65711788</span><span class="o">&gt;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">&lt;</span><span class="k">module</span><span class="o">&gt;</span><span class="p">()</span><span class="w"></span>
+<span class="w">      </span><span class="mi">7</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="err">:</span><span class="w"></span>
+<span class="w">      </span><span class="mi">8</span><span class="w">         </span><span class="n">my_list</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="c1">----&gt; 9     random.choice(my_list)</span>
 
-<span class="n">fibo</span><span class="o">.</span><span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">random</span><span class="p">.</span><span class="n">py</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">choice</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">seq</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="mi">259</span><span class="w">             </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">_randbelow</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">seq</span><span class="p">))</span><span class="w"></span>
+<span class="w">    </span><span class="mi">260</span><span class="w">         </span><span class="ow">except</span><span class="w"> </span><span class="nl">ValueError</span><span class="p">:</span><span class="w"></span>
+<span class="c1">--&gt; 261             raise IndexError(&#39;Cannot choose from an empty sequence&#39;) from None</span>
+<span class="w">    </span><span class="mi">262</span><span class="w">         </span><span class="k">return</span><span class="w"> </span><span class="n">seq</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
+<span class="w">    </span><span class="mi">263</span><span class="w"> </span>
 
-<span class="n">res</span> <span class="o">=</span> <span class="n">fibo</span><span class="o">.</span><span class="n">fib2</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<span class="nl">IndexError</span><span class="p">:</span><span class="w"> </span><span class="n">Cannot</span><span class="w"> </span><span class="nf">choose</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="k">sequence</span><span class="w"></span>
 </code></pre></div>
 
 
-<p>Now we have created and called our very own Python module! We can also import specific functions instead of the whole module, like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">fibo</span> <span class="kn">import</span> <span class="n">fib</span>
-
-<span class="n">fib</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-</code></pre></div>
-
-
-<p>In further labs, we will see how you can view the contents of a given module using the dir() functionality.</p>
-<ul>
-<li>Lab heavily inspired (code credited to): <a href="https://docs.python.org/3/tutorial/modules.html">https://docs.python.org/3/tutorial/modules.html</a></li>
-</ul>
+<p>You can see the actual error, an IndexError is being thrown in the code for the random module (line 261 in random.py). The output text is helpful, it's saying it can't choose a random item from an empty list. So why is our list empty? We now need to determine where in our code the error is occurring, if you look up line 9, that's referring to line 9 in our code. So we know that line's causing the error, so we then have to ask in what case we're passing an empty list into random.choice(). If we go through each iteration of the loop, we can see that it's on the first iteration when i==1, that we remove the first element from my_list, doing this leaves an empty list and passing it into random.choice() causes the error. </p>
+<p>The first step in debugging should always be to read the stack trace, if the source of the error is not self-evident, StackOverflow and Google are your next best bet. </p>
                 
               
               
@@ -1008,7 +1018,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../dir/" title="Dir" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../09-regex/" title="Regular Expressions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -1017,19 +1027,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Dir
+                  Regular Expressions
                 </span>
               </div>
             </a>
           
           
-            <a href="../debugging/" title="Debugging" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../bfsMaze/" title="Maze Solving with BFS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Debugging
+                  Maze Solving with BFS
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
