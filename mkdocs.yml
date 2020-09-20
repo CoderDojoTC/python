@@ -76,4 +76,5 @@ markdown_extensions:
 plugins:
     - search
 markdown_extensions:
-  - codehilite
+  - codehilite:
+      linenums: true
