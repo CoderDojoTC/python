@@ -27,8 +27,9 @@ for i in range(4):
    
 dan.write('done with square')
 ```
+## Run the Example on Trinket
 
-[Function](https://trinket.io/library/trinkets/e3a8279a76)
+[Run the Functions Program on Trinket](https://trinket.io/library/trinkets/e3a8279a76)
 
 
 

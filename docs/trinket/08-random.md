@@ -33,7 +33,9 @@ dan.goto(0,0)
 ## Drawing
 ![](../img/random-circle.png)
 
-[Draw 10 circles example on Trinket](https://trinket.io/python/00e2353a96)
+## Run the Example on Trinket
+
+[Run the Random Example on Trinket](https://trinket.io/python/00e2353a96)
 
 
 

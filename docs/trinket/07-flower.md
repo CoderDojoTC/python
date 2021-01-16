@@ -48,8 +48,9 @@ dan.write('done with flower')
 ## Drawing
 ![](../img/flower.png)
 
-## Run the Example
-[Function](https://trinket.io/python/0de967d3e2)
+## Run the Example on Trinket
+
+[Run the Flower Example on Trinket](https://trinket.io/python/0de967d3e2)
 
 
 ## Experiments

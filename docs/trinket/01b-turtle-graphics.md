@@ -1,4 +1,4 @@
-# Trinket Account
+# Turtle Graphics
 
 Before you begin, we would like you to go to the [Trinket web site](https://trinket.io/) and create your own account.  This will allow you to save your programs and come back later and continue working on them.
 

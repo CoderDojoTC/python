@@ -24,4 +24,5 @@ dan.write('done!')
 ```
 
 # Example on Trinket
-[Run Example](https://trinket.io/python/a4a951eeab)
+
+[Run the Input Example on Trinket](https://trinket.io/python/a4a951eeab)

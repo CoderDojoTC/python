@@ -21,8 +21,9 @@ for i in range(4):
 dan.write('done with square')
 ```
 
-## Running the Demo
-[Run Square With Loop](https://trinket.io/python/6cadd3c046)
+## Running the Example on Trinket
+
+[Run Loop Program on Trinket](https://trinket.io/python/6cadd3c046)
 
 ## Experiments
 Can you make the turtle draw a larger square?  Hint: change the distance to be 80.  How big can you make the square before the turtle goes off the screen?
