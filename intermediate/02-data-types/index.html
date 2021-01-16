@@ -237,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../trinket/01-turtle-graphics/" title="Trinket Account" class="md-nav__link">
+    <a href="../../trinket/01-turtle-graphics.md" title="Trinket Account" class="md-nav__link">
       Trinket Account
     </a>
   </li>
@@ -1097,9 +1097,9 @@
 6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">three_string</span> <span class="o">=</span> <span class="s2">&quot;3&quot;</span>
 <span class="n">three_integer</span> <span class="o">=</span> <span class="mi">3</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">three_string</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">three_string</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">three_integer</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">three_integer</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -1150,12 +1150,12 @@
 5
 6
 7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">no_return</span><span class="p">():</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This function does not return anything.&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This function does not return anything.&quot;</span><span class="p">)</span>
 
 <span class="n">no_return_response</span><span class="o">=</span><span class="n">no_return</span><span class="p">()</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">no_return_response</span> <span class="o">==</span> <span class="kc">None</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">no_return_response</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">no_return_response</span> <span class="o">==</span> <span class="bp">None</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">no_return_response</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -1199,19 +1199,19 @@
 
 <span class="c1">#side note: &#39;\n&#39; tells python to print a newline</span>
 <span class="c1">#side note: we can use the the type keyword to determine what datatype a variable is</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
 <span class="c1">#as you can see the number the user entered belongs to the str data type, that&#39;s because input always returns a string.</span>
 
 <span class="c1">#so if we wanted to see what two times the number the user entered is how would we do it?</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">number</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 
 <span class="c1">#that didn&#39;t do what we wanted, did it?</span>
 
 <span class="c1">#let&#39;s convert the number variable to the int data type:</span>
 <span class="n">number_as_int</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number_as_int variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number_as_int</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type&quot;</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">the number_as_int variable is currently the &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">number_as_int</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot; data type&quot;</span><span class="p">)</span>
 
 <span class="c1">#okay now our number is an int!</span>
 
@@ -1219,7 +1219,7 @@
 
 <span class="n">my_float</span><span class="o">=</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">4</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">my_float is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">my_float</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">my_float is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">my_float</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -1259,15 +1259,15 @@
 <span class="n">test3</span> <span class="o">=</span> <span class="n">expecting_float</span> <span class="o">!=</span> <span class="mi">2</span>
 
 <span class="k">if</span> <span class="n">test1</span> <span class="ow">and</span> <span class="n">test2</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Congrats! You&#39;ve properly implemented the float_converter function!&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Congrats! You&#39;ve properly implemented the float_converter function!&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">test1</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly returned the original float, but didn&#39;t return some_float as an integer when there&#39;s no remainder.&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly returned the original float, but didn&#39;t return some_float as an integer when there&#39;s no remainder.&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">test2</span> <span class="ow">and</span> <span class="n">test3</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly type returned some_float as an integer when there&#39;s no remainder! But you still need to return the original float when there is a remainder.&quot;</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;It looks like you&#39;ve properly type returned some_float as an integer when there&#39;s no remainder! But you still need to return the original float when there is a remainder.&quot;</span><span class="p">)</span>
 <span class="k">elif</span> <span class="n">test2</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">test3</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks It looks like you may always be returning my_float as an integer regardless of whether or not there&#39;s a remainder.&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;It looks It looks like you may always be returning my_float as an integer regardless of whether or not there&#39;s a remainder.&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span> 
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you haven&#39;t properly implemented either of the requirements for float_converter.&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;It looks like you haven&#39;t properly implemented either of the requirements for float_converter.&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 

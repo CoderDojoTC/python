@@ -237,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../trinket/01-turtle-graphics/" title="Trinket Account" class="md-nav__link">
+    <a href="../../trinket/01-turtle-graphics.md" title="Trinket Account" class="md-nav__link">
       Trinket Account
     </a>
   </li>
@@ -1007,21 +1007,21 @@
 12
 13
 14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">---------------------------------------------------------------------------</span>
-<span class="n">IndexError</span><span class="w">                                </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span><span class="w"></span>
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="k">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="mi">593</span><span class="n">f65711788</span><span class="o">&gt;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">&lt;</span><span class="k">module</span><span class="o">&gt;</span><span class="p">()</span><span class="w"></span>
-<span class="w">      </span><span class="mi">7</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="err">:</span><span class="w"></span>
-<span class="w">      </span><span class="mi">8</span><span class="w">         </span><span class="n">my_list</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="c1">----&gt; 9     random.choice(my_list)</span>
+15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span>
+<span class="nv">IndexError</span>                                <span class="nv">Traceback</span> <span class="ss">(</span><span class="nv">most</span> <span class="nv">recent</span> <span class="k">call</span> <span class="nl">last</span><span class="ss">)</span>
+<span class="o">&lt;</span><span class="nv">ipython</span><span class="o">-</span><span class="nv">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="mi">593</span><span class="nv">f65711788</span><span class="o">&gt;</span> <span class="nv">in</span> <span class="o">&lt;</span><span class="nv">module</span><span class="o">&gt;</span><span class="ss">()</span>
+      <span class="mi">7</span>     <span class="k">if</span> <span class="nv">i</span><span class="o">==</span><span class="mi">1</span>:
+      <span class="mi">8</span>         <span class="nv">my_list</span>.<span class="nv">pop</span><span class="ss">(</span><span class="mi">0</span><span class="ss">)</span>
+<span class="o">----&gt;</span> <span class="mi">9</span>     <span class="k">random</span>.<span class="nv">choice</span><span class="ss">(</span><span class="nv">my_list</span><span class="ss">)</span>
 
-<span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">random</span><span class="p">.</span><span class="n">py</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">choice</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">seq</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="mi">259</span><span class="w">             </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">_randbelow</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">seq</span><span class="p">))</span><span class="w"></span>
-<span class="w">    </span><span class="mi">260</span><span class="w">         </span><span class="ow">except</span><span class="w"> </span><span class="nl">ValueError</span><span class="p">:</span><span class="w"></span>
-<span class="c1">--&gt; 261             raise IndexError(&#39;Cannot choose from an empty sequence&#39;) from None</span>
-<span class="w">    </span><span class="mi">262</span><span class="w">         </span><span class="k">return</span><span class="w"> </span><span class="n">seq</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
-<span class="w">    </span><span class="mi">263</span><span class="w"> </span>
+<span class="o">~/</span><span class="nv">anaconda3</span><span class="o">/</span><span class="nv">lib</span><span class="o">/</span><span class="nv">python3</span>.<span class="mi">7</span><span class="o">/</span><span class="k">random</span>.<span class="nv">py</span> <span class="nv">in</span> <span class="nv">choice</span><span class="ss">(</span><span class="nv">self</span>, <span class="nv">seq</span><span class="ss">)</span>
+    <span class="mi">259</span>             <span class="nv">i</span> <span class="o">=</span> <span class="nv">self</span>.<span class="nv">_randbelow</span><span class="ss">(</span><span class="nv">len</span><span class="ss">(</span><span class="nv">seq</span><span class="ss">))</span>
+    <span class="mi">260</span>         <span class="nv">except</span> <span class="nv">ValueError</span>:
+<span class="o">--&gt;</span> <span class="mi">261</span>             <span class="nv">raise</span> <span class="nv">IndexError</span><span class="ss">(</span><span class="s1">&#39;</span><span class="s">Cannot choose from an empty sequence</span><span class="s1">&#39;</span><span class="ss">)</span> <span class="nv">from</span> <span class="nv">None</span>
+    <span class="mi">262</span>         <span class="k">return</span> <span class="nv">seq</span>[<span class="nv">i</span>]
+    <span class="mi">263</span> 
 
-<span class="nl">IndexError</span><span class="p">:</span><span class="w"> </span><span class="n">Cannot</span><span class="w"> </span><span class="nf">choose</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="k">sequence</span><span class="w"></span>
+<span class="nv">IndexError</span>: <span class="nv">Cannot</span> <span class="nv">choose</span> <span class="nv">from</span> <span class="nv">an</span> <span class="nv">empty</span> <span class="nv">sequence</span>
 </code></pre></div>
 </td></tr></table>
 

@@ -237,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../trinket/01-turtle-graphics/" title="Trinket Account" class="md-nav__link">
+    <a href="../../trinket/01-turtle-graphics.md" title="Trinket Account" class="md-nav__link">
       Trinket Account
     </a>
   </li>
@@ -1019,17 +1019,17 @@
 </td></tr></table>
 
 <p>Retrieving the value of a key from a dictionary: remember a dictionary consists of key, value pairs. To get a value for a given key we reference the key:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;integer&#39;</span><span class="p">])</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;integer&#39;</span><span class="p">])</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>If we try to reference a key that does not exist in a dictionary a KeyError will be thrown.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;tuple&#39;</span><span class="p">])</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">print</span><span class="p">(</span><span class="n">my_dict</span><span class="p">[</span><span class="s1">&#39;tuple&#39;</span><span class="p">])</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>A quick way to avoid the KeyError is by using the <em>.get()</em> method for dictionaries: </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tuple&#39;</span><span class="p">))</span> <span class="c1"># this will print None because the key &#39;tuple&#39; does not exist in my_dict. </span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">print</span><span class="p">(</span><span class="n">my_dict</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tuple&#39;</span><span class="p">))</span> <span class="c1"># this will print None because the key &#39;tuple&#39; does not exist in my_dict. </span>
 </code></pre></div>
 </td></tr></table>
 
@@ -1043,14 +1043,14 @@
 7
 8
 9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="s1">&#39;tuple&#39;</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;tuple&#39; is a key in my_dict&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;&#39;tuple&#39; is a key in my_dict&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;tuple&#39; is NOT a key in my_dict&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;&#39;tuple&#39; is NOT a key in my_dict&quot;</span><span class="p">)</span>
 
 <span class="k">if</span> <span class="s1">&#39;int&#39;</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;int&#39; is a key in my_dict&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;&#39;int&#39; is a key in my_dict&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&#39;int&#39; is NOT a key in my_dict&quot;</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">&quot;&#39;int&#39; is NOT a key in my_dict&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -1070,16 +1070,16 @@
  7
  8
  9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>  <span class="n">my_dict</span> <span class="o">=</span> <span class="err">{</span><span class="ss">&quot;dictionary&quot;</span> <span class="p">:</span> <span class="ss">&quot;a book or electronic resource that lists the words of a language&quot;</span><span class="p">,</span> <span class="ss">&quot;int&quot;</span> <span class="p">:</span> <span class="ss">&quot;short for integer. A whole number; a number that is not a fraction&quot;</span><span class="p">,</span> <span class="ss">&quot;float&quot;</span> <span class="p">:</span> <span class="ss">&quot;for our purposes this means a decimal number— a number that consists of a whole number and a fractional part&quot;</span><span class="p">,</span> <span class="ss">&quot;bool&quot;</span> <span class="p">:</span> <span class="ss">&quot;short for boolean; a binary, True or False value&quot;</span><span class="err">}</span>
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>  <span class="nv">my_dict</span> <span class="o">=</span> {<span class="s2">&quot;</span><span class="s">dictionary</span><span class="s2">&quot;</span> : <span class="s2">&quot;</span><span class="s">a book or electronic resource that lists the words of a language</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">int</span><span class="s2">&quot;</span> : <span class="s2">&quot;</span><span class="s">short for integer. A whole number; a number that is not a fraction</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">float</span><span class="s2">&quot;</span> : <span class="s2">&quot;</span><span class="s">for our purposes this means a decimal number— a number that consists of a whole number and a fractional part</span><span class="s2">&quot;</span>, <span class="s2">&quot;</span><span class="s">bool</span><span class="s2">&quot;</span> : <span class="s2">&quot;</span><span class="s">short for boolean; a binary, True or False value</span><span class="s2">&quot;</span>}
 
-  <span class="n">def</span> <span class="n">add_to_dict</span><span class="p">(</span><span class="k">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-    <span class="o">#</span><span class="n">Implement</span> <span class="n">the</span> <span class="k">function</span> <span class="n">here</span><span class="o">!</span>
+  <span class="nv">def</span> <span class="nv">add_to_dict</span><span class="ss">(</span><span class="nv">key</span>, <span class="nv">value</span><span class="ss">)</span>:
+    #<span class="nv">Implement</span> <span class="nv">the</span> <span class="nv">function</span> <span class="nv">here</span><span class="o">!</span>
 
-  <span class="n">add_to_dict</span><span class="p">(</span><span class="ss">&quot;int&quot;</span><span class="p">,</span><span class="ss">&quot;an integer&quot;</span><span class="p">)</span>
-  <span class="o">#</span><span class="n">This</span> <span class="n">should</span> <span class="n">print</span> <span class="ss">&quot;This key is already in the dictionary!&quot;</span>
+  <span class="nv">add_to_dict</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">int</span><span class="s2">&quot;</span>,<span class="s2">&quot;</span><span class="s">an integer</span><span class="s2">&quot;</span><span class="ss">)</span>
+  #<span class="nv">This</span> <span class="nv">should</span> <span class="nv">print</span> <span class="s2">&quot;</span><span class="s">This key is already in the dictionary!</span><span class="s2">&quot;</span>
 
-  <span class="n">add_to_dict</span><span class="p">(</span><span class="ss">&quot;tuple&quot;</span><span class="p">,</span><span class="ss">&quot;an ordered, immutable list of data / objects&quot;</span><span class="p">)</span>
-  <span class="o">#</span><span class="n">This</span> <span class="n">should</span> <span class="k">add</span> <span class="n">the</span> <span class="k">key</span><span class="o">/</span><span class="n">value</span> <span class="n">pair</span> <span class="k">to</span> <span class="n">the</span> <span class="n">my_dict</span> <span class="k">dictionary</span> <span class="k">and</span> <span class="n">print</span> <span class="ss">&quot;This key / value pair has been added to the dictionary&quot;</span>
+  <span class="nv">add_to_dict</span><span class="ss">(</span><span class="s2">&quot;</span><span class="s">tuple</span><span class="s2">&quot;</span>,<span class="s2">&quot;</span><span class="s">an ordered, immutable list of data / objects</span><span class="s2">&quot;</span><span class="ss">)</span>
+  #<span class="nv">This</span> <span class="nv">should</span> <span class="nv">add</span> <span class="nv">the</span> <span class="nv">key</span><span class="o">/</span><span class="nv">value</span> <span class="nv">pair</span> <span class="nv">to</span> <span class="nv">the</span> <span class="nv">my_dict</span> <span class="nv">dictionary</span> <span class="nv">and</span> <span class="nv">print</span> <span class="s2">&quot;</span><span class="s">This key / value pair has been added to the dictionary</span><span class="s2">&quot;</span>
 </code></pre></div>
 </td></tr></table>
                 
