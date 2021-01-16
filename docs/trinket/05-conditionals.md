@@ -21,9 +21,9 @@ angle = 90
 
 # repeat the forward/right functions four times
 for i in range(4):
-   if i % 2:
+   if i % 2:  # This is equivalent to if (i % 2) == 0: (true for odd numbers)
       dan.color('red')
-   else:
+   else: # if i is even
       dan.color('blue')
    dan.forward(distance)
    dan.right(angle)
