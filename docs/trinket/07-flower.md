@@ -57,4 +57,4 @@ dan.write('done with flower')
 1. Can you change the colors of the petals?
 2. Can you change the width of the stem of the flower using the pensize() function?
 3. Can you change the size of the petals?
-4. Can you change the number of petals?
+4. Can you change the number of petals?  Why is this problem harder?  What assumptions did the original author of the program make?
