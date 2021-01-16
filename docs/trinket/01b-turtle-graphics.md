@@ -1,13 +1,5 @@
 # Turtle Graphics
 
-Before you begin, we would like you to go to the [Trinket web site](https://trinket.io/) and create your own account.  This will allow you to save your programs and come back later and continue working on them.
-
-Here is the link to the Trinket web site:
-
-  [https://trinket.io/](https://trinket.io/)
-
-Be sure to bookmark this site for future reference.
-
 ## What is the turtle graphics library?
 Turtle graphs have been around for almost [50 years](https://en.wikipedia.org/wiki/Turtle_graphics).  A turtle is a drawing object that has position, direction, and a pen to draw as it moves around a grid.  Turtle graphics are the preferred way to teach many concepts in computer science because they give you fast feedback.  Fast feedback allows you to quickly see the errors in your code and correct them.
 
