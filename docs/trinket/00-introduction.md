@@ -15,7 +15,8 @@ If you want to try another web-based system that support turtle graphics and Pyt
 ## List of Trinket Python Learning Labs
 For students that are new to programming, here are some sample programs (what we call learning labs) that you can try.  You can learn by reading the sample programs, going to the Trinkit.io site and changing some values in the code.  Each of the labs has experiments at the end you can do to extend to see if you have mastered the concepts before you go on to the next lab.
 
-1. [Turtle graphics](./01-turtle-graphics.md) - introduction to the Turtle Graphs library with a list of drawing functions
+1. [Trinket Account](./01a-trinket-account.md) - introduction to the Turtle Graphs library with a list of drawing functions
+1. [Turtle graphics](./01a-turtle-graphics.md) - introduction to the Turtle Graphs library with a list of drawing functions
 2. [Simple square](./02-simple-square.md) - draw a square by moving and turning right four times
 4. [Variables](./03-variables.md) - add variables for the move edge distance and angle
 5. [Loops](./04-loops.md) - add a loop to make our code smaller
