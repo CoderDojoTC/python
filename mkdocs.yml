@@ -3,7 +3,7 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
-    - Trinket Account: trinket/01a-trinket-account.md
+    - Using Trinket: trinket/01a-trinket-account.md
     - Turtle Graphics: trinket/01b-turtle-graphics.md
     - Turtle Square: trinket/02-simple-square.md
     - Variables: trinket/03-variables.md
@@ -20,6 +20,7 @@ nav:
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
+    - Shape Function: repl/08-shape-function.md
     - Recursion: repl/12-recursion.md
   - Intermediate Python:
     - Introduction: intermediate/intro.md

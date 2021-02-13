@@ -1,4 +1,4 @@
-# Setting up a Trinket Account
+# Getting Starts With Trinket
 
 These labs assume that you have internet access and a modern web browser such as Chrome.
 
@@ -11,3 +11,4 @@ We use the [Trinket web site](https://trinket.io/) because it a kid-save place t
 1. You can create folders of programs
 1. You can run your program
 1. You can make the program fill the screen (fullscreen)
+1. Download your Python code
