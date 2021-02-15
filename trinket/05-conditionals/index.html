@@ -1075,27 +1075,27 @@
 <p>In this example program we will make the turtle draw
 different sides of the square using different colors.</p>
 <p>We would like every other side to change color.  To do this we will add an if-then-else block of code to our example program.  This block of code is called a conditional block.  The condition is an expression that evaluates to be either TRUE for FALSE.  In our example we will test to see if the index of our loop (the letter "i") is ODD or EVEN.  We can do this by looking at the remainder after we divide by 2.  Python has a handy operator called the modulo operator that uses the percent character which is above the number five on your keyboard.  The test for ODD or EVEN is this:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">i</span> <span class="o">%</span> <span class="mi">2</span>
 </code></pre></div>
 </td></tr></table>
 <p>In our previous loop lesson, we created an index that started at 1 and then changed to 2, 3 and finally 4.  For 1 and 3, the first and third edges the result of divid by 2 will return 1 which is the same as TRUE.  For 2 and 4 (the vertical sides of the square), the expression will evaluate to 0 since the remainder of 2/2 and 4/2 is zero. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 

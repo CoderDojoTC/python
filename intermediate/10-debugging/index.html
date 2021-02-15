@@ -1019,20 +1019,20 @@
                 
                 <h1 id="debugging-in-python">Debugging in Python</h1>
 <p>Uncaught errors in a Python script will cause it to abruptley hault. Utilizing the error output, also known as a stack trace will help us determine the root cause. The code below throws an error.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">my_list</span><span class="o">=</span><span class="p">[]</span> <span class="c1">#create empty list</span>
 
@@ -1049,21 +1049,21 @@
 </code></pre></div>
 </td></tr></table>
 <p>This code throws an error and produces the following stack trace:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span><span class="w"></span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span><span class="w"></span>
 <span class="n">IndexError</span><span class="w">                                </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span><span class="w"></span>
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="k">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="mi">593</span><span class="n">f65711788</span><span class="o">&gt;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">&lt;</span><span class="k">module</span><span class="o">&gt;</span><span class="p">()</span><span class="w"></span>
 <span class="w">      </span><span class="mi">7</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="err">:</span><span class="w"></span>

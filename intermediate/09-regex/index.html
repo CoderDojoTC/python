@@ -1163,16 +1163,16 @@
 <p>A regular expression is a shorthand notation for describing a search pattern.  Regular expressions are handy whenever you have one ore more strings and you want to detect if a specific patten of characters appears in that string.  Regular expressions are mostly standardized so that if you use them other developers will quickly be able to read this the patten notation and understand the function of the pattern.</p>
 <h2 id="finding-four-digits-in-an-input-string">Finding four digits in an input string</h2>
 <p>Let's take a simple example.  What if you want an input to to a function to contain four digits.  The string <code>\d</code> matches a single digit.  Here is the python program to check to see if there are four consecutive digits in an input string:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
 
 <span class="c1"># check to see if there are four consecutive digits somewhere in the input</span>
@@ -1193,16 +1193,16 @@
 <h2 id="finding-exactly-four-digits">Finding exactly four digits</h2>
 <p>What if you wanted <strong>exactly</strong> four digits? For example say you have a phone system that has exactly four-digit extensions. To do this you would need to also specify two additional characters: the start expression <strong>"^"</strong> and the end character <strong>"$"</strong>.</p>
 <p>Here is what that program would look like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
 
 <span class="c1"># check to for exactly four digits</span>
@@ -1217,16 +1217,16 @@
 <p><a href="https://trinket.io/library/trinkets/ef0666e0d3">Run the regex-02 program on Trinket.io</a></p>
 <h2 id="checking-for-one-or-more-digits">Checking for one or more digits</h2>
 <p>Sometimes we don't know exactly how many digits an input field should contain.  We might just want to say "look for one or more digits".  We can do this by using the <strong>'+'</strong> expression which says "look for one or more of the previous expression".  Here is a program that will check for one or more digits:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
 
 <span class="c1"># check for one or more digits</span>
@@ -1307,20 +1307,20 @@
 <li>some additional characters such as 'com', 'edu'</li>
 </ol>
 <p>Here is a regular expression that does this:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 <p>Recall that the \w+ character looks for one or more word characters.
 Note that we had to use a backslash in from of the period so it takes it as a literal period and not as a regular expression for zero-or-more of prior expression.</p>
 <p>Here is a program that prompts the user to input a valid e-mail:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;a@myco.com&#39;</span>
 
 <span class="c1"># check for one or more digits</span>
