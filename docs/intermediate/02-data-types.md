@@ -71,16 +71,20 @@ As you can see from the code above, when we assign the result of the _no_return(
 
   A dictionary is demarcated by curly braces around key:value pairs that are separated by commas. Keys and values do not need to be the same data types. 
 
-  ```python 
-  my_dict = {"dictionary" : "a book or electronic resource that lists the words of a language", "int" : "short for integer. A whole number; a number that is not a fraction", "float" : "for our purposes this means a decimal number— a number that consists of a whole number and a fractional part", "bool" : "short for boolean; a binary, True or False value"}
-  ```
+```py
+myDictionary = {
+    "dictionary" : "a book or electronic resource that lists the words of a language", 
+    "int" : "short for integer. A whole number; a number that is not a fraction","float" : "for our purposes this means a decimal number— a number that consists of a whole number and a fractional part", 
+    "bool" : "short for boolean; a binary, True or False value"
+  }
+```
 
   We'll learn more about dictionaries in the [maps section](04-maps.md)
 
 #### Type Casting
 Strings consisting of digits can easily be converted to floats or integers
 
-```python
+```py
 #ask the user to input a number
 number=input("Type a number here and press 'enter' to proceed>>>")
 

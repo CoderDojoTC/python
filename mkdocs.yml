@@ -8,6 +8,7 @@ nav:
     - Turtle Square: trinket/02-simple-square.md
     - Variables: trinket/03-variables.md
     - Loops: trinket/04-loops.md
+    - Stop Sign: trinket/04a-stop-sign.md
     - Conditional: trinket/05-conditionals.md
     - Functions: trinket/06-functions.md
     - Flower: trinket/07-flower.md
@@ -57,6 +58,8 @@ site_description: 'Resources for teaching Python to CoderDojo Twin Cities studen
 site_author: 'Dan McCreary'
 repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
+
+# CoderDojo Standards from here down
 edit_uri: 'blob/master/docs'
 theme:
   name: material
