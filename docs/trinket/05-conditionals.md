@@ -8,12 +8,39 @@ There are two things we do with equations in Python.  The first is to use the eq
 Here is the basic syntax of the Python conditional operator.
 
 ```py
-if (i > 3):
-   # do something if i is greater than 3
+if (i > 2):
+   # do something if i is greater than 2
    else:
-   # do something else when i is exactly 3 or less than 3
+   # do something else when i is exactly 2 or less than 2
 ```
 
+## Simple Conditionals
+Here is a program that 
+
+```py
+import turtle
+dan = turtle.Turtle()
+dan.shape('turtle')
+
+distance = 100
+angle = 90
+
+for i in range(1, 5):
+   # i modulo 2 is the remainer after we divide by 2
+   dan.write(i, font=("arial", 16, "normal"))
+   if i > 2: # true if i greater than 2
+      dan.color('red')
+      dan.pensize(5)
+   else: # if i is exactly 2 or less than 2
+      dan.color('blue')
+      dan.pensize(3)
+   dan.forward(distance)
+   dan.right(angle)
+```
+
+[Link to Trinket with Simple Conditional](https://trinket.io/python/db5978a312)
+
+## Changing Odd and Even Edge Colors
 We would like every other side to change color.  To do this we will add an if-then-else block of code to our example program.  This block of code is called a conditional block.  The condition is an expression that evaluates to be either TRUE for FALSE.  In our example we will test to see if the index of our loop (the letter "i") is ODD or EVEN.  We can do this by looking at the remainder after we divide by 2.  Python has a handy operator called the modulo operator that uses the percent character which is above the number five on your keyboard.  The test for ODD or EVEN is this:
 
 ```py
