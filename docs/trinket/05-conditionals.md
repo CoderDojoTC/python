@@ -3,6 +3,17 @@
 In this example program we will make the turtle draw
 different sides of the square using different colors.
 
+There are two things we do with equations in Python.  The first is to use the equal sign to **assign values** on the left side of the equal sign to the values on the right side.  The second thing we do is to **compare** values to the left and right of an operator.  The result of a comparison is always TRUE or FALSE.
+
+Here is the basic syntax of the Python conditional operator.
+
+```py
+if (i > 3):
+   # do something if i is greater than 3
+   else:
+   # do something else when i is exactly 3 or less than 3
+```
+
 We would like every other side to change color.  To do this we will add an if-then-else block of code to our example program.  This block of code is called a conditional block.  The condition is an expression that evaluates to be either TRUE for FALSE.  In our example we will test to see if the index of our loop (the letter "i") is ODD or EVEN.  We can do this by looking at the remainder after we divide by 2.  Python has a handy operator called the modulo operator that uses the percent character which is above the number five on your keyboard.  The test for ODD or EVEN is this:
 
 ```py
