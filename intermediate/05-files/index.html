@@ -1102,15 +1102,7 @@
 </ul>
 <h3 id="reading-files">Reading Files</h3>
 <p>For our example we're going to <a href="https://www.gutenberg.org/files/2701/old/moby10b.txt">download</a> Herman Melville's <em>Moby-Dick</em> from the Gutenberg Project to read.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 
     <span class="c1">### Let&#39;s take all the lines in Moby-Dick and store them in a list!</span>
 
@@ -1120,16 +1112,8 @@
 
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-</td></tr></table>
 <p>Calling the <code>.readlines()</code> method on a file is very useful. If we wanted to do this manually, we would iterate over the lines in the file and add them one by one to a list.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 
     <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#define empty list</span>
 
@@ -1138,38 +1122,8 @@
 
     <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-</td></tr></table>
 <p>Let's say we needed to know exactly how many times each word appears in <em>Moby-Dick</em>: how might we do that? We'd have to account for things like punctuation, captalization and newline characters ('\n'). We'd also need to get every word by itself.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span> <span class="c1">#punctuation from the string library is a string that contains all punctuation marks</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span> <span class="c1">#punctuation from the string library is a string that contains all punctuation marks</span>
 <span class="c1">#you can run print(punctuation) to see what this looks like</span>
 
 <span class="n">punctuation_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">punctuation</span><span class="p">)</span> <span class="c1">#convert string of punctuation marks to list</span>
@@ -1200,17 +1154,9 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="n">words</span><span class="p">[</span><span class="n">word</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span> <span class="c1">#we&#39;ve already seen this word, so increment the count by 1</span>
 </code></pre></div>
-</td></tr></table>
 <p>The method we used above to remove punctuation characters from the lines is not the most computationally efficent. We're going to learn a better way to do this in the section on Regex expressions.</p>
 <p>One thing we left out from the mapping section is that you can iterate over a dictionary using the .items() method. Here's what that looks like:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="s2">&quot;three&quot;</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="s2">&quot;three&quot;</span><span class="p">}</span>
 
 <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
@@ -1219,21 +1165,11 @@
 <span class="c1">#2 two</span>
 <span class="c1">#3 three</span>
 </code></pre></div>
-</td></tr></table>
 <h3 id="you-try-it">You Try It!</h3>
 <p>If you recall, a dictionary is an unordered data structure. Use what we learned about iterating over items in a dictionary to determine what word occurs the most frequently in <em>Moby-Dick</em>!</p>
 <h3 id="writing-files">Writing Files</h3>
 <p>Let's say we wanted to write out <em>Moby-Dick</em> with no capital letters. Here's how we could approach that:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="c1">#open Moby-Dick file</span>
+<div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="c1">#open Moby-Dick file</span>
 <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1">#put all lines from Moby-Dick into a list</span>
 <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1">#close the file</span>
 
@@ -1244,7 +1180,6 @@
 
 <span class="n">new_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-</td></tr></table>
                 
               
               

@@ -1064,25 +1064,14 @@
                 <h1 id="checking-data-types-of-function-parameters">Checking Data Types of Function Parameters</h1>
 <p>In the beginning course we learned how to pass arguments to functions.  Now we learn how to make sure our functions get the data that they expect!</p>
 <p>We saw in the data types lab we can use the type keyword to get the type of a variable (e.g. <code>type(my_var)</code>). We can use this in combination with the <em>is equal to</em> operator (<code>==</code>) to make sure a variable passed to a function is the right data type. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">validateType</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validateType</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">):</span>
   <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">)</span><span class="o">==</span><span class="nb">str</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed a string!&quot;</span><span class="p">)</span>
   <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed something that wasn&#39;t a string!&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>As you may recall, during the data type labs we used the input function to solicit user input. The response from input is always a string! So if we ask the user to input a number, how do we confirm the input is in fact a number before type casting int on the user input? Remember type casting int on an alphabetic string will throw an error. Let's check it out.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
   <span class="k">return</span> <span class="n">user_input_as_int</span>
@@ -1090,23 +1079,12 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>Let's try <a href="https://trinket.io/python/51fabe7c6c">running this on trinket.io</a> and when asked to enter an int, let's enter a word!</p>
 <p>As you can see we get a type error, because we're trying to convert an alphabetic string to an integer:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span>
+<div class="highlight"><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span>
 </code></pre></div>
-</td></tr></table>
 <p>So what's the work around? Strings have some very useful methods (methods are functions that belong to objects. We'll take about objects in the advanced section), among them <code>.isdigit()</code>! Let's see it in action!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
     <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
@@ -1117,16 +1095,8 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>Let's say the user input was critical to the program we're building and if the user does not input an integer we want to throw an error to the user. We can use the <code>assert</code> keyword to achieve this. The syntax for the assert keyword is as follows: <code>assert some_conditional_statement, "Error message to output."</code> Let's see it in action below! </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="k">assert</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">(),</span> <span class="s2">&quot;You did not input an integer!&quot;</span>
   <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
@@ -1135,7 +1105,6 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <h2 id="you-try-it">You try it!</h2>
 <p>Let's say we want to continously bug a user until they input an integer. How might we achieve this using the lesson above + what we know about while loops?</p>
                 

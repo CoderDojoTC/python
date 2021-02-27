@@ -1140,19 +1140,13 @@
                 <h2 id="data-types">Data Types</h2>
 <p><img alt="Data GIF" src="https://media.giphy.com/media/4FQMuOKR6zQRO/giphy.gif" /></p>
 <p>So we know that data is a piece of information, but there are of course different types of data! Let's illustrate the importance of data types...</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">three_string</span> <span class="o">=</span> <span class="s2">&quot;3&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">three_string</span> <span class="o">=</span> <span class="s2">&quot;3&quot;</span>
 <span class="n">three_integer</span> <span class="o">=</span> <span class="mi">3</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">three_string</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">three_integer</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>Notice the difference in the output when multiplying three_string and three_int by three. three_string * 3 returned 333, whereas three_integer * 3 returned 9. This is because the three_string variable is a string datatype. </p>
 <h3 id="what-are-the-different-data-types">What are the different data types</h3>
 <p><strong>Text</strong></p>
@@ -1193,13 +1187,7 @@
 </ul>
 <p><strong>None</strong></p>
 <p>-None: <em>NoneType</em> — <code>None</code> is a keyword in Python used to indicate a null value. None differs from False or an empty string (<code>""</code>). A function that does not specify a return value will always return None.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">no_return</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">no_return</span><span class="p">():</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This function does not return anything.&quot;</span><span class="p">)</span>
 
 <span class="n">no_return_response</span><span class="o">=</span><span class="n">no_return</span><span class="p">()</span>
@@ -1207,52 +1195,21 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">no_return_response</span> <span class="o">==</span> <span class="kc">None</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">no_return_response</span><span class="p">))</span>
 </code></pre></div>
-</td></tr></table>
 <p>As you can see from the code above, when we assign the result of the <em>no_return()</em> function call to the <em>no_return_response</em> variable, the print statement in the function is executed. However, the value of <em>no_return_response</em> is None, since there was no return statement in the <em>no_return</em> function.</p>
 <p><strong>Mapping</strong></p>
 <p>-Dictionary: <em>dict</em> — an unordered data type consisting of key, value pairs</p>
 <p>Creating a dictionary</p>
 <p>A dictionary is demarcated by curly braces around key:value pairs that are separated by commas. Keys and values do not need to be the same data types. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">myDictionary</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight"><pre><span></span><code><span class="n">myDictionary</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;dictionary&quot;</span> <span class="p">:</span> <span class="s2">&quot;a book or electronic resource that lists the words of a language&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;int&quot;</span> <span class="p">:</span> <span class="s2">&quot;short for integer. A whole number; a number that is not a fraction&quot;</span><span class="p">,</span><span class="s2">&quot;float&quot;</span> <span class="p">:</span> <span class="s2">&quot;for our purposes this means a decimal number— a number that consists of a whole number and a fractional part&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;bool&quot;</span> <span class="p">:</span> <span class="s2">&quot;short for boolean; a binary, True or False value&quot;</span>
   <span class="p">}</span>
 </code></pre></div>
-</td></tr></table>
 <p>We'll learn more about dictionaries in the <a href="../04-maps/">maps section</a></p>
 <h4 id="type-casting">Type Casting</h4>
 <p>Strings consisting of digits can easily be converted to floats or integers</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">#ask the user to input a number</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#ask the user to input a number</span>
 <span class="n">number</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Type a number here and press &#39;enter&#39; to proceed&gt;&gt;&gt;&quot;</span><span class="p">)</span>
 
 <span class="c1">#side note: &#39;\n&#39; tells python to print a newline</span>
@@ -1279,31 +1236,9 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">my_float is &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">my_float</span><span class="p">))</span>
 </code></pre></div>
-</td></tr></table>
 <h2 id="you-try-it">You Try It!</h2>
 <p>We know what type casting is and how to convert a string to an integer. We also know that a division operation in Python will always return a float, regardless of whether or not there's a remainder. Finally, we know using the modulo operator (<em>%</em>) in place of the division operator will return only the remainder—for example, <code>7 % 4</code> will return 3. Using these pieces of knowledge, implement a function that will convert a float to an int, but only if there is no remainder. Complete the function definition for float_converter below! We've put some test conditions below to check your function.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">float_converter</span><span class="p">(</span><span class="n">some_float</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">float_converter</span><span class="p">(</span><span class="n">some_float</span><span class="p">):</span>
   <span class="c1">#if some_float has a remainder return the original float</span>
   <span class="c1">#else return the some_float as an int</span>
 
@@ -1326,7 +1261,6 @@
 <span class="k">else</span><span class="p">:</span> 
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It looks like you haven&#39;t properly implemented either of the requirements for float_converter.&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <h2 id="food-for-thought">Food for Thought</h2>
 <p>When learning about the dictionary data type, we created <em>my_dict</em>, which contained data types and their definitions. Let's say in addition to the definitions of each data type, I wanted to add part of speech and store an example of each data type. How might we do this? Hint: it involves more dictionaries!</p>
                 

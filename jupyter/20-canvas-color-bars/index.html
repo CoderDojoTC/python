@@ -1020,36 +1020,7 @@
                 <h2 id="canvas-color-bars">Canvas Color Bars</h2>
 <p>We can draw directly into the Jupyter Lab canvas by using the Canvas drawing component.</p>
 <p>The following draws several horizontal bars of different color.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipycanvas</span> <span class="kn">import</span> <span class="n">Canvas</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipycanvas</span> <span class="kn">import</span> <span class="n">Canvas</span>
 
 <span class="n">canvas</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">170</span><span class="p">)</span>
 
@@ -1080,44 +1051,27 @@
 
 <span class="n">canvas</span>
 </code></pre></div>
-</td></tr></table>
 <h1 id="experiments">Experiments</h1>
 <p>Can you modify the above to use a list of colors and a for loop?
 The color list might be:</p>
 <h2 id="using-lists">Using Lists</h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">ipycanvas</span> <span class="kn">import</span> <span class="n">Canvas</span>
-<span class="n">canvas</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">250</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>from ipycanvas import Canvas
+canvas = Canvas(width=400, height=250)
 
-<span class="n">colors</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">,</span>
-         <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="s1">&#39;lightgreen&#39;</span><span class="p">,</span> <span class="s1">&#39;lightblue&#39;</span><span class="p">]</span>
-<span class="n">canvas</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="s1">&#39;16px serif&#39;</span>
+colors =[&#39;red&#39;, &#39;orange&#39;, &#39;yellow&#39;, &#39;green&#39;, &#39;blue&#39;, &#39;purple&#39;, &#39;brown&#39;,
+         &#39;cyan&#39;, &#39;lightgreen&#39;, &#39;lightblue&#39;]
+canvas.font = &#39;16px serif&#39;
 
-<span class="c1"># draw some boxes of different colors</span>
+# draw some boxes of different colors
 
-<span class="n">canvas</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)):</span>
-   <span class="n">canvas</span><span class="o">.</span><span class="n">fill_style</span> <span class="o">=</span> <span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-   <span class="n">canvas</span><span class="o">.</span><span class="n">fill_text</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25</span><span class="o">*</span><span class="n">i</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span>
-   <span class="n">canvas</span><span class="o">.</span><span class="n">fill_rect</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="n">i</span><span class="o">*</span><span class="mi">25</span><span class="p">,</span> <span class="mi">400</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span>
+canvas.translate(10,10)
+for i in range(len(colors)):
+   canvas.fill_style = colors[i];
+   canvas.fill_text(colors[i], 0, 25*i + 10)
+   canvas.fill_rect(70, i*25, 400, 15)
 
-<span class="n">canvas</span>
+canvas
 </code></pre></div>
-</td></tr></table>
                 
               
               

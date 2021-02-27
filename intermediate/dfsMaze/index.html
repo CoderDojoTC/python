@@ -996,29 +996,7 @@
                 
                   <h1>Maze Solving with DFS</h1>
                 
-                <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>
+                <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">visit</span><span class="p">(</span><span class="n">u</span><span class="p">):</span>
     <span class="n">u</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;gray&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">vert</span> <span class="ow">in</span> <span class="n">u</span><span class="o">.</span><span class="n">adj</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">vert</span><span class="o">.</span><span class="n">get_color</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;white&quot;</span><span class="p">:</span>
@@ -1042,7 +1020,6 @@
         <span class="n">cur</span> <span class="o">=</span> <span class="n">cur</span><span class="o">.</span><span class="n">prev</span>
     <span class="k">return</span> <span class="n">visited</span> <span class="c1">#Placeholder return to avoid errors</span>
 </code></pre></div>
-</td></tr></table>
 <ul>
 <li>This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.</li>
 </ul>

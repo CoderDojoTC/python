@@ -1134,15 +1134,7 @@
 <p>my_function_name()</p>
 <h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names</h3>
 <p>Variable names should be meaningful to you as the programmer, to any other developers that may be collaborating with you and any developers that may look at your code in the future. Below are two instances of the same code using different variable and function names. Which is easier to read?</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
   <span class="n">variable1</span> <span class="o">=</span> <span class="n">arg</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">variable1</span>
 
@@ -1152,16 +1144,7 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_first_function</span><span class="p">(</span><span class="n">my_second_function</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span>
-<span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">two_more</span>
 
@@ -1171,20 +1154,9 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">plus_two</span><span class="p">(</span><span class="n">times_five</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
 </code></pre></div>
-</td></tr></table>
 <h3 id="variable-scope">Variable Scope</h3>
 <p>A variable's scope refers to where in your code you can access that variable. The scope of a variable defined within a function is limited to the function in which it is defined. This is an example of a local variable.  For example, using the more legible code above: </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">two_more</span>
 
@@ -1196,23 +1168,13 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">five_times</span><span class="p">)</span> 
 </code></pre></div>
-</td></tr></table>
 <p>Attempting to print the value of five_times within the global scope of the code will result in a NameError, because the scope of the variable five_times is limited to the times_five function. Conversely, a global variable is a variable that can be accessed anywhere within your code. Global variables are usually created within the main body of your code, that is outside of functions, as demonstrated below. You can see the my_name variable is accessible within the who_is_awesome function.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Zack&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Zack&quot;</span>
 <span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">my_name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>You can make a variable used within a function globally accessible by using the 'global' keyword. For example,</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span>
-<span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">awesome_statement</span>
     <span class="n">awesome_statement</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variable Reference Within Function: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
@@ -1220,7 +1182,6 @@
 <span class="n">who_is_awesome</span><span class="p">(</span><span class="s2">&quot;Zack&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Global Variable Use: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <h2 id="food-for-thought">Food for Thought</h2>
 <p>When would it make sense to use the global keyword within a function to make a variable globally accessible, instead of returning the variable from the function? </p>
                 

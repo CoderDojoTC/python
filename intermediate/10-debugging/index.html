@@ -1019,20 +1019,7 @@
                 
                 <h1 id="debugging-in-python">Debugging in Python</h1>
 <p>Uncaught errors in a Python script will cause it to abruptley hault. Utilizing the error output, also known as a stack trace will help us determine the root cause. The code below throws an error.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
 
 <span class="n">my_list</span><span class="o">=</span><span class="p">[]</span> <span class="c1">#create empty list</span>
 
@@ -1047,39 +1034,23 @@
         <span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> <span class="c1">#remove the first element from the list</span>
     <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#randomly chose an element from the list</span>
 </code></pre></div>
-</td></tr></table>
 <p>This code throws an error and produces the following stack trace:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">---------------------------------------------------------------------------</span><span class="w"></span>
-<span class="n">IndexError</span><span class="w">                                </span><span class="n">Traceback</span><span class="w"> </span><span class="p">(</span><span class="n">most</span><span class="w"> </span><span class="n">recent</span><span class="w"> </span><span class="k">call</span><span class="w"> </span><span class="k">last</span><span class="p">)</span><span class="w"></span>
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="k">input</span><span class="o">-</span><span class="mi">24</span><span class="o">-</span><span class="mi">593</span><span class="n">f65711788</span><span class="o">&gt;</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="o">&lt;</span><span class="k">module</span><span class="o">&gt;</span><span class="p">()</span><span class="w"></span>
-<span class="w">      </span><span class="mi">7</span><span class="w">     </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">==</span><span class="mi">1</span><span class="err">:</span><span class="w"></span>
-<span class="w">      </span><span class="mi">8</span><span class="w">         </span><span class="n">my_list</span><span class="p">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
-<span class="o">----&gt;</span><span class="w"> </span><span class="mi">9</span><span class="w">     </span><span class="n">random</span><span class="p">.</span><span class="n">choice</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code>---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+&lt;ipython-input-24-593f65711788&gt; in &lt;module&gt;()
+      7     if i==1:
+      8         my_list.pop(0)
+----&gt; 9     random.choice(my_list)
 
-<span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">random</span><span class="p">.</span><span class="n">py</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">choice</span><span class="p">(</span><span class="n">self</span><span class="p">,</span><span class="w"> </span><span class="n">seq</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="mi">259</span><span class="w">             </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">self</span><span class="p">.</span><span class="n">_randbelow</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">seq</span><span class="p">))</span><span class="w"></span>
-<span class="w">    </span><span class="mi">260</span><span class="w">         </span><span class="ow">except</span><span class="w"> </span><span class="nl">ValueError</span><span class="p">:</span><span class="w"></span>
-<span class="o">--&gt;</span><span class="w"> </span><span class="mi">261</span><span class="w">             </span><span class="n">raise</span><span class="w"> </span><span class="n">IndexError</span><span class="p">(</span><span class="s1">&#39;Cannot choose from an empty sequence&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="k">None</span><span class="w"></span>
-<span class="w">    </span><span class="mi">262</span><span class="w">         </span><span class="k">return</span><span class="w"> </span><span class="n">seq</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"></span>
-<span class="w">    </span><span class="mi">263</span><span class="w"> </span>
+~/anaconda3/lib/python3.7/random.py in choice(self, seq)
+    259             i = self._randbelow(len(seq))
+    260         except ValueError:
+--&gt; 261             raise IndexError(&#39;Cannot choose from an empty sequence&#39;) from None
+    262         return seq[i]
+    263 
 
-<span class="nl">IndexError</span><span class="p">:</span><span class="w"> </span><span class="n">Cannot</span><span class="w"> </span><span class="nf">choose</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">an</span><span class="w"> </span><span class="n">empty</span><span class="w"> </span><span class="k">sequence</span><span class="w"></span>
+IndexError: Cannot choose from an empty sequence
 </code></pre></div>
-</td></tr></table>
 <p>You can see the actual error, an IndexError is being thrown in the code for the random module (line 261 in random.py). The output text is helpful, it's saying it can't choose a random item from an empty list. So why is our list empty? We now need to determine where in our code the error is occurring, if you look up line 9, that's referring to line 9 in our code. So we know that line's causing the error, so we then have to ask in what case we're passing an empty list into random.choice(). If we go through each iteration of the loop, we can see that it's on the first iteration when i==1, that we remove the first element from my_list, doing this leaves an empty list and passing it into random.choice() causes the error. </p>
 <p>The first step in debugging should always be to read the stack trace, if the source of the error is not self-evident, StackOverflow and Google are your next best bet. </p>
                 

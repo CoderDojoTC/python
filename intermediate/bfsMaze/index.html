@@ -1029,34 +1029,7 @@
 </ul>
 <p>First, download the code template found in the <code>src/intermediate</code> folder of the repository, found <a href="https://github.com/CoderDojoTC/python">here</a>. Then, lets try and implement a solution to solve it!</p>
 <p>One solution is breadth-first search, or BFS. BFS works by cycling through all possible nodes one hop away from your current position, adding them to a <strong>queue</strong> and then cycling through all of those nodes in the queue to see if they are the solution. Lets see how it is implemented below:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span></pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1">#Takes as input a Square object node in a graph of Square nodes.</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#Takes as input a Square object node in a graph of Square nodes.</span>
 <span class="c1"># This will always be the Square node representing (0,0), the start position</span>
 <span class="c1">#Performs BFS until the goal Square is found (the Square with color = &quot;blue&quot;).</span>
 <span class="c1">#Returns a list containing each Square node in the path from the start</span>
@@ -1085,7 +1058,6 @@
                 <span class="k">return</span> <span class="n">visited</span>
         <span class="n">start_node</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>There are other ways to find paths in mazes, one of which we will explore in the next lab!</p>
 <ul>
 <li>This lab was heavily inspired by Nathan Taylor's University of Minnesota CSCI 4041 assignment.</li>
