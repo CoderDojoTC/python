@@ -76,10 +76,8 @@ markdown_extensions:
   - footnotes
   - toc:
       permalink: true
-  - codehilite:
-      linenums: true
 plugins:
     - search
 markdown_extensions:
-  - codehilite:
-      linenums: true
+  - pymdownx.highlight
+  - pymdownx.superfences
