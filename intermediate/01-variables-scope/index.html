@@ -1125,14 +1125,14 @@
                 
                   <h1>Variables and Scope</h1>
                 
-                <h2 id="variables">Variables</h2>
+                <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
 <p>If you've made it this far, you know a variable is a container for data in Python. Let's dive a little deeper into the world of variables!</p>
-<h3 id="naming-conventions">Naming conventions</h3>
+<h3 id="naming-conventions">Naming conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h3>
 <p>In the <a href="https://www.python.org/dev/peps/pep-0008/#function-and-variable-names">Python community</a>, the general accepted format for variable and function names is all lower case, with multiple words separated by underscores. For example:</p>
 <p>variable = 0</p>
 <p>my_variable = 0</p>
 <p>my_function_name()</p>
-<h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names</h3>
+<h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names<a class="headerlink" href="#giving-variables-and-functions-meaningful-names" title="Permanent link">&para;</a></h3>
 <p>Variable names should be meaningful to you as the programmer, to any other developers that may be collaborating with you and any developers that may look at your code in the future. Below are two instances of the same code using different variable and function names. Which is easier to read?</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
   <span class="n">variable1</span> <span class="o">=</span> <span class="n">arg</span> <span class="o">+</span> <span class="mi">2</span>
@@ -1154,7 +1154,7 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">plus_two</span><span class="p">(</span><span class="n">times_five</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
 </code></pre></div>
-<h3 id="variable-scope">Variable Scope</h3>
+<h3 id="variable-scope">Variable Scope<a class="headerlink" href="#variable-scope" title="Permanent link">&para;</a></h3>
 <p>A variable's scope refers to where in your code you can access that variable. The scope of a variable defined within a function is limited to the function in which it is defined. This is an example of a local variable.  For example, using the more legible code above: </p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
@@ -1182,7 +1182,7 @@
 <span class="n">who_is_awesome</span><span class="p">(</span><span class="s2">&quot;Zack&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Global Variable Use: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="food-for-thought">Food for Thought</h2>
+<h2 id="food-for-thought">Food for Thought<a class="headerlink" href="#food-for-thought" title="Permanent link">&para;</a></h2>
 <p>When would it make sense to use the global keyword within a function to make a variable globally accessible, instead of returning the variable from the function? </p>
                 
               

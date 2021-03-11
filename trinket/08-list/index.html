@@ -1113,7 +1113,7 @@
                 
                   <h1>Lists</h1>
                 
-                <h2 id="python-list">Python List</h2>
+                <h2 id="python-list">Python List<a class="headerlink" href="#python-list" title="Permanent link">&para;</a></h2>
 <p>How would we create and access a list of colors in Python?
 Here is a list of colors:</p>
 <p><div class="highlight"><pre><span></span><code><span class="n">colorList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">,</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="s1">&#39;gold&#39;</span><span class="p">]</span>
@@ -1122,25 +1122,32 @@ To access any color you can reference the index of the color by using a number. 
 color you would use:</p>
 <div class="highlight"><pre><span></span><code><span class="n">colorList</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 </code></pre></div>
-<h2 id="sample-code-to-draw-a-circle-with-a-color-index">Sample Code to Draw A Circle with a Color Index</h2>
+<h2 id="sample-code-to-draw-a-circle-with-a-color-index">Sample Code to Draw A Circle with a Color Index<a class="headerlink" href="#sample-code-to-draw-a-circle-with-a-color-index" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="kn">import</span> <span class="nn">random</span>
 <span class="n">dan</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">shape</span><span class="p">(</span><span class="s1">&#39;turtle&#39;</span><span class="p">)</span>
 
-<span class="n">colorList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">,</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="s1">&#39;gold&#39;</span><span class="p">]</span>
+<span class="n">colorList</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;pink&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">,</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="s1">&#39;gold&#39;</span><span class="p">]</span>
 
 <span class="n">dan</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colorList</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">dan</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
 </code></pre></div>
-<h2 id="drawing">Drawing</h2>
+<h2 id="drawing">Drawing<a class="headerlink" href="#drawing" title="Permanent link">&para;</a></h2>
 <p><img alt="" src="../../img/green-circle.png" /></p>
-<h2 id="run-sample-program-on-trinket">Run Sample Program on Trinket</h2>
+<h2 id="run-sample-program-on-trinket">Run Sample Program on Trinket<a class="headerlink" href="#run-sample-program-on-trinket" title="Permanent link">&para;</a></h2>
 <p><a href="https://trinket.io/python/6b93c1711f">Draw a Green Circle Using List</a></p>
-<h2 id="experiments">Experiments</h2>
-<p>Can you change the name of the function to be "petal"?</p>
+<h2 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Can you change the name of the function to be "petal"?</li>
+<li>What does <code>print(len(colorList))</code> return?</li>
+<li>Go to the <a href="https://trinket.io/docs/colors">Trinket colors page</a> and see the name of other colors you can use.</li>
+<li>What happens if a list does not fit on a single line? Can a list span multiple lines?</li>
+<li>Can you use double quotes and single quotes in the same list?</li>
+</ol>
                 
               
               

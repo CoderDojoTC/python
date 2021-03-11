@@ -1159,9 +1159,9 @@
                   </a>
                 
                 
-                <h1 id="regular-expressions-in-python">Regular Expressions in Python</h1>
+                <h1 id="regular-expressions-in-python">Regular Expressions in Python<a class="headerlink" href="#regular-expressions-in-python" title="Permanent link">&para;</a></h1>
 <p>A regular expression is a shorthand notation for describing a search pattern.  Regular expressions are handy whenever you have one ore more strings and you want to detect if a specific patten of characters appears in that string.  Regular expressions are mostly standardized so that if you use them other developers will quickly be able to read this the patten notation and understand the function of the pattern.</p>
-<h2 id="finding-four-digits-in-an-input-string">Finding four digits in an input string</h2>
+<h2 id="finding-four-digits-in-an-input-string">Finding four digits in an input string<a class="headerlink" href="#finding-four-digits-in-an-input-string" title="Permanent link">&para;</a></h2>
 <p>Let's take a simple example.  What if you want an input to to a function to contain four digits.  The string <code>\d</code> matches a single digit.  Here is the python program to check to see if there are four consecutive digits in an input string:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
@@ -1180,7 +1180,7 @@
 <p>The exact way to read this line is:</p>
 <p>check to see if there are four consecutive digits somewhere in the input</p>
 <p>Note that if you put letters or spaces before or after the four digits the test will still pass.</p>
-<h2 id="finding-exactly-four-digits">Finding exactly four digits</h2>
+<h2 id="finding-exactly-four-digits">Finding exactly four digits<a class="headerlink" href="#finding-exactly-four-digits" title="Permanent link">&para;</a></h2>
 <p>What if you wanted <strong>exactly</strong> four digits? For example say you have a phone system that has exactly four-digit extensions. To do this you would need to also specify two additional characters: the start expression <strong>"^"</strong> and the end character <strong>"$"</strong>.</p>
 <p>Here is what that program would look like:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
@@ -1195,7 +1195,7 @@
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
 </code></pre></div>
 <p><a href="https://trinket.io/library/trinkets/ef0666e0d3">Run the regex-02 program on Trinket.io</a></p>
-<h2 id="checking-for-one-or-more-digits">Checking for one or more digits</h2>
+<h2 id="checking-for-one-or-more-digits">Checking for one or more digits<a class="headerlink" href="#checking-for-one-or-more-digits" title="Permanent link">&para;</a></h2>
 <p>Sometimes we don't know exactly how many digits an input field should contain.  We might just want to say "look for one or more digits".  We can do this by using the <strong>'+'</strong> expression which says "look for one or more of the previous expression".  Here is a program that will check for one or more digits:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 <span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
@@ -1208,7 +1208,7 @@
 <span class="k">else</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="common-regular-expression-characters-for-validating-inputs">Common regular expression characters for validating inputs</h2>
+<h2 id="common-regular-expression-characters-for-validating-inputs">Common regular expression characters for validating inputs<a class="headerlink" href="#common-regular-expression-characters-for-validating-inputs" title="Permanent link">&para;</a></h2>
 <p>Now that you have seen several examples of regular expressions, lets list some of the most common ones we use to validate input data.:</p>
 <table>
 <thead>
@@ -1267,7 +1267,7 @@
 </tbody>
 </table>
 <p>Note that there is an important difference between using the "dot" (period) and the "plus" characters.  We use the dot when we want to check for an optional integer.  We use the plus sign when we require an integer.  When we are gathering information from users in a form, we often must be careful to specify what fields should require an integer input for the field to be valid.</p>
-<h2 id="combining-regular-expressions-checking-e-mail-address">Combining Regular Expressions: Checking E-mail Address</h2>
+<h2 id="combining-regular-expressions-checking-e-mail-address">Combining Regular Expressions: Checking E-mail Address<a class="headerlink" href="#combining-regular-expressions-checking-e-mail-address" title="Permanent link">&para;</a></h2>
 <p>We can combine regular expressions to make more complicated expressions.  For example here are some rules that form a simple e-mail address:</p>
 <ol>
 <li>a string of word characters</li>
@@ -1291,7 +1291,7 @@ Note that we had to use a backslash in from of the period so it takes it as a li
 <span class="k">else</span><span class="p">:</span>
   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Invalid email address!&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="finding-the-right-regular-expression">Finding The Right Regular Expression</h2>
+<h2 id="finding-the-right-regular-expression">Finding The Right Regular Expression<a class="headerlink" href="#finding-the-right-regular-expression" title="Permanent link">&para;</a></h2>
 <p>You often are confronted with validating complex fields like phone numbers, zip codes, and postal addresses.  The good news is that many other people have also needed to do this and with a bit of searching you can probably find a regular expression that meets your needs.  One of the best places to look for regular expressions is <a href="ttps://www.regexlib.com/">RegExLib</a>.  You can not only search for a regular expression but you can test it on common patterns.  Other users have also voted on which regular expressions are their favorites.  There are also categories of regular expressions such as:</p>
 <ol>
 <li>E-mails</li>
@@ -1303,14 +1303,14 @@ Note that we had to use a backslash in from of the period so it takes it as a li
 <li>Markup</li>
 <li>Miscellaneous</li>
 </ol>
-<h2 id="from-search-to">From Search to</h2>
+<h2 id="from-search-to">From Search to<a class="headerlink" href="#from-search-to" title="Permanent link">&para;</a></h2>
 <p>The re module offers a set of functions that allows us to search a string for a match:</p>
 <p>Function    Description
 findall Returns a list containing all matches
 search  Returns a Match object if there is a match anywhere in the string
 split   Returns a list where the string has been split at each match
 sub Replaces one or many matches with a string</p>
-<h2 id="python-regular-expression-references">Python Regular Expression References</h2>
+<h2 id="python-regular-expression-references">Python Regular Expression References<a class="headerlink" href="#python-regular-expression-references" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.debuggex.com/cheatsheet/regex/python">Python RegEx Cheat Sheet</a>
 <a href="https://docs.python.org/3/howto/regex.html#regex-howto">Python Regular Expressions HOWTO</a></p>
                 

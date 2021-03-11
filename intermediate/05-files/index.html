@@ -1089,7 +1089,7 @@
                   </a>
                 
                 
-                <h1 id="reading-and-writing-files-in-python">Reading and Writing Files in Python</h1>
+                <h1 id="reading-and-writing-files-in-python">Reading and Writing Files in Python<a class="headerlink" href="#reading-and-writing-files-in-python" title="Permanent link">&para;</a></h1>
 <p>At this point you should now have python installed on your computer and no longer be using trinket.io. We recommend <a href="https://www.anaconda.com/products/individual">installing Anaconda</a> and using the Spyder integrated development environment (IDE). </p>
 <p>Python makes it easy to read and write text files. The general syntax for opening a file is as follows:</p>
 <p><code>file = open('/file/path/filename.txt', 'mode')</code></p>
@@ -1100,7 +1100,7 @@
 <li>'a': append to a file, you can add new lines to a file that already exists, otherwise it will create the file.</li>
 <li>'r': to read a file.</li>
 </ul>
-<h3 id="reading-files">Reading Files</h3>
+<h3 id="reading-files">Reading Files<a class="headerlink" href="#reading-files" title="Permanent link">&para;</a></h3>
 <p>For our example we're going to <a href="https://www.gutenberg.org/files/2701/old/moby10b.txt">download</a> Herman Melville's <em>Moby-Dick</em> from the Gutenberg Project to read.</p>
 <div class="highlight"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 
@@ -1165,9 +1165,9 @@
 <span class="c1">#2 two</span>
 <span class="c1">#3 three</span>
 </code></pre></div>
-<h3 id="you-try-it">You Try It!</h3>
+<h3 id="you-try-it">You Try It!<a class="headerlink" href="#you-try-it" title="Permanent link">&para;</a></h3>
 <p>If you recall, a dictionary is an unordered data structure. Use what we learned about iterating over items in a dictionary to determine what word occurs the most frequently in <em>Moby-Dick</em>!</p>
-<h3 id="writing-files">Writing Files</h3>
+<h3 id="writing-files">Writing Files<a class="headerlink" href="#writing-files" title="Permanent link">&para;</a></h3>
 <p>Let's say we wanted to write out <em>Moby-Dick</em> with no capital letters. Here's how we could approach that:</p>
 <div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="c1">#open Moby-Dick file</span>
 <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1">#put all lines from Moby-Dick into a list</span>

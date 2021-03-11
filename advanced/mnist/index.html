@@ -1215,19 +1215,19 @@
                   </a>
                 
                 
-                <h1 id="handwritten-digit-classification">Handwritten Digit Classification</h1>
+                <h1 id="handwritten-digit-classification">Handwritten Digit Classification<a class="headerlink" href="#handwritten-digit-classification" title="Permanent link">&para;</a></h1>
 <p>We will program and train a machine learning model to recognize handwritten numbers. The code for this lesson can be found <a href="https://github.com/CoderDojoTC/python/blob/master/advanced/machineLearning/mnist.ipynb">here</a>.</p>
-<h2 id="but-what-is-machine-learnig">But What <em>Is</em> Machine Learnig?</h2>
+<h2 id="but-what-is-machine-learnig">But What <em>Is</em> Machine Learnig?<a class="headerlink" href="#but-what-is-machine-learnig" title="Permanent link">&para;</a></h2>
 <p>Process of determining the function that gives a plausible result <strong>y</strong> for a set of inputs, in form of a vector <strong>x</strong>. In its simplest form, this could be linear regression, where we find the line of best fit through the data.</p>
 <p>In more complex forms, however, this can be training a neural network to fit very non-linear data. We will use a type of neural network to recognize our handwritten numbers.</p>
 <p><img alt="Image of Machine Learning Algorithms" src="https://www.7wdata.be/wp-content/uploads/2017/04/CheatSheet.png" /></p>
-<h2 id="types-of-neural-networks">Types of Neural Networks</h2>
+<h2 id="types-of-neural-networks">Types of Neural Networks<a class="headerlink" href="#types-of-neural-networks" title="Permanent link">&para;</a></h2>
 <p><img alt="Types of Neural Networks" src="https://miro.medium.com/max/4000/1*cuTSPlTq0a_327iTPJyD-Q.png" /></p>
 <p>As you can see, there are many different types, or <strong>architectures</strong> of neural networks. Some of the most common are Feed Forward, Recurrent, LSTM, and AutoEncoder neural networks. The other most common is the one that we will use, or a Convolutional Neural Network.</p>
-<h2 id="convolutional-neural-network">Convolutional Neural Network</h2>
+<h2 id="convolutional-neural-network">Convolutional Neural Network<a class="headerlink" href="#convolutional-neural-network" title="Permanent link">&para;</a></h2>
 <p>Since we have image data, we will use a Convolutional Neural Network (CNN). A CNN works by sliding "windows" over the input image and aggregating nearby pixels together.
 <img alt="CNN Windowing" src="https://miro.medium.com/max/790/1*nYf_cUIHFEWU1JXGwnz-Ig.gif" /></p>
-<h2 id="importing-packages">Importing Packages</h2>
+<h2 id="importing-packages">Importing Packages<a class="headerlink" href="#importing-packages" title="Permanent link">&para;</a></h2>
 <p>For this project, we will be using a machine learning package called Keras. This makes it really easy to construct our neural network. We also import matplotlib to visualize our data, and numpy for some utilities.
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">keras</span>
 <span class="kn">from</span> <span class="nn">keras.datasets</span> <span class="kn">import</span> <span class="n">mnist</span>  <span class="c1"># Get dataset</span>
@@ -1240,7 +1240,7 @@
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 </code></pre></div></p>
-<h2 id="loading-data">Loading Data</h2>
+<h2 id="loading-data">Loading Data<a class="headerlink" href="#loading-data" title="Permanent link">&para;</a></h2>
 <p>Important to load both a training and testing set to make sure the CNN is not "memorizing" the set of images it will train on. This would lead to awful accuracy in the "real world"
 <div class="highlight"><pre><span></span><code><span class="c1"># input image dimensions (pixels)</span>
 <span class="n">img_rows</span><span class="p">,</span> <span class="n">img_cols</span> <span class="o">=</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">28</span>
@@ -1253,7 +1253,7 @@
 <span class="n">x_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">img_rows</span><span class="p">,</span> <span class="n">img_cols</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">input_shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">img_rows</span><span class="p">,</span> <span class="n">img_cols</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div></p>
-<h2 id="preprocessing-data">Preprocessing Data</h2>
+<h2 id="preprocessing-data">Preprocessing Data<a class="headerlink" href="#preprocessing-data" title="Permanent link">&para;</a></h2>
 <p>We want to have our CNN work with numbers between 0 and 1. Since pixel values are from 0-255, we divide all numbers by 255 in order to make them between 0 and 1. We then can see how many training and testing samples we have.
 <div class="highlight"><pre><span></span><code><span class="n">x_train</span> <span class="o">=</span> <span class="n">x_train</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
 <span class="n">x_test</span> <span class="o">=</span> <span class="n">x_test</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;float32&#39;</span><span class="p">)</span>
@@ -1263,7 +1263,7 @@
 <span class="nb">print</span><span class="p">(</span><span class="n">x_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;train samples&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="s1">&#39;test samples&#39;</span><span class="p">)</span>
 </code></pre></div></p>
-<h2 id="look-at-data">Look At Data</h2>
+<h2 id="look-at-data">Look At Data<a class="headerlink" href="#look-at-data" title="Permanent link">&para;</a></h2>
 <p>In the next few cells, we will look at an example of a digit and see what number it is in the training set.</p>
 <p><div class="highlight"><pre><span></span><code><span class="n">x_train</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </code></pre></div>
@@ -1273,7 +1273,7 @@
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">y_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 </code></pre></div></p>
-<h2 id="desired-output">Desired Output</h2>
+<h2 id="desired-output">Desired Output<a class="headerlink" href="#desired-output" title="Permanent link">&para;</a></h2>
 <p>We want to convert the desired output from a number n to a vector where the nth element is 1 and the rest are 0.</p>
 <p>Example: n = 5 Resulting Vector = {0, 0, 0, 0, 0, 1, 0, 0, 0, 0}</p>
 <div class="highlight"><pre><span></span><code><span class="n">num_classes</span> <span class="o">=</span> <span class="mi">10</span>
@@ -1281,7 +1281,7 @@
 <span class="n">y_train</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_train</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">)</span>
 <span class="n">y_test</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">to_categorical</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">num_classes</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="define-model">Define Model</h2>
+<h2 id="define-model">Define Model<a class="headerlink" href="#define-model" title="Permanent link">&para;</a></h2>
 <p>Now here is the fun part. Building the model! We will have a 5 layer neural network. Feel free to play around with some of the parameters and see what works better or worse!</p>
 <div class="highlight"><pre><span></span><code><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
 <span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Conv2D</span><span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="n">kernel_size</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span>
@@ -1297,12 +1297,12 @@
 
 <span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
 </code></pre></div>
-<h2 id="set-parameters">Set Parameters</h2>
+<h2 id="set-parameters">Set Parameters<a class="headerlink" href="#set-parameters" title="Permanent link">&para;</a></h2>
 <p>Here, we will set two parameters for the network. The first is batch size, which determines how many training examples we will look at before changing the weights in the model. We will also set the number of epochs, or iterations through the entire training set.</p>
 <div class="highlight"><pre><span></span><code><span class="n">batch_size</span> <span class="o">=</span> <span class="mi">128</span>  <span class="c1"># How many training examples will we look at before updating the weights in the matrix</span>
 <span class="n">epochs</span> <span class="o">=</span> <span class="mi">12</span> <span class="c1"># How many times we will run through the complete training set</span>
 </code></pre></div>
-<h2 id="compile-and-train-model">Compile and Train Model</h2>
+<h2 id="compile-and-train-model">Compile and Train Model<a class="headerlink" href="#compile-and-train-model" title="Permanent link">&para;</a></h2>
 <p>Here, we compile the model and then train it. A couple things to note. We are using the Adam optimizer, as compared to others such as stochastic gradient descent. We are measuring the success of the model through the categorical crossentropy loss metric, which determines how to adjust the weights within the model.</p>
 <div class="highlight"><pre><span></span><code><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">keras</span><span class="o">.</span><span class="n">losses</span><span class="o">.</span><span class="n">categorical_crossentropy</span><span class="p">,</span>
               <span class="n">optimizer</span><span class="o">=</span><span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(),</span>
@@ -1314,7 +1314,7 @@
           <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
           <span class="n">validation_data</span><span class="o">=</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
 </code></pre></div>
-<h2 id="test-model">Test Model</h2>
+<h2 id="test-model">Test Model<a class="headerlink" href="#test-model" title="Permanent link">&para;</a></h2>
 <p>Now here is the big finish, lets see how well the model performs! We will do this by running through our test set and having the model produce a prediction. Thankfully, there is already a function built into the model for this.
 <div class="highlight"><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_test</span><span class="p">,</span> <span class="n">y_test</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Test loss:&#39;</span><span class="p">,</span> <span class="n">score</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>

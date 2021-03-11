@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#input" class="md-skip">
+        <a href="#getting-inputs-from-the-user" class="md-skip">
           Skip to content
         </a>
       
@@ -417,9 +417,45 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Input
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Input
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-on-trinket" class="md-nav__link">
+    Example on Trinket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1002,6 +1038,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-on-trinket" class="md-nav__link">
+    Example on Trinket
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    Experiments
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1017,7 +1075,7 @@
                   </a>
                 
                 
-                <h2 id="input">Input</h2>
+                <h1 id="getting-inputs-from-the-user">Getting Inputs from the User<a class="headerlink" href="#getting-inputs-from-the-user" title="Permanent link">&para;</a></h1>
 <p>We can prompt the user to supply a number using the input() function.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
 <span class="kn">import</span> <span class="nn">random</span>
@@ -1038,8 +1096,13 @@
 
 <span class="n">dan</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;done!&#39;</span><span class="p">)</span>
 </code></pre></div>
-<h1 id="example-on-trinket">Example on Trinket</h1>
+<h2 id="example-on-trinket">Example on Trinket<a class="headerlink" href="#example-on-trinket" title="Permanent link">&para;</a></h2>
 <p><a href="https://trinket.io/python/a4a951eeab">Run the Input Example on Trinket</a></p>
+<h2 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Write a program that will prompt the user to enter the number of shapes to draw, the size of the shapes, the color of the shapes and the range of the screen to draw them (50 to 200).</li>
+<li>Add some additional code to check the range of your expected values.  If the input is out of range, then continue to prompt the user to enter the correct number until they get a valid number.  Use a <code>while</code> statement to continue prompting.</li>
+</ol>
                 
               
               
