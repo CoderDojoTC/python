@@ -42,4 +42,5 @@ dan.goto(0,0)
 ## Experiments
 1. Can you create a variable that is used to control the distance from the origin to wander?  Right now the distance is set to be 200 on each extent.
 2. Can you create a variable for the number of circles to draw?
-3. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.  Note that you can use 
+3. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.  Note that you can use any of these colors in your lists.
+4. Right now, all the circles are 7 pixels in size.  Can you make the circles have a random size from 3 to 20?

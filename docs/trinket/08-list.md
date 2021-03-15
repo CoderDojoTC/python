@@ -20,7 +20,8 @@ import random
 dan = turtle.Turtle()
 dan.shape('turtle')
 
-colorList = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'brown', 'gray', 'gold']
+colorList = ['red', 'orange', 'yellow', 'green', 'blue',
+  'purple', 'pink', 'brown', 'gray', 'gold']
 
 dan.begin_fill()
 dan.color(colorList[3])
@@ -35,4 +36,9 @@ dan.end_fill()
 [Draw a Green Circle Using List](https://trinket.io/python/6b93c1711f)
 
 ## Experiments
-Can you change the name of the function to be "petal"?
+
+1. Can you change the name of the function to be "petal"?
+1. What does ```print(len(colorList))``` return?
+1. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.
+1. What happens if a list does not fit on a single line? Can a list span multiple lines?
+1. Can you use double quotes and single quotes in the same list?

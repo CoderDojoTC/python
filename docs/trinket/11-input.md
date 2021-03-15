@@ -1,4 +1,4 @@
-## Input
+# Getting Inputs from the User
 
 We can prompt the user to supply a number using the input() function.
 
@@ -23,6 +23,11 @@ while colorIndexInt > -1:
 dan.write('done!')
 ```
 
-# Example on Trinket
+## Example on Trinket
 
 [Run the Input Example on Trinket](https://trinket.io/python/a4a951eeab)
+
+## Experiments
+
+1. Write a program that will prompt the user to enter the number of shapes to draw, the size of the shapes, the color of the shapes and the range of the screen to draw them (50 to 200).
+2. Add some additional code to check the range of your expected values.  If the input is out of range, then continue to prompt the user to enter the correct number until they get a valid number.  Use a ```while``` statement to continue prompting.

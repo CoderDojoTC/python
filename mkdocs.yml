@@ -74,10 +74,10 @@ theme:
 markdown_extensions:
   - admonition
   - footnotes
+  - pymdownx.highlight
+  - pymdownx.superfences
   - toc:
       permalink: true
 plugins:
     - search
-markdown_extensions:
-  - pymdownx.highlight
-  - pymdownx.superfences
+
