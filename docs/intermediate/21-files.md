@@ -1,4 +1,7 @@
 # Reading and Writing Files in Python
+
+
+
 At this point you should now have python installed on your computer and no longer be using trinket.io. We recommend [installing Anaconda](https://www.anaconda.com/products/individual) and using the Spyder integrated development environment (IDE). 
 
 Python makes it easy to read and write text files. The general syntax for opening a file is as follows:

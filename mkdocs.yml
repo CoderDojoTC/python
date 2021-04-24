@@ -18,6 +18,8 @@ nav:
     - Random Stars: trinket/13-random-stars.md
     - Input: trinket/11-input.md
     - Recursion: trinket/12-recursion.md
+    - Shape Module: trinket/13-shape-module.md
+    - Sine Wave: trinket/15-sine-wave.md
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
@@ -29,11 +31,13 @@ nav:
     - Data Types: intermediate/02-data-types.md
     - Data Types & Function Parameters: intermediate/03-data-type-validation.md
     - Maps: intermediate/04-maps.md
-    - Files: intermediate/05-files.md
-    - Images: intermediate/06-images.md
+    - JSON: intermediate/05-json.md
+    - Object Classes: intermediate/06-object-classes.md
     - Modules: intermediate/07-modules.md
     - Dir: intermediate/08-dir.md
     - Regular Expressions: intermediate/09-regex.md
+    - Files: intermediate/05-files.md
+    - Images: intermediate/06-images.md   
     - Debugging: intermediate/10-debugging.md
     - Maze Solving with BFS: intermediate/bfsMaze.md
     - Maze Solving with DFS: intermediate/dfsMaze.md
