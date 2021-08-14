@@ -1,5 +1,6 @@
-## Function= Parameters
+# Function Parameters
 
+## Lesson Objective
 Now we will create a new function that draw a square with a specific color at a specific x and y point.  The function will take three inputs:
 - the color
 - the horizontal x position on the grid
@@ -32,9 +33,12 @@ square('blue', 70, -50)
 ## Drawing
 ![](../img/four-squares.png)
 
-[Function](https://trinket.io/library/trinkets/83e78b10f5)
+[Link to Function in Trinket](https://trinket.io/library/trinkets/83e78b10f5)
 
 
 
 ## Experiments
-Can you change the name of the function to be "petal"?
+
+1. Can you change the name of the function to be "petal"?
+2. Can you change the function to include the ability to pass in one color for the border, and one color for the center fill?
+[Sample of Border Square Program](https://trinket.io/python/3377b0fbd8)

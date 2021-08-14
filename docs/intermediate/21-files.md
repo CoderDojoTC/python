@@ -4,6 +4,7 @@ Most of the initial labs until now used the Trinket web site to teach you how to
 
 To install Python on your computer visit the [Python.org](https://www.python.org) web site and follow the installation instructions for your computer operating system (Windows, Mac, Linux etc.)
 
+At this point you should now have python installed on your computer and no longer be using trinket.io. We recommend [installing Anaconda](https://www.anaconda.com/products/individual) and using the Spyder integrated development environment (IDE). 
 
 Python makes it easy to read and write text files. The general syntax for opening a file is as follows:
 

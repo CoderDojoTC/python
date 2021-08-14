@@ -1,8 +1,10 @@
-# The dir() function
+# Python Objects and the dir() function
 
-As you know some date types and objects have their own methods. For example, a dictionary object has the ```.items()``` method. So how do you know what methods are available to you? That's where the dir function comes in! Just pass whatever data or object you want to know about as an argument. 
+In Python we have the ability to associate a group of functions with any object class.  These functions when grouped together with an object are called *methods*.  You can think of them *accessor methods* go get access to the data or behavior of an object class.
 
-```python3
+For example, a dictionary object has the ```.items()``` method. So how do you know what methods are available to you? That's where the dir function comes in! Just pass whatever data or object you want to know about as an argument. 
+
+```py
 
 my_list=[1,2,3,4]
 
@@ -77,11 +79,11 @@ The pop() method will remove and return the last element from the list, that is 
 
 my_list=[1,2,3,4,5,6]
 
-print(my_list[0]) #prints 1
+print(my_list[0]) # prints 1
 
-print(my_list[5]) #prints 6
+print(my_list[5]) # prints 6
 
-print(my_list.pop(2)) #prints 3
+print(my_list.pop(2)) # removes and prints 3
 
-print(my_list) #prints [1,2,4,5,6]
+print(my_list) # prints [1,2,4,5,6]
 ```

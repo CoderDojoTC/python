@@ -41,8 +41,9 @@ draw_branch(myTurtle, colorList[0], length, 4)
 ## Drawing
 ![](../img/fractle-tree.png)
 
-## Link to Program on Trinket
-[Link to Program on Trinket](https://trinket.io/python/0406ae2ac0)
+## Run Sample Program on Trinket
+
+[Run Recursion Program on Trinket](https://trinket.io/python/0406ae2ac0)
 
 ## Explanation
 The first three lines will be the same for all our programs.  They import the turtle library into our program, create a new turtle object and then assign the turtle a shape icon.

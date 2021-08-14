@@ -1,12 +1,4 @@
-# Trinket Account
-
-Before you begin, we would like you to go to the [Trinket web site](https://trinket.io/) and create your own account.  This will allow you to save your programs and come back later and continue working on them.
-
-Here is the link to the Trinket web site:
-
-  [https://trinket.io/](https://trinket.io/)
-
-Be sure to bookmark this site for future reference.
+# Turtle Graphics
 
 ## What is the turtle graphics library?
 Turtle graphs have been around for almost [50 years](https://en.wikipedia.org/wiki/Turtle_graphics).  A turtle is a drawing object that has position, direction, and a pen to draw as it moves around a grid.  Turtle graphics are the preferred way to teach many concepts in computer science because they give you fast feedback.  Fast feedback allows you to quickly see the errors in your code and correct them.
@@ -42,7 +34,7 @@ There are five ways to move your turtle around the screen.  Our screen is around
 ## Drawing
 There are several ways to draw virtual "ink" on the screen.  The most common way is to just move your turtle around.  It will draw a thin black line by default, but you can also change the pen color and the width of drawing.
 
-- t.penup() - no drawing will happen when the pen is up
+- [t.penup()](https://docs.python.org/3/library/turtle.html#pen-control) - no drawing will happen when the pen is up
 - t.pendown() - drawing will occur on the screen when the turtle moves
 - t.color('red') - set the pen to a specific color
 - t.pensize(5) - set the width of the pen from 1 to 20.  5 is a good size.

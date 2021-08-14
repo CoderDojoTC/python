@@ -3,10 +3,12 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
-    - Trinket Account: trinket/01-turtle-graphics.md
+    - Using Trinket: trinket/01a-trinket-account.md
+    - Turtle Graphics: trinket/01b-turtle-graphics.md
     - Turtle Square: trinket/02-simple-square.md
     - Variables: trinket/03-variables.md
     - Loops: trinket/04-loops.md
+    - Stop Sign: trinket/04a-stop-sign.md
     - Conditional: trinket/05-conditionals.md
     - Functions: trinket/06-functions.md
     - Flower: trinket/07-flower.md
@@ -16,9 +18,12 @@ nav:
     - Random Stars: trinket/13-random-stars.md
     - Input: trinket/11-input.md
     - Recursion: trinket/12-recursion.md
+    - Shape Module: trinket/13-shape-module.md
+    - Sine Wave: trinket/15-sine-wave.md
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
+    - Shape Function: repl/08-shape-function.md
     - Recursion: repl/12-recursion.md
   - Intermediate Python:
     - Introduction: intermediate/01-intro.md
@@ -26,6 +31,7 @@ nav:
     - Data Types: intermediate/02-data-types.md
     - Data Types & Function Parameters: intermediate/03-data-type-validation.md
     - Maps: intermediate/04-maps.md
+<<<<<<< HEAD
     - Modules: intermediate/07-modules.md
     - Dir: intermediate/08-dir.md
     - Regular Expressions: intermediate/09-regex.md
@@ -34,6 +40,16 @@ nav:
     - Images (local file system): intermediate/06-images.md
     
     - Debugging (vscode): intermediate/10-debugging.md
+=======
+    - JSON: intermediate/05-json.md
+    - Object Classes: intermediate/06-object-classes.md
+    - Modules: intermediate/07-modules.md
+    - Dir: intermediate/08-dir.md
+    - Regular Expressions: intermediate/09-regex.md
+    - Files: intermediate/05-files.md
+    - Images: intermediate/06-images.md   
+    - Debugging: intermediate/10-debugging.md
+>>>>>>> 5737efd1b7400531f4fbc3842e0cfb7c98a98d46
     - Maze Solving with BFS: intermediate/bfsMaze.md
     - Maze Solving with DFS: intermediate/dfsMaze.md
   - Jupyter:
@@ -57,6 +73,8 @@ site_description: 'Resources for teaching Python to CoderDojo Twin Cities studen
 site_author: 'Dan McCreary'
 repo_name: 'python'
 repo_url: 'https://github.com/CoderDojoTC/python'
+
+# CoderDojo Standards from here down
 edit_uri: 'blob/master/docs'
 theme:
   name: material
@@ -71,12 +89,10 @@ theme:
 markdown_extensions:
   - admonition
   - footnotes
+  - pymdownx.highlight
+  - pymdownx.superfences
   - toc:
       permalink: true
-  - codehilite:
-      linenums: true
 plugins:
     - search
-markdown_extensions:
-  - codehilite:
-      linenums: true
+

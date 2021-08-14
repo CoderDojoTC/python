@@ -48,12 +48,13 @@ dan.write('done with flower')
 ## Drawing
 ![](../img/flower.png)
 
-## Run the Example
-[Function](https://trinket.io/python/0de967d3e2)
+## Run the Example on Trinket
+
+[Run the Flower Example on Trinket](https://trinket.io/python/0de967d3e2)
 
 
 ## Experiments
 1. Can you change the colors of the petals?
 2. Can you change the width of the stem of the flower using the pensize() function?
 3. Can you change the size of the petals?
-4. Can you change the number of petals?
+4. Can you change the number of petals?  Why is this problem harder?  What assumptions did the original author of the program make?
