@@ -18,7 +18,7 @@
     
     
       
-        <title>Regular Expressions - CoderDojo TC Python</title>
+        <title>Files - CoderDojo TC Python</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#regular-expressions-in-python" class="md-skip">
+        <a href="#reading-and-writing-files-in-python" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Regular Expressions
+              Files
             
           </span>
         </div>
@@ -655,94 +655,9 @@
   
   
     <li class="md-nav__item">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Regular Expressions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="../09-regex/" class="md-nav__link">
         Regular Expressions
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#finding-four-digits-in-an-input-string" class="md-nav__link">
-    Finding four digits in an input string
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-exactly-four-digits" class="md-nav__link">
-    Finding exactly four digits
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#checking-for-one-or-more-digits" class="md-nav__link">
-    Checking for one or more digits
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-regular-expression-characters-for-validating-inputs" class="md-nav__link">
-    Common regular expression characters for validating inputs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combining-regular-expressions-checking-e-mail-address" class="md-nav__link">
-    Combining Regular Expressions: Checking E-mail Address
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-the-right-regular-expression" class="md-nav__link">
-    Finding The Right Regular Expression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-search-to" class="md-nav__link">
-    From Search to
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-regular-expression-references" class="md-nav__link">
-    Python Regular Expression References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -752,7 +667,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-files/" class="md-nav__link">
+      <a href="./" class="md-nav__link">
         Files (local file system)
       </a>
     </li>
@@ -834,6 +749,18 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../09-regex/" class="md-nav__link">
+        Regular Expressions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -845,12 +772,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Regular Expressions
+          Files
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Regular Expressions
+        Files
       </a>
       
         
@@ -867,57 +794,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#finding-four-digits-in-an-input-string" class="md-nav__link">
-    Finding four digits in an input string
+  <a href="#reading-files" class="md-nav__link">
+    Reading Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-exactly-four-digits" class="md-nav__link">
-    Finding exactly four digits
+  <a href="#you-try-it" class="md-nav__link">
+    You Try It!
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-for-one-or-more-digits" class="md-nav__link">
-    Checking for one or more digits
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-regular-expression-characters-for-validating-inputs" class="md-nav__link">
-    Common regular expression characters for validating inputs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combining-regular-expressions-checking-e-mail-address" class="md-nav__link">
-    Combining Regular Expressions: Checking E-mail Address
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-the-right-regular-expression" class="md-nav__link">
-    Finding The Right Regular Expression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-search-to" class="md-nav__link">
-    From Search to
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-regular-expression-references" class="md-nav__link">
-    Python Regular Expression References
+  <a href="#writing-files" class="md-nav__link">
+    Writing Files
   </a>
   
 </li>
@@ -926,18 +818,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../05-files/" class="md-nav__link">
-        Files
-      </a>
     </li>
   
 
@@ -1301,57 +1181,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#finding-four-digits-in-an-input-string" class="md-nav__link">
-    Finding four digits in an input string
+  <a href="#reading-files" class="md-nav__link">
+    Reading Files
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#finding-exactly-four-digits" class="md-nav__link">
-    Finding exactly four digits
+  <a href="#you-try-it" class="md-nav__link">
+    You Try It!
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-for-one-or-more-digits" class="md-nav__link">
-    Checking for one or more digits
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-regular-expression-characters-for-validating-inputs" class="md-nav__link">
-    Common regular expression characters for validating inputs
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#combining-regular-expressions-checking-e-mail-address" class="md-nav__link">
-    Combining Regular Expressions: Checking E-mail Address
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#finding-the-right-regular-expression" class="md-nav__link">
-    Finding The Right Regular Expression
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-search-to" class="md-nav__link">
-    From Search to
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#python-regular-expression-references" class="md-nav__link">
-    Python Regular Expression References
+  <a href="#writing-files" class="md-nav__link">
+    Writing Files
   </a>
   
 </li>
@@ -1368,165 +1213,104 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/09-regex.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/python/blob/master/docs/intermediate/05-files.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="regular-expressions-in-python">Regular Expressions in Python<a class="headerlink" href="#regular-expressions-in-python" title="Permanent link">&para;</a></h1>
-<p>A regular expression is a shorthand notation for describing a search pattern.  Regular expressions are handy whenever you have one ore more strings and you want to detect if a specific patten of characters appears in that string.  Regular expressions are mostly standardized so that if you use them other developers will quickly be able to read this the patten notation and understand the function of the pattern.</p>
-<h2 id="finding-four-digits-in-an-input-string">Finding four digits in an input string<a class="headerlink" href="#finding-four-digits-in-an-input-string" title="Permanent link">&para;</a></h2>
-<p>Let's take a simple example.  What if you want an input to to a function to contain four digits.  The string <code>\d</code> matches a single digit.  Here is the python program to check to see if there are four consecutive digits in an input string:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
+                <h1 id="reading-and-writing-files-in-python">Reading and Writing Files in Python<a class="headerlink" href="#reading-and-writing-files-in-python" title="Permanent link">&para;</a></h1>
+<p>Most of the initial labs until now used the Trinket web site to teach you how to program Python.  Although many of these labs use Trinket, some of the labs in the intermediate class need access to your local file system to learn how to open and manipulate files.  To do this you must install Python on your local computer.</p>
+<p>To install Python on your computer visit the <a href="https://www.python.org">Python.org</a> web site and follow the installation instructions for your computer operating system (Windows, Mac, Linux etc.)</p>
+<p>At this point you should now have python installed on your computer and no longer be using trinket.io. We recommend <a href="https://www.anaconda.com/products/individual">installing Anaconda</a> and using the Spyder integrated development environment (IDE). </p>
+<p>Python makes it easy to read and write text files. The general syntax for opening a file is as follows:</p>
+<p><code>file = open('/file/path/filename.txt', 'mode')</code></p>
+<p>The first argument is the path the file on your computer. If the file you're trying to open is in the same folder as your python script you can just input the filename, if not you'll need the path to file. For example, let's say you're using a Mac, your username is Bella, and you're trying to open a file called "myfile.txt" in your downloads folder. The path to that file would be: <code>/Users/Bella/Downloads/myfile.txt</code></p>
+<p>Valid arguments for the mode parameter are:</p>
+<ul>
+<li>'w': writing to a file, this will overwrite a file if it already exists.</li>
+<li>'a': append to a file, you can add new lines to a file that already exists, otherwise it will create the file.</li>
+<li>'r': to read a file.</li>
+</ul>
+<h3 id="reading-files">Reading Files<a class="headerlink" href="#reading-files" title="Permanent link">&para;</a></h3>
+<p>For our example we're going to <a href="https://www.gutenberg.org/files/2701/old/moby10b.txt">download</a> Herman Melville's <em>Moby-Dick</em> from the Gutenberg Project to read.</p>
+<div class="highlight"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 
-<span class="c1"># check to see if there are four consecutive digits somewhere in the input</span>
-<span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;\d\d\d\d&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+    <span class="c1">### Let&#39;s take all the lines in Moby-Dick and store them in a list!</span>
 
-<span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have four digits!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+    <span class="c1">### Close the file</span>
+
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-<p><a href="https://trinket.io/python3/780b1810ad">Run the regex-01 program on Trinket.io</a></p>
-<p>If you run the program as-is, it will tell you that the string <strong>'1234'</strong> will pass the test and the string <strong>We have four digits</strong>, but if you change the my_input to be <strong>123x</strong> then the <strong>Invalid data</strong> will be returned.</p>
-<p>The name of the regular expression module is just "re".  We must have an import this line with the "re" module at the start of our program.  The key line has <strong>re.search()</strong> function with two parameters.  The first parameter is the regular expression and the second is the string to be tested.</p>
-<p>The exact way to read this line is:</p>
-<p>check to see if there are four consecutive digits somewhere in the input</p>
-<p>Note that if you put letters or spaces before or after the four digits the test will still pass.</p>
-<h2 id="finding-exactly-four-digits">Finding exactly four digits<a class="headerlink" href="#finding-exactly-four-digits" title="Permanent link">&para;</a></h2>
-<p>What if you wanted <strong>exactly</strong> four digits? For example say you have a phone system that has exactly four-digit extensions. To do this you would need to also specify two additional characters: the start expression <strong>"^"</strong> and the end character <strong>"$"</strong>.</p>
-<p>Here is what that program would look like:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1234&#39;</span>
+<p>Calling the <code>.readlines()</code> method on a file is very useful. If we wanted to do this manually, we would iterate over the lines in the file and add them one by one to a list.</p>
+<div class="highlight"><pre><span></span><code>    <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">)</span>
 
-<span class="c1"># check to for exactly four digits</span>
-<span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\d\d\d\d$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+    <span class="n">lines</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#define empty list</span>
 
-<span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have exactly four digits!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="c1">#we can use the .append() method to add new items to a list!</span>
+
+    <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-<p><a href="https://trinket.io/library/trinkets/ef0666e0d3">Run the regex-02 program on Trinket.io</a></p>
-<h2 id="checking-for-one-or-more-digits">Checking for one or more digits<a class="headerlink" href="#checking-for-one-or-more-digits" title="Permanent link">&para;</a></h2>
-<p>Sometimes we don't know exactly how many digits an input field should contain.  We might just want to say "look for one or more digits".  We can do this by using the <strong>'+'</strong> expression which says "look for one or more of the previous expression".  Here is a program that will check for one or more digits:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span>
+<p>Let's say we needed to know exactly how many times each word appears in <em>Moby-Dick</em>: how might we do that? We'd have to account for things like punctuation, captalization and newline characters ('\n'). We'd also need to get every word by itself.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span> <span class="c1">#punctuation from the string library is a string that contains all punctuation marks</span>
+<span class="c1">#you can run print(punctuation) to see what this looks like</span>
 
-<span class="c1"># check for one or more digits</span>
-<span class="n">digits_test</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\d+&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
+<span class="n">punctuation_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">punctuation</span><span class="p">)</span> <span class="c1">#convert string of punctuation marks to list</span>
 
-<span class="k">if</span> <span class="n">digits_test</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;We have one or more digits!&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid data&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h2 id="common-regular-expression-characters-for-validating-inputs">Common regular expression characters for validating inputs<a class="headerlink" href="#common-regular-expression-characters-for-validating-inputs" title="Permanent link">&para;</a></h2>
-<p>Now that you have seen several examples of regular expressions, lets list some of the most common ones we use to validate input data.:</p>
-<table>
-<thead>
-<tr>
-<th>Expression</th>
-<th>Meaning</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\d</td>
-<td>A single digit in the range 0 to 9</td>
-<td><strong>'\d\d\d'</strong> for validating <strong>'123'</strong></td>
-</tr>
-<tr>
-<td>^</td>
-<td>The start of a string</td>
-<td><strong>'^hello'</strong></td>
-</tr>
-<tr>
-<td>$</td>
-<td>The end of a string</td>
-<td><strong>'hello'$</strong></td>
-</tr>
-<tr>
-<td>[a-z]</td>
-<td>Any lowercase character in the range of <strong>'a'</strong> to <strong>'z'</strong></td>
-<td><strong>'[a-z]\d\d'</strong> will match <strong>'x12'</strong></td>
-</tr>
-<tr>
-<td>[A-Z]</td>
-<td>Any uppercase character in the range <strong>'A'</strong> to <strong>'Z'</strong></td>
-<td><strong>'\d\d[A-Z]</strong> will match <strong>'47N'</strong></td>
-</tr>
-<tr>
-<td><strong>.</strong></td>
-<td>Zero or more occurrences of the previous expression</td>
-<td><strong>'\d.'</strong> would match an empty string, '1' or '12'</td>
-</tr>
-<tr>
-<td><strong>+</strong></td>
-<td>One or more occurrences of the previous expression</td>
-<td><strong>'\d+'</strong> would match '1' or '12' but would not match an empty string</td>
-</tr>
-<tr>
-<td>**</td>
-<td>**</td>
-<td>Or</td>
-</tr>
-<tr>
-<td><strong>\w</strong></td>
-<td>Characters that typically make up words. This includes upper and lowercase charcters [a-z], [A-Z] and digits as well as the underscore</td>
-<td><strong>\w</strong> would match <strong>'hello_world123'</strong></td>
-</tr>
-</tbody>
-</table>
-<p>Note that there is an important difference between using the "dot" (period) and the "plus" characters.  We use the dot when we want to check for an optional integer.  We use the plus sign when we require an integer.  When we are gathering information from users in a form, we often must be careful to specify what fields should require an integer input for the field to be valid.</p>
-<h2 id="combining-regular-expressions-checking-e-mail-address">Combining Regular Expressions: Checking E-mail Address<a class="headerlink" href="#combining-regular-expressions-checking-e-mail-address" title="Permanent link">&para;</a></h2>
-<p>We can combine regular expressions to make more complicated expressions.  For example here are some rules that form a simple e-mail address:</p>
-<ol>
-<li>a string of word characters</li>
-<li>the ampersand character <strong>'@'</strong></li>
-<li>a string of additional word characters</li>
-<li>the period character <strong>'.'</strong></li>
-<li>some additional characters such as 'com', 'edu'</li>
-</ol>
-<p>Here is a regular expression that does this:</p>
-<div class="highlight"><pre><span></span><code><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">)</span>
-</code></pre></div>
-<p>Recall that the \w+ character looks for one or more word characters.
-Note that we had to use a backslash in from of the period so it takes it as a literal period and not as a regular expression for zero-or-more of prior expression.</p>
-<p>Here is a program that prompts the user to input a valid e-mail:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
-<span class="n">my_input</span> <span class="o">=</span> <span class="s1">&#39;a@myco.com&#39;</span>
 
-<span class="c1"># check for one or more digits</span>
-<span class="k">if</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;^\w+@\w+\.\w+$&#39;</span><span class="p">,</span> <span class="n">my_input</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E-mail address valid&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Error: Invalid email address!&quot;</span><span class="p">)</span>
+<span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="c1">#open Moby-Dick file</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1">#put all lines from Moby-Dick into a list</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1">#close the file</span>
+
+<span class="n">clean_lines</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1">#empty list for lines stripped of newline characters and all characters converted to lowercase</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span> <span class="c1">#go through every line in the file</span>
+    <span class="n">clean_line</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1">#get rid of new-line characters</span>
+    <span class="n">clean_line</span> <span class="o">=</span> <span class="n">clean_line</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="c1">#convert everything to lowercase</span>
+    <span class="n">clean_lines</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">clean_line</span><span class="p">)</span> <span class="c1">#add cleaned line to clean_lines</span>
+
+<span class="n">words</span><span class="o">=</span><span class="p">{}</span> <span class="c1">#create empty dictionary for words</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">clean_lines</span><span class="p">:</span> <span class="c1">#go through every line in the file</span>
+    <span class="k">for</span> <span class="n">mark</span> <span class="ow">in</span> <span class="n">punctuation_list</span><span class="p">:</span> <span class="c1">#go through every punctuation mark </span>
+        <span class="n">line</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">mark</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="c1">#use replace method to replace each possible punctuation mark with an empty string</span>
+    <span class="n">line_words</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span> <span class="c1">#we&#39;re using the string split() method to separate each line by space character</span>
+    <span class="c1">#this converts the line to a list</span>
+    <span class="c1">#for example: &quot;This is a sentence.&quot;.split(&quot; &quot;) --&gt; [&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sentence.&#39;]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line_words</span><span class="p">:</span> <span class="c1">#iterate over every word in the line</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span> <span class="c1"># if we haven&#39;t seen this word yet</span>
+            <span class="n">words</span><span class="p">[</span><span class="n">word</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span> <span class="c1">#add it to the words dictionary, and mark the count as 1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">words</span><span class="p">[</span><span class="n">word</span><span class="p">]</span><span class="o">+=</span><span class="mi">1</span> <span class="c1">#we&#39;ve already seen this word, so increment the count by 1</span>
 </code></pre></div>
-<h2 id="finding-the-right-regular-expression">Finding The Right Regular Expression<a class="headerlink" href="#finding-the-right-regular-expression" title="Permanent link">&para;</a></h2>
-<p>You often are confronted with validating complex fields like phone numbers, zip codes, and postal addresses.  The good news is that many other people have also needed to do this and with a bit of searching you can probably find a regular expression that meets your needs.  One of the best places to look for regular expressions is <a href="ttps://www.regexlib.com/">RegExLib</a>.  You can not only search for a regular expression but you can test it on common patterns.  Other users have also voted on which regular expressions are their favorites.  There are also categories of regular expressions such as:</p>
-<ol>
-<li>E-mails</li>
-<li>Dates and times</li>
-<li>Strings</li>
-<li>Numbers</li>
-<li>URI</li>
-<li>Addresses/Phone</li>
-<li>Markup</li>
-<li>Miscellaneous</li>
-</ol>
-<h2 id="from-search-to">From Search to<a class="headerlink" href="#from-search-to" title="Permanent link">&para;</a></h2>
-<p>The re module offers a set of functions that allows us to search a string for a match:</p>
-<p>Function    Description
-findall Returns a list containing all matches
-search  Returns a Match object if there is a match anywhere in the string
-split   Returns a list where the string has been split at each match
-sub Replaces one or many matches with a string</p>
-<h2 id="python-regular-expression-references">Python Regular Expression References<a class="headerlink" href="#python-regular-expression-references" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.debuggex.com/cheatsheet/regex/python">Python RegEx Cheat Sheet</a>
-<a href="https://docs.python.org/3/howto/regex.html#regex-howto">Python Regular Expressions HOWTO</a></p>
+<p>The method we used above to remove punctuation characters from the lines is not the most computationally efficent. We're going to learn a better way to do this in the section on Regex expressions.</p>
+<p>One thing we left out from the mapping section is that you can iterate over a dictionary using the .items() method. Here's what that looks like:</p>
+<div class="highlight"><pre><span></span><code><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s2">&quot;one&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span><span class="s2">&quot;two&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span><span class="s2">&quot;three&quot;</span><span class="p">}</span>
+
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="c1">#this prints:</span>
+<span class="c1">#1 one</span>
+<span class="c1">#2 two</span>
+<span class="c1">#3 three</span>
+</code></pre></div>
+<h3 id="you-try-it">You Try It!<a class="headerlink" href="#you-try-it" title="Permanent link">&para;</a></h3>
+<p>If you recall, a dictionary is an unordered data structure. Use what we learned about iterating over items in a dictionary to determine what word occurs the most frequently in <em>Moby-Dick</em>!</p>
+<h3 id="writing-files">Writing Files<a class="headerlink" href="#writing-files" title="Permanent link">&para;</a></h3>
+<p>Let's say we wanted to write out <em>Moby-Dick</em> with no capital letters. Here's how we could approach that:</p>
+<div class="highlight"><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Downloads/moby10b.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="c1">#open Moby-Dick file</span>
+<span class="n">lines</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1">#put all lines from Moby-Dick into a list</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1">#close the file</span>
+
+<span class="n">new_file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/Users/Bella/Documents/moby-dick_lowercase.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="c1">#write new file to Documents folder</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+    <span class="n">new_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span>
+
+<span class="n">new_file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
                 
               
               
@@ -1545,7 +1329,7 @@ sub Replaces one or many matches with a string</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../08-dir/" title="Dir" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../09-regex/" title="Regular Expressions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -1554,19 +1338,19 @@ sub Replaces one or many matches with a string</p>
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Dir
+                  Regular Expressions
                 </span>
               </div>
             </a>
           
           
-            <a href="../05-files/" title="Files" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../06-images/" title="Images" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Files
+                  Images
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
