@@ -36,4 +36,15 @@ dan.write('done with square')
 Can you make the turtle use a larger pen size?  Try dan.pensize(10) for the red and dan.pensize(3) for the blue.
 
 ## Experiments
-Can you change the width of the pen with the dan.penwidth(20) function?
+1. Can you change the width of the pen with the dan.penwidth(20) function?
+2. Show i
+```py
+for i in range(4):
+    dan.write(i ,None,None, "16pt bold")
+    if i % 2:
+      dan.color('red')
+   else:
+      dan.color('blue')
+   dan.forward(distance)
+   dan.right(angle)
+```

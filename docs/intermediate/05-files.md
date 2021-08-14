@@ -1,5 +1,9 @@
 # Reading and Writing Files in Python
-At this point you should now have python installed on your computer and no longer be using trinket.io. We recommend [installing Anaconda](https://www.anaconda.com/products/individual) and using the Spyder integrated development environment (IDE). 
+
+Most of the initial labs until now used the Trinket web site to teach you how to program Python.  Although many of these labs use Trinket, some of the labs in the intermediate class need access to your local file system to learn how to open and manipulate files.  To do this you must install Python on your local computer.
+
+To install Python on your computer visit the [Python.org](https://www.python.org) web site and follow the installation instructions for your computer operating system (Windows, Mac, Linux etc.)
+
 
 Python makes it easy to read and write text files. The general syntax for opening a file is as follows:
 

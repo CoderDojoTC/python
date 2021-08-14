@@ -1,5 +1,5 @@
 ## Drawing a Square
-The following code is an example of drawing a square using turtle graphics.  In this example the turtle moves foward 100 units and then turns right.  The angle for the right turn is 90 degrees.  It repeats these two functions four times to make a square.
+The following code is an example of drawing a square using turtle graphics.  In this example the turtle moves forward 100 units and then turns right.  The angle for the right turn is 90 degrees.  It repeats these two functions four times to make a square.
 
 ## Sample Code
 ```python
@@ -19,6 +19,7 @@ dan.right(90)
 dan.forward(100)
 dan.right(90)
 ```
+
 ## Drawing
 ![](../img/simple-square.png)
 
