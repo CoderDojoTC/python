@@ -253,8 +253,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trinket/01-turtle-graphics/" class="md-nav__link">
-        Trinket Account
+      <a href="../../trinket/01a-trinket-account/" class="md-nav__link">
+        Using Trinket
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01b-turtle-graphics/" class="md-nav__link">
+        Turtle Graphics
       </a>
     </li>
   
@@ -291,6 +303,18 @@
     <li class="md-nav__item">
       <a href="../../trinket/04-loops/" class="md-nav__link">
         Loops
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04a-stop-sign/" class="md-nav__link">
+        Stop Sign
       </a>
     </li>
   
@@ -404,6 +428,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/13-shape-module/" class="md-nav__link">
+        Shape Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/15-sine-wave/" class="md-nav__link">
+        Sine Wave
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -455,6 +503,18 @@
     <li class="md-nav__item">
       <a href="../../repl/07-flower/" class="md-nav__link">
         Flower
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/08-shape-function/" class="md-nav__link">
+        Shape Function
       </a>
     </li>
   
@@ -675,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-files/" class="md-nav__link">
+      <a href="../05-files.md" class="md-nav__link">
         Files (local file system)
       </a>
     </li>
@@ -687,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-images/" class="md-nav__link">
+      <a href="../06-images.md" class="md-nav__link">
         Images (local file system)
       </a>
     </li>
@@ -701,6 +761,102 @@
     <li class="md-nav__item">
       <a href="../10-debugging/" class="md-nav__link">
         Debugging (vscode)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-json.md" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-object-classes/" class="md-nav__link">
+        Object Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-dir/" class="md-nav__link">
+        Dir
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-regex/" class="md-nav__link">
+        Regular Expressions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-files.md" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-images.md" class="md-nav__link">
+        Images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-debugging/" class="md-nav__link">
+        Debugging
       </a>
     </li>
   
@@ -1098,24 +1254,16 @@
                 
                   <h1>Variables and Scope</h1>
                 
-                <h2 id="variables">Variables</h2>
+                <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h2>
 <p>If you've made it this far, you know a variable is a container for data in Python. Let's dive a little deeper into the world of variables!</p>
-<h3 id="naming-conventions">Naming conventions</h3>
+<h3 id="naming-conventions">Naming conventions<a class="headerlink" href="#naming-conventions" title="Permanent link">&para;</a></h3>
 <p>In the <a href="https://www.python.org/dev/peps/pep-0008/#function-and-variable-names">Python community</a>, the general accepted format for variable and function names is all lower case, with multiple words separated by underscores. For example:</p>
 <p>variable = 0</p>
 <p>my_variable = 0</p>
 <p>my_function_name()</p>
-<h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names</h3>
+<h3 id="giving-variables-and-functions-meaningful-names">Giving variables and functions meaningful names<a class="headerlink" href="#giving-variables-and-functions-meaningful-names" title="Permanent link">&para;</a></h3>
 <p>Variable names should be meaningful to you as the programmer, to any other developers that may be collaborating with you and any developers that may look at your code in the future. Below are two instances of the same code using different variable and function names. Which is easier to read?</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_first_function</span><span class="p">(</span><span class="n">arg</span><span class="p">):</span>
   <span class="n">variable1</span> <span class="o">=</span> <span class="n">arg</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">variable1</span>
 
@@ -1125,16 +1273,7 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_first_function</span><span class="p">(</span><span class="n">my_second_function</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
 </code></pre></div>
-</td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">two_more</span>
 
@@ -1144,20 +1283,9 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">plus_two</span><span class="p">(</span><span class="n">times_five</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
 </code></pre></div>
-</td></tr></table>
-<h3 id="variable-scope">Variable Scope</h3>
+<h3 id="variable-scope">Variable Scope<a class="headerlink" href="#variable-scope" title="Permanent link">&para;</a></h3>
 <p>A variable's scope refers to where in your code you can access that variable. The scope of a variable defined within a function is limited to the function in which it is defined. This is an example of a local variable.  For example, using the more legible code above: </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">plus_two</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
   <span class="n">two_more</span> <span class="o">=</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">2</span>
   <span class="k">return</span> <span class="n">two_more</span>
 
@@ -1169,23 +1297,13 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">five_times</span><span class="p">)</span> 
 </code></pre></div>
-</td></tr></table>
 <p>Attempting to print the value of five_times within the global scope of the code will result in a NameError, because the scope of the variable five_times is limited to the times_five function. Conversely, a global variable is a variable that can be accessed anywhere within your code. Global variables are usually created within the main body of your code, that is outside of functions, as demonstrated below. You can see the my_name variable is accessible within the who_is_awesome function.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Zack&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="n">my_name</span> <span class="o">=</span> <span class="s2">&quot;Zack&quot;</span>
 <span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">my_name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>You can make a variable used within a function globally accessible by using the 'global' keyword. For example,</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">who_is_awesome</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
     <span class="k">global</span> <span class="n">awesome_statement</span>
     <span class="n">awesome_statement</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot; is awesome!&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Variable Reference Within Function: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
@@ -1193,8 +1311,7 @@
 <span class="n">who_is_awesome</span><span class="p">(</span><span class="s2">&quot;Zack&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Global Variable Use: &quot;</span> <span class="o">+</span> <span class="n">awesome_statement</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
-<h2 id="food-for-thought">Food for Thought</h2>
+<h2 id="food-for-thought">Food for Thought<a class="headerlink" href="#food-for-thought" title="Permanent link">&para;</a></h2>
 <p>When would it make sense to use the global keyword within a function to make a variable globally accessible, instead of returning the variable from the function? </p>
                 
               
@@ -1250,7 +1367,7 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           
-            built with the <a href="http://microsite.optum.com">Micro-Site Builder</a>
+            All content is covered under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
         </div>
         
       </div>

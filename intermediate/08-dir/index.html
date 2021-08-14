@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#the-dir-function" class="md-skip">
+        <a href="#python-objects-and-the-dir-function" class="md-skip">
           Skip to content
         </a>
       
@@ -253,8 +253,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trinket/01-turtle-graphics/" class="md-nav__link">
-        Trinket Account
+      <a href="../../trinket/01a-trinket-account/" class="md-nav__link">
+        Using Trinket
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01b-turtle-graphics/" class="md-nav__link">
+        Turtle Graphics
       </a>
     </li>
   
@@ -291,6 +303,18 @@
     <li class="md-nav__item">
       <a href="../../trinket/04-loops/" class="md-nav__link">
         Loops
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04a-stop-sign/" class="md-nav__link">
+        Stop Sign
       </a>
     </li>
   
@@ -404,6 +428,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/13-shape-module/" class="md-nav__link">
+        Shape Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/15-sine-wave/" class="md-nav__link">
+        Sine Wave
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -455,6 +503,18 @@
     <li class="md-nav__item">
       <a href="../../repl/07-flower/" class="md-nav__link">
         Flower
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/08-shape-function/" class="md-nav__link">
+        Shape Function
       </a>
     </li>
   
@@ -581,6 +641,109 @@
             
   
   
+  
+    <li class="md-nav__item">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Dir
+      </a>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-regex/" class="md-nav__link">
+        Regular Expressions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-files.md" class="md-nav__link">
+        Files (local file system)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-images.md" class="md-nav__link">
+        Images (local file system)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-debugging/" class="md-nav__link">
+        Debugging (vscode)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-json.md" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-object-classes/" class="md-nav__link">
+        Object Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -616,8 +779,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-files/" class="md-nav__link">
-        Files (local file system)
+      <a href="../05-files.md" class="md-nav__link">
+        Files
       </a>
     </li>
   
@@ -628,8 +791,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-images/" class="md-nav__link">
-        Images (local file system)
+      <a href="../06-images.md" class="md-nav__link">
+        Images
       </a>
     </li>
   
@@ -641,7 +804,7 @@
   
     <li class="md-nav__item">
       <a href="../10-debugging/" class="md-nav__link">
-        Debugging (vscode)
+        Debugging
       </a>
     </li>
   
@@ -990,58 +1153,10 @@
                   </a>
                 
                 
-                <h1 id="the-dir-function">The dir() function</h1>
-<p>As you know some date types and objects have their own methods. For example, a dictionary object has the <code>.items()</code> method. So how do you know what methods are available to you? That's where the dir function comes in! Just pass whatever data or object you want to know about as an argument. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+                <h1 id="python-objects-and-the-dir-function">Python Objects and the dir() function<a class="headerlink" href="#python-objects-and-the-dir-function" title="Permanent link">&para;</a></h1>
+<p>In Python we have the ability to associate a group of functions with any object class.  These functions when grouped together with an object are called <em>methods</em>.  You can think of them <em>accessor methods</em> go get access to the data or behavior of an object class.</p>
+<p>For example, a dictionary object has the <code>.items()</code> method. So how do you know what methods are available to you? That's where the dir function comes in! Just pass whatever data or object you want to know about as an argument. </p>
+<div class="highlight"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 
 <span class="nb">dir</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 
@@ -1092,15 +1207,8 @@
  <span class="s1">&#39;reverse&#39;</span><span class="p">,</span>
  <span class="s1">&#39;sort&#39;</span><span class="p">]</span>
 </code></pre></div>
-</td></tr></table>
 <p>You can see this returns a list of methods, a lot of which begin and end with <code>__</code>, those are special methods that we won't worry about for the purposes of this lab. But the rest of them are methods we can use on a list object. For example, <code>.pop()</code>.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
 
 <span class="n">last</span><span class="o">=</span><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
@@ -1108,27 +1216,17 @@
 
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#prints [1,2,3]</span>
 </code></pre></div>
-</td></tr></table>
 <p>The pop() method will remove and return the last element from the list, that is if you call pop without passing in an argument, as we just did. Pop will accept one optional argument, that is index...you can pass the index of the item you want to remove from the list and return. With lists we start counting indices from 0. So in the list below 1 is at the 0th index and 6 is at the 5th index. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">my_list</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1">#prints 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># prints 1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c1">#prints 6</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c1"># prints 6</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="c1">#prints 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span> <span class="c1"># removes and prints 3</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1">#prints [1,2,4,5,6]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span> <span class="c1"># prints [1,2,4,5,6]</span>
 </code></pre></div>
-</td></tr></table>
                 
               
               
@@ -1183,7 +1281,7 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           
-            built with the <a href="http://microsite.optum.com">Micro-Site Builder</a>
+            All content is covered under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
         </div>
         
       </div>

@@ -253,8 +253,20 @@
   
   
     <li class="md-nav__item">
-      <a href="../../trinket/01-turtle-graphics/" class="md-nav__link">
-        Trinket Account
+      <a href="../../trinket/01a-trinket-account/" class="md-nav__link">
+        Using Trinket
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01b-turtle-graphics/" class="md-nav__link">
+        Turtle Graphics
       </a>
     </li>
   
@@ -291,6 +303,18 @@
     <li class="md-nav__item">
       <a href="../../trinket/04-loops/" class="md-nav__link">
         Loops
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04a-stop-sign/" class="md-nav__link">
+        Stop Sign
       </a>
     </li>
   
@@ -404,6 +428,30 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/13-shape-module/" class="md-nav__link">
+        Shape Module
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/15-sine-wave/" class="md-nav__link">
+        Sine Wave
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -455,6 +503,18 @@
     <li class="md-nav__item">
       <a href="../../repl/07-flower/" class="md-nav__link">
         Flower
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/08-shape-function/" class="md-nav__link">
+        Shape Function
       </a>
     </li>
   
@@ -645,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../05-files/" class="md-nav__link">
+      <a href="../05-files.md" class="md-nav__link">
         Files (local file system)
       </a>
     </li>
@@ -657,7 +717,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../06-images/" class="md-nav__link">
+      <a href="../06-images.md" class="md-nav__link">
         Images (local file system)
       </a>
     </li>
@@ -671,6 +731,102 @@
     <li class="md-nav__item">
       <a href="../10-debugging/" class="md-nav__link">
         Debugging (vscode)
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-json.md" class="md-nav__link">
+        JSON
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-object-classes/" class="md-nav__link">
+        Object Classes
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-modules/" class="md-nav__link">
+        Modules
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-dir/" class="md-nav__link">
+        Dir
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-regex/" class="md-nav__link">
+        Regular Expressions
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-files.md" class="md-nav__link">
+        Files
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-images.md" class="md-nav__link">
+        Images
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-debugging/" class="md-nav__link">
+        Debugging
       </a>
     </li>
   
@@ -1034,28 +1190,17 @@
                   </a>
                 
                 
-                <h1 id="checking-data-types-of-function-parameters">Checking Data Types of Function Parameters</h1>
+                <h1 id="checking-data-types-of-function-parameters">Checking Data Types of Function Parameters<a class="headerlink" href="#checking-data-types-of-function-parameters" title="Permanent link">&para;</a></h1>
 <p>In the beginning course we learned how to pass arguments to functions.  Now we learn how to make sure our functions get the data that they expect!</p>
 <p>We saw in the data types lab we can use the type keyword to get the type of a variable (e.g. <code>type(my_var)</code>). We can use this in combination with the <em>is equal to</em> operator (<code>==</code>) to make sure a variable passed to a function is the right data type. </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">validateType</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">validateType</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">):</span>
   <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">expecting_string</span><span class="p">)</span><span class="o">==</span><span class="nb">str</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed a string!&quot;</span><span class="p">)</span>
   <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You passed something that wasn&#39;t a string!&quot;</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>As you may recall, during the data type labs we used the input function to solicit user input. The response from input is always a string! So if we ask the user to input a number, how do we confirm the input is in fact a number before type casting int on the user input? Remember type casting int on an alphabetic string will throw an error. Let's check it out.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
   <span class="k">return</span> <span class="n">user_input_as_int</span>
@@ -1063,23 +1208,12 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>Let's try <a href="https://trinket.io/python/51fabe7c6c">running this on trinket.io</a> and when asked to enter an int, let's enter a word!</p>
 <p>As you can see we get a type error, because we're trying to convert an alphabetic string to an integer:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span>
+<div class="highlight"><pre><span></span><code><span class="ne">ValueError</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">literal</span> <span class="k">for</span> <span class="nb">int</span>
 </code></pre></div>
-</td></tr></table>
 <p>So what's the work around? Strings have some very useful methods (methods are functions that belong to objects. We'll take about objects in the advanced section), among them <code>.isdigit()</code>! Let's see it in action!</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
     <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
@@ -1090,16 +1224,8 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
 <p>Let's say the user input was critical to the program we're building and if the user does not input an integer we want to throw an error to the user. We can use the <code>assert</code> keyword to achieve this. The syntax for the assert keyword is as follows: <code>assert some_conditional_statement, "Error message to output."</code> Let's see it in action below! </p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">cast_to_int</span><span class="p">():</span>
   <span class="n">user_input</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter an int</span><span class="se">\n</span><span class="s2">&gt;&quot;</span><span class="p">)</span>
   <span class="k">assert</span> <span class="n">user_input</span><span class="o">.</span><span class="n">isdigit</span><span class="p">(),</span> <span class="s2">&quot;You did not input an integer!&quot;</span>
   <span class="n">user_input_as_int</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
@@ -1108,8 +1234,7 @@
 <span class="n">some_int</span><span class="o">=</span><span class="n">cast_to_int</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">some_int</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
-<h2 id="you-try-it">You try it!</h2>
+<h2 id="you-try-it">You try it!<a class="headerlink" href="#you-try-it" title="Permanent link">&para;</a></h2>
 <p>Let's say we want to continously bug a user until they input an integer. How might we achieve this using the lesson above + what we know about while loops?</p>
                 
               
@@ -1165,7 +1290,7 @@
       <div class="md-footer-meta__inner md-grid">
         <div class="md-footer-copyright">
           
-            built with the <a href="http://microsite.optum.com">Micro-Site Builder</a>
+            All content is covered under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
         </div>
         
       </div>
