@@ -31,7 +31,6 @@ nav:
     - Data Types: intermediate/02-data-types.md
     - Data Types & Function Parameters: intermediate/03-data-type-validation.md
     - Maps: intermediate/04-maps.md
-<<<<<<< HEAD
     - Modules: intermediate/07-modules.md
     - Dir: intermediate/08-dir.md
     - Regular Expressions: intermediate/09-regex.md
@@ -40,7 +39,6 @@ nav:
     - Images (local file system): intermediate/06-images.md
     
     - Debugging (vscode): intermediate/10-debugging.md
-=======
     - JSON: intermediate/05-json.md
     - Object Classes: intermediate/06-object-classes.md
     - Modules: intermediate/07-modules.md
@@ -49,7 +47,6 @@ nav:
     - Files: intermediate/05-files.md
     - Images: intermediate/06-images.md   
     - Debugging: intermediate/10-debugging.md
->>>>>>> 5737efd1b7400531f4fbc3842e0cfb7c98a98d46
     - Maze Solving with BFS: intermediate/bfsMaze.md
     - Maze Solving with DFS: intermediate/dfsMaze.md
   - Jupyter:
