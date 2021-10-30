@@ -44,6 +44,13 @@ for step in range(0, len(myPath)):
     print(step+1, myPath[step])
 ```
 
+## Using Conda Environments
+We use conda to keep all our Python projects separate.
+
+```sh
+conda create -n coderdojo python=3
+conda activate coderdojo
+```
 
 ## Installing Python in an Integrated Development Environment (IDE)
 
