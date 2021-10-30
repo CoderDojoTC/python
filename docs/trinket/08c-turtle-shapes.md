@@ -1,13 +1,13 @@
 # Change the Turtle Shape
 
-You can change your turtle shape to be any of the following:
+With the turtle shape() method we can change your turtle shape to be any of the following shapes
 
-1. 'arrow'
-2. 'turtle'
-3. 'circle'
-4. 'square'
-5. 'triangle'
-6. 'classic'
+1. arrow
+2. turtle
+3. circle
+4. square
+5. triangle
+6. classic
 
 ```py
 import turtle
