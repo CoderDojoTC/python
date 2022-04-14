@@ -2,9 +2,23 @@
 
 In this lab we will create a set of drawing function and put them together into a new file.  We will then import this file into our main.py file.
 
+Example code to import the module in main.py
+``` py
+import turtle
+from shape import *
+dan = turtle.Turtle()
+dan.shape('turtle')
 
-## Sample Code
+draw_triangle(dan, 'red', 5, 20, 30)
+  
+draw_circle(dan, 'orange', 10, 0, 30)
+
+draw_square(dan, 'orange', 15, -20, 30)
 ```
+
+
+## Sample Codeimited t
+```py
 # This is a custom module we've made.  
 # Modules are files full of code that you can import into your programs.
 # This one teaches our turtle to draw various shapes.

@@ -41,3 +41,10 @@ for myShape in myList:
   dan.shape(myShape)
   time.sleep(1)
 ```
+
+
+##Sample program
+[Sample](https://trinket.io/library/trinkets/c9924a123a)
+
+## Experiments
+Can you use the new shapes to draw a star or any other shape of your chosing
