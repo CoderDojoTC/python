@@ -29,6 +29,9 @@ jobs:
           pip install mkdocs-material
 
       - name: Deploy
-        run: |
-          git pull
-          mkdocs gh-deploy
+        uses: actions/deploy-pages@v1
+   #     with:
+   #       branch: master # The branch the action should deploy to.
+   #     run: |
+   #       git pull
+   #       mkdocs gh-deploy
