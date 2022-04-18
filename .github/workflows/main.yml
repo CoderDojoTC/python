@@ -17,6 +17,9 @@ jobs:
   build:
     name: Build and Deploy Documentation
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     steps:
       - name: Checkout Master
         uses: actions/checkout@v3
@@ -31,6 +34,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
 
+      - name: Check
+        run: |
+        pwd
+        ls -la
       - name: Deploy
         uses: actions/deploy-pages@v1
    #     with:
