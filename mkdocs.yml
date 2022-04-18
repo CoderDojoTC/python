@@ -3,7 +3,7 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
-    - Using Trinket: trinket/01a-trinket-account.md
+    - Setting Up Trinket: trinket/01a-trinket-account.md
     - Turtle Graphics: trinket/01b-turtle-graphics.md
     - Turtle Square: trinket/02-simple-square.md
     - Variables: trinket/03-variables.md

@@ -5,6 +5,8 @@ name: Build Documentation using MkDocs
 on:
   push:
     branches: [master]
+    paths:
+      - '**.yml'
   pull_request:
     branches: [master]
 
