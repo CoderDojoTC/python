@@ -13,16 +13,20 @@ on:
 env:
   GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+permissions:
+      contents: 'read'
+      id-token: 'write'
+      pull-requests: 'write'
 jobs:
   build:
     name: Build and Deploy Documentation
     runs-on: ubuntu-latest
-    permissions:
-      contents: 'read'
-      id-token: 'write'
+  
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v3
+          with:
+            persist-credentials: false
         if: github.event_name == 'pull_request'
         with:
           fetch-depth: 0
@@ -30,6 +34,8 @@ jobs:
 
       - name: Checkout Master
         uses: actions/checkout@v3
+          with:
+            persist-credentials: false
         if: github.event_name == 'push'
         with:
           fetch-depth: 0
@@ -43,6 +49,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs-material
+          run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
 
       - name: Check
         run: |
