@@ -23,6 +23,16 @@ jobs:
     steps:
       - name: Checkout Master
         uses: actions/checkout@v3
+        - uses: actions/checkout@v2
+          if: github.event_name == 'pull_request'
+          with:
+            fetch-depth: 0
+            ref: ${{ github.event.pull_request.head.ref }}
+
+        - uses: actions/checkout@v3
+          if: github.event_name == 'push'
+          with:
+            fetch-depth: 0
 
       - name: Set up Python 3.7
         uses: actions/setup-python@v2
@@ -39,9 +49,8 @@ jobs:
           pwd
           ls -la
       - name: Deploy
-        uses: actions/deploy-pages@v1
    #     with:
-   #       branch: master # The branch the action should deploy to.
-   #     run: |
-   #       git pull
-   #       mkdocs gh-deploy
+   #      branch: master # The branch the action should deploy to.
+        run: |
+          git pull
+          mkdocs gh-deploy
