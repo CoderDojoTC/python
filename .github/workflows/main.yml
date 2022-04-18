@@ -25,8 +25,8 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v3
-          with:
-            persist-credentials: false
+        with:
+          persist-credentials: false
         if: github.event_name == 'pull_request'
         with:
           fetch-depth: 0
@@ -34,8 +34,8 @@ jobs:
 
       - name: Checkout Master
         uses: actions/checkout@v3
-          with:
-            persist-credentials: false
+        with:
+          persist-credentials: false
         if: github.event_name == 'push'
         with:
           fetch-depth: 0
