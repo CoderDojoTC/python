@@ -25,20 +25,18 @@ jobs:
     steps:
       - name: Checkout Branch
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
         if: github.event_name == 'pull_request'
         with:
           fetch-depth: 0
           ref: ${{ github.event.pull_request.head.ref }}
+          persist-credentials: false
 
       - name: Checkout Master
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
         if: github.event_name == 'push'
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Python 3.7
         uses: actions/setup-python@v2
