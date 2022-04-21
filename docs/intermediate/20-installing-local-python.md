@@ -3,8 +3,7 @@
 The next few labs are labs that must be run on your local computer because the will interact with the local operating system and local file system.  You will not be able to use Trinket to run these programs.
 
 The main site for Python is here:
-
-    [https://www.python.org/](https://www.python.org/)
+[https://www.python.org/](https://www.python.org/)
 
 If you go to that site there will be pages for Downloads and Documentation for each version of your desktop or PC.
 
