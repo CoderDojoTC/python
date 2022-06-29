@@ -28,5 +28,5 @@ dan.write('done with square')
 ## Experiments
 1. Can you make the turtle draw a larger square?  Hint: change the distance to be 80.  How big can you make the square before the turtle goes off the screen?
 2. Can you make a hexagon?  This is a figure with six sides.  Hint: the angle will need to be 60 and the range limit will need to be 6.
-3. Can you make a hexagon?  A Hexagon has eight sides.  Hints: Try using an angle of 45.
-4. Can you make a stop sign?  You will need to use a dan.color('red'). a dan.begomfill() and a dan.endfill().  You can add the text of the word "stop" by using dan.moveto(x,y) and dan.write("STOP",None,None, "30pt bold").  You can also use the dan.hideturtle() so that the outline of the turtle is not displayed at the end.  See: https://www.youtube.com/watch?v=HhxYt9Lskrw
+3. Can you make an octagon?  An Octagon has eight sides.  Hints: Try using an angle of 45.
+4. Can you make a stop sign?  You will need to use a dan.color('red'). a dan.beginfill() and a dan.endfill().  You can add the text of the word "stop" by using dan.moveto(x,y) and dan.write("STOP",None,None, "30pt bold").  You can also use the dan.hideturtle() so that the outline of the turtle is not displayed at the end.  See: https://www.youtube.com/watch?v=HhxYt9Lskrw
