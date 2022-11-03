@@ -10,7 +10,7 @@ Here is the basic syntax of the Python conditional operator.
 ```py
 if (i > 2):
    # do something if i is greater than 2
-   else:
+else:
    # do something else when i is exactly 2 or less than 2
 ```
 
@@ -26,7 +26,7 @@ distance = 100
 angle = 90
 
 for i in range(1, 5):
-   # i modulo 2 is the remainer after we divide by 2
+   # i modulo 2 is the remainder after we divide by 2
    dan.write(i, font=("arial", 16, "normal"))
    if i > 2: # true if i greater than 2
       dan.color('red')
@@ -47,7 +47,7 @@ We would like every other side to change color.  To do this we will add an if-th
 i % 2
 ```
 
-In our previous loop lesson, we created an index that started at 1 and then changed to 2, 3 and finally 4.  For 1 and 3, the first and third edges the result of divid by 2 will return 1 which is the same as TRUE.  For 2 and 4 (the vertical sides of the square), the expression will evaluate to 0 since the remainder of 2/2 and 4/2 is zero. 
+In our previous loop lesson, we created an index that started at 1 and then changed to 2, 3 and finally 4.  For 1 and 3, the first and third edges the result of divide by 2 will return 1 which is the same as TRUE.  For 2 and 4 (the vertical sides of the square), the expression will evaluate to 0 since the remainder of 2/2 and 4/2 is zero. 
 
 ```py
 import turtle
@@ -69,7 +69,7 @@ for i in range(4):
 dan.write('done with square')
 ```
 
-[Conditinal Sqare](https://trinket.io/library/trinkets/5b18dc55c6)
+[Conditional Square](https://trinket.io/library/trinkets/5b18dc55c6)
 
 Can you make the turtle use a larger pen size?  Try dan.pensize(10) for the red and dan.pensize(3) for the blue.
 
