@@ -92,4 +92,10 @@ markdown_extensions:
       permalink: true
 plugins:
     - search
+# Google Analytics Site ID: G-EP38Z3PVD5
+extra:
+  analytics:
+    provider: google
+    # https://analytics.google.com/analytics/web/#/p368752593/reports/intelligenthome
+    property: G-EP38Z3PVD5
 
