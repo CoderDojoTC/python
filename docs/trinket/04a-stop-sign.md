@@ -1,5 +1,7 @@
 # Python Turtle Graphics Stop Sign
 
+![](../img/stop-sign.png)
+
 In this lesson, we will use variables and for loop to draw a stop sign.
 We will also show how to use the penup, pendown, color, begin_fill, end_fill and write functions.
 Our write function will also change the font size using the ```font=("Arial", 30, "normal")``` parameter.

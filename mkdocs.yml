@@ -3,7 +3,7 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
-    - Using Trinket: trinket/01a-trinket-account.md
+    - Setting Up Trinket: trinket/01a-trinket-account.md
     - Turtle Graphics: trinket/01b-turtle-graphics.md
     - Turtle Square: trinket/02-simple-square.md
     - Variables: trinket/03-variables.md
@@ -14,12 +14,17 @@ nav:
     - Flower: trinket/07-flower.md
     - Function Parameters: trinket/07-function-parameters.md
     - Lists: trinket/08-list.md
+    - List of Turtle Shapes: trinket/08c-turtle-shapes.md
     - Random Numbers: trinket/08-random.md
-    - Random Stars: trinket/13-random-stars.md
+    - Random Stars: trinket/08b-random-stars.md
     - Input: trinket/11-input.md
     - Recursion: trinket/12-recursion.md
     - Shape Module: trinket/13-shape-module.md
+    - Color Picker: trinket/14-color-picker.md
     - Sine Wave: trinket/15-sine-wave.md
+    - Changing background: trinket/16-changing-background.md
+    - Controlling mouseclicks: trinket/17-controlling-mouseclicks.md
+    - Other examples: trinket/examples.m 
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
@@ -31,24 +36,18 @@ nav:
     - Data Types: intermediate/02-data-types.md
     - Data Types & Function Parameters: intermediate/03-data-type-validation.md
     - Maps: intermediate/04-maps.md
-    - Modules: intermediate/07-modules.md
-    - Dir: intermediate/08-dir.md
-    - Regular Expressions: intermediate/09-regex.md
-
     - Files (local file system): intermediate/05-files.md
-    - Images (local file system): intermediate/06-images.md
-    
-    - Debugging (vscode): intermediate/10-debugging.md
+    - Images (local file system): intermediate/06-images.md    
     - JSON: intermediate/05-json.md
     - Object Classes: intermediate/06-object-classes.md
     - Modules: intermediate/07-modules.md
     - Dir: intermediate/08-dir.md
     - Regular Expressions: intermediate/09-regex.md
-    - Files: intermediate/05-files.md
-    - Images: intermediate/06-images.md   
     - Debugging: intermediate/10-debugging.md
+    - Plotting sine: intermediate/12-plot-sin.md
     - Maze Solving with BFS: intermediate/bfsMaze.md
     - Maze Solving with DFS: intermediate/dfsMaze.md
+    - Installing Python: intermediate/20-installing-local-python.md
   - Jupyter:
     - Setup Turtle on Jupyter: jupyter/01-setup.md
     - Drawing Box Labs: jupyter/02-draw-box.md
@@ -68,7 +67,7 @@ nav:
 
 site_description: 'Resources for teaching Python to CoderDojo Twin Cities students.'
 site_author: 'Dan McCreary'
-repo_name: 'python'
+repo_name: 'GitHub Repo'
 repo_url: 'https://github.com/CoderDojoTC/python'
 
 # CoderDojo Standards from here down
