@@ -59,7 +59,9 @@ nav:
   - Advanced Python:
     - Stock Ticker Analysis: advanced/stocks.md
     - MNIST Digit Prediction: advanced/mnist.md
-    
+  - Strategy:
+    - Introduction: strategy/index.md
+    - Order of Concepts: order-of-cocepts.,d
   - Contributing:
     - How to Contribute Examples: contribute.md
   - Contact:
