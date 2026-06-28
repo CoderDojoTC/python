@@ -1,0 +1,16 @@
+{
+  "ENV": "SteelBlue",
+  "SYN": "DarkSlateBlue",
+  "DAT": "DarkGreen",
+  "CTL": "LimeGreen",
+  "FUN": "Gold",
+  "COL": "DarkGoldenrod",
+  "MOD": "Teal",
+  "TXT": "DodgerBlue",
+  "FIO": "LightSkyBlue",
+  "ERR": "Crimson",
+  "OOP": "MediumPurple",
+  "VIZ": "DarkOrchid",
+  "ALG": "OliveDrab",
+  "ADV": "Orange"
+}

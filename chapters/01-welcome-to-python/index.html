@@ -1,0 +1,3983 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Meet Monty, run your first Python code in the browser, and discover print(), comments, and turtle graphics.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/python/chapters/01-welcome-to-python/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../02-python-code-structure/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Welcome to Python and Skulpt - Beginning Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/skulpt.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-EP38Z3PVD5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-EP38Z3PVD5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-EP38Z3PVD5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#642580" data-md-color-accent="#41BAC1">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#welcome-to-python-and-skulpt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Beginning Python" class="md-header__button md-logo" aria-label="Beginning Python" data-md-component="logo">
+      
+  <img src="../../img/python-logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Beginning Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Welcome to Python and Skulpt
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Beginning Python" class="md-nav__button md-logo" aria-label="Beginning Python" data-md-component="logo">
+      
+  <img src="../../img/python-logo.jpeg" alt="logo">
+
+    </a>
+    Beginning Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Chapters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    1. Welcome to Python and Skulpt
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    1. Welcome to Python and Skulpt
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Python?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-run-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ways to Run Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-python-line-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First Python Line: print()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-code-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Code: print()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try It Now
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-print-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How print() Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-comments-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Comments with
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Sensitivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blank-lines-make-code-readable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blank Lines Make Code Readable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-libraries-with-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Libraries with import
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawing-with-import-turtle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drawing with import turtle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-code-drawing-a-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Code: Drawing a Shape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-turtle-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try It: Turtle Graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-turtle-program-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How the Turtle Program Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Check
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-python-code-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Python Code Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-variables-and-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Variables and Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04-functions-and-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Functions and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05-drawing-with-turtle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Drawing with Turtle Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06-math-and-arithmetic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Math and Arithmetic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07-for-loops-and-shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. For Loops and Drawing Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08-working-with-strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Working with Strings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09-decisions-if-else/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Making Decisions with If/Else
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10-while-loops-and-animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. While Loops and Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../11-functions-parameters-scope/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Functions with Parameters and Scope
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12-colors-fill-turtle-art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Colors, Fill, and Turtle Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../13-user-input-type-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. User Input and Type Conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../14-string-methods-formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. String Methods and Formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../15-lists-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Lists - Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../16-lists-methods-patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Lists - Methods and Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../17-modules-and-random/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Modules and Random Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../18-math-module-turtle-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Math Module and Turtle Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19-booleans-and-conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. More Booleans and Conditionals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../20-tuples-and-sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Tuples and Sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../21-dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../22-advanced-collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Advanced Collections and Built-in Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../23-error-handling-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Error Handling and Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../24-recursion-and-fractals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24. Recursion and Fractals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../25-object-oriented-programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    25. Object-Oriented Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../26-file-input-output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    26. File Input and Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../27-standard-library-json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    27. Standard Library and JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../28-python-dev-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    28. Python Development Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../29-text-processing-regex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    29. Text Processing and Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../30-algorithms-data-structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    30. Algorithms and Data Structures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../31-advanced-functions-oop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    31. Advanced Functions and OOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../32-data-visualization-matplotlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    32. Data Visualization with matplotlib
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../33-numpy-scientific-computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    33. NumPy and Scientific Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../34-image-processing-pillow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    34. Image Processing with Pillow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../35-advanced-turtle-event-driven/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    35. Advanced Turtle and Event-Driven Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../36-computational-thinking-best-practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    36. Computational Thinking and Best Practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../37-machine-learning-foundations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    37. Machine Learning Foundations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../38-neural-networks-and-mnist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    38. Neural Networks and MNIST
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Trinket
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Trinket
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/00-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01a-trinket-account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Trinket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01b-turtle-graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turtle Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/02-simple-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turtle Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/03-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04-loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04a-stop-sign/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stop Sign
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/05-conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/06-functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/07-flower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/07-function-parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08c-turtle-shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Turtle Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08-random/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08b-random-stars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Stars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/11-input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/12-recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/13-shape-module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shape Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/14-color-picker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Color Picker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/15-sine-wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sine Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/16-changing-background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changing background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/17-controlling-mouseclicks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controlling mouseclicks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/examples.m" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Skulpt (self-hosted)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Skulpt (self-hosted)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/02-simple-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Draw a Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/04a-stop-sign/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stop Sign
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/10-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/text-only-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text-Only Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/mascot-test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mascot Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Graph
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/course-description-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description Assessment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/concept-list-v1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept List v1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/concept-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept List
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/quality-metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graph Quality Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/concept-taxonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Taxonomy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning-graph/taxonomy-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taxonomy Distribution Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Repl.it
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Repl.it
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/02-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/07-flower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/08-shape-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shape Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/12-recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/01-variables-scope/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables and Scope
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/02-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/03-data-type-validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types & Function Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/04-maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/05-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files (local file system)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/06-images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Images (local file system)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/05-json.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/06-object-classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/07-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/08-dir/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dir
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/09-regex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/10-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/12-plot-sin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plotting sine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/bfsMaze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maze Solving with BFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/dfsMaze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maze Solving with DFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/20-installing-local-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/01-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Turtle on Jupyter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-draw-box.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Box Labs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-draw-figure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Figure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-canvas-setup.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Canvas on Jupyter Lab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/20-canvas-color-bars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas Color Bars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Pi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python on Raspberry Pi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/stocks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Ticker Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/mnist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MNIST Digit Prediction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Strategy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Strategy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order-of-cocepts.,d" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order of Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sims/graph-viewer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Viewer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Contribute Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Contact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#concepts-covered" class="md-nav__link">
+    <span class="md-ellipsis">
+      Concepts Covered
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      What is Python?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ways-to-run-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ways to Run Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-python-line-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      Your First Python Line: print()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-code-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Code: print()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try It Now
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-print-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How print() Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#writing-comments-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Writing Comments with
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Sensitivity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blank-lines-make-code-readable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blank Lines Make Code Readable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-libraries-with-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Importing Libraries with import
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drawing-with-import-turtle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drawing with import turtle
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-code-drawing-a-shape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Code: Drawing a Shape
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-it-turtle-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try It: Turtle Graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-the-turtle-program-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      How the Turtle Program Works
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Check
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#experiments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experiments
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="welcome-to-python-and-skulpt">Welcome to Python and Skulpt<a class="headerlink" href="#welcome-to-python-and-skulpt" title="Permanent link">&para;</a></h1>
+<h2 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h2>
+<p>In this first chapter you meet <strong>Monty</strong> — your friendly python-snake guide —
+and write your very first lines of Python code inside the Skulpt browser window.
+You'll discover what Python is, why it's so popular, and get an exciting preview:
+you'll run <code>import turtle</code> and watch Monty draw a shape right on the page.
+By the end you'll know how to print messages, write comments, and understand
+why Python is a great next step after Scratch.</p>
+<h2 id="concepts-covered">Concepts Covered<a class="headerlink" href="#concepts-covered" title="Permanent link">&para;</a></h2>
+<p>This chapter covers the following 9 concepts from the learning graph:</p>
+<ol>
+<li>Python Interpreter Overview</li>
+<li>Trinket.io Web Environment</li>
+<li>Skulpt Browser Python</li>
+<li>print() Function</li>
+<li>Single-Line Comments</li>
+<li>Case Sensitivity</li>
+<li>Blank Lines and Readability</li>
+<li>import Statement</li>
+<li>import turtle</li>
+</ol>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
+<p>This chapter builds on concepts from:</p>
+<p>This is the very first chapter — no prerequisites needed beyond familiarity with Scratch!
+This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
+<hr />
+<p>By the end of this lesson you'll be able to:</p>
+<ul>
+<li>Run Python code right inside your browser without installing anything</li>
+<li>Use <code>print()</code> to display messages on the screen</li>
+<li>Write single-line comments to explain what your code does</li>
+<li>Import the turtle library and watch it draw a shape on the page</li>
+</ul>
+<p>You've been coding with colorful blocks — snapping pieces together in Scratch to make sprites move, say things, and react to clicks. Now it's time for the next adventure: writing <strong>Python</strong>, one of the most popular programming languages in the entire world. The good news? Everything you already know from Scratch still works — it just looks a little different in Python.</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Hi! I'm Monty.</p>
+<p><img alt="Monty waving hello" class="mascot-admonition-img" src="../../img/mascot/welcome.png" />
+Welcome to <strong>Beginning Python — From Blocks to Code</strong>! I'm <strong>Monty</strong>, a friendly python snake who lives right here in your textbook. I'll pop up throughout every lesson, but never randomly — I have exactly <strong>seven jobs</strong>, and you'll quickly learn to recognize me by which one I'm doing:</p>
+<ol>
+<li><strong>Welcome you</strong> at the start of every lesson — exactly what I'm doing right now.</li>
+<li><strong>Help you think and predict</strong> before you run a program, so you build the habit of reasoning through code before executing it.</li>
+<li><strong>Give you tips</strong> — the clever moves that experienced programmers use that nobody bothers to write down.</li>
+<li><strong>Bridge to Scratch</strong> — whenever a Python idea has a direct Scratch equivalent, I'll connect the two so you can use what you already know.</li>
+<li><strong>Warn you</strong> about the spots where even careful coders trip up — common mistakes, sneaky bugs, and easy-to-miss rules.</li>
+<li><strong>Encourage you</strong> when a concept looks hard at first — some ideas take a moment to click, and that is completely normal.</li>
+<li><strong>Celebrate with you</strong> at the end of every lesson when you have earned it.</li>
+</ol>
+<p>That is it. If I am not doing one of those seven things, I am not in the lesson. Let's code it together!</p>
+</div>
+<h2 id="what-is-python">What is Python?<a class="headerlink" href="#what-is-python" title="Permanent link">&para;</a></h2>
+<p>Scratch uses colorful blocks that snap together. Python uses <strong>text</strong> — words and symbols you type on a keyboard. A <strong>programming language</strong> is a set of rules for writing instructions that a computer can follow. Python is one of those languages, and it is a great choice because it reads almost like plain English.</p>
+<p>When you write a Python program, something called the <strong>Python interpreter</strong> reads your code one line at a time from top to bottom and carries out each instruction. Think of the interpreter as a super-fast reader who turns your words into actions. In Scratch, clicking the green flag started your program. In Python, the interpreter does the same job — it starts at the very first line and works its way down.</p>
+<p>Python was invented in 1991 by a programmer named Guido van Rossum. He named it after a British comedy show — not after the snake, even though the snake mascot fits perfectly! Today Python powers YouTube, Instagram, NASA robots, and artificial intelligence research. It is consistently ranked the most popular first programming language in the world for both beginners and professionals.</p>
+<h2 id="ways-to-run-python">Ways to Run Python<a class="headerlink" href="#ways-to-run-python" title="Permanent link">&para;</a></h2>
+<p>Before you write your first line of Python, it helps to know <em>where</em> Python runs. There are several options, and each one has its place in this course.</p>
+<ul>
+<li><strong>On your own computer</strong> — You can install Python and run it from a terminal window. This is how professional programmers work, but it requires setup and is not where we start.</li>
+<li><strong>Trinket.io</strong> — A website where you type Python in one panel and see results in another, all inside your browser. No installation needed, and many Python courses use it.</li>
+<li><strong>Skulpt (inline)</strong> — This is the tool built right into <em>this</em> textbook. Skulpt is a version of Python that runs directly inside the web page you are reading right now. Every interactive code box in Chapters 1–18 is powered by Skulpt. You do not need to open a new tab, log in, or install anything. You click <strong>Run</strong> and the code executes here on the page.</li>
+</ul>
+<p>In this course, <strong>Skulpt</strong> is your main tool for the early chapters. The table below summarizes all three environments:</p>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th>Where it runs</th>
+<th>Needs install?</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Your computer</td>
+<td>Local terminal</td>
+<td>Yes</td>
+<td>Professional work</td>
+</tr>
+<tr>
+<td>Trinket.io</td>
+<td>Website</td>
+<td>No</td>
+<td>Sharing projects online</td>
+</tr>
+<tr>
+<td>Skulpt (this book)</td>
+<td>This web page</td>
+<td>No</td>
+<td>Instant in-lesson practice</td>
+</tr>
+</tbody>
+</table>
+<h2 id="your-first-python-line-print">Your First Python Line: print()<a class="headerlink" href="#your-first-python-line-print" title="Permanent link">&para;</a></h2>
+<p>The very first thing most programmers learn is how to make a program display a message. In Python, the command is called <strong><code>print()</code></strong>.</p>
+<p>A <strong>function</strong> is a named action that Python knows how to carry out. <code>print()</code> is Python's built-in "display a message" function. Whatever you put inside the parentheses — surrounded by quote marks — appears in the output area when the program runs.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Scratch Bridge</p>
+<p><img alt="Monty with a tip" class="mascot-admonition-img" src="../../img/mascot/tip.png" />
+In Scratch you used the <strong>"Say [ ] for 2 seconds"</strong> block to make your sprite show a speech bubble. In Python, <code>print("Hello!")</code> does the same job — it makes your program display a message. The difference is that Python shows the message as plain text below the code, not as a speech bubble on a character.</p>
+</div>
+<h2 id="sample-code-print">Sample Code: print()<a class="headerlink" href="#sample-code-print" title="Permanent link">&para;</a></h2>
+<p>Here is a short program with three <code>print()</code> calls. Read each line carefully before you run it:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;My name is Monty.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Let&#39;s learn Python!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Before you click Run:</strong> how many lines of text do you think will appear in the output box? Make your prediction, then try it!</p>
+<h2 id="try-it-now">Try It Now<a class="headerlink" href="#try-it-now" title="Permanent link">&para;</a></h2>
+<p>Edit the code below and click <strong>Run</strong> to see the result right on this page. No account needed — everything runs in your browser.</p>
+<script src="https://skulpt.org/js/skulpt.min.js"></script>
+<script src="https://skulpt.org/js/skulpt-stdlib.js"></script>
+
+<div id="skulpt-lab" class="skulpt-text-only">
+  <div id="editor-container">
+    <textarea id="code" spellcheck="false">print("Hello, world!")
+print("My name is Monty.")
+print("Let's learn Python!")
+</textarea>
+    <div id="button-row">
+      <button id="run-btn" onclick="runSkulpt()">&#9654; Run</button>
+      <button id="reset-btn" onclick="resetSkulpt()">&#8635; Reset</button>
+    </div>
+    <pre id="output"></pre>
+  </div>
+  <div id="canvas-container">
+    <div id="turtle-target"></div>
+  </div>
+</div>
+
+<p>Were you right? You should see three lines of text appear, one for each <code>print()</code> call — Python runs them in order from top to bottom.</p>
+<p><strong>If you see a red error message:</strong> Check your spelling carefully. Python is case-sensitive, so <code>Print("Hello")</code> with a capital P won't work — it must be <code>print("Hello")</code> in all lowercase. Also make sure you have both an opening <code>"</code> and a closing <code>"</code> around your text.</p>
+<h2 id="how-print-works">How print() Works<a class="headerlink" href="#how-print-works" title="Permanent link">&para;</a></h2>
+<p>Each <code>print()</code> line runs one at a time, from the top of the program to the bottom — exactly the same order Scratch runs blocks inside a script. When Python sees <code>print("Hello, world!")</code> it does three things:</p>
+<ol>
+<li>Reads the function name: <code>print</code></li>
+<li>Reads the text inside the parentheses: <code>"Hello, world!"</code></li>
+<li>Displays that text, then moves to the next line</li>
+</ol>
+<p>The quote marks around the text are important. They tell Python that <code>"Hello, world!"</code> is a piece of text — what programmers call a <strong>string</strong>. A string is any sequence of characters (letters, numbers, spaces, punctuation) wrapped in quote marks. Without the quotes, Python would think you are writing the name of a variable or a command it does not recognize.</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>print("Hello, world!")</code></td>
+<td>Displays the text: Hello, world!</td>
+</tr>
+<tr>
+<td><code>print("My name is Monty.")</code></td>
+<td>Displays the text: My name is Monty.</td>
+</tr>
+<tr>
+<td><code>print("Let's learn Python!")</code></td>
+<td>Displays the text: Let's learn Python!</td>
+</tr>
+</tbody>
+</table>
+<h2 id="writing-comments-with">Writing Comments with<a class="headerlink" href="#writing-comments-with" title="Permanent link">&para;</a></h2>
+<p>As your programs grow longer, it becomes helpful to leave notes for yourself and for anyone else who reads your code. In Python, a <strong>comment</strong> is a note that the interpreter completely ignores when running the program — it exists only for human readers.</p>
+<p>You start a comment by typing a <code>#</code> character (called a hash or pound sign). Everything on that line after the <code>#</code> is treated as a note, not as code.</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># This line is a comment — Python ignores it completely</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;But Python runs this line!&quot;</span><span class="p">)</span>
+
+<span class="c1"># Comments explain the WHY behind your code</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;They make programs easier to read.&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Good programmers use comments constantly. A comment does not change what the program does — it just helps the next person (often you, six months later) understand what you were thinking.</p>
+<h2 id="case-sensitivity">Case Sensitivity<a class="headerlink" href="#case-sensitivity" title="Permanent link">&para;</a></h2>
+<p>Python is <strong>case-sensitive</strong>, which means uppercase and lowercase letters are treated as completely different things. The command <code>print</code> and the word <code>Print</code> are not the same.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Capital Letters Matter!</p>
+<p><img alt="Monty warning" class="mascot-admonition-img" src="../../img/mascot/warning.png" />
+One of the most common first-week mistakes is typing <code>Print("Hello")</code> with a capital P. Python will respond with a <code>NameError: name 'Print' is not defined</code> message. The fix is simple: always use lowercase <code>print()</code>. This rule applies to every Python command — <code>Forward</code> is not the same as <code>forward</code>, and <code>Turtle</code> (capital T) refers to something different from <code>turtle</code> (lowercase t). When you are learning a new command, always double-check the capitalization.</p>
+</div>
+<h2 id="blank-lines-make-code-readable">Blank Lines Make Code Readable<a class="headerlink" href="#blank-lines-make-code-readable" title="Permanent link">&para;</a></h2>
+<p>Python does not care about blank lines — you can add as many empty lines as you like between statements and the interpreter ignores them all. But <em>human readers</em> care a great deal.</p>
+<p>Blank lines divide your code into logical groups, the same way paragraph breaks divide a story into scenes. Two lines of code that do the same task belong together; two lines that do different tasks should be separated with a blank line (and optionally a comment label).</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># --- Introduction ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome to my program!&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Let&#39;s get started.&quot;</span><span class="p">)</span>
+
+<span class="c1"># --- Main message ---</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python is fun to learn.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You are doing great!&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Get into the habit early: if two chunks of code do different jobs, separate them with a blank line. Your programs will be much easier to read — and to fix when something goes wrong.</p>
+<h2 id="importing-libraries-with-import">Importing Libraries with import<a class="headerlink" href="#importing-libraries-with-import" title="Permanent link">&para;</a></h2>
+<p>One of Python's greatest strengths is its huge collection of pre-built tools. You can bring any of those tools into your program with an <strong><code>import</code> statement</strong>.</p>
+<p>The keyword <code>import</code> tells the Python interpreter: "I need this extra toolkit — please load it before running the rest of my program." By itself Python knows how to do many things (<code>print</code>, basic math, and more), but libraries like <code>turtle</code>, <code>random</code>, and <code>math</code> must be imported before you can use them.</p>
+<p>An import statement always goes at the very <strong>top</strong> of your program — before any other code — so Python loads the library before it needs it.</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>   <span class="c1"># Load the turtle library</span>
+</code></pre></div>
+<p>After that one line, everything in the turtle library is available to your program.</p>
+<h2 id="drawing-with-import-turtle">Drawing with import turtle<a class="headerlink" href="#drawing-with-import-turtle" title="Permanent link">&para;</a></h2>
+<p>The <strong>turtle</strong> library lets you draw pictures by moving a virtual pen around the screen. Imagine a tiny turtle holding a pen. When you tell the turtle <code>forward(100)</code>, it walks forward 100 steps and draws a line as it goes. When you tell it <code>right(90)</code>, it pivots 90 degrees clockwise.</p>
+<p>Every turtle program starts the same way:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</code></pre></div>
+<p>The first line loads the library. The second line creates a turtle and gives it the name <code>t</code>. Once you have a turtle, you direct it using dot notation — <code>t.forward(100)</code> means "tell turtle <code>t</code> to go forward 100 steps."</p>
+<h2 id="sample-code-drawing-a-shape">Sample Code: Drawing a Shape<a class="headerlink" href="#sample-code-drawing-a-shape" title="Permanent link">&para;</a></h2>
+<p>Here is a short turtle program. It calls <code>forward(100)</code> and <code>right(90)</code> several times in a row:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">turtle</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">What Shape Will Monty Draw?</p>
+<p><img alt="Monty thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png" />
+Look at the program above. The turtle calls <code>forward(100)</code> four times and <code>right(90)</code> three times in between. The number 90 is the number of degrees in each right turn. How many sides will the finished shape have, and what is the name of that shape? Make your guess — then click Run to find out!</p>
+</div>
+<h2 id="try-it-turtle-graphics">Try It: Turtle Graphics<a class="headerlink" href="#try-it-turtle-graphics" title="Permanent link">&para;</a></h2>
+<div id="skulpt-lab-2">
+  <div id="editor-container-2">
+    <textarea id="code-2" spellcheck="false">import turtle
+
+t = turtle.Turtle()
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+</textarea>
+    <div id="button-row-2">
+      <button id="run-btn-2" onclick="runSkulpt('-2')">&#9654; Run</button>
+      <button id="reset-btn-2" onclick="resetSkulpt('-2')">&#8635; Reset</button>
+    </div>
+    <pre id="output-2"></pre>
+  </div>
+  <div id="canvas-container-2">
+    <div id="turtle-target-2"></div>
+  </div>
+</div>
+
+<p>Were you right? The turtle draws a <strong>square</strong> — four sides of equal length with a 90-degree right turn between each side. Four turns of 90 degrees adds up to 360 degrees, which is one full rotation, so the turtle ends up facing the same direction it started.</p>
+<h2 id="how-the-turtle-program-works">How the Turtle Program Works<a class="headerlink" href="#how-the-turtle-program-works" title="Permanent link">&para;</a></h2>
+<p>Let's trace through each line:</p>
+<table>
+<thead>
+<tr>
+<th>Line</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>import turtle</code></td>
+<td>Loads the turtle graphics library</td>
+</tr>
+<tr>
+<td><code>t = turtle.Turtle()</code></td>
+<td>Creates a new turtle and names it <code>t</code></td>
+</tr>
+<tr>
+<td><code>t.forward(100)</code></td>
+<td>Moves <code>t</code> forward 100 steps, drawing a line</td>
+</tr>
+<tr>
+<td><code>t.right(90)</code></td>
+<td>Turns <code>t</code> clockwise by 90 degrees</td>
+</tr>
+</tbody>
+</table>
+<p>The number inside <code>forward()</code> controls how far the turtle walks — bigger numbers draw longer lines. The number inside <code>right()</code> controls how sharply the turtle turns — 90 degrees makes a square corner. Changing these two numbers is how you draw different shapes.</p>
+<h2 id="learning-check">Learning Check<a class="headerlink" href="#learning-check" title="Permanent link">&para;</a></h2>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Your Turn — Complete the Triangle!</p>
+<p><img alt="Monty thinking" class="mascot-admonition-img" src="../../img/mascot/thinking.png" />
+The program below draws <strong>two sides</strong> of a triangle and then stops. A triangle has three equal sides, with a 120-degree right turn at each corner. Add <strong>one line</strong> — <code>t.forward(100)</code> — to draw the missing third side and close the triangle!</p>
+</div>
+<div id="skulpt-lab-3">
+  <div id="editor-container-3">
+    <textarea id="code-3" spellcheck="false">import turtle
+
+t = turtle.Turtle()
+t.forward(100)
+t.right(120)
+t.forward(100)
+t.right(120)
+# Add one line here to complete the triangle!
+</textarea>
+    <div id="button-row-3">
+      <button id="run-btn-3" onclick="runSkulpt('-3')">&#9654; Run</button>
+      <button id="reset-btn-3" onclick="resetSkulpt('-3')">&#8635; Reset</button>
+    </div>
+    <pre id="output-3"></pre>
+  </div>
+  <div id="canvas-container-3">
+    <div id="turtle-target-3"></div>
+  </div>
+</div>
+
+<p>When you add the missing line and click Run, the turtle should draw a closed triangle. If the shape does not close, double-check that your added line spells <code>forward</code> in all lowercase and uses parentheses with the number 100 inside.</p>
+<h2 id="experiments">Experiments<a class="headerlink" href="#experiments" title="Permanent link">&para;</a></h2>
+<p>Try these changes to the programs above. For each one, <strong>predict what will happen first</strong> — then run it to check!</p>
+<ol>
+<li>
+<p><strong>Change a message in <code>print()</code></strong>. Replace <code>"Hello, world!"</code> with your own name, like <code>print("Hello, I'm Alex!")</code>. <strong>You'll know it worked when</strong> your name appears in the output box.</p>
+</li>
+<li>
+<p><strong>Add a fourth <code>print()</code> line</strong> with a message of your choice. <strong>You'll know it worked when</strong> four lines of text appear in the output, not three.</p>
+</li>
+<li>
+<p><strong>Change <code>forward(100)</code> in the square to <code>forward(200)</code></strong>. <strong>You'll know it worked when</strong> the square is twice as wide and tall.</p>
+</li>
+<li>
+<p><strong>Draw a different shape</strong>: change the square program to use <code>right(60)</code> and repeat <code>forward(100)</code> and <code>right(60)</code> six times. <strong>You'll know it worked when</strong> you see a six-sided hexagon.</p>
+</li>
+<li>
+<p><strong>Challenge — change the speed</strong>: add the line <code>t.speed(1)</code> right after <code>t = turtle.Turtle()</code> in the square program. Run it and watch what happens. Then try <code>t.speed(10)</code>. <strong>You'll know it worked when</strong> the drawing speed visibly changes between the two runs.</p>
+</li>
+</ol>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Fantastic Work!</p>
+<p><img alt="Monty celebrating" class="mascot-admonition-img" src="../../img/mascot/celebration.png" />
+You just wrote your very first Python programs — and they actually ran! You used <code>print()</code> to display messages, <code>#</code> to write comments, <code>import</code> to load a library, and <code>import turtle</code> to draw a shape on screen. That is nine brand-new concepts in one chapter, and you handled every single one. You have got this — let's keep coding together!</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+  <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../" title="List of Chapters" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  List of Chapters
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../02-python-code-structure/" title="2. Python Code Structure" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  2. Python Code Structure
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          
+            All content is covered under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
+        </div>
+        <div class="md-social">
+  
+</div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/skulpt.js"></script>
+      
+    
+  </body>
+</html>

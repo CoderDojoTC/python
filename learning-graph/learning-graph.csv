@@ -1,0 +1,451 @@
+ConceptID,ConceptLabel,Dependencies,TaxonomyID
+1,Python Interpreter Overview,,ENV
+2,Python 2 vs Python 3,1,ENV
+3,Trinket.io Web Environment,1,ENV
+4,Repl.it Online IDE,1,ENV
+5,Thonny Beginner IDE,1,ENV
+6,Spyder Scientific IDE,1,ENV
+7,VS Code Editor,1,ENV
+8,Jupyter Notebooks,1,ENV
+9,JupyterLab Environment,8,ENV
+10,Conda Package Manager,1,ENV
+11,pip Package Installer,1|10,ENV
+12,Virtual Environments,11,ENV
+13,Installing Python Locally,1|11,ENV
+14,Running Scripts from Terminal,13|19,ENV
+15,Python REPL Shell,1,ENV
+16,Raspberry Pi Python Platform,1|13,ENV
+17,Skulpt Browser Python,1|3,ENV
+18,Google Colab Environment,1|8,ENV
+19,Command Line Basics,,ENV
+20,File System Navigation,19,ENV
+21,print() Function,1,SYN
+22,Single-Line Comments,21,SYN
+23,Multi-Line Strings,21,SYN
+24,Indentation as Syntax,21,SYN
+25,Case Sensitivity,21,SYN
+26,Python Keywords,21,SYN
+27,Blank Lines and Readability,21|22,SYN
+28,Code Block Structure,24,SYN
+29,Statement vs Expression,21,SYN
+30,Whitespace Rules,24,SYN
+31,Variable Definition and Assignment,21|29,DAT
+32,Variable Naming Rules,31,DAT
+33,Snake_case Convention,32,DAT
+34,Meaningful Variable Names,32|33,DAT
+35,Multiple Assignment,31,DAT
+36,Augmented Assignment Operators,31|47,DAT
+37,Constants by Convention,31|33,DAT
+38,Variable Reassignment,31,DAT
+39,Swap Two Variables,35|38,DAT
+40,Naming Conflicts to Avoid,32|26,DAT
+41,Integer Type,31,DAT
+42,Float Type,31,DAT
+43,Division Returns Float,42,DAT
+44,Integer Division Operator,41|42,DAT
+45,Modulo Operator,41,DAT
+46,Exponentiation Operator,41,DAT
+47,Arithmetic Operators,41|42,DAT
+48,Order of Operations,47,DAT
+49,Negative Numbers,41,DAT
+50,Scientific Notation Floats,42,DAT
+51,Boolean Type,31,DAT
+52,Comparison Operators,41|51,DAT
+53,Logical Operators,51|52,DAT
+54,Truthiness and Falsiness,51,DAT
+55,Short-Circuit Evaluation,53,DAT
+56,Boolean in Conditions,51|92,DAT
+57,Chained Comparisons,52|53,DAT
+58,String Type,31,DAT
+59,Single vs Double Quotes,58,DAT
+60,String Concatenation,58,DAT
+61,String Repetition,58|41,DAT
+62,String Indexing,58|41,DAT
+63,String Slicing,62,DAT
+64,Escape Characters,58,DAT
+65,String Length with len(),58,DAT
+66,String lower() upper() strip(),58,DAT
+67,String split() join() replace(),58,DAT
+68,String startswith() endswith() find(),58,DAT
+69,String isdigit() isalpha() isalnum(),58,DAT
+70,String format() Method,58|31,DAT
+71,f-Strings,58|31|70,DAT
+72,String Immutability,58,DAT
+73,Raw Strings,58|64,DAT
+74,String Comparison,58|52,DAT
+75,Multiline String Formatting,23|71,DAT
+76,None Value and NoneType,31,DAT
+77,Functions Returning None,121|76,DAT
+78,Checking for None with is,76|52,DAT
+79,int() Conversion,41|58,DAT
+80,float() Conversion,42|58,DAT
+81,str() Conversion,58|41,DAT
+82,bool() Conversion,51|31,DAT
+83,type() Function,31|41,DAT
+84,isinstance() Function,83|285,DAT
+85,Implicit vs Explicit Conversion,79|80|81,DAT
+86,input() Function,21|58,CTL
+87,Prompting the User,86|58,CTL
+88,Converting Input to Numbers,86|79|80,CTL
+89,Input Validation Basics,86|92,CTL
+90,Reading Multiple Inputs,86|35,CTL
+91,Strip Whitespace from Input,86|66,CTL
+92,if Statement,51|24|28,CTL
+93,if...else Block,92,CTL
+94,elif Chains,93,CTL
+95,Nested if Statements,93,CTL
+96,Conditional Ternary Expression,92|51,CTL
+97,match/case Statement,92|94,CTL
+98,Truthiness in Conditions,54|92,CTL
+99,Compound Conditions,53|92,CTL
+100,for Loop over Sequence,24|28,CTL
+101,for Loop with range(),100,CTL
+102,Range with Start Stop Step,101|41,CTL
+103,while Loop,24|28|51,CTL
+104,break Statement,100|103,CTL
+105,continue Statement,100|103,CTL
+106,else Clause on Loops,100|103,CTL
+107,Nested Loops,100|108,CTL
+108,Loop Counter Variable,100|41,CTL
+109,Infinite Loops to Avoid,103|104,CTL
+110,enumerate() Function,100,CTL
+111,zip() Function,100,CTL
+112,Loop Accumulator Pattern,100|31,CTL
+113,Loop with List Building,100|138,CTL
+114,Countdown Loop,101|102,CTL
+115,Defining a Function with def,24|28|21,FUN
+116,Calling a Function,115,FUN
+117,Positional Parameters,115,FUN
+118,Default Parameter Values,115|117,FUN
+119,Keyword Arguments,115|117,FUN
+120,return Statement,115,FUN
+121,Functions Returning None,115|76,FUN
+122,Local Scope,115|31,FUN
+123,Global Scope,31|115,FUN
+124,global Keyword,123|122,FUN
+125,nonlocal Keyword,122|135,FUN
+126,Docstrings,115|23,FUN
+127,Pure Functions vs Side Effects,115|120,FUN
+128,Recursion Concept,115|116,FUN
+129,Recursion Base Case,128,FUN
+130,Recursion Depth and Stack,128|129,FUN
+131,Lambda Functions,115|116,FUN
+132,Variable Number of Arguments *args,115|137,FUN
+133,Keyword Variable Arguments **kwargs,115|163,FUN
+134,Function as Argument,131|115,FUN
+135,Nested Functions,115|122,FUN
+136,Returning Multiple Values,120|155,FUN
+137,List Type,31,COL
+138,Creating a List,137,COL
+139,List Indexing,137|41,COL
+140,Negative Indexing,139,COL
+141,List Slicing,139|63,COL
+142,len() for Lists,137,COL
+143,List append() insert() extend(),137,COL
+144,List remove() pop() clear(),137,COL
+145,List sort() reverse() copy(),137|52,COL
+146,List index() count(),137,COL
+147,Membership with in Operator,137|58,COL
+148,List Concatenation and Repetition,137|60|61,COL
+149,Iterating over a List,100|137,COL
+150,Nested Lists,137|139,COL
+151,List Comprehensions,100|137|149,COL
+152,Mutable vs Immutable Types,137|58,COL
+153,List as Stack,137|143|144,COL
+154,List as Queue,137|143|144,COL
+155,Tuple Type,31,COL
+156,Creating a Tuple,155,COL
+157,Tuple Indexing and Slicing,156|139|141,COL
+158,Tuple Unpacking,156|35,COL
+159,Tuples vs Lists,155|137|152,COL
+160,Single-Element Tuple Syntax,156,COL
+161,Named Tuple Concept,155|163|285,COL
+162,Tuple as Return Value,156|120,COL
+163,Dictionary Type,31,COL
+164,Creating a Dictionary,163,COL
+165,Accessing Values by Key,163|164,COL
+166,dict get() Method,165|163,COL
+167,Adding and Updating Key-Value Pairs,164|165,COL
+168,Removing Entries pop() del,164|144,COL
+169,Dictionary keys() values() items(),164,COL
+170,Iterating over a Dictionary,100|164|169,COL
+171,Key Membership with in,147|163,COL
+172,Nested Dictionaries,163|150,COL
+173,Dictionary Comprehensions,151|163,COL
+174,Default Dictionary Pattern,163|118,COL
+175,Dictionary from Two Lists with zip(),111|163|138,COL
+176,Set Type,31,COL
+177,Creating a Set,176,COL
+178,Set Union Intersection Difference,176|177,COL
+179,Set add() remove() discard(),177,COL
+180,Set Membership with in,177|147,COL
+181,Frozensets,176|72,COL
+182,print() Output Function,21,COL
+183,input() Read Input,86,COL
+184,len() Sequence Length,65|142,COL
+185,range() Number Sequence,102,COL
+186,type() Get Object Type,83,COL
+187,int() float() str() bool() Conversions,79|80|81|82,COL
+188,list() tuple() set() dict() Constructors,138|156|177|164,COL
+189,max() min() Functions,137|41,COL
+190,sum() Function,137|41,COL
+191,abs() Absolute Value,41,COL
+192,round() Function,42|41,COL
+193,sorted() Function,137|145|52,COL
+194,reversed() Function,137,COL
+195,enumerate() with Index,100|110,COL
+196,zip() Combine Iterables,111,COL
+197,map() Apply Function,115|137|134,COL
+198,filter() Filter Items,115|137|134,COL
+199,dir() List Attributes,285,COL
+200,help() Documentation,199,COL
+201,id() Object Identity,31|285,COL
+202,hash() Function,163|176|285,COL
+203,any() and all() Functions,137|51,COL
+204,chr() and ord() Functions,58|41,COL
+205,import Statement,1,MOD
+206,from...import Specific Names,205,MOD
+207,import...as Alias,205,MOD
+208,from...import Star,206,MOD
+209,Creating Custom Modules,115|205,MOD
+210,"__name__ == ""__main__"" Guard",209|205,MOD
+211,Standard Library Overview,205,MOD
+212,Module Search Path,205|20,MOD
+213,Reloading a Module,205,MOD
+214,random Module Overview,205|211,MOD
+215,random.randint(),214|41,MOD
+216,random.choice(),214|137,MOD
+217,random.shuffle(),214|137,MOD
+218,random.seed(),214,MOD
+219,random.random() Float,214|42,MOD
+220,random.sample(),214|137,MOD
+221,math Module Overview,205|211,MOD
+222,math.sqrt() floor() ceil(),221|42,MOD
+223,math.sin() cos() pi,221|42,MOD
+224,math.radians() degrees(),221|223,MOD
+225,math.log() exp(),221|42,MOD
+226,math.factorial(),221|41,MOD
+227,string Module Constants,205|211|58,MOD
+228,time Module Overview,205|211,MOD
+229,time.sleep(),228,MOD
+230,sys Module,205|211,MOD
+231,sys.path Search Path,230|212,MOD
+232,os Module,205|211,MOD
+233,os.path Operations,232|20,MOD
+234,json Module Overview,205|211,MOD
+235,json.loads() json.dumps(),234|163|58,MOD
+236,json.load() json.dump(),234|255|262,MOD
+237,csv Module Basics,205|211|265,MOD
+238,datetime Module Basics,205|211,MOD
+239,collections Module,205|211|163,MOD
+240,itertools Module Overview,205|211|100,MOD
+241,re Module Import,205|211,TXT
+242,re.search() First Match,241|58,TXT
+243,re.findall() All Matches,242,TXT
+244,re.split() Split by Pattern,241|58,TXT
+245,re.sub() Substitute Matches,241|58,TXT
+246,Digit Word Whitespace Patterns,241,TXT
+247,Anchors Start and End,241|246,TXT
+248,Character Classes,246,TXT
+249,Quantifiers Plus Star Question,246,TXT
+250,Alternation with Pipe,246,TXT
+251,Escaping Special Characters,64|246,TXT
+252,Raw Strings for Regex,73|246,TXT
+253,Regex Groups with Parentheses,246|156,TXT
+254,Compiled Regex Patterns,241,TXT
+255,open() Function,20,FIO
+256,File Modes r w a b,255,FIO
+257,file.read(),255|256,FIO
+258,file.readlines(),255|256,FIO
+259,file.readline(),255|256,FIO
+260,file.write(),255|256,FIO
+261,file.close(),255,FIO
+262,with Statement Context Manager,255|261,FIO
+263,Iterating over File Lines,262|100,FIO
+264,Text Processing strip() lower(),66|263,FIO
+265,CSV File Reading,255|262|67,FIO
+266,CSV File Writing,255|262|260,FIO
+267,Reading JSON from File,234|262|235,FIO
+268,Writing JSON to File,234|262|260,FIO
+269,File Path Handling,232|233|20,FIO
+270,Checking if File Exists,232|233,FIO
+271,Syntax vs Runtime vs Logic Errors,21|1,ERR
+272,Common Exception Types,271,ERR
+273,Reading a Traceback,272,ERR
+274,try...except Block,272,ERR
+275,Catching Specific Exceptions,274|272,ERR
+276,else Clause in try/except,274|93,ERR
+277,finally Clause,274,ERR
+278,raise Statement,274|285,ERR
+279,assert Statement,51|52,ERR
+280,Debugging with print(),21|271,ERR
+281,Using Search Engines to Debug,271,ERR
+282,Exception Hierarchy,272|285|295,ERR
+283,Custom Exception Classes,285|278|282,ERR
+284,Exception Chaining,278|283,ERR
+285,Objects and Classes Overview,31|115,OOP
+286,Attributes of an Object,285,OOP
+287,Methods of an Object,285|115,OOP
+288,class Keyword,285,OOP
+289,__init__() Constructor,288|117,OOP
+290,self Parameter,289,OOP
+291,Creating Class Instances,288|289|116,OOP
+292,Accessing Attributes and Methods,291|286|287,OOP
+293,String Methods as OOP Examples,287|58,OOP
+294,List Methods as OOP Examples,287|137,OOP
+295,Inheritance Basics,288|291,OOP
+296,__str__() String Representation,287|288|58,OOP
+297,__repr__() Developer Representation,296|288,OOP
+298,Subclasses and Method Overriding,295|287,OOP
+299,super() Function,298|295,OOP
+300,Class Variables vs Instance Variables,288|286|31,OOP
+301,Static Methods,287|288,OOP
+302,Properties with @property,287|288,OOP
+303,Dunder Methods Overview,287|288|296|297,OOP
+304,Object Composition,285|291|295,OOP
+305,import turtle,205|1,VIZ
+306,turtle.Turtle() Object,305|285,VIZ
+307,turtle.Screen() Object,305|285,VIZ
+308,Screen Setup and bgcolor(),307,VIZ
+309,Movement forward() backward(),306,VIZ
+310,Turning left() right(),306,VIZ
+311,Absolute Positioning goto(),306|309,VIZ
+312,Pen Control penup() pendown(),306,VIZ
+313,Pen Size and Color,306|437,VIZ
+314,Fill begin_fill() end_fill(),306|313,VIZ
+315,Drawing circle() and Polygons,306|309|101,VIZ
+316,Turtle Appearance shape(),306,VIZ
+317,Hiding and Showing Turtle,306,VIZ
+318,Writing Text with turtle.write(),306|58,VIZ
+319,Clearing and Resetting,306|307,VIZ
+320,Position Query xcor() ycor(),306,VIZ
+321,Speed Control speed(),306,VIZ
+322,setheading() Direction,306|310,VIZ
+323,onscreenclick() Event Handler,307|419,VIZ
+324,Animation with Turtle Loops,309|101|229,VIZ
+325,Color Picker with Turtle,313|323|163,VIZ
+326,Fractals with Recursion and Turtle,128|129|309,VIZ
+327,Sine Wave with Turtle and Math,309|223|224|101,VIZ
+328,Drawing Star Patterns,309|310|101,VIZ
+329,Turtle Race Simulation,306|215|101,VIZ
+330,Maze Visualization with Turtle,372|309,VIZ
+331,matplotlib Library Overview,205|211,VIZ
+332,import matplotlib.pyplot as plt,331,VIZ
+333,plt.plot() Line Plot,332|138,VIZ
+334,plt.show() Display,332,VIZ
+335,Plot Title and Axis Labels,332|58,VIZ
+336,plt.grid() Grid Lines,332,VIZ
+337,Plotting a Sine Wave,333|223|347,VIZ
+338,Lists as XY Plot Data,138|333,VIZ
+339,plt.scatter() Scatter Plot,332|138,VIZ
+340,plt.bar() Bar Chart,332|138,VIZ
+341,plt.hist() Histogram,332|138,VIZ
+342,plt.legend() Legend,332|58,VIZ
+343,plt.savefig() Save Plot,332|20,VIZ
+344,Multiple Lines on One Plot,333|148,VIZ
+345,Subplots with plt.subplot(),332|107,VIZ
+346,numpy Library Overview,205|211,VIZ
+347,import numpy as np,346,VIZ
+348,np.array() Creating Arrays,347|138,VIZ
+349,np.argmax() Index of Max,348,VIZ
+350,Array Operations and Broadcasting,348|47,VIZ
+351,Reshaping Arrays,348,VIZ
+352,np.zeros() np.ones(),347|348,VIZ
+353,np.linspace() Evenly Spaced Values,347|102,VIZ
+354,Array Slicing and Indexing,348|141,VIZ
+355,Element-wise Math Operations,350|47,VIZ
+356,np.mean() np.std(),348|190,VIZ
+357,PIL Pillow Library Overview,205|211,VIZ
+358,Image.open() Open Image,357|255,VIZ
+359,image.show() Display Image,358,VIZ
+360,Pixel Data and Image Arrays,358|348,VIZ
+361,Image Resize and Crop,358,VIZ
+362,Image Color Conversion,358|440,VIZ
+363,Saving Images,358|20,VIZ
+364,Abstract Data Types Overview,285|115,ALG
+365,Stack LIFO Structure,137|153,ALG
+366,Queue FIFO Structure,137|154,ALG
+367,Queue enqueue() dequeue(),366|143|144,ALG
+368,Graph Nodes and Edges,364,ALG
+369,Adjacency List Representation,368|163|137,ALG
+370,Breadth-First Search BFS,369|366|100,ALG
+371,BFS Color Tracking,370|163,ALG
+372,BFS for Path Finding,370|371,ALG
+373,Depth-First Search DFS,369|365|128,ALG
+374,DFS with Recursion,373|128|129,ALG
+375,DFS and BFS for Maze Solving,372|374,ALG
+376,Sorting Algorithms Overview,137|145,ALG
+377,Bubble Sort,376|100|107,ALG
+378,Selection Sort,376|100,ALG
+379,Insertion Sort,376|100,ALG
+380,Binary Search Concept,376|137|102,ALG
+381,Time Complexity Big-O Overview,376|380,ALG
+382,Space Complexity Overview,381|130,ALG
+383,Linked List Concept,364|285,ALG
+384,Tree Data Structure Concept,364|368,ALG
+385,Binary Tree Basics,384,ALG
+386,Machine Learning Overview,1|285,ADV
+387,Supervised vs Unsupervised Learning,386,ADV
+388,keras Library Overview,205|211|346,ADV
+389,Sequential Model,388,ADV
+390,Dense Fully Connected Layers,389|41,ADV
+391,Activation Functions relu softmax,390|223,ADV
+392,Conv2D Convolutional Layers,389|360,ADV
+393,MaxPooling2D Pooling Layers,392,ADV
+394,Dropout Regularization,390|412,ADV
+395,Flatten Layer,392|351,ADV
+396,model.compile(),389|400|401|402,ADV
+397,model.fit() Training,396|403|411,ADV
+398,model.evaluate() Testing,397|411,ADV
+399,model.predict() Inference,396|348,ADV
+400,Categorical Crossentropy Loss,389|190,ADV
+401,Adam Optimizer,389|386,ADV
+402,Accuracy Metric,386|190,ADV
+403,Batch Size and Epochs,386|102,ADV
+404,MNIST Dataset,346|386,ADV
+405,Data Normalization,404|350|42,ADV
+406,Convolutional Neural Networks,392|393|395,ADV
+407,Feedforward Networks,390|391,ADV
+408,Recurrent Networks RNN Overview,389|386,ADV
+409,LSTM Networks Overview,408,ADV
+410,Autoencoders Overview,389|390,ADV
+411,Training vs Validation vs Test Sets,386|137,ADV
+412,Overfitting Concept,386|411,ADV
+413,Feature Extraction,392|348|386,ADV
+414,ipycanvas Canvas in Jupyter,8|205,VIZ
+415,mobilechelonian Turtle in Jupyter,8|305,VIZ
+416,Drawing Shapes on Canvas,414|309,VIZ
+417,Color Bars in Jupyter,414|313,VIZ
+418,Event-Driven Programming Model,115|116,ADV
+419,Mouse Click Event Handlers,418|307,ADV
+420,Keyboard Event Handlers,418|307,ADV
+421,Callback Functions,115|131|418,ADV
+422,Animation Loops,101|418|229,ADV
+423,Event Queue Concept,418|366,ADV
+424,Timer-Based Events,229|418,ADV
+425,Modularity in Code,115|209,ADV
+426,Code Reusability,425|115,ADV
+427,DRY Principle,426|425,ADV
+428,Meaningful Names,32|33|34,ADV
+429,Code Comments When and Why,22|115,ADV
+430,Literate Programming in Jupyter,8|22|126,ADV
+431,Reading Docs with help() and dir(),199|200,ADV
+432,Version Control Basics,20|19,ADV
+433,Searching Documentation,200|431,ADV
+434,Code Refactoring,425|427,ADV
+435,Test-Driven Thinking,279|271,ADV
+436,Pair Programming Concept,425|428,ADV
+437,Named Colors,1,ADV
+438,Hex Color Values,437|41,ADV
+439,RGB Color Model,437|438,ADV
+440,Color in Turtle Graphics,313|437,ADV
+441,Background and Pen Colors,308|313|437,ADV
+442,HSL Color Model,439,ADV
+443,Color Theory Basics,437|439,ADV
+444,Transparency and Alpha,439|442,ADV
+445,Decomposition,115|425,ADV
+446,Pattern Recognition,445|92,ADV
+447,Abstraction in Programming,445|115|285,ADV
+448,Algorithm Design,445|447|100,ADV
+449,Pseudocode Writing,448|22,ADV
+450,Debugging Strategies,280|273|271,ADV

@@ -1,0 +1,5720 @@
+{
+  "metadata": {
+    "title": "Beginning Python \u2014 From Blocks to Code with Monty",
+    "description": "A fun, project-driven course that guides young programmers (ages 10-13) from block-based coding to writing real Python, covering core syntax, data types, control flow, functions, collections, turtle graphics, algorithms, and an introduction to machine learning.",
+    "creator": "Dan McCreary",
+    "date": "2026-06-28",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "ENV": {
+      "classifierName": "Environment & Tools",
+      "color": "SteelBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "SYN": {
+      "classifierName": "Core Syntax & Output",
+      "color": "DarkSlateBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "DAT": {
+      "classifierName": "Variables & Data Types",
+      "color": "DarkGreen",
+      "font": {
+        "color": "white"
+      }
+    },
+    "CTL": {
+      "classifierName": "Input & Control Flow",
+      "color": "LimeGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FUN": {
+      "classifierName": "Functions & Scope",
+      "color": "Gold",
+      "font": {
+        "color": "black"
+      }
+    },
+    "COL": {
+      "classifierName": "Collections",
+      "color": "DarkGoldenrod",
+      "font": {
+        "color": "white"
+      }
+    },
+    "MOD": {
+      "classifierName": "Modules & Standard Library",
+      "color": "Teal",
+      "font": {
+        "color": "white"
+      }
+    },
+    "TXT": {
+      "classifierName": "Text Processing & Regex",
+      "color": "DodgerBlue",
+      "font": {
+        "color": "white"
+      }
+    },
+    "FIO": {
+      "classifierName": "File I/O & Data",
+      "color": "LightSkyBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ERR": {
+      "classifierName": "Error Handling & Debugging",
+      "color": "Crimson",
+      "font": {
+        "color": "white"
+      }
+    },
+    "OOP": {
+      "classifierName": "Object-Oriented Programming",
+      "color": "MediumPurple",
+      "font": {
+        "color": "white"
+      }
+    },
+    "VIZ": {
+      "classifierName": "Turtle Graphics & Visualization",
+      "color": "DarkOrchid",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ALG": {
+      "classifierName": "Algorithms & Data Structures",
+      "color": "OliveDrab",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ADV": {
+      "classifierName": "Advanced & Applied Python",
+      "color": "Orange",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Python Interpreter Overview",
+      "group": "ENV",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Python 2 vs Python 3",
+      "group": "ENV"
+    },
+    {
+      "id": 3,
+      "label": "Trinket.io Web Environment",
+      "group": "ENV"
+    },
+    {
+      "id": 4,
+      "label": "Repl.it Online IDE",
+      "group": "ENV"
+    },
+    {
+      "id": 5,
+      "label": "Thonny Beginner IDE",
+      "group": "ENV"
+    },
+    {
+      "id": 6,
+      "label": "Spyder Scientific IDE",
+      "group": "ENV"
+    },
+    {
+      "id": 7,
+      "label": "VS Code Editor",
+      "group": "ENV"
+    },
+    {
+      "id": 8,
+      "label": "Jupyter Notebooks",
+      "group": "ENV"
+    },
+    {
+      "id": 9,
+      "label": "JupyterLab Environment",
+      "group": "ENV"
+    },
+    {
+      "id": 10,
+      "label": "Conda Package Manager",
+      "group": "ENV"
+    },
+    {
+      "id": 11,
+      "label": "pip Package Installer",
+      "group": "ENV"
+    },
+    {
+      "id": 12,
+      "label": "Virtual Environments",
+      "group": "ENV"
+    },
+    {
+      "id": 13,
+      "label": "Installing Python Locally",
+      "group": "ENV"
+    },
+    {
+      "id": 14,
+      "label": "Running Scripts from Terminal",
+      "group": "ENV"
+    },
+    {
+      "id": 15,
+      "label": "Python REPL Shell",
+      "group": "ENV"
+    },
+    {
+      "id": 16,
+      "label": "Raspberry Pi Python Platform",
+      "group": "ENV"
+    },
+    {
+      "id": 17,
+      "label": "Skulpt Browser Python",
+      "group": "ENV"
+    },
+    {
+      "id": 18,
+      "label": "Google Colab Environment",
+      "group": "ENV"
+    },
+    {
+      "id": 19,
+      "label": "Command Line Basics",
+      "group": "ENV",
+      "shape": "box"
+    },
+    {
+      "id": 20,
+      "label": "File System Navigation",
+      "group": "ENV"
+    },
+    {
+      "id": 21,
+      "label": "print() Function",
+      "group": "SYN"
+    },
+    {
+      "id": 22,
+      "label": "Single-Line Comments",
+      "group": "SYN"
+    },
+    {
+      "id": 23,
+      "label": "Multi-Line Strings",
+      "group": "SYN"
+    },
+    {
+      "id": 24,
+      "label": "Indentation as Syntax",
+      "group": "SYN"
+    },
+    {
+      "id": 25,
+      "label": "Case Sensitivity",
+      "group": "SYN"
+    },
+    {
+      "id": 26,
+      "label": "Python Keywords",
+      "group": "SYN"
+    },
+    {
+      "id": 27,
+      "label": "Blank Lines and Readability",
+      "group": "SYN"
+    },
+    {
+      "id": 28,
+      "label": "Code Block Structure",
+      "group": "SYN"
+    },
+    {
+      "id": 29,
+      "label": "Statement vs Expression",
+      "group": "SYN"
+    },
+    {
+      "id": 30,
+      "label": "Whitespace Rules",
+      "group": "SYN"
+    },
+    {
+      "id": 31,
+      "label": "Variable Definition and Assignment",
+      "group": "DAT"
+    },
+    {
+      "id": 32,
+      "label": "Variable Naming Rules",
+      "group": "DAT"
+    },
+    {
+      "id": 33,
+      "label": "Snake_case Convention",
+      "group": "DAT"
+    },
+    {
+      "id": 34,
+      "label": "Meaningful Variable Names",
+      "group": "DAT"
+    },
+    {
+      "id": 35,
+      "label": "Multiple Assignment",
+      "group": "DAT"
+    },
+    {
+      "id": 36,
+      "label": "Augmented Assignment Operators",
+      "group": "DAT"
+    },
+    {
+      "id": 37,
+      "label": "Constants by Convention",
+      "group": "DAT"
+    },
+    {
+      "id": 38,
+      "label": "Variable Reassignment",
+      "group": "DAT"
+    },
+    {
+      "id": 39,
+      "label": "Swap Two Variables",
+      "group": "DAT"
+    },
+    {
+      "id": 40,
+      "label": "Naming Conflicts to Avoid",
+      "group": "DAT"
+    },
+    {
+      "id": 41,
+      "label": "Integer Type",
+      "group": "DAT"
+    },
+    {
+      "id": 42,
+      "label": "Float Type",
+      "group": "DAT"
+    },
+    {
+      "id": 43,
+      "label": "Division Returns Float",
+      "group": "DAT"
+    },
+    {
+      "id": 44,
+      "label": "Integer Division Operator",
+      "group": "DAT"
+    },
+    {
+      "id": 45,
+      "label": "Modulo Operator",
+      "group": "DAT"
+    },
+    {
+      "id": 46,
+      "label": "Exponentiation Operator",
+      "group": "DAT"
+    },
+    {
+      "id": 47,
+      "label": "Arithmetic Operators",
+      "group": "DAT"
+    },
+    {
+      "id": 48,
+      "label": "Order of Operations",
+      "group": "DAT"
+    },
+    {
+      "id": 49,
+      "label": "Negative Numbers",
+      "group": "DAT"
+    },
+    {
+      "id": 50,
+      "label": "Scientific Notation Floats",
+      "group": "DAT"
+    },
+    {
+      "id": 51,
+      "label": "Boolean Type",
+      "group": "DAT"
+    },
+    {
+      "id": 52,
+      "label": "Comparison Operators",
+      "group": "DAT"
+    },
+    {
+      "id": 53,
+      "label": "Logical Operators",
+      "group": "DAT"
+    },
+    {
+      "id": 54,
+      "label": "Truthiness and Falsiness",
+      "group": "DAT"
+    },
+    {
+      "id": 55,
+      "label": "Short-Circuit Evaluation",
+      "group": "DAT"
+    },
+    {
+      "id": 56,
+      "label": "Boolean in Conditions",
+      "group": "DAT"
+    },
+    {
+      "id": 57,
+      "label": "Chained Comparisons",
+      "group": "DAT"
+    },
+    {
+      "id": 58,
+      "label": "String Type",
+      "group": "DAT"
+    },
+    {
+      "id": 59,
+      "label": "Single vs Double Quotes",
+      "group": "DAT"
+    },
+    {
+      "id": 60,
+      "label": "String Concatenation",
+      "group": "DAT"
+    },
+    {
+      "id": 61,
+      "label": "String Repetition",
+      "group": "DAT"
+    },
+    {
+      "id": 62,
+      "label": "String Indexing",
+      "group": "DAT"
+    },
+    {
+      "id": 63,
+      "label": "String Slicing",
+      "group": "DAT"
+    },
+    {
+      "id": 64,
+      "label": "Escape Characters",
+      "group": "DAT"
+    },
+    {
+      "id": 65,
+      "label": "String Length with len()",
+      "group": "DAT"
+    },
+    {
+      "id": 66,
+      "label": "String lower() upper() strip()",
+      "group": "DAT"
+    },
+    {
+      "id": 67,
+      "label": "String split() join() replace()",
+      "group": "DAT"
+    },
+    {
+      "id": 68,
+      "label": "String startswith() endswith() find()",
+      "group": "DAT"
+    },
+    {
+      "id": 69,
+      "label": "String isdigit() isalpha() isalnum()",
+      "group": "DAT"
+    },
+    {
+      "id": 70,
+      "label": "String format() Method",
+      "group": "DAT"
+    },
+    {
+      "id": 71,
+      "label": "f-Strings",
+      "group": "DAT"
+    },
+    {
+      "id": 72,
+      "label": "String Immutability",
+      "group": "DAT"
+    },
+    {
+      "id": 73,
+      "label": "Raw Strings",
+      "group": "DAT"
+    },
+    {
+      "id": 74,
+      "label": "String Comparison",
+      "group": "DAT"
+    },
+    {
+      "id": 75,
+      "label": "Multiline String Formatting",
+      "group": "DAT"
+    },
+    {
+      "id": 76,
+      "label": "None Value and NoneType",
+      "group": "DAT"
+    },
+    {
+      "id": 77,
+      "label": "Functions Returning None",
+      "group": "DAT"
+    },
+    {
+      "id": 78,
+      "label": "Checking for None with is",
+      "group": "DAT"
+    },
+    {
+      "id": 79,
+      "label": "int() Conversion",
+      "group": "DAT"
+    },
+    {
+      "id": 80,
+      "label": "float() Conversion",
+      "group": "DAT"
+    },
+    {
+      "id": 81,
+      "label": "str() Conversion",
+      "group": "DAT"
+    },
+    {
+      "id": 82,
+      "label": "bool() Conversion",
+      "group": "DAT"
+    },
+    {
+      "id": 83,
+      "label": "type() Function",
+      "group": "DAT"
+    },
+    {
+      "id": 84,
+      "label": "isinstance() Function",
+      "group": "DAT"
+    },
+    {
+      "id": 85,
+      "label": "Implicit vs Explicit Conversion",
+      "group": "DAT"
+    },
+    {
+      "id": 86,
+      "label": "input() Function",
+      "group": "CTL"
+    },
+    {
+      "id": 87,
+      "label": "Prompting the User",
+      "group": "CTL"
+    },
+    {
+      "id": 88,
+      "label": "Converting Input to Numbers",
+      "group": "CTL"
+    },
+    {
+      "id": 89,
+      "label": "Input Validation Basics",
+      "group": "CTL"
+    },
+    {
+      "id": 90,
+      "label": "Reading Multiple Inputs",
+      "group": "CTL"
+    },
+    {
+      "id": 91,
+      "label": "Strip Whitespace from Input",
+      "group": "CTL"
+    },
+    {
+      "id": 92,
+      "label": "if Statement",
+      "group": "CTL"
+    },
+    {
+      "id": 93,
+      "label": "if...else Block",
+      "group": "CTL"
+    },
+    {
+      "id": 94,
+      "label": "elif Chains",
+      "group": "CTL"
+    },
+    {
+      "id": 95,
+      "label": "Nested if Statements",
+      "group": "CTL"
+    },
+    {
+      "id": 96,
+      "label": "Conditional Ternary Expression",
+      "group": "CTL"
+    },
+    {
+      "id": 97,
+      "label": "match/case Statement",
+      "group": "CTL"
+    },
+    {
+      "id": 98,
+      "label": "Truthiness in Conditions",
+      "group": "CTL"
+    },
+    {
+      "id": 99,
+      "label": "Compound Conditions",
+      "group": "CTL"
+    },
+    {
+      "id": 100,
+      "label": "for Loop over Sequence",
+      "group": "CTL"
+    },
+    {
+      "id": 101,
+      "label": "for Loop with range()",
+      "group": "CTL"
+    },
+    {
+      "id": 102,
+      "label": "Range with Start Stop Step",
+      "group": "CTL"
+    },
+    {
+      "id": 103,
+      "label": "while Loop",
+      "group": "CTL"
+    },
+    {
+      "id": 104,
+      "label": "break Statement",
+      "group": "CTL"
+    },
+    {
+      "id": 105,
+      "label": "continue Statement",
+      "group": "CTL"
+    },
+    {
+      "id": 106,
+      "label": "else Clause on Loops",
+      "group": "CTL"
+    },
+    {
+      "id": 107,
+      "label": "Nested Loops",
+      "group": "CTL"
+    },
+    {
+      "id": 108,
+      "label": "Loop Counter Variable",
+      "group": "CTL"
+    },
+    {
+      "id": 109,
+      "label": "Infinite Loops to Avoid",
+      "group": "CTL"
+    },
+    {
+      "id": 110,
+      "label": "enumerate() Function",
+      "group": "CTL"
+    },
+    {
+      "id": 111,
+      "label": "zip() Function",
+      "group": "CTL"
+    },
+    {
+      "id": 112,
+      "label": "Loop Accumulator Pattern",
+      "group": "CTL"
+    },
+    {
+      "id": 113,
+      "label": "Loop with List Building",
+      "group": "CTL"
+    },
+    {
+      "id": 114,
+      "label": "Countdown Loop",
+      "group": "CTL"
+    },
+    {
+      "id": 115,
+      "label": "Defining a Function with def",
+      "group": "FUN"
+    },
+    {
+      "id": 116,
+      "label": "Calling a Function",
+      "group": "FUN"
+    },
+    {
+      "id": 117,
+      "label": "Positional Parameters",
+      "group": "FUN"
+    },
+    {
+      "id": 118,
+      "label": "Default Parameter Values",
+      "group": "FUN"
+    },
+    {
+      "id": 119,
+      "label": "Keyword Arguments",
+      "group": "FUN"
+    },
+    {
+      "id": 120,
+      "label": "return Statement",
+      "group": "FUN"
+    },
+    {
+      "id": 121,
+      "label": "Functions Returning None",
+      "group": "FUN"
+    },
+    {
+      "id": 122,
+      "label": "Local Scope",
+      "group": "FUN"
+    },
+    {
+      "id": 123,
+      "label": "Global Scope",
+      "group": "FUN"
+    },
+    {
+      "id": 124,
+      "label": "global Keyword",
+      "group": "FUN"
+    },
+    {
+      "id": 125,
+      "label": "nonlocal Keyword",
+      "group": "FUN"
+    },
+    {
+      "id": 126,
+      "label": "Docstrings",
+      "group": "FUN"
+    },
+    {
+      "id": 127,
+      "label": "Pure Functions vs Side Effects",
+      "group": "FUN"
+    },
+    {
+      "id": 128,
+      "label": "Recursion Concept",
+      "group": "FUN"
+    },
+    {
+      "id": 129,
+      "label": "Recursion Base Case",
+      "group": "FUN"
+    },
+    {
+      "id": 130,
+      "label": "Recursion Depth and Stack",
+      "group": "FUN"
+    },
+    {
+      "id": 131,
+      "label": "Lambda Functions",
+      "group": "FUN"
+    },
+    {
+      "id": 132,
+      "label": "Variable Number of Arguments *args",
+      "group": "FUN"
+    },
+    {
+      "id": 133,
+      "label": "Keyword Variable Arguments **kwargs",
+      "group": "FUN"
+    },
+    {
+      "id": 134,
+      "label": "Function as Argument",
+      "group": "FUN"
+    },
+    {
+      "id": 135,
+      "label": "Nested Functions",
+      "group": "FUN"
+    },
+    {
+      "id": 136,
+      "label": "Returning Multiple Values",
+      "group": "FUN"
+    },
+    {
+      "id": 137,
+      "label": "List Type",
+      "group": "COL"
+    },
+    {
+      "id": 138,
+      "label": "Creating a List",
+      "group": "COL"
+    },
+    {
+      "id": 139,
+      "label": "List Indexing",
+      "group": "COL"
+    },
+    {
+      "id": 140,
+      "label": "Negative Indexing",
+      "group": "COL"
+    },
+    {
+      "id": 141,
+      "label": "List Slicing",
+      "group": "COL"
+    },
+    {
+      "id": 142,
+      "label": "len() for Lists",
+      "group": "COL"
+    },
+    {
+      "id": 143,
+      "label": "List append() insert() extend()",
+      "group": "COL"
+    },
+    {
+      "id": 144,
+      "label": "List remove() pop() clear()",
+      "group": "COL"
+    },
+    {
+      "id": 145,
+      "label": "List sort() reverse() copy()",
+      "group": "COL"
+    },
+    {
+      "id": 146,
+      "label": "List index() count()",
+      "group": "COL"
+    },
+    {
+      "id": 147,
+      "label": "Membership with in Operator",
+      "group": "COL"
+    },
+    {
+      "id": 148,
+      "label": "List Concatenation and Repetition",
+      "group": "COL"
+    },
+    {
+      "id": 149,
+      "label": "Iterating over a List",
+      "group": "COL"
+    },
+    {
+      "id": 150,
+      "label": "Nested Lists",
+      "group": "COL"
+    },
+    {
+      "id": 151,
+      "label": "List Comprehensions",
+      "group": "COL"
+    },
+    {
+      "id": 152,
+      "label": "Mutable vs Immutable Types",
+      "group": "COL"
+    },
+    {
+      "id": 153,
+      "label": "List as Stack",
+      "group": "COL"
+    },
+    {
+      "id": 154,
+      "label": "List as Queue",
+      "group": "COL"
+    },
+    {
+      "id": 155,
+      "label": "Tuple Type",
+      "group": "COL"
+    },
+    {
+      "id": 156,
+      "label": "Creating a Tuple",
+      "group": "COL"
+    },
+    {
+      "id": 157,
+      "label": "Tuple Indexing and Slicing",
+      "group": "COL"
+    },
+    {
+      "id": 158,
+      "label": "Tuple Unpacking",
+      "group": "COL"
+    },
+    {
+      "id": 159,
+      "label": "Tuples vs Lists",
+      "group": "COL"
+    },
+    {
+      "id": 160,
+      "label": "Single-Element Tuple Syntax",
+      "group": "COL"
+    },
+    {
+      "id": 161,
+      "label": "Named Tuple Concept",
+      "group": "COL"
+    },
+    {
+      "id": 162,
+      "label": "Tuple as Return Value",
+      "group": "COL"
+    },
+    {
+      "id": 163,
+      "label": "Dictionary Type",
+      "group": "COL"
+    },
+    {
+      "id": 164,
+      "label": "Creating a Dictionary",
+      "group": "COL"
+    },
+    {
+      "id": 165,
+      "label": "Accessing Values by Key",
+      "group": "COL"
+    },
+    {
+      "id": 166,
+      "label": "dict get() Method",
+      "group": "COL"
+    },
+    {
+      "id": 167,
+      "label": "Adding and Updating Key-Value Pairs",
+      "group": "COL"
+    },
+    {
+      "id": 168,
+      "label": "Removing Entries pop() del",
+      "group": "COL"
+    },
+    {
+      "id": 169,
+      "label": "Dictionary keys() values() items()",
+      "group": "COL"
+    },
+    {
+      "id": 170,
+      "label": "Iterating over a Dictionary",
+      "group": "COL"
+    },
+    {
+      "id": 171,
+      "label": "Key Membership with in",
+      "group": "COL"
+    },
+    {
+      "id": 172,
+      "label": "Nested Dictionaries",
+      "group": "COL"
+    },
+    {
+      "id": 173,
+      "label": "Dictionary Comprehensions",
+      "group": "COL"
+    },
+    {
+      "id": 174,
+      "label": "Default Dictionary Pattern",
+      "group": "COL"
+    },
+    {
+      "id": 175,
+      "label": "Dictionary from Two Lists with zip()",
+      "group": "COL"
+    },
+    {
+      "id": 176,
+      "label": "Set Type",
+      "group": "COL"
+    },
+    {
+      "id": 177,
+      "label": "Creating a Set",
+      "group": "COL"
+    },
+    {
+      "id": 178,
+      "label": "Set Union Intersection Difference",
+      "group": "COL"
+    },
+    {
+      "id": 179,
+      "label": "Set add() remove() discard()",
+      "group": "COL"
+    },
+    {
+      "id": 180,
+      "label": "Set Membership with in",
+      "group": "COL"
+    },
+    {
+      "id": 181,
+      "label": "Frozensets",
+      "group": "COL"
+    },
+    {
+      "id": 182,
+      "label": "print() Output Function",
+      "group": "COL"
+    },
+    {
+      "id": 183,
+      "label": "input() Read Input",
+      "group": "COL"
+    },
+    {
+      "id": 184,
+      "label": "len() Sequence Length",
+      "group": "COL"
+    },
+    {
+      "id": 185,
+      "label": "range() Number Sequence",
+      "group": "COL"
+    },
+    {
+      "id": 186,
+      "label": "type() Get Object Type",
+      "group": "COL"
+    },
+    {
+      "id": 187,
+      "label": "int() float() str() bool() Conversions",
+      "group": "COL"
+    },
+    {
+      "id": 188,
+      "label": "list() tuple() set() dict() Constructors",
+      "group": "COL"
+    },
+    {
+      "id": 189,
+      "label": "max() min() Functions",
+      "group": "COL"
+    },
+    {
+      "id": 190,
+      "label": "sum() Function",
+      "group": "COL"
+    },
+    {
+      "id": 191,
+      "label": "abs() Absolute Value",
+      "group": "COL"
+    },
+    {
+      "id": 192,
+      "label": "round() Function",
+      "group": "COL"
+    },
+    {
+      "id": 193,
+      "label": "sorted() Function",
+      "group": "COL"
+    },
+    {
+      "id": 194,
+      "label": "reversed() Function",
+      "group": "COL"
+    },
+    {
+      "id": 195,
+      "label": "enumerate() with Index",
+      "group": "COL"
+    },
+    {
+      "id": 196,
+      "label": "zip() Combine Iterables",
+      "group": "COL"
+    },
+    {
+      "id": 197,
+      "label": "map() Apply Function",
+      "group": "COL"
+    },
+    {
+      "id": 198,
+      "label": "filter() Filter Items",
+      "group": "COL"
+    },
+    {
+      "id": 199,
+      "label": "dir() List Attributes",
+      "group": "COL"
+    },
+    {
+      "id": 200,
+      "label": "help() Documentation",
+      "group": "COL"
+    },
+    {
+      "id": 201,
+      "label": "id() Object Identity",
+      "group": "COL"
+    },
+    {
+      "id": 202,
+      "label": "hash() Function",
+      "group": "COL"
+    },
+    {
+      "id": 203,
+      "label": "any() and all() Functions",
+      "group": "COL"
+    },
+    {
+      "id": 204,
+      "label": "chr() and ord() Functions",
+      "group": "COL"
+    },
+    {
+      "id": 205,
+      "label": "import Statement",
+      "group": "MOD"
+    },
+    {
+      "id": 206,
+      "label": "from...import Specific Names",
+      "group": "MOD"
+    },
+    {
+      "id": 207,
+      "label": "import...as Alias",
+      "group": "MOD"
+    },
+    {
+      "id": 208,
+      "label": "from...import Star",
+      "group": "MOD"
+    },
+    {
+      "id": 209,
+      "label": "Creating Custom Modules",
+      "group": "MOD"
+    },
+    {
+      "id": 210,
+      "label": "__name__ == \"__main__\" Guard",
+      "group": "MOD"
+    },
+    {
+      "id": 211,
+      "label": "Standard Library Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 212,
+      "label": "Module Search Path",
+      "group": "MOD"
+    },
+    {
+      "id": 213,
+      "label": "Reloading a Module",
+      "group": "MOD"
+    },
+    {
+      "id": 214,
+      "label": "random Module Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 215,
+      "label": "random.randint()",
+      "group": "MOD"
+    },
+    {
+      "id": 216,
+      "label": "random.choice()",
+      "group": "MOD"
+    },
+    {
+      "id": 217,
+      "label": "random.shuffle()",
+      "group": "MOD"
+    },
+    {
+      "id": 218,
+      "label": "random.seed()",
+      "group": "MOD"
+    },
+    {
+      "id": 219,
+      "label": "random.random() Float",
+      "group": "MOD"
+    },
+    {
+      "id": 220,
+      "label": "random.sample()",
+      "group": "MOD"
+    },
+    {
+      "id": 221,
+      "label": "math Module Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 222,
+      "label": "math.sqrt() floor() ceil()",
+      "group": "MOD"
+    },
+    {
+      "id": 223,
+      "label": "math.sin() cos() pi",
+      "group": "MOD"
+    },
+    {
+      "id": 224,
+      "label": "math.radians() degrees()",
+      "group": "MOD"
+    },
+    {
+      "id": 225,
+      "label": "math.log() exp()",
+      "group": "MOD"
+    },
+    {
+      "id": 226,
+      "label": "math.factorial()",
+      "group": "MOD"
+    },
+    {
+      "id": 227,
+      "label": "string Module Constants",
+      "group": "MOD"
+    },
+    {
+      "id": 228,
+      "label": "time Module Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 229,
+      "label": "time.sleep()",
+      "group": "MOD"
+    },
+    {
+      "id": 230,
+      "label": "sys Module",
+      "group": "MOD"
+    },
+    {
+      "id": 231,
+      "label": "sys.path Search Path",
+      "group": "MOD"
+    },
+    {
+      "id": 232,
+      "label": "os Module",
+      "group": "MOD"
+    },
+    {
+      "id": 233,
+      "label": "os.path Operations",
+      "group": "MOD"
+    },
+    {
+      "id": 234,
+      "label": "json Module Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 235,
+      "label": "json.loads() json.dumps()",
+      "group": "MOD"
+    },
+    {
+      "id": 236,
+      "label": "json.load() json.dump()",
+      "group": "MOD"
+    },
+    {
+      "id": 237,
+      "label": "csv Module Basics",
+      "group": "MOD"
+    },
+    {
+      "id": 238,
+      "label": "datetime Module Basics",
+      "group": "MOD"
+    },
+    {
+      "id": 239,
+      "label": "collections Module",
+      "group": "MOD"
+    },
+    {
+      "id": 240,
+      "label": "itertools Module Overview",
+      "group": "MOD"
+    },
+    {
+      "id": 241,
+      "label": "re Module Import",
+      "group": "TXT"
+    },
+    {
+      "id": 242,
+      "label": "re.search() First Match",
+      "group": "TXT"
+    },
+    {
+      "id": 243,
+      "label": "re.findall() All Matches",
+      "group": "TXT"
+    },
+    {
+      "id": 244,
+      "label": "re.split() Split by Pattern",
+      "group": "TXT"
+    },
+    {
+      "id": 245,
+      "label": "re.sub() Substitute Matches",
+      "group": "TXT"
+    },
+    {
+      "id": 246,
+      "label": "Digit Word Whitespace Patterns",
+      "group": "TXT"
+    },
+    {
+      "id": 247,
+      "label": "Anchors Start and End",
+      "group": "TXT"
+    },
+    {
+      "id": 248,
+      "label": "Character Classes",
+      "group": "TXT"
+    },
+    {
+      "id": 249,
+      "label": "Quantifiers Plus Star Question",
+      "group": "TXT"
+    },
+    {
+      "id": 250,
+      "label": "Alternation with Pipe",
+      "group": "TXT"
+    },
+    {
+      "id": 251,
+      "label": "Escaping Special Characters",
+      "group": "TXT"
+    },
+    {
+      "id": 252,
+      "label": "Raw Strings for Regex",
+      "group": "TXT"
+    },
+    {
+      "id": 253,
+      "label": "Regex Groups with Parentheses",
+      "group": "TXT"
+    },
+    {
+      "id": 254,
+      "label": "Compiled Regex Patterns",
+      "group": "TXT"
+    },
+    {
+      "id": 255,
+      "label": "open() Function",
+      "group": "FIO"
+    },
+    {
+      "id": 256,
+      "label": "File Modes r w a b",
+      "group": "FIO"
+    },
+    {
+      "id": 257,
+      "label": "file.read()",
+      "group": "FIO"
+    },
+    {
+      "id": 258,
+      "label": "file.readlines()",
+      "group": "FIO"
+    },
+    {
+      "id": 259,
+      "label": "file.readline()",
+      "group": "FIO"
+    },
+    {
+      "id": 260,
+      "label": "file.write()",
+      "group": "FIO"
+    },
+    {
+      "id": 261,
+      "label": "file.close()",
+      "group": "FIO"
+    },
+    {
+      "id": 262,
+      "label": "with Statement Context Manager",
+      "group": "FIO"
+    },
+    {
+      "id": 263,
+      "label": "Iterating over File Lines",
+      "group": "FIO"
+    },
+    {
+      "id": 264,
+      "label": "Text Processing strip() lower()",
+      "group": "FIO"
+    },
+    {
+      "id": 265,
+      "label": "CSV File Reading",
+      "group": "FIO"
+    },
+    {
+      "id": 266,
+      "label": "CSV File Writing",
+      "group": "FIO"
+    },
+    {
+      "id": 267,
+      "label": "Reading JSON from File",
+      "group": "FIO"
+    },
+    {
+      "id": 268,
+      "label": "Writing JSON to File",
+      "group": "FIO"
+    },
+    {
+      "id": 269,
+      "label": "File Path Handling",
+      "group": "FIO"
+    },
+    {
+      "id": 270,
+      "label": "Checking if File Exists",
+      "group": "FIO"
+    },
+    {
+      "id": 271,
+      "label": "Syntax vs Runtime vs Logic Errors",
+      "group": "ERR"
+    },
+    {
+      "id": 272,
+      "label": "Common Exception Types",
+      "group": "ERR"
+    },
+    {
+      "id": 273,
+      "label": "Reading a Traceback",
+      "group": "ERR"
+    },
+    {
+      "id": 274,
+      "label": "try...except Block",
+      "group": "ERR"
+    },
+    {
+      "id": 275,
+      "label": "Catching Specific Exceptions",
+      "group": "ERR"
+    },
+    {
+      "id": 276,
+      "label": "else Clause in try/except",
+      "group": "ERR"
+    },
+    {
+      "id": 277,
+      "label": "finally Clause",
+      "group": "ERR"
+    },
+    {
+      "id": 278,
+      "label": "raise Statement",
+      "group": "ERR"
+    },
+    {
+      "id": 279,
+      "label": "assert Statement",
+      "group": "ERR"
+    },
+    {
+      "id": 280,
+      "label": "Debugging with print()",
+      "group": "ERR"
+    },
+    {
+      "id": 281,
+      "label": "Using Search Engines to Debug",
+      "group": "ERR"
+    },
+    {
+      "id": 282,
+      "label": "Exception Hierarchy",
+      "group": "ERR"
+    },
+    {
+      "id": 283,
+      "label": "Custom Exception Classes",
+      "group": "ERR"
+    },
+    {
+      "id": 284,
+      "label": "Exception Chaining",
+      "group": "ERR"
+    },
+    {
+      "id": 285,
+      "label": "Objects and Classes Overview",
+      "group": "OOP"
+    },
+    {
+      "id": 286,
+      "label": "Attributes of an Object",
+      "group": "OOP"
+    },
+    {
+      "id": 287,
+      "label": "Methods of an Object",
+      "group": "OOP"
+    },
+    {
+      "id": 288,
+      "label": "class Keyword",
+      "group": "OOP"
+    },
+    {
+      "id": 289,
+      "label": "__init__() Constructor",
+      "group": "OOP"
+    },
+    {
+      "id": 290,
+      "label": "self Parameter",
+      "group": "OOP"
+    },
+    {
+      "id": 291,
+      "label": "Creating Class Instances",
+      "group": "OOP"
+    },
+    {
+      "id": 292,
+      "label": "Accessing Attributes and Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 293,
+      "label": "String Methods as OOP Examples",
+      "group": "OOP"
+    },
+    {
+      "id": 294,
+      "label": "List Methods as OOP Examples",
+      "group": "OOP"
+    },
+    {
+      "id": 295,
+      "label": "Inheritance Basics",
+      "group": "OOP"
+    },
+    {
+      "id": 296,
+      "label": "__str__() String Representation",
+      "group": "OOP"
+    },
+    {
+      "id": 297,
+      "label": "__repr__() Developer Representation",
+      "group": "OOP"
+    },
+    {
+      "id": 298,
+      "label": "Subclasses and Method Overriding",
+      "group": "OOP"
+    },
+    {
+      "id": 299,
+      "label": "super() Function",
+      "group": "OOP"
+    },
+    {
+      "id": 300,
+      "label": "Class Variables vs Instance Variables",
+      "group": "OOP"
+    },
+    {
+      "id": 301,
+      "label": "Static Methods",
+      "group": "OOP"
+    },
+    {
+      "id": 302,
+      "label": "Properties with @property",
+      "group": "OOP"
+    },
+    {
+      "id": 303,
+      "label": "Dunder Methods Overview",
+      "group": "OOP"
+    },
+    {
+      "id": 304,
+      "label": "Object Composition",
+      "group": "OOP"
+    },
+    {
+      "id": 305,
+      "label": "import turtle",
+      "group": "VIZ"
+    },
+    {
+      "id": 306,
+      "label": "turtle.Turtle() Object",
+      "group": "VIZ"
+    },
+    {
+      "id": 307,
+      "label": "turtle.Screen() Object",
+      "group": "VIZ"
+    },
+    {
+      "id": 308,
+      "label": "Screen Setup and bgcolor()",
+      "group": "VIZ"
+    },
+    {
+      "id": 309,
+      "label": "Movement forward() backward()",
+      "group": "VIZ"
+    },
+    {
+      "id": 310,
+      "label": "Turning left() right()",
+      "group": "VIZ"
+    },
+    {
+      "id": 311,
+      "label": "Absolute Positioning goto()",
+      "group": "VIZ"
+    },
+    {
+      "id": 312,
+      "label": "Pen Control penup() pendown()",
+      "group": "VIZ"
+    },
+    {
+      "id": 313,
+      "label": "Pen Size and Color",
+      "group": "VIZ"
+    },
+    {
+      "id": 314,
+      "label": "Fill begin_fill() end_fill()",
+      "group": "VIZ"
+    },
+    {
+      "id": 315,
+      "label": "Drawing circle() and Polygons",
+      "group": "VIZ"
+    },
+    {
+      "id": 316,
+      "label": "Turtle Appearance shape()",
+      "group": "VIZ"
+    },
+    {
+      "id": 317,
+      "label": "Hiding and Showing Turtle",
+      "group": "VIZ"
+    },
+    {
+      "id": 318,
+      "label": "Writing Text with turtle.write()",
+      "group": "VIZ"
+    },
+    {
+      "id": 319,
+      "label": "Clearing and Resetting",
+      "group": "VIZ"
+    },
+    {
+      "id": 320,
+      "label": "Position Query xcor() ycor()",
+      "group": "VIZ"
+    },
+    {
+      "id": 321,
+      "label": "Speed Control speed()",
+      "group": "VIZ"
+    },
+    {
+      "id": 322,
+      "label": "setheading() Direction",
+      "group": "VIZ"
+    },
+    {
+      "id": 323,
+      "label": "onscreenclick() Event Handler",
+      "group": "VIZ"
+    },
+    {
+      "id": 324,
+      "label": "Animation with Turtle Loops",
+      "group": "VIZ"
+    },
+    {
+      "id": 325,
+      "label": "Color Picker with Turtle",
+      "group": "VIZ"
+    },
+    {
+      "id": 326,
+      "label": "Fractals with Recursion and Turtle",
+      "group": "VIZ"
+    },
+    {
+      "id": 327,
+      "label": "Sine Wave with Turtle and Math",
+      "group": "VIZ"
+    },
+    {
+      "id": 328,
+      "label": "Drawing Star Patterns",
+      "group": "VIZ"
+    },
+    {
+      "id": 329,
+      "label": "Turtle Race Simulation",
+      "group": "VIZ"
+    },
+    {
+      "id": 330,
+      "label": "Maze Visualization with Turtle",
+      "group": "VIZ"
+    },
+    {
+      "id": 331,
+      "label": "matplotlib Library Overview",
+      "group": "VIZ"
+    },
+    {
+      "id": 332,
+      "label": "import matplotlib.pyplot as plt",
+      "group": "VIZ"
+    },
+    {
+      "id": 333,
+      "label": "plt.plot() Line Plot",
+      "group": "VIZ"
+    },
+    {
+      "id": 334,
+      "label": "plt.show() Display",
+      "group": "VIZ"
+    },
+    {
+      "id": 335,
+      "label": "Plot Title and Axis Labels",
+      "group": "VIZ"
+    },
+    {
+      "id": 336,
+      "label": "plt.grid() Grid Lines",
+      "group": "VIZ"
+    },
+    {
+      "id": 337,
+      "label": "Plotting a Sine Wave",
+      "group": "VIZ"
+    },
+    {
+      "id": 338,
+      "label": "Lists as XY Plot Data",
+      "group": "VIZ"
+    },
+    {
+      "id": 339,
+      "label": "plt.scatter() Scatter Plot",
+      "group": "VIZ"
+    },
+    {
+      "id": 340,
+      "label": "plt.bar() Bar Chart",
+      "group": "VIZ"
+    },
+    {
+      "id": 341,
+      "label": "plt.hist() Histogram",
+      "group": "VIZ"
+    },
+    {
+      "id": 342,
+      "label": "plt.legend() Legend",
+      "group": "VIZ"
+    },
+    {
+      "id": 343,
+      "label": "plt.savefig() Save Plot",
+      "group": "VIZ"
+    },
+    {
+      "id": 344,
+      "label": "Multiple Lines on One Plot",
+      "group": "VIZ"
+    },
+    {
+      "id": 345,
+      "label": "Subplots with plt.subplot()",
+      "group": "VIZ"
+    },
+    {
+      "id": 346,
+      "label": "numpy Library Overview",
+      "group": "VIZ"
+    },
+    {
+      "id": 347,
+      "label": "import numpy as np",
+      "group": "VIZ"
+    },
+    {
+      "id": 348,
+      "label": "np.array() Creating Arrays",
+      "group": "VIZ"
+    },
+    {
+      "id": 349,
+      "label": "np.argmax() Index of Max",
+      "group": "VIZ"
+    },
+    {
+      "id": 350,
+      "label": "Array Operations and Broadcasting",
+      "group": "VIZ"
+    },
+    {
+      "id": 351,
+      "label": "Reshaping Arrays",
+      "group": "VIZ"
+    },
+    {
+      "id": 352,
+      "label": "np.zeros() np.ones()",
+      "group": "VIZ"
+    },
+    {
+      "id": 353,
+      "label": "np.linspace() Evenly Spaced Values",
+      "group": "VIZ"
+    },
+    {
+      "id": 354,
+      "label": "Array Slicing and Indexing",
+      "group": "VIZ"
+    },
+    {
+      "id": 355,
+      "label": "Element-wise Math Operations",
+      "group": "VIZ"
+    },
+    {
+      "id": 356,
+      "label": "np.mean() np.std()",
+      "group": "VIZ"
+    },
+    {
+      "id": 357,
+      "label": "PIL Pillow Library Overview",
+      "group": "VIZ"
+    },
+    {
+      "id": 358,
+      "label": "Image.open() Open Image",
+      "group": "VIZ"
+    },
+    {
+      "id": 359,
+      "label": "image.show() Display Image",
+      "group": "VIZ"
+    },
+    {
+      "id": 360,
+      "label": "Pixel Data and Image Arrays",
+      "group": "VIZ"
+    },
+    {
+      "id": 361,
+      "label": "Image Resize and Crop",
+      "group": "VIZ"
+    },
+    {
+      "id": 362,
+      "label": "Image Color Conversion",
+      "group": "VIZ"
+    },
+    {
+      "id": 363,
+      "label": "Saving Images",
+      "group": "VIZ"
+    },
+    {
+      "id": 364,
+      "label": "Abstract Data Types Overview",
+      "group": "ALG"
+    },
+    {
+      "id": 365,
+      "label": "Stack LIFO Structure",
+      "group": "ALG"
+    },
+    {
+      "id": 366,
+      "label": "Queue FIFO Structure",
+      "group": "ALG"
+    },
+    {
+      "id": 367,
+      "label": "Queue enqueue() dequeue()",
+      "group": "ALG"
+    },
+    {
+      "id": 368,
+      "label": "Graph Nodes and Edges",
+      "group": "ALG"
+    },
+    {
+      "id": 369,
+      "label": "Adjacency List Representation",
+      "group": "ALG"
+    },
+    {
+      "id": 370,
+      "label": "Breadth-First Search BFS",
+      "group": "ALG"
+    },
+    {
+      "id": 371,
+      "label": "BFS Color Tracking",
+      "group": "ALG"
+    },
+    {
+      "id": 372,
+      "label": "BFS for Path Finding",
+      "group": "ALG"
+    },
+    {
+      "id": 373,
+      "label": "Depth-First Search DFS",
+      "group": "ALG"
+    },
+    {
+      "id": 374,
+      "label": "DFS with Recursion",
+      "group": "ALG"
+    },
+    {
+      "id": 375,
+      "label": "DFS and BFS for Maze Solving",
+      "group": "ALG"
+    },
+    {
+      "id": 376,
+      "label": "Sorting Algorithms Overview",
+      "group": "ALG"
+    },
+    {
+      "id": 377,
+      "label": "Bubble Sort",
+      "group": "ALG"
+    },
+    {
+      "id": 378,
+      "label": "Selection Sort",
+      "group": "ALG"
+    },
+    {
+      "id": 379,
+      "label": "Insertion Sort",
+      "group": "ALG"
+    },
+    {
+      "id": 380,
+      "label": "Binary Search Concept",
+      "group": "ALG"
+    },
+    {
+      "id": 381,
+      "label": "Time Complexity Big-O Overview",
+      "group": "ALG"
+    },
+    {
+      "id": 382,
+      "label": "Space Complexity Overview",
+      "group": "ALG"
+    },
+    {
+      "id": 383,
+      "label": "Linked List Concept",
+      "group": "ALG"
+    },
+    {
+      "id": 384,
+      "label": "Tree Data Structure Concept",
+      "group": "ALG"
+    },
+    {
+      "id": 385,
+      "label": "Binary Tree Basics",
+      "group": "ALG"
+    },
+    {
+      "id": 386,
+      "label": "Machine Learning Overview",
+      "group": "ADV"
+    },
+    {
+      "id": 387,
+      "label": "Supervised vs Unsupervised Learning",
+      "group": "ADV"
+    },
+    {
+      "id": 388,
+      "label": "keras Library Overview",
+      "group": "ADV"
+    },
+    {
+      "id": 389,
+      "label": "Sequential Model",
+      "group": "ADV"
+    },
+    {
+      "id": 390,
+      "label": "Dense Fully Connected Layers",
+      "group": "ADV"
+    },
+    {
+      "id": 391,
+      "label": "Activation Functions relu softmax",
+      "group": "ADV"
+    },
+    {
+      "id": 392,
+      "label": "Conv2D Convolutional Layers",
+      "group": "ADV"
+    },
+    {
+      "id": 393,
+      "label": "MaxPooling2D Pooling Layers",
+      "group": "ADV"
+    },
+    {
+      "id": 394,
+      "label": "Dropout Regularization",
+      "group": "ADV"
+    },
+    {
+      "id": 395,
+      "label": "Flatten Layer",
+      "group": "ADV"
+    },
+    {
+      "id": 396,
+      "label": "model.compile()",
+      "group": "ADV"
+    },
+    {
+      "id": 397,
+      "label": "model.fit() Training",
+      "group": "ADV"
+    },
+    {
+      "id": 398,
+      "label": "model.evaluate() Testing",
+      "group": "ADV"
+    },
+    {
+      "id": 399,
+      "label": "model.predict() Inference",
+      "group": "ADV"
+    },
+    {
+      "id": 400,
+      "label": "Categorical Crossentropy Loss",
+      "group": "ADV"
+    },
+    {
+      "id": 401,
+      "label": "Adam Optimizer",
+      "group": "ADV"
+    },
+    {
+      "id": 402,
+      "label": "Accuracy Metric",
+      "group": "ADV"
+    },
+    {
+      "id": 403,
+      "label": "Batch Size and Epochs",
+      "group": "ADV"
+    },
+    {
+      "id": 404,
+      "label": "MNIST Dataset",
+      "group": "ADV"
+    },
+    {
+      "id": 405,
+      "label": "Data Normalization",
+      "group": "ADV"
+    },
+    {
+      "id": 406,
+      "label": "Convolutional Neural Networks",
+      "group": "ADV"
+    },
+    {
+      "id": 407,
+      "label": "Feedforward Networks",
+      "group": "ADV"
+    },
+    {
+      "id": 408,
+      "label": "Recurrent Networks RNN Overview",
+      "group": "ADV"
+    },
+    {
+      "id": 409,
+      "label": "LSTM Networks Overview",
+      "group": "ADV"
+    },
+    {
+      "id": 410,
+      "label": "Autoencoders Overview",
+      "group": "ADV"
+    },
+    {
+      "id": 411,
+      "label": "Training vs Validation vs Test Sets",
+      "group": "ADV"
+    },
+    {
+      "id": 412,
+      "label": "Overfitting Concept",
+      "group": "ADV"
+    },
+    {
+      "id": 413,
+      "label": "Feature Extraction",
+      "group": "ADV"
+    },
+    {
+      "id": 414,
+      "label": "ipycanvas Canvas in Jupyter",
+      "group": "VIZ"
+    },
+    {
+      "id": 415,
+      "label": "mobilechelonian Turtle in Jupyter",
+      "group": "VIZ"
+    },
+    {
+      "id": 416,
+      "label": "Drawing Shapes on Canvas",
+      "group": "VIZ"
+    },
+    {
+      "id": 417,
+      "label": "Color Bars in Jupyter",
+      "group": "VIZ"
+    },
+    {
+      "id": 418,
+      "label": "Event-Driven Programming Model",
+      "group": "ADV"
+    },
+    {
+      "id": 419,
+      "label": "Mouse Click Event Handlers",
+      "group": "ADV"
+    },
+    {
+      "id": 420,
+      "label": "Keyboard Event Handlers",
+      "group": "ADV"
+    },
+    {
+      "id": 421,
+      "label": "Callback Functions",
+      "group": "ADV"
+    },
+    {
+      "id": 422,
+      "label": "Animation Loops",
+      "group": "ADV"
+    },
+    {
+      "id": 423,
+      "label": "Event Queue Concept",
+      "group": "ADV"
+    },
+    {
+      "id": 424,
+      "label": "Timer-Based Events",
+      "group": "ADV"
+    },
+    {
+      "id": 425,
+      "label": "Modularity in Code",
+      "group": "ADV"
+    },
+    {
+      "id": 426,
+      "label": "Code Reusability",
+      "group": "ADV"
+    },
+    {
+      "id": 427,
+      "label": "DRY Principle",
+      "group": "ADV"
+    },
+    {
+      "id": 428,
+      "label": "Meaningful Names",
+      "group": "ADV"
+    },
+    {
+      "id": 429,
+      "label": "Code Comments When and Why",
+      "group": "ADV"
+    },
+    {
+      "id": 430,
+      "label": "Literate Programming in Jupyter",
+      "group": "ADV"
+    },
+    {
+      "id": 431,
+      "label": "Reading Docs with help() and dir()",
+      "group": "ADV"
+    },
+    {
+      "id": 432,
+      "label": "Version Control Basics",
+      "group": "ADV"
+    },
+    {
+      "id": 433,
+      "label": "Searching Documentation",
+      "group": "ADV"
+    },
+    {
+      "id": 434,
+      "label": "Code Refactoring",
+      "group": "ADV"
+    },
+    {
+      "id": 435,
+      "label": "Test-Driven Thinking",
+      "group": "ADV"
+    },
+    {
+      "id": 436,
+      "label": "Pair Programming Concept",
+      "group": "ADV"
+    },
+    {
+      "id": 437,
+      "label": "Named Colors",
+      "group": "ADV"
+    },
+    {
+      "id": 438,
+      "label": "Hex Color Values",
+      "group": "ADV"
+    },
+    {
+      "id": 439,
+      "label": "RGB Color Model",
+      "group": "ADV"
+    },
+    {
+      "id": 440,
+      "label": "Color in Turtle Graphics",
+      "group": "ADV"
+    },
+    {
+      "id": 441,
+      "label": "Background and Pen Colors",
+      "group": "ADV"
+    },
+    {
+      "id": 442,
+      "label": "HSL Color Model",
+      "group": "ADV"
+    },
+    {
+      "id": 443,
+      "label": "Color Theory Basics",
+      "group": "ADV"
+    },
+    {
+      "id": 444,
+      "label": "Transparency and Alpha",
+      "group": "ADV"
+    },
+    {
+      "id": 445,
+      "label": "Decomposition",
+      "group": "ADV"
+    },
+    {
+      "id": 446,
+      "label": "Pattern Recognition",
+      "group": "ADV"
+    },
+    {
+      "id": 447,
+      "label": "Abstraction in Programming",
+      "group": "ADV"
+    },
+    {
+      "id": 448,
+      "label": "Algorithm Design",
+      "group": "ADV"
+    },
+    {
+      "id": 449,
+      "label": "Pseudocode Writing",
+      "group": "ADV"
+    },
+    {
+      "id": 450,
+      "label": "Debugging Strategies",
+      "group": "ADV"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 9,
+      "to": 8
+    },
+    {
+      "from": 10,
+      "to": 1
+    },
+    {
+      "from": 11,
+      "to": 1
+    },
+    {
+      "from": 11,
+      "to": 10
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 1
+    },
+    {
+      "from": 13,
+      "to": 11
+    },
+    {
+      "from": 14,
+      "to": 13
+    },
+    {
+      "from": 14,
+      "to": 19
+    },
+    {
+      "from": 15,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 13
+    },
+    {
+      "from": 17,
+      "to": 1
+    },
+    {
+      "from": 17,
+      "to": 3
+    },
+    {
+      "from": 18,
+      "to": 1
+    },
+    {
+      "from": 18,
+      "to": 8
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 1
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 21
+    },
+    {
+      "from": 25,
+      "to": 21
+    },
+    {
+      "from": 26,
+      "to": 21
+    },
+    {
+      "from": 27,
+      "to": 21
+    },
+    {
+      "from": 27,
+      "to": 22
+    },
+    {
+      "from": 28,
+      "to": 24
+    },
+    {
+      "from": 29,
+      "to": 21
+    },
+    {
+      "from": 30,
+      "to": 24
+    },
+    {
+      "from": 31,
+      "to": 21
+    },
+    {
+      "from": 31,
+      "to": 29
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 31
+    },
+    {
+      "from": 36,
+      "to": 31
+    },
+    {
+      "from": 36,
+      "to": 47
+    },
+    {
+      "from": 37,
+      "to": 31
+    },
+    {
+      "from": 37,
+      "to": 33
+    },
+    {
+      "from": 38,
+      "to": 31
+    },
+    {
+      "from": 39,
+      "to": 35
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 32
+    },
+    {
+      "from": 40,
+      "to": 26
+    },
+    {
+      "from": 41,
+      "to": 31
+    },
+    {
+      "from": 42,
+      "to": 31
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 41
+    },
+    {
+      "from": 44,
+      "to": 42
+    },
+    {
+      "from": 45,
+      "to": 41
+    },
+    {
+      "from": 46,
+      "to": 41
+    },
+    {
+      "from": 47,
+      "to": 41
+    },
+    {
+      "from": 47,
+      "to": 42
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 41
+    },
+    {
+      "from": 50,
+      "to": 42
+    },
+    {
+      "from": 51,
+      "to": 31
+    },
+    {
+      "from": 52,
+      "to": 41
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 52
+    },
+    {
+      "from": 54,
+      "to": 51
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 56,
+      "to": 51
+    },
+    {
+      "from": 56,
+      "to": 92
+    },
+    {
+      "from": 57,
+      "to": 52
+    },
+    {
+      "from": 57,
+      "to": 53
+    },
+    {
+      "from": 58,
+      "to": 31
+    },
+    {
+      "from": 59,
+      "to": 58
+    },
+    {
+      "from": 60,
+      "to": 58
+    },
+    {
+      "from": 61,
+      "to": 58
+    },
+    {
+      "from": 61,
+      "to": 41
+    },
+    {
+      "from": 62,
+      "to": 58
+    },
+    {
+      "from": 62,
+      "to": 41
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 58
+    },
+    {
+      "from": 65,
+      "to": 58
+    },
+    {
+      "from": 66,
+      "to": 58
+    },
+    {
+      "from": 67,
+      "to": 58
+    },
+    {
+      "from": 68,
+      "to": 58
+    },
+    {
+      "from": 69,
+      "to": 58
+    },
+    {
+      "from": 70,
+      "to": 58
+    },
+    {
+      "from": 70,
+      "to": 31
+    },
+    {
+      "from": 71,
+      "to": 58
+    },
+    {
+      "from": 71,
+      "to": 31
+    },
+    {
+      "from": 71,
+      "to": 70
+    },
+    {
+      "from": 72,
+      "to": 58
+    },
+    {
+      "from": 73,
+      "to": 58
+    },
+    {
+      "from": 73,
+      "to": 64
+    },
+    {
+      "from": 74,
+      "to": 58
+    },
+    {
+      "from": 74,
+      "to": 52
+    },
+    {
+      "from": 75,
+      "to": 23
+    },
+    {
+      "from": 75,
+      "to": 71
+    },
+    {
+      "from": 76,
+      "to": 31
+    },
+    {
+      "from": 77,
+      "to": 121
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 52
+    },
+    {
+      "from": 79,
+      "to": 41
+    },
+    {
+      "from": 79,
+      "to": 58
+    },
+    {
+      "from": 80,
+      "to": 42
+    },
+    {
+      "from": 80,
+      "to": 58
+    },
+    {
+      "from": 81,
+      "to": 58
+    },
+    {
+      "from": 81,
+      "to": 41
+    },
+    {
+      "from": 82,
+      "to": 51
+    },
+    {
+      "from": 82,
+      "to": 31
+    },
+    {
+      "from": 83,
+      "to": 31
+    },
+    {
+      "from": 83,
+      "to": 41
+    },
+    {
+      "from": 84,
+      "to": 83
+    },
+    {
+      "from": 84,
+      "to": 285
+    },
+    {
+      "from": 85,
+      "to": 79
+    },
+    {
+      "from": 85,
+      "to": 80
+    },
+    {
+      "from": 85,
+      "to": 81
+    },
+    {
+      "from": 86,
+      "to": 21
+    },
+    {
+      "from": 86,
+      "to": 58
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 87,
+      "to": 58
+    },
+    {
+      "from": 88,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 79
+    },
+    {
+      "from": 88,
+      "to": 80
+    },
+    {
+      "from": 89,
+      "to": 86
+    },
+    {
+      "from": 89,
+      "to": 92
+    },
+    {
+      "from": 90,
+      "to": 86
+    },
+    {
+      "from": 90,
+      "to": 35
+    },
+    {
+      "from": 91,
+      "to": 86
+    },
+    {
+      "from": 91,
+      "to": 66
+    },
+    {
+      "from": 92,
+      "to": 51
+    },
+    {
+      "from": 92,
+      "to": 24
+    },
+    {
+      "from": 92,
+      "to": 28
+    },
+    {
+      "from": 93,
+      "to": 92
+    },
+    {
+      "from": 94,
+      "to": 93
+    },
+    {
+      "from": 95,
+      "to": 93
+    },
+    {
+      "from": 96,
+      "to": 92
+    },
+    {
+      "from": 96,
+      "to": 51
+    },
+    {
+      "from": 97,
+      "to": 92
+    },
+    {
+      "from": 97,
+      "to": 94
+    },
+    {
+      "from": 98,
+      "to": 54
+    },
+    {
+      "from": 98,
+      "to": 92
+    },
+    {
+      "from": 99,
+      "to": 53
+    },
+    {
+      "from": 99,
+      "to": 92
+    },
+    {
+      "from": 100,
+      "to": 24
+    },
+    {
+      "from": 100,
+      "to": 28
+    },
+    {
+      "from": 101,
+      "to": 100
+    },
+    {
+      "from": 102,
+      "to": 101
+    },
+    {
+      "from": 102,
+      "to": 41
+    },
+    {
+      "from": 103,
+      "to": 24
+    },
+    {
+      "from": 103,
+      "to": 28
+    },
+    {
+      "from": 103,
+      "to": 51
+    },
+    {
+      "from": 104,
+      "to": 100
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 100
+    },
+    {
+      "from": 105,
+      "to": 103
+    },
+    {
+      "from": 106,
+      "to": 100
+    },
+    {
+      "from": 106,
+      "to": 103
+    },
+    {
+      "from": 107,
+      "to": 100
+    },
+    {
+      "from": 107,
+      "to": 108
+    },
+    {
+      "from": 108,
+      "to": 100
+    },
+    {
+      "from": 108,
+      "to": 41
+    },
+    {
+      "from": 109,
+      "to": 103
+    },
+    {
+      "from": 109,
+      "to": 104
+    },
+    {
+      "from": 110,
+      "to": 100
+    },
+    {
+      "from": 111,
+      "to": 100
+    },
+    {
+      "from": 112,
+      "to": 100
+    },
+    {
+      "from": 112,
+      "to": 31
+    },
+    {
+      "from": 113,
+      "to": 100
+    },
+    {
+      "from": 113,
+      "to": 138
+    },
+    {
+      "from": 114,
+      "to": 101
+    },
+    {
+      "from": 114,
+      "to": 102
+    },
+    {
+      "from": 115,
+      "to": 24
+    },
+    {
+      "from": 115,
+      "to": 28
+    },
+    {
+      "from": 115,
+      "to": 21
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 117
+    },
+    {
+      "from": 119,
+      "to": 115
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 115
+    },
+    {
+      "from": 121,
+      "to": 115
+    },
+    {
+      "from": 121,
+      "to": 76
+    },
+    {
+      "from": 122,
+      "to": 115
+    },
+    {
+      "from": 122,
+      "to": 31
+    },
+    {
+      "from": 123,
+      "to": 31
+    },
+    {
+      "from": 123,
+      "to": 115
+    },
+    {
+      "from": 124,
+      "to": 123
+    },
+    {
+      "from": 124,
+      "to": 122
+    },
+    {
+      "from": 125,
+      "to": 122
+    },
+    {
+      "from": 125,
+      "to": 135
+    },
+    {
+      "from": 126,
+      "to": 115
+    },
+    {
+      "from": 126,
+      "to": 23
+    },
+    {
+      "from": 127,
+      "to": 115
+    },
+    {
+      "from": 127,
+      "to": 120
+    },
+    {
+      "from": 128,
+      "to": 115
+    },
+    {
+      "from": 128,
+      "to": 116
+    },
+    {
+      "from": 129,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 128
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 115
+    },
+    {
+      "from": 131,
+      "to": 116
+    },
+    {
+      "from": 132,
+      "to": 115
+    },
+    {
+      "from": 132,
+      "to": 137
+    },
+    {
+      "from": 133,
+      "to": 115
+    },
+    {
+      "from": 133,
+      "to": 163
+    },
+    {
+      "from": 134,
+      "to": 131
+    },
+    {
+      "from": 134,
+      "to": 115
+    },
+    {
+      "from": 135,
+      "to": 115
+    },
+    {
+      "from": 135,
+      "to": 122
+    },
+    {
+      "from": 136,
+      "to": 120
+    },
+    {
+      "from": 136,
+      "to": 155
+    },
+    {
+      "from": 137,
+      "to": 31
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 137
+    },
+    {
+      "from": 139,
+      "to": 41
+    },
+    {
+      "from": 140,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 139
+    },
+    {
+      "from": 141,
+      "to": 63
+    },
+    {
+      "from": 142,
+      "to": 137
+    },
+    {
+      "from": 143,
+      "to": 137
+    },
+    {
+      "from": 144,
+      "to": 137
+    },
+    {
+      "from": 145,
+      "to": 137
+    },
+    {
+      "from": 145,
+      "to": 52
+    },
+    {
+      "from": 146,
+      "to": 137
+    },
+    {
+      "from": 147,
+      "to": 137
+    },
+    {
+      "from": 147,
+      "to": 58
+    },
+    {
+      "from": 148,
+      "to": 137
+    },
+    {
+      "from": 148,
+      "to": 60
+    },
+    {
+      "from": 148,
+      "to": 61
+    },
+    {
+      "from": 149,
+      "to": 100
+    },
+    {
+      "from": 149,
+      "to": 137
+    },
+    {
+      "from": 150,
+      "to": 137
+    },
+    {
+      "from": 150,
+      "to": 139
+    },
+    {
+      "from": 151,
+      "to": 100
+    },
+    {
+      "from": 151,
+      "to": 137
+    },
+    {
+      "from": 151,
+      "to": 149
+    },
+    {
+      "from": 152,
+      "to": 137
+    },
+    {
+      "from": 152,
+      "to": 58
+    },
+    {
+      "from": 153,
+      "to": 137
+    },
+    {
+      "from": 153,
+      "to": 143
+    },
+    {
+      "from": 153,
+      "to": 144
+    },
+    {
+      "from": 154,
+      "to": 137
+    },
+    {
+      "from": 154,
+      "to": 143
+    },
+    {
+      "from": 154,
+      "to": 144
+    },
+    {
+      "from": 155,
+      "to": 31
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 157,
+      "to": 139
+    },
+    {
+      "from": 157,
+      "to": 141
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 35
+    },
+    {
+      "from": 159,
+      "to": 155
+    },
+    {
+      "from": 159,
+      "to": 137
+    },
+    {
+      "from": 159,
+      "to": 152
+    },
+    {
+      "from": 160,
+      "to": 156
+    },
+    {
+      "from": 161,
+      "to": 155
+    },
+    {
+      "from": 161,
+      "to": 163
+    },
+    {
+      "from": 161,
+      "to": 285
+    },
+    {
+      "from": 162,
+      "to": 156
+    },
+    {
+      "from": 162,
+      "to": 120
+    },
+    {
+      "from": 163,
+      "to": 31
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 164
+    },
+    {
+      "from": 166,
+      "to": 165
+    },
+    {
+      "from": 166,
+      "to": 163
+    },
+    {
+      "from": 167,
+      "to": 164
+    },
+    {
+      "from": 167,
+      "to": 165
+    },
+    {
+      "from": 168,
+      "to": 164
+    },
+    {
+      "from": 168,
+      "to": 144
+    },
+    {
+      "from": 169,
+      "to": 164
+    },
+    {
+      "from": 170,
+      "to": 100
+    },
+    {
+      "from": 170,
+      "to": 164
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 147
+    },
+    {
+      "from": 171,
+      "to": 163
+    },
+    {
+      "from": 172,
+      "to": 163
+    },
+    {
+      "from": 172,
+      "to": 150
+    },
+    {
+      "from": 173,
+      "to": 151
+    },
+    {
+      "from": 173,
+      "to": 163
+    },
+    {
+      "from": 174,
+      "to": 163
+    },
+    {
+      "from": 174,
+      "to": 118
+    },
+    {
+      "from": 175,
+      "to": 111
+    },
+    {
+      "from": 175,
+      "to": 163
+    },
+    {
+      "from": 175,
+      "to": 138
+    },
+    {
+      "from": 176,
+      "to": 31
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 177
+    },
+    {
+      "from": 179,
+      "to": 177
+    },
+    {
+      "from": 180,
+      "to": 177
+    },
+    {
+      "from": 180,
+      "to": 147
+    },
+    {
+      "from": 181,
+      "to": 176
+    },
+    {
+      "from": 181,
+      "to": 72
+    },
+    {
+      "from": 182,
+      "to": 21
+    },
+    {
+      "from": 183,
+      "to": 86
+    },
+    {
+      "from": 184,
+      "to": 65
+    },
+    {
+      "from": 184,
+      "to": 142
+    },
+    {
+      "from": 185,
+      "to": 102
+    },
+    {
+      "from": 186,
+      "to": 83
+    },
+    {
+      "from": 187,
+      "to": 79
+    },
+    {
+      "from": 187,
+      "to": 80
+    },
+    {
+      "from": 187,
+      "to": 81
+    },
+    {
+      "from": 187,
+      "to": 82
+    },
+    {
+      "from": 188,
+      "to": 138
+    },
+    {
+      "from": 188,
+      "to": 156
+    },
+    {
+      "from": 188,
+      "to": 177
+    },
+    {
+      "from": 188,
+      "to": 164
+    },
+    {
+      "from": 189,
+      "to": 137
+    },
+    {
+      "from": 189,
+      "to": 41
+    },
+    {
+      "from": 190,
+      "to": 137
+    },
+    {
+      "from": 190,
+      "to": 41
+    },
+    {
+      "from": 191,
+      "to": 41
+    },
+    {
+      "from": 192,
+      "to": 42
+    },
+    {
+      "from": 192,
+      "to": 41
+    },
+    {
+      "from": 193,
+      "to": 137
+    },
+    {
+      "from": 193,
+      "to": 145
+    },
+    {
+      "from": 193,
+      "to": 52
+    },
+    {
+      "from": 194,
+      "to": 137
+    },
+    {
+      "from": 195,
+      "to": 100
+    },
+    {
+      "from": 195,
+      "to": 110
+    },
+    {
+      "from": 196,
+      "to": 111
+    },
+    {
+      "from": 197,
+      "to": 115
+    },
+    {
+      "from": 197,
+      "to": 137
+    },
+    {
+      "from": 197,
+      "to": 134
+    },
+    {
+      "from": 198,
+      "to": 115
+    },
+    {
+      "from": 198,
+      "to": 137
+    },
+    {
+      "from": 198,
+      "to": 134
+    },
+    {
+      "from": 199,
+      "to": 285
+    },
+    {
+      "from": 200,
+      "to": 199
+    },
+    {
+      "from": 201,
+      "to": 31
+    },
+    {
+      "from": 201,
+      "to": 285
+    },
+    {
+      "from": 202,
+      "to": 163
+    },
+    {
+      "from": 202,
+      "to": 176
+    },
+    {
+      "from": 202,
+      "to": 285
+    },
+    {
+      "from": 203,
+      "to": 137
+    },
+    {
+      "from": 203,
+      "to": 51
+    },
+    {
+      "from": 204,
+      "to": 58
+    },
+    {
+      "from": 204,
+      "to": 41
+    },
+    {
+      "from": 205,
+      "to": 1
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 207,
+      "to": 205
+    },
+    {
+      "from": 208,
+      "to": 206
+    },
+    {
+      "from": 209,
+      "to": 115
+    },
+    {
+      "from": 209,
+      "to": 205
+    },
+    {
+      "from": 210,
+      "to": 209
+    },
+    {
+      "from": 210,
+      "to": 205
+    },
+    {
+      "from": 211,
+      "to": 205
+    },
+    {
+      "from": 212,
+      "to": 205
+    },
+    {
+      "from": 212,
+      "to": 20
+    },
+    {
+      "from": 213,
+      "to": 205
+    },
+    {
+      "from": 214,
+      "to": 205
+    },
+    {
+      "from": 214,
+      "to": 211
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 215,
+      "to": 41
+    },
+    {
+      "from": 216,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 137
+    },
+    {
+      "from": 217,
+      "to": 214
+    },
+    {
+      "from": 217,
+      "to": 137
+    },
+    {
+      "from": 218,
+      "to": 214
+    },
+    {
+      "from": 219,
+      "to": 214
+    },
+    {
+      "from": 219,
+      "to": 42
+    },
+    {
+      "from": 220,
+      "to": 214
+    },
+    {
+      "from": 220,
+      "to": 137
+    },
+    {
+      "from": 221,
+      "to": 205
+    },
+    {
+      "from": 221,
+      "to": 211
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 222,
+      "to": 42
+    },
+    {
+      "from": 223,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 42
+    },
+    {
+      "from": 224,
+      "to": 221
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 221
+    },
+    {
+      "from": 225,
+      "to": 42
+    },
+    {
+      "from": 226,
+      "to": 221
+    },
+    {
+      "from": 226,
+      "to": 41
+    },
+    {
+      "from": 227,
+      "to": 205
+    },
+    {
+      "from": 227,
+      "to": 211
+    },
+    {
+      "from": 227,
+      "to": 58
+    },
+    {
+      "from": 228,
+      "to": 205
+    },
+    {
+      "from": 228,
+      "to": 211
+    },
+    {
+      "from": 229,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 205
+    },
+    {
+      "from": 230,
+      "to": 211
+    },
+    {
+      "from": 231,
+      "to": 230
+    },
+    {
+      "from": 231,
+      "to": 212
+    },
+    {
+      "from": 232,
+      "to": 205
+    },
+    {
+      "from": 232,
+      "to": 211
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 233,
+      "to": 20
+    },
+    {
+      "from": 234,
+      "to": 205
+    },
+    {
+      "from": 234,
+      "to": 211
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 235,
+      "to": 163
+    },
+    {
+      "from": 235,
+      "to": 58
+    },
+    {
+      "from": 236,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 255
+    },
+    {
+      "from": 236,
+      "to": 262
+    },
+    {
+      "from": 237,
+      "to": 205
+    },
+    {
+      "from": 237,
+      "to": 211
+    },
+    {
+      "from": 237,
+      "to": 265
+    },
+    {
+      "from": 238,
+      "to": 205
+    },
+    {
+      "from": 238,
+      "to": 211
+    },
+    {
+      "from": 239,
+      "to": 205
+    },
+    {
+      "from": 239,
+      "to": 211
+    },
+    {
+      "from": 239,
+      "to": 163
+    },
+    {
+      "from": 240,
+      "to": 205
+    },
+    {
+      "from": 240,
+      "to": 211
+    },
+    {
+      "from": 240,
+      "to": 100
+    },
+    {
+      "from": 241,
+      "to": 205
+    },
+    {
+      "from": 241,
+      "to": 211
+    },
+    {
+      "from": 242,
+      "to": 241
+    },
+    {
+      "from": 242,
+      "to": 58
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 244,
+      "to": 241
+    },
+    {
+      "from": 244,
+      "to": 58
+    },
+    {
+      "from": 245,
+      "to": 241
+    },
+    {
+      "from": 245,
+      "to": 58
+    },
+    {
+      "from": 246,
+      "to": 241
+    },
+    {
+      "from": 247,
+      "to": 241
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 246
+    },
+    {
+      "from": 249,
+      "to": 246
+    },
+    {
+      "from": 250,
+      "to": 246
+    },
+    {
+      "from": 251,
+      "to": 64
+    },
+    {
+      "from": 251,
+      "to": 246
+    },
+    {
+      "from": 252,
+      "to": 73
+    },
+    {
+      "from": 252,
+      "to": 246
+    },
+    {
+      "from": 253,
+      "to": 246
+    },
+    {
+      "from": 253,
+      "to": 156
+    },
+    {
+      "from": 254,
+      "to": 241
+    },
+    {
+      "from": 255,
+      "to": 20
+    },
+    {
+      "from": 256,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 255
+    },
+    {
+      "from": 257,
+      "to": 256
+    },
+    {
+      "from": 258,
+      "to": 255
+    },
+    {
+      "from": 258,
+      "to": 256
+    },
+    {
+      "from": 259,
+      "to": 255
+    },
+    {
+      "from": 259,
+      "to": 256
+    },
+    {
+      "from": 260,
+      "to": 255
+    },
+    {
+      "from": 260,
+      "to": 256
+    },
+    {
+      "from": 261,
+      "to": 255
+    },
+    {
+      "from": 262,
+      "to": 255
+    },
+    {
+      "from": 262,
+      "to": 261
+    },
+    {
+      "from": 263,
+      "to": 262
+    },
+    {
+      "from": 263,
+      "to": 100
+    },
+    {
+      "from": 264,
+      "to": 66
+    },
+    {
+      "from": 264,
+      "to": 263
+    },
+    {
+      "from": 265,
+      "to": 255
+    },
+    {
+      "from": 265,
+      "to": 262
+    },
+    {
+      "from": 265,
+      "to": 67
+    },
+    {
+      "from": 266,
+      "to": 255
+    },
+    {
+      "from": 266,
+      "to": 262
+    },
+    {
+      "from": 266,
+      "to": 260
+    },
+    {
+      "from": 267,
+      "to": 234
+    },
+    {
+      "from": 267,
+      "to": 262
+    },
+    {
+      "from": 267,
+      "to": 235
+    },
+    {
+      "from": 268,
+      "to": 234
+    },
+    {
+      "from": 268,
+      "to": 262
+    },
+    {
+      "from": 268,
+      "to": 260
+    },
+    {
+      "from": 269,
+      "to": 232
+    },
+    {
+      "from": 269,
+      "to": 233
+    },
+    {
+      "from": 269,
+      "to": 20
+    },
+    {
+      "from": 270,
+      "to": 232
+    },
+    {
+      "from": 270,
+      "to": 233
+    },
+    {
+      "from": 271,
+      "to": 21
+    },
+    {
+      "from": 271,
+      "to": 1
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 272
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 275,
+      "to": 272
+    },
+    {
+      "from": 276,
+      "to": 274
+    },
+    {
+      "from": 276,
+      "to": 93
+    },
+    {
+      "from": 277,
+      "to": 274
+    },
+    {
+      "from": 278,
+      "to": 274
+    },
+    {
+      "from": 278,
+      "to": 285
+    },
+    {
+      "from": 279,
+      "to": 51
+    },
+    {
+      "from": 279,
+      "to": 52
+    },
+    {
+      "from": 280,
+      "to": 21
+    },
+    {
+      "from": 280,
+      "to": 271
+    },
+    {
+      "from": 281,
+      "to": 271
+    },
+    {
+      "from": 282,
+      "to": 272
+    },
+    {
+      "from": 282,
+      "to": 285
+    },
+    {
+      "from": 282,
+      "to": 295
+    },
+    {
+      "from": 283,
+      "to": 285
+    },
+    {
+      "from": 283,
+      "to": 278
+    },
+    {
+      "from": 283,
+      "to": 282
+    },
+    {
+      "from": 284,
+      "to": 278
+    },
+    {
+      "from": 284,
+      "to": 283
+    },
+    {
+      "from": 285,
+      "to": 31
+    },
+    {
+      "from": 285,
+      "to": 115
+    },
+    {
+      "from": 286,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 285
+    },
+    {
+      "from": 287,
+      "to": 115
+    },
+    {
+      "from": 288,
+      "to": 285
+    },
+    {
+      "from": 289,
+      "to": 288
+    },
+    {
+      "from": 289,
+      "to": 117
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 291,
+      "to": 288
+    },
+    {
+      "from": 291,
+      "to": 289
+    },
+    {
+      "from": 291,
+      "to": 116
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 292,
+      "to": 286
+    },
+    {
+      "from": 292,
+      "to": 287
+    },
+    {
+      "from": 293,
+      "to": 287
+    },
+    {
+      "from": 293,
+      "to": 58
+    },
+    {
+      "from": 294,
+      "to": 287
+    },
+    {
+      "from": 294,
+      "to": 137
+    },
+    {
+      "from": 295,
+      "to": 288
+    },
+    {
+      "from": 295,
+      "to": 291
+    },
+    {
+      "from": 296,
+      "to": 287
+    },
+    {
+      "from": 296,
+      "to": 288
+    },
+    {
+      "from": 296,
+      "to": 58
+    },
+    {
+      "from": 297,
+      "to": 296
+    },
+    {
+      "from": 297,
+      "to": 288
+    },
+    {
+      "from": 298,
+      "to": 295
+    },
+    {
+      "from": 298,
+      "to": 287
+    },
+    {
+      "from": 299,
+      "to": 298
+    },
+    {
+      "from": 299,
+      "to": 295
+    },
+    {
+      "from": 300,
+      "to": 288
+    },
+    {
+      "from": 300,
+      "to": 286
+    },
+    {
+      "from": 300,
+      "to": 31
+    },
+    {
+      "from": 301,
+      "to": 287
+    },
+    {
+      "from": 301,
+      "to": 288
+    },
+    {
+      "from": 302,
+      "to": 287
+    },
+    {
+      "from": 302,
+      "to": 288
+    },
+    {
+      "from": 303,
+      "to": 287
+    },
+    {
+      "from": 303,
+      "to": 288
+    },
+    {
+      "from": 303,
+      "to": 296
+    },
+    {
+      "from": 303,
+      "to": 297
+    },
+    {
+      "from": 304,
+      "to": 285
+    },
+    {
+      "from": 304,
+      "to": 291
+    },
+    {
+      "from": 304,
+      "to": 295
+    },
+    {
+      "from": 305,
+      "to": 205
+    },
+    {
+      "from": 305,
+      "to": 1
+    },
+    {
+      "from": 306,
+      "to": 305
+    },
+    {
+      "from": 306,
+      "to": 285
+    },
+    {
+      "from": 307,
+      "to": 305
+    },
+    {
+      "from": 307,
+      "to": 285
+    },
+    {
+      "from": 308,
+      "to": 307
+    },
+    {
+      "from": 309,
+      "to": 306
+    },
+    {
+      "from": 310,
+      "to": 306
+    },
+    {
+      "from": 311,
+      "to": 306
+    },
+    {
+      "from": 311,
+      "to": 309
+    },
+    {
+      "from": 312,
+      "to": 306
+    },
+    {
+      "from": 313,
+      "to": 306
+    },
+    {
+      "from": 313,
+      "to": 437
+    },
+    {
+      "from": 314,
+      "to": 306
+    },
+    {
+      "from": 314,
+      "to": 313
+    },
+    {
+      "from": 315,
+      "to": 306
+    },
+    {
+      "from": 315,
+      "to": 309
+    },
+    {
+      "from": 315,
+      "to": 101
+    },
+    {
+      "from": 316,
+      "to": 306
+    },
+    {
+      "from": 317,
+      "to": 306
+    },
+    {
+      "from": 318,
+      "to": 306
+    },
+    {
+      "from": 318,
+      "to": 58
+    },
+    {
+      "from": 319,
+      "to": 306
+    },
+    {
+      "from": 319,
+      "to": 307
+    },
+    {
+      "from": 320,
+      "to": 306
+    },
+    {
+      "from": 321,
+      "to": 306
+    },
+    {
+      "from": 322,
+      "to": 306
+    },
+    {
+      "from": 322,
+      "to": 310
+    },
+    {
+      "from": 323,
+      "to": 307
+    },
+    {
+      "from": 323,
+      "to": 419
+    },
+    {
+      "from": 324,
+      "to": 309
+    },
+    {
+      "from": 324,
+      "to": 101
+    },
+    {
+      "from": 324,
+      "to": 229
+    },
+    {
+      "from": 325,
+      "to": 313
+    },
+    {
+      "from": 325,
+      "to": 323
+    },
+    {
+      "from": 325,
+      "to": 163
+    },
+    {
+      "from": 326,
+      "to": 128
+    },
+    {
+      "from": 326,
+      "to": 129
+    },
+    {
+      "from": 326,
+      "to": 309
+    },
+    {
+      "from": 327,
+      "to": 309
+    },
+    {
+      "from": 327,
+      "to": 223
+    },
+    {
+      "from": 327,
+      "to": 224
+    },
+    {
+      "from": 327,
+      "to": 101
+    },
+    {
+      "from": 328,
+      "to": 309
+    },
+    {
+      "from": 328,
+      "to": 310
+    },
+    {
+      "from": 328,
+      "to": 101
+    },
+    {
+      "from": 329,
+      "to": 306
+    },
+    {
+      "from": 329,
+      "to": 215
+    },
+    {
+      "from": 329,
+      "to": 101
+    },
+    {
+      "from": 330,
+      "to": 372
+    },
+    {
+      "from": 330,
+      "to": 309
+    },
+    {
+      "from": 331,
+      "to": 205
+    },
+    {
+      "from": 331,
+      "to": 211
+    },
+    {
+      "from": 332,
+      "to": 331
+    },
+    {
+      "from": 333,
+      "to": 332
+    },
+    {
+      "from": 333,
+      "to": 138
+    },
+    {
+      "from": 334,
+      "to": 332
+    },
+    {
+      "from": 335,
+      "to": 332
+    },
+    {
+      "from": 335,
+      "to": 58
+    },
+    {
+      "from": 336,
+      "to": 332
+    },
+    {
+      "from": 337,
+      "to": 333
+    },
+    {
+      "from": 337,
+      "to": 223
+    },
+    {
+      "from": 337,
+      "to": 347
+    },
+    {
+      "from": 338,
+      "to": 138
+    },
+    {
+      "from": 338,
+      "to": 333
+    },
+    {
+      "from": 339,
+      "to": 332
+    },
+    {
+      "from": 339,
+      "to": 138
+    },
+    {
+      "from": 340,
+      "to": 332
+    },
+    {
+      "from": 340,
+      "to": 138
+    },
+    {
+      "from": 341,
+      "to": 332
+    },
+    {
+      "from": 341,
+      "to": 138
+    },
+    {
+      "from": 342,
+      "to": 332
+    },
+    {
+      "from": 342,
+      "to": 58
+    },
+    {
+      "from": 343,
+      "to": 332
+    },
+    {
+      "from": 343,
+      "to": 20
+    },
+    {
+      "from": 344,
+      "to": 333
+    },
+    {
+      "from": 344,
+      "to": 148
+    },
+    {
+      "from": 345,
+      "to": 332
+    },
+    {
+      "from": 345,
+      "to": 107
+    },
+    {
+      "from": 346,
+      "to": 205
+    },
+    {
+      "from": 346,
+      "to": 211
+    },
+    {
+      "from": 347,
+      "to": 346
+    },
+    {
+      "from": 348,
+      "to": 347
+    },
+    {
+      "from": 348,
+      "to": 138
+    },
+    {
+      "from": 349,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 47
+    },
+    {
+      "from": 351,
+      "to": 348
+    },
+    {
+      "from": 352,
+      "to": 347
+    },
+    {
+      "from": 352,
+      "to": 348
+    },
+    {
+      "from": 353,
+      "to": 347
+    },
+    {
+      "from": 353,
+      "to": 102
+    },
+    {
+      "from": 354,
+      "to": 348
+    },
+    {
+      "from": 354,
+      "to": 141
+    },
+    {
+      "from": 355,
+      "to": 350
+    },
+    {
+      "from": 355,
+      "to": 47
+    },
+    {
+      "from": 356,
+      "to": 348
+    },
+    {
+      "from": 356,
+      "to": 190
+    },
+    {
+      "from": 357,
+      "to": 205
+    },
+    {
+      "from": 357,
+      "to": 211
+    },
+    {
+      "from": 358,
+      "to": 357
+    },
+    {
+      "from": 358,
+      "to": 255
+    },
+    {
+      "from": 359,
+      "to": 358
+    },
+    {
+      "from": 360,
+      "to": 358
+    },
+    {
+      "from": 360,
+      "to": 348
+    },
+    {
+      "from": 361,
+      "to": 358
+    },
+    {
+      "from": 362,
+      "to": 358
+    },
+    {
+      "from": 362,
+      "to": 440
+    },
+    {
+      "from": 363,
+      "to": 358
+    },
+    {
+      "from": 363,
+      "to": 20
+    },
+    {
+      "from": 364,
+      "to": 285
+    },
+    {
+      "from": 364,
+      "to": 115
+    },
+    {
+      "from": 365,
+      "to": 137
+    },
+    {
+      "from": 365,
+      "to": 153
+    },
+    {
+      "from": 366,
+      "to": 137
+    },
+    {
+      "from": 366,
+      "to": 154
+    },
+    {
+      "from": 367,
+      "to": 366
+    },
+    {
+      "from": 367,
+      "to": 143
+    },
+    {
+      "from": 367,
+      "to": 144
+    },
+    {
+      "from": 368,
+      "to": 364
+    },
+    {
+      "from": 369,
+      "to": 368
+    },
+    {
+      "from": 369,
+      "to": 163
+    },
+    {
+      "from": 369,
+      "to": 137
+    },
+    {
+      "from": 370,
+      "to": 369
+    },
+    {
+      "from": 370,
+      "to": 366
+    },
+    {
+      "from": 370,
+      "to": 100
+    },
+    {
+      "from": 371,
+      "to": 370
+    },
+    {
+      "from": 371,
+      "to": 163
+    },
+    {
+      "from": 372,
+      "to": 370
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 373,
+      "to": 369
+    },
+    {
+      "from": 373,
+      "to": 365
+    },
+    {
+      "from": 373,
+      "to": 128
+    },
+    {
+      "from": 374,
+      "to": 373
+    },
+    {
+      "from": 374,
+      "to": 128
+    },
+    {
+      "from": 374,
+      "to": 129
+    },
+    {
+      "from": 375,
+      "to": 372
+    },
+    {
+      "from": 375,
+      "to": 374
+    },
+    {
+      "from": 376,
+      "to": 137
+    },
+    {
+      "from": 376,
+      "to": 145
+    },
+    {
+      "from": 377,
+      "to": 376
+    },
+    {
+      "from": 377,
+      "to": 100
+    },
+    {
+      "from": 377,
+      "to": 107
+    },
+    {
+      "from": 378,
+      "to": 376
+    },
+    {
+      "from": 378,
+      "to": 100
+    },
+    {
+      "from": 379,
+      "to": 376
+    },
+    {
+      "from": 379,
+      "to": 100
+    },
+    {
+      "from": 380,
+      "to": 376
+    },
+    {
+      "from": 380,
+      "to": 137
+    },
+    {
+      "from": 380,
+      "to": 102
+    },
+    {
+      "from": 381,
+      "to": 376
+    },
+    {
+      "from": 381,
+      "to": 380
+    },
+    {
+      "from": 382,
+      "to": 381
+    },
+    {
+      "from": 382,
+      "to": 130
+    },
+    {
+      "from": 383,
+      "to": 364
+    },
+    {
+      "from": 383,
+      "to": 285
+    },
+    {
+      "from": 384,
+      "to": 364
+    },
+    {
+      "from": 384,
+      "to": 368
+    },
+    {
+      "from": 385,
+      "to": 384
+    },
+    {
+      "from": 386,
+      "to": 1
+    },
+    {
+      "from": 386,
+      "to": 285
+    },
+    {
+      "from": 387,
+      "to": 386
+    },
+    {
+      "from": 388,
+      "to": 205
+    },
+    {
+      "from": 388,
+      "to": 211
+    },
+    {
+      "from": 388,
+      "to": 346
+    },
+    {
+      "from": 389,
+      "to": 388
+    },
+    {
+      "from": 390,
+      "to": 389
+    },
+    {
+      "from": 390,
+      "to": 41
+    },
+    {
+      "from": 391,
+      "to": 390
+    },
+    {
+      "from": 391,
+      "to": 223
+    },
+    {
+      "from": 392,
+      "to": 389
+    },
+    {
+      "from": 392,
+      "to": 360
+    },
+    {
+      "from": 393,
+      "to": 392
+    },
+    {
+      "from": 394,
+      "to": 390
+    },
+    {
+      "from": 394,
+      "to": 412
+    },
+    {
+      "from": 395,
+      "to": 392
+    },
+    {
+      "from": 395,
+      "to": 351
+    },
+    {
+      "from": 396,
+      "to": 389
+    },
+    {
+      "from": 396,
+      "to": 400
+    },
+    {
+      "from": 396,
+      "to": 401
+    },
+    {
+      "from": 396,
+      "to": 402
+    },
+    {
+      "from": 397,
+      "to": 396
+    },
+    {
+      "from": 397,
+      "to": 403
+    },
+    {
+      "from": 397,
+      "to": 411
+    },
+    {
+      "from": 398,
+      "to": 397
+    },
+    {
+      "from": 398,
+      "to": 411
+    },
+    {
+      "from": 399,
+      "to": 396
+    },
+    {
+      "from": 399,
+      "to": 348
+    },
+    {
+      "from": 400,
+      "to": 389
+    },
+    {
+      "from": 400,
+      "to": 190
+    },
+    {
+      "from": 401,
+      "to": 389
+    },
+    {
+      "from": 401,
+      "to": 386
+    },
+    {
+      "from": 402,
+      "to": 386
+    },
+    {
+      "from": 402,
+      "to": 190
+    },
+    {
+      "from": 403,
+      "to": 386
+    },
+    {
+      "from": 403,
+      "to": 102
+    },
+    {
+      "from": 404,
+      "to": 346
+    },
+    {
+      "from": 404,
+      "to": 386
+    },
+    {
+      "from": 405,
+      "to": 404
+    },
+    {
+      "from": 405,
+      "to": 350
+    },
+    {
+      "from": 405,
+      "to": 42
+    },
+    {
+      "from": 406,
+      "to": 392
+    },
+    {
+      "from": 406,
+      "to": 393
+    },
+    {
+      "from": 406,
+      "to": 395
+    },
+    {
+      "from": 407,
+      "to": 390
+    },
+    {
+      "from": 407,
+      "to": 391
+    },
+    {
+      "from": 408,
+      "to": 389
+    },
+    {
+      "from": 408,
+      "to": 386
+    },
+    {
+      "from": 409,
+      "to": 408
+    },
+    {
+      "from": 410,
+      "to": 389
+    },
+    {
+      "from": 410,
+      "to": 390
+    },
+    {
+      "from": 411,
+      "to": 386
+    },
+    {
+      "from": 411,
+      "to": 137
+    },
+    {
+      "from": 412,
+      "to": 386
+    },
+    {
+      "from": 412,
+      "to": 411
+    },
+    {
+      "from": 413,
+      "to": 392
+    },
+    {
+      "from": 413,
+      "to": 348
+    },
+    {
+      "from": 413,
+      "to": 386
+    },
+    {
+      "from": 414,
+      "to": 8
+    },
+    {
+      "from": 414,
+      "to": 205
+    },
+    {
+      "from": 415,
+      "to": 8
+    },
+    {
+      "from": 415,
+      "to": 305
+    },
+    {
+      "from": 416,
+      "to": 414
+    },
+    {
+      "from": 416,
+      "to": 309
+    },
+    {
+      "from": 417,
+      "to": 414
+    },
+    {
+      "from": 417,
+      "to": 313
+    },
+    {
+      "from": 418,
+      "to": 115
+    },
+    {
+      "from": 418,
+      "to": 116
+    },
+    {
+      "from": 419,
+      "to": 418
+    },
+    {
+      "from": 419,
+      "to": 307
+    },
+    {
+      "from": 420,
+      "to": 418
+    },
+    {
+      "from": 420,
+      "to": 307
+    },
+    {
+      "from": 421,
+      "to": 115
+    },
+    {
+      "from": 421,
+      "to": 131
+    },
+    {
+      "from": 421,
+      "to": 418
+    },
+    {
+      "from": 422,
+      "to": 101
+    },
+    {
+      "from": 422,
+      "to": 418
+    },
+    {
+      "from": 422,
+      "to": 229
+    },
+    {
+      "from": 423,
+      "to": 418
+    },
+    {
+      "from": 423,
+      "to": 366
+    },
+    {
+      "from": 424,
+      "to": 229
+    },
+    {
+      "from": 424,
+      "to": 418
+    },
+    {
+      "from": 425,
+      "to": 115
+    },
+    {
+      "from": 425,
+      "to": 209
+    },
+    {
+      "from": 426,
+      "to": 425
+    },
+    {
+      "from": 426,
+      "to": 115
+    },
+    {
+      "from": 427,
+      "to": 426
+    },
+    {
+      "from": 427,
+      "to": 425
+    },
+    {
+      "from": 428,
+      "to": 32
+    },
+    {
+      "from": 428,
+      "to": 33
+    },
+    {
+      "from": 428,
+      "to": 34
+    },
+    {
+      "from": 429,
+      "to": 22
+    },
+    {
+      "from": 429,
+      "to": 115
+    },
+    {
+      "from": 430,
+      "to": 8
+    },
+    {
+      "from": 430,
+      "to": 22
+    },
+    {
+      "from": 430,
+      "to": 126
+    },
+    {
+      "from": 431,
+      "to": 199
+    },
+    {
+      "from": 431,
+      "to": 200
+    },
+    {
+      "from": 432,
+      "to": 20
+    },
+    {
+      "from": 432,
+      "to": 19
+    },
+    {
+      "from": 433,
+      "to": 200
+    },
+    {
+      "from": 433,
+      "to": 431
+    },
+    {
+      "from": 434,
+      "to": 425
+    },
+    {
+      "from": 434,
+      "to": 427
+    },
+    {
+      "from": 435,
+      "to": 279
+    },
+    {
+      "from": 435,
+      "to": 271
+    },
+    {
+      "from": 436,
+      "to": 425
+    },
+    {
+      "from": 436,
+      "to": 428
+    },
+    {
+      "from": 437,
+      "to": 1
+    },
+    {
+      "from": 438,
+      "to": 437
+    },
+    {
+      "from": 438,
+      "to": 41
+    },
+    {
+      "from": 439,
+      "to": 437
+    },
+    {
+      "from": 439,
+      "to": 438
+    },
+    {
+      "from": 440,
+      "to": 313
+    },
+    {
+      "from": 440,
+      "to": 437
+    },
+    {
+      "from": 441,
+      "to": 308
+    },
+    {
+      "from": 441,
+      "to": 313
+    },
+    {
+      "from": 441,
+      "to": 437
+    },
+    {
+      "from": 442,
+      "to": 439
+    },
+    {
+      "from": 443,
+      "to": 437
+    },
+    {
+      "from": 443,
+      "to": 439
+    },
+    {
+      "from": 444,
+      "to": 439
+    },
+    {
+      "from": 444,
+      "to": 442
+    },
+    {
+      "from": 445,
+      "to": 115
+    },
+    {
+      "from": 445,
+      "to": 425
+    },
+    {
+      "from": 446,
+      "to": 445
+    },
+    {
+      "from": 446,
+      "to": 92
+    },
+    {
+      "from": 447,
+      "to": 445
+    },
+    {
+      "from": 447,
+      "to": 115
+    },
+    {
+      "from": 447,
+      "to": 285
+    },
+    {
+      "from": 448,
+      "to": 445
+    },
+    {
+      "from": 448,
+      "to": 447
+    },
+    {
+      "from": 448,
+      "to": 100
+    },
+    {
+      "from": 449,
+      "to": 448
+    },
+    {
+      "from": 449,
+      "to": 22
+    },
+    {
+      "from": 450,
+      "to": 280
+    },
+    {
+      "from": 450,
+      "to": 273
+    },
+    {
+      "from": 450,
+      "to": 271
+    }
+  ]
+}

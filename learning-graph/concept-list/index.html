@@ -1,0 +1,4554 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Resources for teaching Python to beginning programmers.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/python/learning-graph/concept-list/">
+      
+      
+        <link rel="prev" href="../concept-list-v1/">
+      
+      
+        <link rel="next" href="../quality-metrics/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Concept List - Beginning Python</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/skulpt.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-EP38Z3PVD5"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-EP38Z3PVD5",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-EP38Z3PVD5",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="#642580" data-md-color-accent="#41BAC1">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#beginning-python-concept-list" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Beginning Python" class="md-header__button md-logo" aria-label="Beginning Python" data-md-component="logo">
+      
+  <img src="../../img/python-logo.jpeg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Beginning Python
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Concept List
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Beginning Python" class="md-nav__button md-logo" aria-label="Beginning Python" data-md-component="logo">
+      
+  <img src="../../img/python-logo.jpeg" alt="logo">
+
+    </a>
+    Beginning Python
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/python" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub Repo
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Chapters
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Chapters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/01-welcome-to-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    1. Welcome to Python and Skulpt
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/02-python-code-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2. Python Code Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/03-variables-and-numbers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Variables and Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/04-functions-and-objects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Functions and Objects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/05-drawing-with-turtle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Drawing with Turtle Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/06-math-and-arithmetic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. Math and Arithmetic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/07-for-loops-and-shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. For Loops and Drawing Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/08-working-with-strings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Working with Strings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/09-decisions-if-else/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. Making Decisions with If/Else
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/10-while-loops-and-animation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. While Loops and Animation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/11-functions-parameters-scope/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    11. Functions with Parameters and Scope
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/12-colors-fill-turtle-art/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Colors, Fill, and Turtle Art
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/13-user-input-type-conversion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13. User Input and Type Conversion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/14-string-methods-formatting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. String Methods and Formatting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/15-lists-basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    15. Lists - Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/16-lists-methods-patterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    16. Lists - Methods and Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/17-modules-and-random/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    17. Modules and Random Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/18-math-module-turtle-projects/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    18. Math Module and Turtle Projects
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/19-booleans-and-conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19. More Booleans and Conditionals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/20-tuples-and-sets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    20. Tuples and Sets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/21-dictionaries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    21. Dictionaries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/22-advanced-collections/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    22. Advanced Collections and Built-in Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/23-error-handling-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    23. Error Handling and Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/24-recursion-and-fractals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    24. Recursion and Fractals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/25-object-oriented-programming/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    25. Object-Oriented Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/26-file-input-output/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    26. File Input and Output
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/27-standard-library-json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    27. Standard Library and JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/28-python-dev-tools/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    28. Python Development Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/29-text-processing-regex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    29. Text Processing and Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/30-algorithms-data-structures/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    30. Algorithms and Data Structures
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/31-advanced-functions-oop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    31. Advanced Functions and OOP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/32-data-visualization-matplotlib/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    32. Data Visualization with matplotlib
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/33-numpy-scientific-computing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    33. NumPy and Scientific Computing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/34-image-processing-pillow/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    34. Image Processing with Pillow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/35-advanced-turtle-event-driven/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    35. Advanced Turtle and Event-Driven Programming
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/36-computational-thinking-best-practices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    36. Computational Thinking and Best Practices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/37-machine-learning-foundations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    37. Machine Learning Foundations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../chapters/38-neural-networks-and-mnist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    38. Neural Networks and MNIST
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Trinket
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Trinket
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/00-introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01a-trinket-account/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Trinket
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/01b-turtle-graphics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turtle Graphics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/02-simple-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Turtle Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/03-variables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04-loops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/04a-stop-sign/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stop Sign
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/05-conditionals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conditional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/06-functions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Functions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/07-flower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/07-function-parameters/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Function Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08-list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08c-turtle-shapes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    List of Turtle Shapes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08-random/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Numbers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/08b-random-stars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Random Stars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/11-input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Input
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/12-recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/13-shape-module/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shape Module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/14-color-picker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Color Picker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/15-sine-wave/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sine Wave
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/16-changing-background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Changing background
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/17-controlling-mouseclicks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Controlling mouseclicks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../trinket/examples.m" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Other examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Skulpt (self-hosted)
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Skulpt (self-hosted)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/02-simple-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Draw a Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/04a-stop-sign/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stop Sign
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/10-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Reading Errors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skulpt/text-only-example/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text-Only Example
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mascot-test/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mascot Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Learning Graph
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course-description-assessment/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description Assessment
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-list-v1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept List v1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Concept List
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Concept List
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-development-environments-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Development Environments &amp; Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-basic-syntax-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Basic Syntax &amp; Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-variables-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Variables &amp; Assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-types-numeric" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Data Types — Numeric
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-data-types-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Data Types — Boolean
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-data-types-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Data Types — Strings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-data-types-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Data Types — None
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Type Conversion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-user-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. User Input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-control-flow-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Control Flow — Conditionals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-control-flow-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Control Flow — Loops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-collections-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Collections — Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-collections-tuples" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Collections — Tuples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-collections-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Collections — Dictionaries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-collections-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Collections — Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-built-in-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Built-in Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-modules-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Modules &amp; Imports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-standard-library-random" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Standard Library — random
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-standard-library-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Standard Library — math
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-standard-library-other-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Standard Library — Other Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Regular Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-file-inputoutput" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. File Input/Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Error Handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-object-oriented-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Object-Oriented Programming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-turtle-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Turtle Graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-data-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Data Visualization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-numerical-computing-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Numerical Computing — NumPy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Image Processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-data-structures-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Data Structures &amp; Algorithms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-machine-learning-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. Machine Learning &amp; Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-graphics-in-jupyter" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Graphics in Jupyter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-event-driven-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. Event-Driven Programming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-programming-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. Programming Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-color-graphics-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      35. Color &amp; Graphics Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-computational-thinking-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      36. Computational Thinking Foundations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quality-metrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Graph Quality Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../concept-taxonomy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Concept Taxonomy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../taxonomy-distribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Taxonomy Distribution Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Beginning Python - Repl.it
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Beginning Python - Repl.it
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/02-square/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Square
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/07-flower/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flower
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/08-shape-function/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shape Function
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../repl/12-recursion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recursion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intermediate Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Intermediate Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/01-variables-scope/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Variables and Scope
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/02-data-types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/03-data-type-validation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Types & Function Parameters
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/04-maps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/05-files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Files (local file system)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/06-images/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Images (local file system)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/05-json.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/06-object-classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Object Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/07-modules/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modules
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/08-dir/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dir
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/09-regex/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Regular Expressions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/10-debugging/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Debugging
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/12-plot-sin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plotting sine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/bfsMaze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maze Solving with BFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/dfsMaze/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Maze Solving with DFS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intermediate/20-installing-local-python/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installing Python
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Jupyter
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Jupyter
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/01-setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Turtle on Jupyter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-draw-box.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Box Labs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-draw-figure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Drawing Figure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/02-canvas-setup.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Canvas on Jupyter Lab
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../jupyter/20-canvas-color-bars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Canvas Color Bars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Pi
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Pi
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pi/01-intro/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Python on Raspberry Pi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/stocks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stock Ticker Analysis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/mnist/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MNIST Digit Prediction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Strategy
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            Strategy
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../strategy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../order-of-cocepts.,d" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Order of Concepts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            MicroSims
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sims/graph-viewer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Viewer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_14" id="__nav_14_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_14">
+            <span class="md-nav__icon md-icon"></span>
+            Contributing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Contribute Examples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_16" >
+        
+          
+          <label class="md-nav__link" for="__nav_16" id="__nav_16_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_16">
+            <span class="md-nav__icon md-icon"></span>
+            Contact
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-development-environments-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Development Environments &amp; Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-basic-syntax-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Basic Syntax &amp; Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-variables-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Variables &amp; Assignment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-data-types-numeric" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Data Types — Numeric
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-data-types-boolean" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Data Types — Boolean
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-data-types-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Data Types — Strings
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-data-types-none" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Data Types — None
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-type-conversion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Type Conversion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-user-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. User Input
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-control-flow-conditionals" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Control Flow — Conditionals
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-control-flow-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Control Flow — Loops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-collections-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Collections — Lists
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-collections-tuples" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. Collections — Tuples
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-collections-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Collections — Dictionaries
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-collections-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. Collections — Sets
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-built-in-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Built-in Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-modules-imports" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. Modules &amp; Imports
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-standard-library-random" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Standard Library — random
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-standard-library-math" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Standard Library — math
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-standard-library-other-modules" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. Standard Library — Other Modules
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-regular-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Regular Expressions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-file-inputoutput" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. File Input/Output
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Error Handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-object-oriented-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Object-Oriented Programming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#26-turtle-graphics" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Turtle Graphics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#27-data-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Data Visualization
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#28-numerical-computing-numpy" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Numerical Computing — NumPy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#29-image-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Image Processing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#30-data-structures-algorithms" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Data Structures &amp; Algorithms
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#31-machine-learning-neural-networks" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. Machine Learning &amp; Neural Networks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-graphics-in-jupyter" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Graphics in Jupyter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-event-driven-programming" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. Event-Driven Programming
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-programming-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. Programming Practices
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-color-graphics-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      35. Color &amp; Graphics Concepts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-computational-thinking-foundations" class="md-nav__link">
+    <span class="md-ellipsis">
+      36. Computational Thinking Foundations
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="beginning-python-concept-list">Beginning Python — Concept List<a class="headerlink" href="#beginning-python-concept-list" title="Permanent link">&para;</a></h1>
+<p>Generated for the learning graph. This list includes all 350 concepts from concept-list-v1.md
+plus additional foundational and dependency concepts, expanded to 450 total.</p>
+<hr />
+<h2 id="1-development-environments-setup">1. Development Environments &amp; Setup<a class="headerlink" href="#1-development-environments-setup" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Python Interpreter Overview</li>
+<li>Python 2 vs Python 3</li>
+<li>Trinket.io Web Environment</li>
+<li>Repl.it Online IDE</li>
+<li>Thonny Beginner IDE</li>
+<li>Spyder Scientific IDE</li>
+<li>VS Code Editor</li>
+<li>Jupyter Notebooks</li>
+<li>JupyterLab Environment</li>
+<li>Conda Package Manager</li>
+<li>pip Package Installer</li>
+<li>Virtual Environments</li>
+<li>Installing Python Locally</li>
+<li>Running Scripts from Terminal</li>
+<li>Python REPL Shell</li>
+<li>Raspberry Pi Python Platform</li>
+<li>Skulpt Browser Python</li>
+<li>Google Colab Environment</li>
+<li>Command Line Basics</li>
+<li>File System Navigation</li>
+</ol>
+<hr />
+<h2 id="2-basic-syntax-output">2. Basic Syntax &amp; Output<a class="headerlink" href="#2-basic-syntax-output" title="Permanent link">&para;</a></h2>
+<ol>
+<li>print() Function</li>
+<li>Single-Line Comments</li>
+<li>Multi-Line Strings</li>
+<li>Indentation as Syntax</li>
+<li>Case Sensitivity</li>
+<li>Python Keywords</li>
+<li>Blank Lines and Readability</li>
+<li>Code Block Structure</li>
+<li>Statement vs Expression</li>
+<li>Whitespace Rules</li>
+</ol>
+<hr />
+<h2 id="3-variables-assignment">3. Variables &amp; Assignment<a class="headerlink" href="#3-variables-assignment" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Variable Definition and Assignment</li>
+<li>Variable Naming Rules</li>
+<li>Snake_case Convention</li>
+<li>Meaningful Variable Names</li>
+<li>Multiple Assignment</li>
+<li>Augmented Assignment Operators</li>
+<li>Constants by Convention</li>
+<li>Variable Reassignment</li>
+<li>Swap Two Variables</li>
+<li>Naming Conflicts to Avoid</li>
+</ol>
+<hr />
+<h2 id="4-data-types-numeric">4. Data Types — Numeric<a class="headerlink" href="#4-data-types-numeric" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Integer Type</li>
+<li>Float Type</li>
+<li>Division Returns Float</li>
+<li>Integer Division Operator</li>
+<li>Modulo Operator</li>
+<li>Exponentiation Operator</li>
+<li>Arithmetic Operators</li>
+<li>Order of Operations</li>
+<li>Negative Numbers</li>
+<li>Scientific Notation Floats</li>
+</ol>
+<hr />
+<h2 id="5-data-types-boolean">5. Data Types — Boolean<a class="headerlink" href="#5-data-types-boolean" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Boolean Type</li>
+<li>Comparison Operators</li>
+<li>Logical Operators</li>
+<li>Truthiness and Falsiness</li>
+<li>Short-Circuit Evaluation</li>
+<li>Boolean in Conditions</li>
+<li>Chained Comparisons</li>
+</ol>
+<hr />
+<h2 id="6-data-types-strings">6. Data Types — Strings<a class="headerlink" href="#6-data-types-strings" title="Permanent link">&para;</a></h2>
+<ol>
+<li>String Type</li>
+<li>Single vs Double Quotes</li>
+<li>String Concatenation</li>
+<li>String Repetition</li>
+<li>String Indexing</li>
+<li>String Slicing</li>
+<li>Escape Characters</li>
+<li>String Length with len()</li>
+<li>String lower() upper() strip()</li>
+<li>String split() join() replace()</li>
+<li>String startswith() endswith() find()</li>
+<li>String isdigit() isalpha() isalnum()</li>
+<li>String format() Method</li>
+<li>f-Strings</li>
+<li>String Immutability</li>
+<li>Raw Strings</li>
+<li>String Comparison</li>
+<li>Multiline String Formatting</li>
+</ol>
+<hr />
+<h2 id="7-data-types-none">7. Data Types — None<a class="headerlink" href="#7-data-types-none" title="Permanent link">&para;</a></h2>
+<ol>
+<li>None Value and NoneType</li>
+<li>Functions Returning None</li>
+<li>Checking for None with is</li>
+</ol>
+<hr />
+<h2 id="8-type-conversion">8. Type Conversion<a class="headerlink" href="#8-type-conversion" title="Permanent link">&para;</a></h2>
+<ol>
+<li>int() Conversion</li>
+<li>float() Conversion</li>
+<li>str() Conversion</li>
+<li>bool() Conversion</li>
+<li>type() Function</li>
+<li>isinstance() Function</li>
+<li>Implicit vs Explicit Conversion</li>
+</ol>
+<hr />
+<h2 id="9-user-input">9. User Input<a class="headerlink" href="#9-user-input" title="Permanent link">&para;</a></h2>
+<ol>
+<li>input() Function</li>
+<li>Prompting the User</li>
+<li>Converting Input to Numbers</li>
+<li>Input Validation Basics</li>
+<li>Reading Multiple Inputs</li>
+<li>Strip Whitespace from Input</li>
+</ol>
+<hr />
+<h2 id="10-control-flow-conditionals">10. Control Flow — Conditionals<a class="headerlink" href="#10-control-flow-conditionals" title="Permanent link">&para;</a></h2>
+<ol>
+<li>if Statement</li>
+<li>if...else Block</li>
+<li>elif Chains</li>
+<li>Nested if Statements</li>
+<li>Conditional Ternary Expression</li>
+<li>match/case Statement</li>
+<li>Truthiness in Conditions</li>
+<li>Compound Conditions</li>
+</ol>
+<hr />
+<h2 id="11-control-flow-loops">11. Control Flow — Loops<a class="headerlink" href="#11-control-flow-loops" title="Permanent link">&para;</a></h2>
+<ol>
+<li>for Loop over Sequence</li>
+<li>for Loop with range()</li>
+<li>range(start, stop, step)</li>
+<li>while Loop</li>
+<li>break Statement</li>
+<li>continue Statement</li>
+<li>else Clause on Loops</li>
+<li>Nested Loops</li>
+<li>Loop Counter Variable</li>
+<li>Infinite Loops to Avoid</li>
+<li>enumerate() Function</li>
+<li>zip() Function</li>
+<li>Loop Accumulator Pattern</li>
+<li>Loop with List Building</li>
+<li>Countdown Loop</li>
+</ol>
+<hr />
+<h2 id="12-functions">12. Functions<a class="headerlink" href="#12-functions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Defining a Function with def</li>
+<li>Calling a Function</li>
+<li>Positional Parameters</li>
+<li>Default Parameter Values</li>
+<li>Keyword Arguments</li>
+<li>return Statement</li>
+<li>Functions Returning None</li>
+<li>Local Scope</li>
+<li>Global Scope</li>
+<li>global Keyword</li>
+<li>nonlocal Keyword</li>
+<li>Docstrings</li>
+<li>Pure Functions vs Side Effects</li>
+<li>Recursion Concept</li>
+<li>Recursion Base Case</li>
+<li>Recursion Depth and Stack</li>
+<li>Lambda Functions</li>
+<li>Variable Number of Arguments *args</li>
+<li>Keyword Variable Arguments **kwargs</li>
+<li>Function as Argument (Higher-Order)</li>
+<li>Nested Functions</li>
+<li>Returning Multiple Values</li>
+</ol>
+<hr />
+<h2 id="13-collections-lists">13. Collections — Lists<a class="headerlink" href="#13-collections-lists" title="Permanent link">&para;</a></h2>
+<ol>
+<li>List Type</li>
+<li>Creating a List</li>
+<li>List Indexing</li>
+<li>Negative Indexing</li>
+<li>List Slicing</li>
+<li>len() for Lists</li>
+<li>List append() insert() extend()</li>
+<li>List remove() pop() clear()</li>
+<li>List sort() reverse() copy()</li>
+<li>List index() count()</li>
+<li>Membership with in Operator</li>
+<li>List Concatenation and Repetition</li>
+<li>Iterating over a List</li>
+<li>Nested Lists</li>
+<li>List Comprehensions</li>
+<li>Mutable vs Immutable Types</li>
+<li>List as Stack</li>
+<li>List as Queue</li>
+</ol>
+<hr />
+<h2 id="14-collections-tuples">14. Collections — Tuples<a class="headerlink" href="#14-collections-tuples" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Tuple Type</li>
+<li>Creating a Tuple</li>
+<li>Tuple Indexing and Slicing</li>
+<li>Tuple Unpacking</li>
+<li>Tuples vs Lists</li>
+<li>Single-Element Tuple Syntax</li>
+<li>Named Tuple Concept</li>
+<li>Tuple as Return Value</li>
+</ol>
+<hr />
+<h2 id="15-collections-dictionaries">15. Collections — Dictionaries<a class="headerlink" href="#15-collections-dictionaries" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Dictionary Type</li>
+<li>Creating a Dictionary</li>
+<li>Accessing Values by Key</li>
+<li>dict get() Method</li>
+<li>Adding and Updating Key-Value Pairs</li>
+<li>Removing Entries pop() del</li>
+<li>Dictionary keys() values() items()</li>
+<li>Iterating over a Dictionary</li>
+<li>Key Membership with in</li>
+<li>Nested Dictionaries</li>
+<li>Dictionary Comprehensions</li>
+<li>Default Dictionary Pattern</li>
+<li>Dictionary from Two Lists with zip()</li>
+</ol>
+<hr />
+<h2 id="16-collections-sets">16. Collections — Sets<a class="headerlink" href="#16-collections-sets" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Set Type</li>
+<li>Creating a Set</li>
+<li>Set Union Intersection Difference</li>
+<li>Set add() remove() discard()</li>
+<li>Set Membership with in</li>
+<li>Frozensets</li>
+</ol>
+<hr />
+<h2 id="17-built-in-functions">17. Built-in Functions<a class="headerlink" href="#17-built-in-functions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>print() Output Function</li>
+<li>input() Read Input</li>
+<li>len() Sequence Length</li>
+<li>range() Number Sequence</li>
+<li>type() Get Object Type</li>
+<li>int() float() str() bool() Conversions</li>
+<li>list() tuple() set() dict() Constructors</li>
+<li>max() min() Functions</li>
+<li>sum() Function</li>
+<li>abs() Absolute Value</li>
+<li>round() Function</li>
+<li>sorted() Function</li>
+<li>reversed() Function</li>
+<li>enumerate() with Index</li>
+<li>zip() Combine Iterables</li>
+<li>map() Apply Function</li>
+<li>filter() Filter Items</li>
+<li>dir() List Attributes</li>
+<li>help() Documentation</li>
+<li>id() Object Identity</li>
+<li>hash() Function</li>
+<li>any() and all() Functions</li>
+<li>chr() and ord() Functions</li>
+</ol>
+<hr />
+<h2 id="18-modules-imports">18. Modules &amp; Imports<a class="headerlink" href="#18-modules-imports" title="Permanent link">&para;</a></h2>
+<ol>
+<li>import Statement</li>
+<li>from...import Specific Names</li>
+<li>import...as Alias</li>
+<li>from...import Star</li>
+<li>Creating Custom Modules</li>
+<li><strong>name</strong> == "<strong>main</strong>" Guard</li>
+<li>Standard Library Overview</li>
+<li>Module Search Path</li>
+<li>Reloading a Module</li>
+</ol>
+<hr />
+<h2 id="19-standard-library-random">19. Standard Library — random<a class="headerlink" href="#19-standard-library-random" title="Permanent link">&para;</a></h2>
+<ol>
+<li>random Module Overview</li>
+<li>random.randint()</li>
+<li>random.choice()</li>
+<li>random.shuffle()</li>
+<li>random.seed()</li>
+<li>random.random() Float</li>
+<li>random.sample()</li>
+</ol>
+<hr />
+<h2 id="20-standard-library-math">20. Standard Library — math<a class="headerlink" href="#20-standard-library-math" title="Permanent link">&para;</a></h2>
+<ol>
+<li>math Module Overview</li>
+<li>math.sqrt() floor() ceil()</li>
+<li>math.sin() cos() pi</li>
+<li>math.radians() degrees()</li>
+<li>math.log() exp()</li>
+<li>math.factorial()</li>
+</ol>
+<hr />
+<h2 id="21-standard-library-other-modules">21. Standard Library — Other Modules<a class="headerlink" href="#21-standard-library-other-modules" title="Permanent link">&para;</a></h2>
+<ol>
+<li>string Module Constants</li>
+<li>time Module Overview</li>
+<li>time.sleep()</li>
+<li>sys Module</li>
+<li>sys.path Search Path</li>
+<li>os Module</li>
+<li>os.path Operations</li>
+<li>json Module Overview</li>
+<li>json.loads() json.dumps()</li>
+<li>json.load() json.dump()</li>
+<li>csv Module Basics</li>
+<li>datetime Module Basics</li>
+<li>collections Module</li>
+<li>itertools Module Overview</li>
+</ol>
+<hr />
+<h2 id="22-regular-expressions">22. Regular Expressions<a class="headerlink" href="#22-regular-expressions" title="Permanent link">&para;</a></h2>
+<ol>
+<li>re Module Import</li>
+<li>re.search() First Match</li>
+<li>re.findall() All Matches</li>
+<li>re.split() Split by Pattern</li>
+<li>re.sub() Substitute Matches</li>
+<li>Digit Word Whitespace Patterns</li>
+<li>Anchors Start and End</li>
+<li>Character Classes</li>
+<li>Quantifiers Plus Star Question</li>
+<li>Alternation with Pipe</li>
+<li>Escaping Special Characters</li>
+<li>Raw Strings for Regex</li>
+<li>Regex Groups with Parentheses</li>
+<li>Compiled Regex Patterns</li>
+</ol>
+<hr />
+<h2 id="23-file-inputoutput">23. File Input/Output<a class="headerlink" href="#23-file-inputoutput" title="Permanent link">&para;</a></h2>
+<ol>
+<li>open() Function</li>
+<li>File Modes r w a b</li>
+<li>file.read()</li>
+<li>file.readlines()</li>
+<li>file.readline()</li>
+<li>file.write()</li>
+<li>file.close()</li>
+<li>with Statement Context Manager</li>
+<li>Iterating over File Lines</li>
+<li>Text Processing strip() lower()</li>
+<li>CSV File Reading</li>
+<li>CSV File Writing</li>
+<li>Reading JSON from File</li>
+<li>Writing JSON to File</li>
+<li>File Path Handling</li>
+<li>Checking if File Exists</li>
+</ol>
+<hr />
+<h2 id="24-error-handling">24. Error Handling<a class="headerlink" href="#24-error-handling" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Syntax vs Runtime vs Logic Errors</li>
+<li>Common Exception Types</li>
+<li>Reading a Traceback</li>
+<li>try...except Block</li>
+<li>Catching Specific Exceptions</li>
+<li>else Clause in try/except</li>
+<li>finally Clause</li>
+<li>raise Statement</li>
+<li>assert Statement</li>
+<li>Debugging with print()</li>
+<li>Using Search Engines to Debug</li>
+<li>Exception Hierarchy</li>
+<li>Custom Exception Classes</li>
+<li>Exception Chaining</li>
+</ol>
+<hr />
+<h2 id="25-object-oriented-programming">25. Object-Oriented Programming<a class="headerlink" href="#25-object-oriented-programming" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Objects and Classes Overview</li>
+<li>Attributes of an Object</li>
+<li>Methods of an Object</li>
+<li>class Keyword</li>
+<li><strong>init</strong>() Constructor</li>
+<li>self Parameter</li>
+<li>Creating Class Instances</li>
+<li>Accessing Attributes and Methods</li>
+<li>String Methods as OOP Examples</li>
+<li>List Methods as OOP Examples</li>
+<li>Inheritance Basics</li>
+<li><strong>str</strong>() String Representation</li>
+<li><strong>repr</strong>() Developer Representation</li>
+<li>Subclasses and Method Overriding</li>
+<li>super() Function</li>
+<li>Class Variables vs Instance Variables</li>
+<li>Static Methods</li>
+<li>Properties with @property</li>
+<li>Dunder Methods Overview</li>
+<li>Object Composition</li>
+</ol>
+<hr />
+<h2 id="26-turtle-graphics">26. Turtle Graphics<a class="headerlink" href="#26-turtle-graphics" title="Permanent link">&para;</a></h2>
+<ol>
+<li>import turtle</li>
+<li>turtle.Turtle() Object</li>
+<li>turtle.Screen() Object</li>
+<li>Screen Setup and bgcolor()</li>
+<li>Movement forward() backward()</li>
+<li>Turning left() right()</li>
+<li>Absolute Positioning goto()</li>
+<li>Pen Control penup() pendown()</li>
+<li>Pen Size and Color</li>
+<li>Fill begin_fill() end_fill()</li>
+<li>Drawing circle() and Polygons</li>
+<li>Turtle Appearance shape()</li>
+<li>Hiding and Showing Turtle</li>
+<li>Writing Text with turtle.write()</li>
+<li>Clearing and Resetting</li>
+<li>Position Query xcor() ycor()</li>
+<li>Speed Control speed()</li>
+<li>setheading() Direction</li>
+<li>onscreenclick() Event Handler</li>
+<li>Animation with Turtle Loops</li>
+<li>Color Picker with Turtle</li>
+<li>Fractals with Recursion and Turtle</li>
+<li>Sine Wave with Turtle and Math</li>
+<li>Drawing Star Patterns</li>
+<li>Turtle Race Simulation</li>
+<li>Maze Visualization with Turtle</li>
+</ol>
+<hr />
+<h2 id="27-data-visualization">27. Data Visualization<a class="headerlink" href="#27-data-visualization" title="Permanent link">&para;</a></h2>
+<ol>
+<li>matplotlib Library Overview</li>
+<li>import matplotlib.pyplot as plt</li>
+<li>plt.plot() Line Plot</li>
+<li>plt.show() Display</li>
+<li>Plot Title and Axis Labels</li>
+<li>plt.grid() Grid Lines</li>
+<li>Plotting a Sine Wave</li>
+<li>Lists as XY Plot Data</li>
+<li>plt.scatter() Scatter Plot</li>
+<li>plt.bar() Bar Chart</li>
+<li>plt.hist() Histogram</li>
+<li>plt.legend() Legend</li>
+<li>plt.savefig() Save Plot</li>
+<li>Multiple Lines on One Plot</li>
+<li>Subplots with plt.subplot()</li>
+</ol>
+<hr />
+<h2 id="28-numerical-computing-numpy">28. Numerical Computing — NumPy<a class="headerlink" href="#28-numerical-computing-numpy" title="Permanent link">&para;</a></h2>
+<ol>
+<li>numpy Library Overview</li>
+<li>import numpy as np</li>
+<li>np.array() Creating Arrays</li>
+<li>np.argmax() Index of Max</li>
+<li>Array Operations and Broadcasting</li>
+<li>Reshaping Arrays</li>
+<li>np.zeros() np.ones()</li>
+<li>np.linspace() Evenly Spaced Values</li>
+<li>Array Slicing and Indexing</li>
+<li>Element-wise Math Operations</li>
+<li>np.mean() np.std()</li>
+</ol>
+<hr />
+<h2 id="29-image-processing">29. Image Processing<a class="headerlink" href="#29-image-processing" title="Permanent link">&para;</a></h2>
+<ol>
+<li>PIL Pillow Library Overview</li>
+<li>Image.open() Open Image</li>
+<li>image.show() Display Image</li>
+<li>Pixel Data and Image Arrays</li>
+<li>Image Resize and Crop</li>
+<li>Image Color Conversion</li>
+<li>Saving Images</li>
+</ol>
+<hr />
+<h2 id="30-data-structures-algorithms">30. Data Structures &amp; Algorithms<a class="headerlink" href="#30-data-structures-algorithms" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Abstract Data Types Overview</li>
+<li>Stack LIFO Structure</li>
+<li>Queue FIFO Structure</li>
+<li>Queue enqueue() dequeue()</li>
+<li>Graph Nodes and Edges</li>
+<li>Adjacency List Representation</li>
+<li>Breadth-First Search BFS</li>
+<li>BFS Color Tracking</li>
+<li>BFS for Path Finding</li>
+<li>Depth-First Search DFS</li>
+<li>DFS with Recursion</li>
+<li>DFS and BFS for Maze Solving</li>
+<li>Sorting Algorithms Overview</li>
+<li>Bubble Sort</li>
+<li>Selection Sort</li>
+<li>Insertion Sort</li>
+<li>Binary Search Concept</li>
+<li>Time Complexity Big-O Overview</li>
+<li>Space Complexity Overview</li>
+<li>Linked List Concept</li>
+<li>Tree Data Structure Concept</li>
+<li>Binary Tree Basics</li>
+</ol>
+<hr />
+<h2 id="31-machine-learning-neural-networks">31. Machine Learning &amp; Neural Networks<a class="headerlink" href="#31-machine-learning-neural-networks" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Machine Learning Overview</li>
+<li>Supervised vs Unsupervised Learning</li>
+<li>keras Library Overview</li>
+<li>Sequential Model</li>
+<li>Dense Fully Connected Layers</li>
+<li>Activation Functions relu softmax</li>
+<li>Conv2D Convolutional Layers</li>
+<li>MaxPooling2D Pooling Layers</li>
+<li>Dropout Regularization</li>
+<li>Flatten Layer</li>
+<li>model.compile()</li>
+<li>model.fit() Training</li>
+<li>model.evaluate() Testing</li>
+<li>model.predict() Inference</li>
+<li>Categorical Crossentropy Loss</li>
+<li>Adam Optimizer</li>
+<li>Accuracy Metric</li>
+<li>Batch Size and Epochs</li>
+<li>MNIST Dataset</li>
+<li>Data Normalization</li>
+<li>Convolutional Neural Networks</li>
+<li>Feedforward Networks</li>
+<li>Recurrent Networks RNN Overview</li>
+<li>LSTM Networks Overview</li>
+<li>Autoencoders Overview</li>
+<li>Training vs Validation vs Test Sets</li>
+<li>Overfitting Concept</li>
+<li>Feature Extraction</li>
+</ol>
+<hr />
+<h2 id="32-graphics-in-jupyter">32. Graphics in Jupyter<a class="headerlink" href="#32-graphics-in-jupyter" title="Permanent link">&para;</a></h2>
+<ol>
+<li>ipycanvas Canvas in Jupyter</li>
+<li>mobilechelonian Turtle in Jupyter</li>
+<li>Drawing Shapes on Canvas</li>
+<li>Color Bars in Jupyter</li>
+</ol>
+<hr />
+<h2 id="33-event-driven-programming">33. Event-Driven Programming<a class="headerlink" href="#33-event-driven-programming" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Event-Driven Programming Model</li>
+<li>Mouse Click Event Handlers</li>
+<li>Keyboard Event Handlers</li>
+<li>Callback Functions</li>
+<li>Animation Loops</li>
+<li>Event Queue Concept</li>
+<li>Timer-Based Events</li>
+</ol>
+<hr />
+<h2 id="34-programming-practices">34. Programming Practices<a class="headerlink" href="#34-programming-practices" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Modularity in Code</li>
+<li>Code Reusability</li>
+<li>DRY Principle</li>
+<li>Meaningful Names</li>
+<li>Code Comments When and Why</li>
+<li>Literate Programming in Jupyter</li>
+<li>Reading Docs with help() and dir()</li>
+<li>Version Control Basics</li>
+<li>Searching Documentation</li>
+<li>Code Refactoring</li>
+<li>Test-Driven Thinking</li>
+<li>Pair Programming Concept</li>
+</ol>
+<hr />
+<h2 id="35-color-graphics-concepts">35. Color &amp; Graphics Concepts<a class="headerlink" href="#35-color-graphics-concepts" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Named Colors</li>
+<li>Hex Color Values</li>
+<li>RGB Color Model</li>
+<li>Color in Turtle Graphics</li>
+<li>Background and Pen Colors</li>
+<li>HSL Color Model</li>
+<li>Color Theory Basics</li>
+<li>Transparency and Alpha</li>
+</ol>
+<hr />
+<h2 id="36-computational-thinking-foundations">36. Computational Thinking Foundations<a class="headerlink" href="#36-computational-thinking-foundations" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Decomposition</li>
+<li>Pattern Recognition</li>
+<li>Abstraction in Programming</li>
+<li>Algorithm Design</li>
+<li>Pseudocode Writing</li>
+<li>Debugging Strategies</li>
+</ol>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+  <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid">
+          
+            <a href="../concept-list-v1/" title="Concept List v1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+              </div>
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Concept List v1
+                </span>
+              </div>
+            </a>
+          
+          
+            <a href="../quality-metrics/" title="Graph Quality Analysis" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+                <span class="md-flex__ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Graph Quality Analysis
+                </span>
+              </div>
+              <div class="md-flex__cell md-flex__cell--shrink">
+                <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          
+            All content is covered under the <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike.</a>
+        </div>
+        <div class="md-social">
+  
+</div>
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/skulpt.js"></script>
+      
+    
+  </body>
+</html>

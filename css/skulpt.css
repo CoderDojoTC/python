@@ -1,0 +1,119 @@
+/* Skulpt embedded Python editor — shared styles for all Skulpt labs.
+ *
+ * Single-lab pages use plain IDs: #skulpt-lab, #code, etc.
+ * Additional labs on the same page use suffixed IDs: #skulpt-lab-2, #code-2, etc.
+ * Attribute-prefix selectors ([id^="..."]) style both cases from one rule.
+ */
+
+[id="skulpt-lab"],
+[id^="skulpt-lab-"] {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 1.5em 0;
+  font-family: monospace;
+}
+
+[id="editor-container"],
+[id^="editor-container-"] {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 280px;
+}
+
+[id="code"],
+[id^="code-"] {
+  width: 100%;
+  /* Height is set by skulpt.js on page load to fit the code exactly.
+     min-height is a fallback in case JS is slow or unavailable. */
+  min-height: 120px;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  border: 2px solid #642580;
+  border-radius: 6px 6px 0 0;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  resize: vertical;
+  box-sizing: border-box;
+  tab-size: 4;
+}
+
+[id="code"]:focus,
+[id^="code-"]:focus {
+  outline: none;
+  border-color: #41BAC1;
+}
+
+[id="button-row"],
+[id^="button-row-"] {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+[id="run-btn"],
+[id^="run-btn-"],
+[id="reset-btn"],
+[id^="reset-btn-"] {
+  padding: 8px 20px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+[id="run-btn"],
+[id^="run-btn-"]             { background: #642580; color: white; }
+[id="run-btn"]:hover,
+[id^="run-btn-"]:hover       { background: #7a2f9e; }
+[id="reset-btn"],
+[id^="reset-btn-"]           { background: #41BAC1; color: white; }
+[id="reset-btn"]:hover,
+[id^="reset-btn-"]:hover     { background: #2fa8b0; }
+
+[id="output"],
+[id^="output-"] {
+  margin-top: 8px;
+  padding: 8px;
+  min-height: 36px;
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  color: #222;
+  white-space: pre-wrap;
+}
+
+.skulpt-error {
+  color: #c0392b;
+}
+
+[id="canvas-container"],
+[id^="canvas-container-"] {
+  flex: 0 0 auto;
+}
+
+[id="turtle-target"],
+[id^="turtle-target-"] {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #642580;
+  border-radius: 6px;
+  background: white;
+  overflow: hidden;
+}
+
+/* Text-only labs: canvas panel hidden, editor stretches to full width */
+.skulpt-text-only [id="canvas-container"],
+.skulpt-text-only [id^="canvas-container-"] {
+  display: none;
+}
+
+.skulpt-text-only [id="editor-container"],
+.skulpt-text-only [id^="editor-container-"] {
+  flex: 1 1 100%;
+  min-width: 0;
+}
