@@ -87,8 +87,7 @@
   white-space: pre-wrap;
 }
 
-[id="output"].skulpt-error,
-[id^="output-"].skulpt-error {
+.skulpt-error {
   color: #c0392b;
 }
 
@@ -105,4 +104,16 @@
   border-radius: 6px;
   background: white;
   overflow: hidden;
+}
+
+/* Text-only labs: canvas panel hidden, editor stretches to full width */
+.skulpt-text-only [id="canvas-container"],
+.skulpt-text-only [id^="canvas-container-"] {
+  display: none;
+}
+
+.skulpt-text-only [id="editor-container"],
+.skulpt-text-only [id^="editor-container-"] {
+  flex: 1 1 100%;
+  min-width: 0;
 }

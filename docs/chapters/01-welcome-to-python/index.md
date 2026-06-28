@@ -116,7 +116,7 @@ Edit the code below and click **Run** to see the result right on this page. No a
 <script src="https://skulpt.org/js/skulpt.min.js"></script>
 <script src="https://skulpt.org/js/skulpt-stdlib.js"></script>
 
-<div id="skulpt-lab">
+<div id="skulpt-lab" class="skulpt-text-only">
   <div id="editor-container">
     <textarea id="code" spellcheck="false">print("Hello, world!")
 print("My name is Monty.")

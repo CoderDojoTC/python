@@ -15,6 +15,11 @@ function builtinRead(x) {
   return Sk.builtinFiles['files'][x];
 }
 
+/* Escape HTML special characters so print() output is safe to inject via innerHTML. */
+function _skulptEscape(text) {
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 function runSkulpt(suffix) {
   suffix = suffix || '';
   var target = document.getElementById('turtle-target' + suffix);
@@ -22,12 +27,11 @@ function runSkulpt(suffix) {
   var code   = document.getElementById('code' + suffix);
   if (!target || !output || !code) return;
 
-  target.innerHTML  = '';
-  output.textContent = '';
-  output.classList.remove('skulpt-error');
+  target.innerHTML = '';
+  output.innerHTML = '';
 
   Sk.configure({
-    output: function (text) { output.textContent += text; },
+    output: function (text) { output.innerHTML += _skulptEscape(text); },
     read:   builtinRead,
     __future__:   Sk.python3,
     killableWhile: true,
@@ -41,8 +45,7 @@ function runSkulpt(suffix) {
   Sk.misceval.asyncToPromise(function () {
     return Sk.importMainWithBody('<stdin>', false, code.value, true);
   }).catch(function (err) {
-    output.textContent = err.toString();
-    output.classList.add('skulpt-error');
+    output.innerHTML += '<span class="skulpt-error">' + _skulptEscape(err.toString()) + '</span>';
   });
 }
 
@@ -53,8 +56,8 @@ function resetSkulpt(suffix) {
   var output = document.getElementById('output' + suffix);
   var key    = '_skulptOriginalCode' + suffix;
   if (code   && window[key] !== undefined) code.value = window[key];
-  if (target) target.innerHTML   = '';
-  if (output) output.textContent = '';
+  if (target) target.innerHTML = '';
+  if (output) output.innerHTML = '';
 }
 
 function _initSkulptEditor() {

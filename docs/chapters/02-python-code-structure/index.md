@@ -68,7 +68,7 @@ print(haiku)
 <script src="https://skulpt.org/js/skulpt.min.js"></script>
 <script src="https://skulpt.org/js/skulpt-stdlib.js"></script>
 
-<div id="skulpt-lab">
+<div id="skulpt-lab" class="skulpt-text-only">
   <div id="editor-container">
     <textarea id="code" spellcheck="false">haiku = """An old silent pond.
 A frog jumps into the pond.

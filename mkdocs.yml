@@ -74,6 +74,8 @@ nav:
   - Beginning Python - Skulpt (self-hosted):
     - Draw a Square: skulpt/02-simple-square.md
     - Stop Sign: skulpt/04a-stop-sign.md
+    - Reading Errors: skulpt/10-debugging.md
+    - Text-Only Example: skulpt/text-only-example.md
   - Reference:
     - Mascot Style Guide: learning-graph/mascot-test.md
   - Learning Graph:
@@ -139,8 +141,8 @@ theme:
   palette:
     primary: '#642580'
     accent: '#41BAC1'
-  feature:
-    tabs: true
+  features:
+    - content.code.copy
   custom_dir: 'theme'
   include_sidebar: true
 markdown_extensions:

@@ -100,12 +100,27 @@ Keep programs short enough that students can read the whole thing at a glance:
 - **Mid-course labs (Chapters 6–18):** 8–20 lines of Python
 - **Advanced labs (Chapters 19+):** no strict limit, but prefer several short focused labs over one long one
 
-### When Not to Use Turtle Graphics
+### When to Use Each Lab Type
 
-From Chapter 19 onward, turtle is used selectively for visualization projects.
-Pure language concepts (string methods, dictionaries, error handling, etc.) may use
-text-output Skulpt labs that write to the `<pre id="output">` element instead of drawing
-on the canvas. The same HTML block structure applies — just omit turtle-specific code.
+There are two Skulpt lab layouts. Choose based on whether the program uses turtle graphics:
+
+| Situation | Lab type | HTML class |
+|-----------|----------|------------|
+| Program uses `import turtle` or any turtle command | **Drawing lab** | *(no extra class — default)* |
+| Program uses only `print()`, variables, loops, functions, etc. | **Text-only lab** | `class="skulpt-text-only"` |
+
+**Drawing labs** (Chapters 1–18 turtle lessons) show a 400 × 400 px canvas to the right of the
+code editor where the turtle draws.
+
+**Text-only labs** hide the canvas panel entirely; the code editor stretches to fill the full
+content width. Use these for any program that produces only text output — `print()` calls,
+variable values, string results, etc. This layout is the default from Chapter 19 onward, and
+can also appear in earlier chapters for the rare non-turtle concept (e.g., a `print()`-only
+variable lesson).
+
+Never put a text-only lab in a lesson that also needs the canvas, and never put a drawing
+lab in a lesson whose programs do not call any turtle commands — the empty canvas just
+wastes space and confuses students.
 
 ---
 
@@ -452,14 +467,24 @@ then run it to check!
 
 ### Skulpt HTML Block
 
-Every Skulpt lab uses this exact HTML block. The CDN scripts load Skulpt;
-`skulpt.js` (via `extra_javascript`) and `skulpt.css` (via `extra_css`)
-provide the shared functions and styles.
+There are two lab templates. Pick based on whether the program uses turtle graphics
+(see [When to Use Each Lab Type](#when-to-use-each-lab-type)).
+
+The CDN `<script>` tags must appear **once per page**, before the first lab block.
+`skulpt.js` (via `extra_javascript`) and `skulpt.css` (via `extra_css`) provide the
+shared runtime and styles — do not add inline `<style>` or `<script>` tags.
 
 ```html
 <script src="https://skulpt.org/js/skulpt.min.js"></script>
 <script src="https://skulpt.org/js/skulpt-stdlib.js"></script>
+```
 
+#### Drawing Lab (turtle programs)
+
+Use when the program calls `import turtle` or any turtle command.
+The canvas appears to the right of the code editor.
+
+```html
 <div id="skulpt-lab">
   <div id="editor-container">
     <textarea id="code" spellcheck="false">PYTHON CODE HERE
@@ -476,19 +501,62 @@ provide the shared functions and styles.
 </div>
 ```
 
-**Rules:**
-- The Python code inside `<textarea>` must match the Sample Code block exactly
-- Do not add inline `<style>` or `<script>` tags — all CSS/JS is centralized
-- The first lab on a page uses the plain IDs above — `skulpt.js` depends on them
-- **Do not set a `height` or `rows` attribute on the `<textarea>`** — `skulpt.js` counts the lines of code on page load and sets the textarea height automatically so all code is visible without scrolling
+#### Text-Only Lab (print/variables/logic — no turtle)
 
-**Multiple labs on one page (Learning Checks, etc.):**
-
-Every lab after the first must use a `-2`, `-3`, … suffix on every ID, and pass
-the matching suffix to the button `onclick` handlers:
+Use when the program produces only text output. Add `class="skulpt-text-only"` to
+the outer div. The canvas container is hidden by CSS; the editor fills the full
+content width. The `turtle-target` div must still be present so `runSkulpt()` can
+initialise without errors — it just isn't visible.
 
 ```html
+<div id="skulpt-lab" class="skulpt-text-only">
+  <div id="editor-container">
+    <textarea id="code" spellcheck="false">PYTHON CODE HERE
+</textarea>
+    <div id="button-row">
+      <button id="run-btn" onclick="runSkulpt()">&#9654; Run</button>
+      <button id="reset-btn" onclick="resetSkulpt()">&#8635; Reset</button>
+    </div>
+    <pre id="output"></pre>
+  </div>
+  <div id="canvas-container">
+    <div id="turtle-target"></div>
+  </div>
+</div>
+```
+
+#### Rules that apply to both templates
+
+- The Python code inside `<textarea>` must match the Sample Code block exactly
+- **Do not set a `height` or `rows` attribute on the `<textarea>`** — `skulpt.js` auto-sizes it on page load so all code is visible without scrolling
+- The first lab on a page uses the plain IDs above; `skulpt.js` depends on them
+
+#### Multiple labs on one page (Learning Checks, etc.)
+
+Every lab after the first must use a `-2`, `-3`, … suffix on **every** ID, and pass
+the matching suffix to the button `onclick` handlers. The `skulpt-text-only` class
+applies to multiple labs independently — a page may have a drawing lab first and a
+text-only lab second, or vice versa.
+
+```html
+<!-- Second drawing lab -->
 <div id="skulpt-lab-2">
+  <div id="editor-container-2">
+    <textarea id="code-2" spellcheck="false">PYTHON CODE HERE
+</textarea>
+    <div id="button-row-2">
+      <button id="run-btn-2" onclick="runSkulpt('-2')">&#9654; Run</button>
+      <button id="reset-btn-2" onclick="resetSkulpt('-2')">&#8635; Reset</button>
+    </div>
+    <pre id="output-2"></pre>
+  </div>
+  <div id="canvas-container-2">
+    <div id="turtle-target-2"></div>
+  </div>
+</div>
+
+<!-- Second text-only lab -->
+<div id="skulpt-lab-2" class="skulpt-text-only">
   <div id="editor-container-2">
     <textarea id="code-2" spellcheck="false">PYTHON CODE HERE
 </textarea>
@@ -504,7 +572,6 @@ the matching suffix to the button `onclick` handlers:
 </div>
 ```
 
-The `skulpt.js` and `skulpt.css` files both support the `-2` / `-3` suffix pattern.
 Do not add the `<script>` CDN tags a second time — one copy per page is enough.
 
 ---

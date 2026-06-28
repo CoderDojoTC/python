@@ -83,7 +83,7 @@ No account needed — everything runs in your browser.
 <script src="https://skulpt.org/js/skulpt.min.js"></script>
 <script src="https://skulpt.org/js/skulpt-stdlib.js"></script>
 
-<div id="skulpt-lab">
+<div id="skulpt-lab" class="skulpt-text-only">
   <div id="editor-container">
     <textarea id="code" spellcheck="false">score = 10
 lives = 3
@@ -149,6 +149,7 @@ The table below shows common naming mistakes and their snake_case fixes:
 | `myscore` | Words run together — hard to read | `my_score` |
 | `MyScore` | Capital letters belong to a different naming style | `my_score` |
 | `my score` | Spaces are not allowed in variable names | `my_score` |
+| `my-score` | Python reads the dash as **subtraction** — `my - score` — not a name! | `my_score` |
 | `x` | Too vague — what does `x` mean? | `player_score` |
 | `s` | Single letters give no information | `lives_remaining` |
 
@@ -165,7 +166,7 @@ When that happens, a good name is the difference between code you can read and c
 
 !!! mascot-warning "Naming Pitfalls!"
     ![Monty warning](../../img/mascot/warning.png){ class="mascot-admonition-img" }
-    Three traps beginners fall into: (1) single-letter names like `x` or `n` that tell you nothing, (2) capital letters that break the snake_case style Python expects, and (3) accidentally naming a variable after a Python keyword. If Python gives you a `SyntaxError` the moment you assign a value, check whether your variable name is a keyword like `print` or `list`!
+    Watch out for the dash! If you write `my-score` instead of `my_score`, Python reads the dash as a minus sign and thinks you are subtracting a variable called `score` from a variable called `my`. Use an **underscore** (`_`), never a dash (`-`), to join words in a name. Other common traps: single-letter names like `x` that tell you nothing, capital letters that break snake_case, and accidentally using a Python keyword as your variable name.
 
 ## Integers: Whole Numbers
 
@@ -246,7 +247,7 @@ print(score)
 
 ## Try It Now — Reassignment
 
-<div id="skulpt-lab-2">
+<div id="skulpt-lab-2" class="skulpt-text-only">
   <div id="editor-container-2">
     <textarea id="code-2" spellcheck="false">score = 10
 print(score)
@@ -340,7 +341,7 @@ You will learn much more about classes later in the course.
     ![Monty thinking](../../img/mascot/thinking.png){ class="mascot-admonition-img" }
     The program below creates two variables — `player_score` and `bonus_points`. It prints `player_score` just fine, but something is missing: `bonus_points` never gets printed. Add **one line** so the output shows both numbers, one on each line.
 
-<div id="skulpt-lab-3">
+<div id="skulpt-lab-3" class="skulpt-text-only">
   <div id="editor-container-3">
     <textarea id="code-3" spellcheck="false">player_score = 42
 bonus_points = 10
