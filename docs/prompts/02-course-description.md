@@ -1,0 +1,4 @@
+# Course Description Generation
+
+!!! prompt
+    Very nice!  Now please use the /course-description-analyzer guide to create a new course description and put it in @docs/course-description.md - the target audience is students around 10 years old that have just finished a class using block programming (scratch).  It is designed to be a fun course that uses our pedagogical mascot "monty"  and leverages the built-in inline Skulpt programming tools.  It also has intermediate and advanced python concepts.  Make sure that the course description can cover all the current 350 concepts listed in @docs/learning-graph/concept-list-v1.md - the course will include a glossary, faq, quizzes, and a detailed teacher's guide.

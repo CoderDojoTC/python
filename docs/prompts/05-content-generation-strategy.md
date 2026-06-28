@@ -1,0 +1,5 @@
+Emphasize in both the CLAUDE.md file and the @CONTENT-GENERATION-GUIDELINES.md that the primary teaching tool in the early part of this textbook is to place interactive turtle graphics inline using the Skulpt libraries.  This is the core feature of this textbook - allow students to see a simple Python program and then encourage them to modify and run the program.  For important concepts, take  the opportunity to check their learning, create a new program that needs an additional line added or a small bug fixed.
+
+Add another section to the "Core Teaching Philosophy" that encourages a student to "guess" what a program will do BEFORE they run that program.
+
+Now take the perspective of a senior instructional designer.  What changes would you make to the @CONTENT-GENERATION-GUIDELINES.md  for a beginning coding course?

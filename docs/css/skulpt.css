@@ -1,6 +1,12 @@
-/* Skulpt embedded Python editor — shared styles for all Skulpt labs */
+/* Skulpt embedded Python editor — shared styles for all Skulpt labs.
+ *
+ * Single-lab pages use plain IDs: #skulpt-lab, #code, etc.
+ * Additional labs on the same page use suffixed IDs: #skulpt-lab-2, #code-2, etc.
+ * Attribute-prefix selectors ([id^="..."]) style both cases from one rule.
+ */
 
-#skulpt-lab {
+[id="skulpt-lab"],
+[id^="skulpt-lab-"] {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
@@ -8,16 +14,20 @@
   font-family: monospace;
 }
 
-#editor-container {
+[id="editor-container"],
+[id^="editor-container-"] {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 280px;
 }
 
-#code {
+[id="code"],
+[id^="code-"] {
   width: 100%;
-  height: 260px;
+  /* Height is set by skulpt.js on page load to fit the code exactly.
+     min-height is a fallback in case JS is slow or unavailable. */
+  min-height: 120px;
   padding: 10px;
   font-size: 14px;
   font-family: 'Courier New', monospace;
@@ -30,19 +40,23 @@
   tab-size: 4;
 }
 
-#code:focus {
+[id="code"]:focus,
+[id^="code-"]:focus {
   outline: none;
   border-color: #41BAC1;
 }
 
-#button-row {
+[id="button-row"],
+[id^="button-row-"] {
   display: flex;
   gap: 8px;
   margin-top: 8px;
 }
 
-#run-btn,
-#reset-btn {
+[id="run-btn"],
+[id^="run-btn-"],
+[id="reset-btn"],
+[id^="reset-btn-"] {
   padding: 8px 20px;
   font-size: 15px;
   border: none;
@@ -51,12 +65,17 @@
   font-weight: bold;
 }
 
-#run-btn             { background: #642580; color: white; }
-#run-btn:hover       { background: #7a2f9e; }
-#reset-btn           { background: #41BAC1; color: white; }
-#reset-btn:hover     { background: #2fa8b0; }
+[id="run-btn"],
+[id^="run-btn-"]             { background: #642580; color: white; }
+[id="run-btn"]:hover,
+[id^="run-btn-"]:hover       { background: #7a2f9e; }
+[id="reset-btn"],
+[id^="reset-btn-"]           { background: #41BAC1; color: white; }
+[id="reset-btn"]:hover,
+[id^="reset-btn-"]:hover     { background: #2fa8b0; }
 
-#output {
+[id="output"],
+[id^="output-"] {
   margin-top: 8px;
   padding: 8px;
   min-height: 36px;
@@ -64,15 +83,22 @@
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 13px;
-  color: #c0392b;
+  color: #222;
   white-space: pre-wrap;
 }
 
-#canvas-container {
+[id="output"].skulpt-error,
+[id^="output-"].skulpt-error {
+  color: #c0392b;
+}
+
+[id="canvas-container"],
+[id^="canvas-container-"] {
   flex: 0 0 auto;
 }
 
-#turtle-target {
+[id="turtle-target"],
+[id^="turtle-target-"] {
   width: 400px;
   height: 400px;
   border: 2px solid #642580;

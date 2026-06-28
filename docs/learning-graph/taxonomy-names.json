@@ -1,0 +1,16 @@
+{
+  "ENV": "Environment & Tools",
+  "SYN": "Core Syntax & Output",
+  "DAT": "Variables & Data Types",
+  "CTL": "Input & Control Flow",
+  "FUN": "Functions & Scope",
+  "COL": "Collections",
+  "MOD": "Modules & Standard Library",
+  "TXT": "Text Processing & Regex",
+  "FIO": "File I/O & Data",
+  "ERR": "Error Handling & Debugging",
+  "OOP": "Object-Oriented Programming",
+  "VIZ": "Turtle Graphics & Visualization",
+  "ALG": "Algorithms & Data Structures",
+  "ADV": "Advanced & Applied Python"
+}

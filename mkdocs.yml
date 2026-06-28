@@ -6,6 +6,47 @@ repo_url: 'https://github.com/dmccreary/python'
 site_url: 'https://dmccreary.github.io/python/'
 
 nav:
+  - Course Description: course-description.md
+  - Chapters:
+    - List of Chapters: chapters/index.md
+    - 1. Welcome to Python and Skulpt: chapters/01-welcome-to-python/index.md
+    - 2. Python Code Structure: chapters/02-python-code-structure/index.md
+    - 3. Variables and Numbers: chapters/03-variables-and-numbers/index.md
+    - 4. Functions and Objects: chapters/04-functions-and-objects/index.md
+    - 5. Drawing with Turtle Graphics: chapters/05-drawing-with-turtle/index.md
+    - 6. Math and Arithmetic: chapters/06-math-and-arithmetic/index.md
+    - 7. For Loops and Drawing Shapes: chapters/07-for-loops-and-shapes/index.md
+    - 8. Working with Strings: chapters/08-working-with-strings/index.md
+    - 9. Making Decisions with If/Else: chapters/09-decisions-if-else/index.md
+    - 10. While Loops and Animation: chapters/10-while-loops-and-animation/index.md
+    - 11. Functions with Parameters and Scope: chapters/11-functions-parameters-scope/index.md
+    - 12. Colors, Fill, and Turtle Art: chapters/12-colors-fill-turtle-art/index.md
+    - 13. User Input and Type Conversion: chapters/13-user-input-type-conversion/index.md
+    - 14. String Methods and Formatting: chapters/14-string-methods-formatting/index.md
+    - 15. Lists - Basics: chapters/15-lists-basics/index.md
+    - 16. Lists - Methods and Patterns: chapters/16-lists-methods-patterns/index.md
+    - 17. Modules and Random Numbers: chapters/17-modules-and-random/index.md
+    - 18. Math Module and Turtle Projects: chapters/18-math-module-turtle-projects/index.md
+    - 19. More Booleans and Conditionals: chapters/19-booleans-and-conditionals/index.md
+    - 20. Tuples and Sets: chapters/20-tuples-and-sets/index.md
+    - 21. Dictionaries: chapters/21-dictionaries/index.md
+    - 22. Advanced Collections and Built-in Functions: chapters/22-advanced-collections/index.md
+    - 23. Error Handling and Debugging: chapters/23-error-handling-debugging/index.md
+    - 24. Recursion and Fractals: chapters/24-recursion-and-fractals/index.md
+    - 25. Object-Oriented Programming: chapters/25-object-oriented-programming/index.md
+    - 26. File Input and Output: chapters/26-file-input-output/index.md
+    - 27. Standard Library and JSON: chapters/27-standard-library-json/index.md
+    - 28. Python Development Tools: chapters/28-python-dev-tools/index.md
+    - 29. Text Processing and Regular Expressions: chapters/29-text-processing-regex/index.md
+    - 30. Algorithms and Data Structures: chapters/30-algorithms-data-structures/index.md
+    - 31. Advanced Functions and OOP: chapters/31-advanced-functions-oop/index.md
+    - 32. Data Visualization with matplotlib: chapters/32-data-visualization-matplotlib/index.md
+    - 33. NumPy and Scientific Computing: chapters/33-numpy-scientific-computing/index.md
+    - 34. Image Processing with Pillow: chapters/34-image-processing-pillow/index.md
+    - 35. Advanced Turtle and Event-Driven Programming: chapters/35-advanced-turtle-event-driven/index.md
+    - 36. Computational Thinking and Best Practices: chapters/36-computational-thinking-best-practices/index.md
+    - 37. Machine Learning Foundations: chapters/37-machine-learning-foundations/index.md
+    - 38. Neural Networks and MNIST: chapters/38-neural-networks-and-mnist/index.md
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
     - Setting Up Trinket: trinket/01a-trinket-account.md
@@ -35,6 +76,14 @@ nav:
     - Stop Sign: skulpt/04a-stop-sign.md
   - Reference:
     - Mascot Style Guide: learning-graph/mascot-test.md
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept List v1: learning-graph/concept-list-v1.md
+    - Concept List: learning-graph/concept-list.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Taxonomy Distribution Report: learning-graph/taxonomy-distribution.md
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
@@ -72,8 +121,11 @@ nav:
   - Strategy:
     - Introduction: strategy/index.md
     - Order of Concepts: order-of-cocepts.,d
+  - MicroSims:
+    - Learning Graph Viewer: sims/graph-viewer/index.md
   - Contributing:
     - How to Contribute Examples: contribute.md
+  - About: about.md
   - Contact:
     - Contact: contact.md
 
