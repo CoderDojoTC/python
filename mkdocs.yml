@@ -25,6 +25,9 @@ nav:
     - Changing background: trinket/16-changing-background.md
     - Controlling mouseclicks: trinket/17-controlling-mouseclicks.md
     - Other examples: trinket/examples.m 
+  - Beginning Python - Skulpt (self-hosted):
+    - Draw a Square: skulpt/02-simple-square.md
+    - Stop Sign: skulpt/04a-stop-sign.md
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
@@ -93,6 +96,10 @@ markdown_extensions:
       permalink: true
 plugins:
     - search
+extra_css:
+  - css/skulpt.css
+extra_javascript:
+  - js/skulpt.js
 # Google Analytics Site ID: G-EP38Z3PVD5
 extra:
   analytics:
