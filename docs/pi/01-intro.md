@@ -2,7 +2,7 @@
 
 - [Raspberry Pi Foundation Projects](https://projects.raspberrypi.org/en)
 
-- [CoderDojo Pages on the Pi Site](https://projects.raspberrypi.org/en/coderdojo)
+- [Raspberry Pi CoderDojo Projects](https://projects.raspberrypi.org/en/coderdojo)
 
 - [Thonny](https://thonny.org/)Thonny is a Integrated Development Environment for debugging Python code.  Unfortunatly, no turtle graphics are supported.
 

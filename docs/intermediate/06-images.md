@@ -8,4 +8,4 @@ my_image = Image.open("/path/to/image.jpg")
 my_image.show()
 ```
 
-The CoderDojo AI Racing League will explore more around working with image data.
+The AI Racing League will explore more around working with image data.

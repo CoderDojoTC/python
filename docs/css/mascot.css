@@ -1,12 +1,12 @@
 /* ============================================
    Learning Mascot: Monty the Python
-   Pedagogical agent for CoderDojo TC Python
-   CoderDojo brand: primary #642580, accent #41BAC1
+   Pedagogical agent for Beginning Python
+   Colors: primary #642580 purple, accent #41BAC1 teal
    ============================================ */
 
 :root {
-  --mascot-primary:   #642580;   /* CoderDojo purple   */
-  --mascot-secondary: #41BAC1;   /* CoderDojo teal     */
+  --mascot-primary:   #642580;   /* primary purple   */
+  --mascot-secondary: #41BAC1;   /* accent teal     */
   --mascot-bg:        #f3eaf8;   /* light purple tint  */
   --mascot-border:    #7a2f9e;   /* medium purple      */
   --mascot-size: 90px;
@@ -30,7 +30,7 @@
   font-size: inherit;
 }
 
-/* ---- Welcome (chapter openings) — CoderDojo purple ---- */
+/* ---- Welcome (chapter openings) — primary purple ---- */
 .md-typeset .admonition.mascot-welcome,
 .md-typeset details.mascot-welcome {
   border-color: var(--mascot-primary);
@@ -42,7 +42,7 @@
   color: white;
 }
 
-/* ---- Thinking (key concepts) — CoderDojo teal ---- */
+/* ---- Thinking (key concepts) — accent teal ---- */
 .md-typeset .admonition.mascot-thinking,
 .md-typeset details.mascot-thinking {
   border-color: var(--mascot-secondary);

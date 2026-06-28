@@ -1,6 +1,11 @@
-site_name: 'CoderDojo TC Python'
+site_name: 'Beginning Python'
+site_description: 'Resources for teaching Python to beginning programmers.'
+site_author: 'Dan McCreary'
+repo_name: 'GitHub Repo'
+repo_url: 'https://github.com/dmccreary/python'
+site_url: 'https://dmccreary.github.io/python/'
+
 nav:
-  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Beginning Python - Trinket:
     - Introduction: trinket/00-introduction.md
     - Setting Up Trinket: trinket/01a-trinket-account.md
@@ -28,6 +33,8 @@ nav:
   - Beginning Python - Skulpt (self-hosted):
     - Draw a Square: skulpt/02-simple-square.md
     - Stop Sign: skulpt/04a-stop-sign.md
+  - Reference:
+    - Mascot Style Guide: learning-graph/mascot-test.md
   - Beginning Python - Repl.it:
     - Square: repl/02-square.md
     - Flower: repl/07-flower.md
@@ -70,16 +77,13 @@ nav:
   - Contact:
     - Contact: contact.md
 
-site_description: 'Resources for teaching Python to CoderDojo Twin Cities students.'
-site_author: 'Dan McCreary'
-repo_name: 'GitHub Repo'
-repo_url: 'https://github.com/CoderDojoTC/python'
 
-# CoderDojo Standards from here down
+
+# Site configuration
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/coderdojo-logo.png
+  logo: img/python-logo.jpeg
   palette:
     primary: '#642580'
     accent: '#41BAC1'
@@ -89,7 +93,10 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
+  - attr_list
   - footnotes
+  - md_in_html
+  - pymdownx.details
   - pymdownx.highlight
   - pymdownx.superfences
   - toc:
@@ -98,6 +105,7 @@ plugins:
     - search
 extra_css:
   - css/skulpt.css
+  - css/mascot.css
 extra_javascript:
   - js/skulpt.js
 # Google Analytics Site ID: G-EP38Z3PVD5

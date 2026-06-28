@@ -6,7 +6,7 @@ In this lab, we are going to solve a maze with an **algorithm** called **breadth
 
 * A **queue** is another commonly used data structure. Think of it as a line that we always take from the front of and always add to the back (no budging).
 
-First, download the code template found in the ```src/intermediate``` folder of the repository, found [here](https://github.com/CoderDojoTC/python). Then, lets try and implement a solution to solve it!
+First, download the code template found in the ```src/intermediate``` folder of the repository, found [here](https://github.com/dmccreary/python). Then, lets try and implement a solution to solve it!
 
 One solution is breadth-first search, or BFS. BFS works by cycling through all possible nodes one hop away from your current position, adding them to a **queue** and then cycling through all of those nodes in the queue to see if they are the solution. Lets see how it is implemented below:
 

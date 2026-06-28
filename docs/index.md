@@ -1,4 +1,4 @@
-# CoderDojo Twin Cities Python Resources
+# Beginning Python Resources
 This GitHub repository is for sharing teaching resources to teach Python. This includes hints on getting your Python environments setup up and extensive lesson plans for several environments.
 
 
