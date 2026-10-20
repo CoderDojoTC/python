@@ -56,4 +56,4 @@ dan.hideturtle()
 
 ## Experiments
 1. Can you create a variable for the number of circles to draw?
-2. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.  Note that you can use any of these colors in your lists.
+2. Go to the [named colors page](https://coddy.tech/tools/color-converter#named-colors) and see the name of other colors you can use.  Note that you can use any of these colors in your lists.
