@@ -65,6 +65,6 @@ dan.hideturtle()
 
 1. Can you change the name of the function to be "petal"?
 1. What does ```print(len(colorList))``` return?
-1. Go to the [Trinket colors page](https://trinket.io/docs/colors) and see the name of other colors you can use.
+1. Go to the [named colors page](https://coddy.tech/tools/color-converter#named-colors) and see the name of other colors you can use.
 1. What happens if a list does not fit on a single line? Can a list span multiple lines?
 1. Can you use double quotes and single quotes in the same list?

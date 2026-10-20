@@ -1,6 +1,6 @@
 ## Color Picker
 
-You are not limited to the colors by name [Trinket Colors](https://trinket.io/docs/colors).
+You are not limited to the colors by name [named colors](https://coddy.tech/tools/color-converter#named-colors).
 You can use Hex and RGB values and let your imagination run wild.
 
 [Color Picker](https://projects.raspberrypi.org/en/projects/colourful-creations/1)
